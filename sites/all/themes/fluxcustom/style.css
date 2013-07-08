@@ -155,7 +155,7 @@ tr.odd {
   background-color:#F9F9F9;
 }
 tbody tr:hover {
-  background-color:#F6F6F6;
+  /*background-color:#F6F6F6;*/
 }
 
 form .field-multiple-table th.field-label,
@@ -324,7 +324,7 @@ body.sidebar-second #sidebar-second {
 }
 
 #header #site-name {
-  font-size: 2.5em;
+  font-size: 3.5em;
   font-weight: 700;
   line-height: 1.5em;
   margin: 0;
@@ -353,7 +353,7 @@ body.sidebar-second #sidebar-second {
   margin: 0;
   padding: 0;
   display:inline-block;
-  margin-top:.9em;
+  margin-top:1.75em;
 }
 
 #navigation ul#main-menu {
@@ -1818,10 +1818,28 @@ body.maintenance-page #page-title {
   margin: 0 0 35px;
 }
 
-.front #navigation {
-  margin-top: 0;
+.view-frontpage-player .views-field-field-audio .field-content ul.graphic a.sm2_link {
+  min-width: 11em;
 }
 
-.front .view-frontpage-player .views-field-field-audio .field-content ul.graphic a.sm2_link {
-  min-width: 11em;
+.views-field-colorbox .field-content a img {
+  opacity: 0.7;
+}
+
+.views-field-colorbox .field-content a.active img {
+  opacity: 1;
+}
+
+.views-field-colorbox .field-content a img:hover {
+  /*border: 1px solid red;*/
+  opacity: 1;
+}
+
+.front h1.title { 
+  display:none;
+}
+
+#cboxContent img {
+  float:left;
+  padding-right: 10px;
 }

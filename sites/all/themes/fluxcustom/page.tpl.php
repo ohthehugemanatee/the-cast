@@ -20,7 +20,6 @@
     <header id="header" role="banner" class="clearfix">
       <?php print render($page['header']); ?>
       <?php if ($site_name || $site_slogan): ?>
-        <?php if (!$is_front): ?>
           <hgroup id="site-name-slogan">
           <?php if ($site_name): ?>
             <h1 id="site-name">
@@ -31,7 +30,6 @@
             <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
           <?php endif; ?>
         </hgroup>
-        <?php endif; ?>
       <?php endif; ?>
   
   
