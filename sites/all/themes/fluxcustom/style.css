@@ -1843,3 +1843,8 @@ body.maintenance-page #page-title {
   float:left;
   padding-right: 10px;
 }
+
+.node-bio .content .field-name-field-headshot img {
+  float:left;
+  padding-right: 10px;
+}
