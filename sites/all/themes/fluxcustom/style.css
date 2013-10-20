@@ -1215,7 +1215,7 @@ body.node-type-event .field-name-field-links a:hover {
   border:solid #F3f3f3f 5px;
   border-width:0 3px 3px 3px;
 }
-.view-photosets .views-field-field-photos img {
+#flickrgallery img {
   border:solid 5px #000;
   display:inline;
   display:inline-block;
