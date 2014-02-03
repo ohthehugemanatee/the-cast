@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Cast Panels feature.
+ */
+
+include_once 'cast_panels.features.inc';

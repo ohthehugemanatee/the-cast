@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Cast Core Types feature.
+ */
+
+include_once 'cast_core_types.features.inc';
