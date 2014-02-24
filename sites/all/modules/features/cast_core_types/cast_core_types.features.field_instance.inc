@@ -20,7 +20,11 @@ function cast_core_types_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 1,
       ),
@@ -54,6 +58,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'image_link' => '',
           'image_style' => 'medium',
         ),
@@ -98,7 +105,11 @@ function cast_core_types_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'link',
-        'settings' => array(),
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
+        ),
         'type' => 'link_default',
         'weight' => 2,
       ),
@@ -146,7 +157,11 @@ function cast_core_types_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 1,
       ),
@@ -154,6 +169,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -197,6 +215,9 @@ function cast_core_types_field_default_field_instances() {
           'colorbox_image_style' => 'photo_large',
           'colorbox_multivalue_index' => NULL,
           'colorbox_node_style' => 'bio_headshot',
+          'edit' => array(
+            'editor' => 'form',
+          ),
         ),
         'type' => 'colorbox',
         'weight' => 0,
@@ -205,6 +226,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'image_link' => 'content',
           'image_style' => 'bio_headshot',
         ),
@@ -249,7 +273,11 @@ function cast_core_types_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 0,
       ),
@@ -257,6 +285,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -293,6 +324,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'format_type' => 'long',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -357,6 +391,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'above',
         'module' => 'addressfield',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'format_handlers' => array(
             0 => 'address',
           ),
@@ -407,6 +444,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'above',
         'module' => 'image',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'image_link' => '',
           'image_style' => 'flexslider_full',
         ),
@@ -457,7 +497,11 @@ function cast_core_types_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 0,
       ),
@@ -465,6 +509,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -501,7 +548,11 @@ function cast_core_types_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 0,
       ),
@@ -509,6 +560,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -547,6 +601,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'above',
         'module' => 'file_entity',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'file_view_mode' => 'default',
         ),
         'type' => 'file_rendered',
