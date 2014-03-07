@@ -7,3 +7,11 @@
 .flexslider:hover .flex-direction-nav a {
   display: block;
 }
+.flexslider .slides img {
+  width:unset !important;
+  max-width: 100%;
+  margin: auto; 
+}
+.flexslider .slides .views-field {
+  width:100%; 
+}

@@ -1,0 +1,19 @@
+diff --git a/sites/all/modules/contrib/flexslider/assets/css/flexslider_img.css b/sites/all/modules/contrib/flexslider/assets/css/flexslider_img.css
+index fad2f21..f846774 100644
+--- a/sites/all/modules/contrib/flexslider/assets/css/flexslider_img.css
++++ b/sites/all/modules/contrib/flexslider/assets/css/flexslider_img.css
+@@ -6,4 +6,12 @@
+ .flexslider:hover .flex-direction-nav a,
+ .flexslider:hover .flex-direction-nav a {
+   display: block;
+-}
+\ No newline at end of file
++}
++.flexslider .slides img {
++  width:unset !important;
++  max-width: 100%;
++  margin: auto; 
++}
++.flexslider .slides .views-field {
++  width:100%; 
++}
