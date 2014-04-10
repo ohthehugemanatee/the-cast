@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Cast Boxes feature.
+ */
+
+include_once 'cast_boxes.features.inc';

@@ -1,0 +1,14 @@
+name = Cast flexslider
+description = Flexslider optionsets
+core = 7.x
+package = The Cast
+version = 7.x-1.0
+project = cast_flexslider
+dependencies[] = ctools
+dependencies[] = flexslider
+features[ctools][] = flexslider:flexslider_default_preset:1
+features[features_api][] = api:2
+features[flexslider_optionset][] = cast_frontpage
+features[flexslider_optionset][] = photo_gallery_main_image
+features[flexslider_optionset][] = photo_gallery_thumbnail_slider
+project path = sites/all/modules/features

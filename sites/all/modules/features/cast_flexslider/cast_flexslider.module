@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Cast flexslider feature.
+ */
+
+include_once 'cast_flexslider.features.inc';
