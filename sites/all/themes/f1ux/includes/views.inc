@@ -14,7 +14,7 @@ function f1ux_preprocess_views_view(&$vars) {
 
   $vars['classes_array'] = preg_replace('/^view-/', 'view--', $vars['classes_array']);
   if (!$only_use_smacss) {
-      $vars['classes_array'] = array_unique (array_merge($vars['classes_array'], $tmp_classes_array));
+    $vars['classes_array'] = array_unique (array_merge($vars['classes_array'], $tmp_classes_array));
   }
 }
 
@@ -33,4 +33,12 @@ function f1ux_preprocess_views_view_grid(&$vars) {
   foreach ($vars['column_classes'] as $key => $value) {
     $vars['column_classes'][$key] = preg_replace('/col-/', 'l-grid__column--', $vars['column_classes'][$key]);
   }
+}
+
+/**
+ * Implements hook_preprocess_views_exposed_form().
+ */
+function f1ux_preprocess_views_exposed_form(&$vars) {
+  // Create variable for SMACSS theme setting.
+  $vars['only_use_smacss'] = theme_get_setting('only_use_smacss');
 }

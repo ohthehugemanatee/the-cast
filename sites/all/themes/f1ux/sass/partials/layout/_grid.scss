@@ -3,6 +3,10 @@
 
 $gutter-width: 1em;
 
+.l-grid {
+  overflow: hidden; // so .l-grid__row negative margins don't create horizontal scrollbar 
+}
+
 .l-grid__row {
   @extend %clearfix;
   margin-left: -$gutter-width;

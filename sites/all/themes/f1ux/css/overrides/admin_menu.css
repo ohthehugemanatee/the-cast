@@ -12,25 +12,28 @@
   z-index: 499;
 }
 
-/* line 21, ../../sass/overrides/admin_menu.scss */
+/* line 22, ../../sass/overrides/admin_menu.scss */
 #admin-menu-icon,
 #admin-menu-menu,
-#admin-menu-account {
+#admin-menu-account,
+#admin-menu-users {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 26, ../../sass/overrides/admin_menu.scss */
+/* line 27, ../../sass/overrides/admin_menu.scss */
 #admin-menu-icon > li,
 #admin-menu-menu > li,
-#admin-menu-account > li {
+#admin-menu-account > li,
+#admin-menu-users > li {
   float: left;
   margin: 0;
 }
-/* line 30, ../../sass/overrides/admin_menu.scss */
+/* line 31, ../../sass/overrides/admin_menu.scss */
 #admin-menu-icon > li > a,
 #admin-menu-menu > li > a,
-#admin-menu-account > li > a {
+#admin-menu-account > li > a,
+#admin-menu-users > li > a {
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;
   -ms-border-radius: 1em;
@@ -44,25 +47,29 @@
   padding: 0 0.75em;
   text-decoration: none;
 }
-/* line 41, ../../sass/overrides/admin_menu.scss */
+/* line 42, ../../sass/overrides/admin_menu.scss */
 #admin-menu-icon > li > a:hover, #admin-menu-icon > li > a.active,
 #admin-menu-menu > li > a:hover,
 #admin-menu-menu > li > a.active,
 #admin-menu-account > li > a:hover,
-#admin-menu-account > li > a.active {
+#admin-menu-account > li > a.active,
+#admin-menu-users > li > a:hover,
+#admin-menu-users > li > a.active {
   background-color: #555;
 }
-/* line 45, ../../sass/overrides/admin_menu.scss */
+/* line 46, ../../sass/overrides/admin_menu.scss */
 #admin-menu-icon > li > a:focus,
 #admin-menu-menu > li > a:focus,
-#admin-menu-account > li > a:focus {
+#admin-menu-account > li > a:focus,
+#admin-menu-users > li > a:focus {
   background-color: #555;
   border-color: #ccc;
 }
-/* line 52, ../../sass/overrides/admin_menu.scss */
+/* line 53, ../../sass/overrides/admin_menu.scss */
 #admin-menu-icon .dropdown,
 #admin-menu-menu .dropdown,
-#admin-menu-account .dropdown {
+#admin-menu-account .dropdown,
+#admin-menu-users .dropdown {
   background: #000;
   display: none;
   list-style: none;
@@ -71,26 +78,29 @@
   position: absolute;
   width: 14em;
 }
-/* line 61, ../../sass/overrides/admin_menu.scss */
+/* line 62, ../../sass/overrides/admin_menu.scss */
 #admin-menu-icon .dropdown li + li,
 #admin-menu-menu .dropdown li + li,
-#admin-menu-account .dropdown li + li {
+#admin-menu-account .dropdown li + li,
+#admin-menu-users .dropdown li + li {
   border-top: 1px solid #555;
 }
-/* line 66, ../../sass/overrides/admin_menu.scss */
+/* line 67, ../../sass/overrides/admin_menu.scss */
 #admin-menu-icon .dropdown a,
 #admin-menu-icon .dropdown span,
 #admin-menu-menu .dropdown a,
 #admin-menu-menu .dropdown span,
 #admin-menu-account .dropdown a,
-#admin-menu-account .dropdown span {
+#admin-menu-account .dropdown span,
+#admin-menu-users .dropdown a,
+#admin-menu-users .dropdown span {
   color: #fff;
   display: block;
   margin: 0;
   padding: 0 0.5em;
   text-decoration: none;
 }
-/* line 74, ../../sass/overrides/admin_menu.scss */
+/* line 75, ../../sass/overrides/admin_menu.scss */
 #admin-menu-icon .dropdown a:hover, #admin-menu-icon .dropdown a:focus,
 #admin-menu-icon .dropdown span:hover,
 #admin-menu-icon .dropdown span:focus,
@@ -101,49 +111,58 @@
 #admin-menu-account .dropdown a:hover,
 #admin-menu-account .dropdown a:focus,
 #admin-menu-account .dropdown span:hover,
-#admin-menu-account .dropdown span:focus {
+#admin-menu-account .dropdown span:focus,
+#admin-menu-users .dropdown a:hover,
+#admin-menu-users .dropdown a:focus,
+#admin-menu-users .dropdown span:hover,
+#admin-menu-users .dropdown span:focus {
   background-color: #555;
 }
-/* line 79, ../../sass/overrides/admin_menu.scss */
+/* line 80, ../../sass/overrides/admin_menu.scss */
 #admin-menu-icon .dropdown .dropdown,
 #admin-menu-menu .dropdown .dropdown,
-#admin-menu-account .dropdown .dropdown {
+#admin-menu-account .dropdown .dropdown,
+#admin-menu-users .dropdown .dropdown {
   margin: -1.75em 0 0 14em;
   position: absolute;
 }
-/* line 85, ../../sass/overrides/admin_menu.scss */
+/* line 86, ../../sass/overrides/admin_menu.scss */
 #admin-menu-icon .dropdown .expandable > a,
 #admin-menu-icon .dropdown .expandable > span,
 #admin-menu-menu .dropdown .expandable > a,
 #admin-menu-menu .dropdown .expandable > span,
 #admin-menu-account .dropdown .expandable > a,
-#admin-menu-account .dropdown .expandable > span {
+#admin-menu-account .dropdown .expandable > span,
+#admin-menu-users .dropdown .expandable > a,
+#admin-menu-users .dropdown .expandable > span {
   position: relative;
 }
-/* line 88, ../../sass/overrides/admin_menu.scss */
+/* line 89, ../../sass/overrides/admin_menu.scss */
 #admin-menu-icon .dropdown .expandable > a:after,
 #admin-menu-icon .dropdown .expandable > span:after,
 #admin-menu-menu .dropdown .expandable > a:after,
 #admin-menu-menu .dropdown .expandable > span:after,
 #admin-menu-account .dropdown .expandable > a:after,
-#admin-menu-account .dropdown .expandable > span:after {
+#admin-menu-account .dropdown .expandable > span:after,
+#admin-menu-users .dropdown .expandable > a:after,
+#admin-menu-users .dropdown .expandable > span:after {
   content: "\00bb";
   position: absolute;
   right: 0.5em;
   top: 0;
 }
 
-/* line 98, ../../sass/overrides/admin_menu.scss */
+/* line 99, ../../sass/overrides/admin_menu.scss */
 #admin-menu-account {
   float: right;
 }
 
-/* line 102, ../../sass/overrides/admin_menu.scss */
+/* line 103, ../../sass/overrides/admin_menu.scss */
 img.admin-menu-icon {
   vertical-align: middle;
 }
 
-/* line 106, ../../sass/overrides/admin_menu.scss */
+/* line 107, ../../sass/overrides/admin_menu.scss */
 body.admin-menu {
   margin-top: 0.25em;
   padding-top: 2.0625em;

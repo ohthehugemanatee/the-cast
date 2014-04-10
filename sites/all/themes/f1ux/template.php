@@ -11,6 +11,7 @@ require_once dirname(__FILE__) . '/includes/comments.inc';
 require_once dirname(__FILE__) . '/includes/css.inc';
 require_once dirname(__FILE__) . '/includes/entity.inc';
 require_once dirname(__FILE__) . '/includes/feed-icon.inc';
+require_once dirname(__FILE__) . '/includes/field.inc';
 require_once dirname(__FILE__) . '/includes/field-collection.inc';
 require_once dirname(__FILE__) . '/includes/form.inc';
 require_once dirname(__FILE__) . '/includes/html.inc';

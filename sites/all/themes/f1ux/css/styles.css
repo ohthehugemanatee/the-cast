@@ -1,5 +1,5 @@
-@charset "IBM437";
-/* line 65, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+@charset "UTF-8";
+/* line 65, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
 .l-grid__row:after {
   content: "";
   display: table;
@@ -660,39 +660,44 @@ ul.panels-ipe-linkbar li {
 }
 
 /* line 6, ../sass/partials/layout/_grid.scss */
+.l-grid {
+  overflow: hidden;
+}
+
+/* line 10, ../sass/partials/layout/_grid.scss */
 .l-grid__row {
   margin-left: -1em;
   margin-right: -1em;
 }
 
-/* line 12, ../sass/partials/layout/_grid.scss */
+/* line 16, ../sass/partials/layout/_grid.scss */
 .l-grid__column {
   float: left;
   padding: 0 1em;
   width: 100%;
 }
 
-/* line 18, ../sass/partials/layout/_grid.scss */
+/* line 22, ../sass/partials/layout/_grid.scss */
 .l-grid--cols-2 .l-grid__column {
   width: 50%;
 }
 
-/* line 22, ../sass/partials/layout/_grid.scss */
+/* line 26, ../sass/partials/layout/_grid.scss */
 .l-grid--cols-3 .l-grid__column {
   width: 33.33333%;
 }
 
-/* line 26, ../sass/partials/layout/_grid.scss */
+/* line 30, ../sass/partials/layout/_grid.scss */
 .l-grid--cols-4 .l-grid__column {
   width: 25%;
 }
 
-/* line 30, ../sass/partials/layout/_grid.scss */
+/* line 34, ../sass/partials/layout/_grid.scss */
 .l-grid--cols-5 .l-grid__column {
   width: 20%;
 }
 
-/* line 34, ../sass/partials/layout/_grid.scss */
+/* line 38, ../sass/partials/layout/_grid.scss */
 .l-grid--cols-6 .l-grid__column {
   width: 16.66667%;
 }
@@ -1971,11 +1976,37 @@ tr.drag-previous {
 }
 
 /* line 104, ../sass/partials/components/_vertical-tabs.scss */
-.vertical-tabs legend {
+.vertical-tabs > legend {
   display: none;
 }
 
 /* line 108, ../sass/partials/components/_vertical-tabs.scss */
 .vertical-tabs .form-type-textfield input {
   width: 100%;
+}
+
+/* line 6, ../sass/partials/components/_view.scss */
+.view__filters {
+  margin-bottom: 1.3125em;
+}
+
+/* line 4, ../sass/partials/components/_views-widget.scss */
+.views-widget {
+  display: inline-block;
+  margin: 0 1em 1.3125em 0;
+  overflow: auto;
+  vertical-align: baseline;
+}
+/* line 11, ../sass/partials/components/_views-widget.scss */
+.views-widget .button,
+.views-widget .form-item {
+  margin-bottom: 0;
+}
+
+/* line 16, ../sass/partials/components/_views-widget.scss */
+.views-widget__label {
+  font-size: 0.875em;
+  line-height: 1.5em;
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

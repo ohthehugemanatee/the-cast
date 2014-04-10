@@ -61,6 +61,9 @@ function f1ux_links($vars) {
   global $language_url;
   $output = '';
 
+  // @todo Turn this into a theme setting.
+  $vars['hide_first_last'] = FALSE;
+
   if (count($links) > 0) {
     $output = '';
 
@@ -246,7 +249,9 @@ function f1ux_preprocess_menu_link(&$vars) {
     $item_classes[] = 'nav__item';
   }
   else {
-    array_unshift($item_classes, 'nav__item');
+    if (!in_array('nav__item', $item_classes)) {
+      array_unshift($item_classes, 'nav__item');
+    }
 
     if ($only_use_smacss) {
       $item_classes = preg_replace('/^active-trail$/', 'is-active-trail', $item_classes);
@@ -293,7 +298,9 @@ function f1ux_preprocess_menu_link(&$vars) {
     $link_classes[] = 'nav__link';
   }
   else {
-    array_unshift($link_classes, 'nav__link');
+    if (!in_array('nav__link', $link_classes)) {
+      array_unshift($link_classes, 'nav__link');
+    }
 
     if ($only_use_smacss) {
       $link_classes = preg_replace('/^active$/', 'is-active', $link_classes);

@@ -67,7 +67,8 @@ settings[magic_embedded_mqs] = '1'
 settings[magic_css_excludes] = 'comment/*.css
 misc/vertical-tabs*.css
 node/*.css
-system/*.css'
+system/*.css
+views/css/views.css'
 settings[magic_footer_js] = '0'
 settings[magic_library_head] = '1'
 settings[magic_experimental_js] = '0'
@@ -76,6 +77,6 @@ settings[magic_rebuild_registry] = '0'
 settings[magic_viewport_indicator] = '0'
 settings[magic_modernizr_debug] = '0'
 settings[magic_performance__active_tab] = 'edit-css'
-settings[magic_css_excludes_regex][exclude] = '/^(modules\/comment\/(.*)\.css|misc\/vertical\-tabs(.*)\.css|modules\/node\/(.*)\.css|modules\/system\/(.*)\.css)$/'
+settings[magic_css_excludes_regex][exclude] = '/^(modules\/comment\/(.*)\.css|misc\/vertical\-tabs(.*)\.css|modules\/node\/(.*)\.css|modules\/system\/(.*)\.css|sites\/all\/modules\/contrib\/views\/css\/views\.css)$/'
 settings[magic_css_excludes_regex][include] = ''
 settings[magic_js_excludes_regex] = ''
