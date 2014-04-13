@@ -483,14 +483,8 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '2';
-  $handler->display->display_options['style_plugin'] = 'grid';
-  $handler->display->display_options['style_options']['columns'] = '1';
+  $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['row_options']['inline'] = array(
-    'field_location_name_line' => 'field_location_name_line',
-    'field_location_locality' => 'field_location_locality',
-  );
-  $handler->display->display_options['row_options']['separator'] = ', ';
   $handler->display->display_options['row_options']['hide_empty'] = TRUE;
   /* Field: Content: Date */
   $handler->display->display_options['fields']['field_date']['id'] = 'field_date';
@@ -505,18 +499,18 @@ function cast_panels_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Field: Content: Location - Full name */
-  $handler->display->display_options['fields']['field_location_name_line']['id'] = 'field_location_name_line';
-  $handler->display->display_options['fields']['field_location_name_line']['table'] = 'field_data_field_location';
-  $handler->display->display_options['fields']['field_location_name_line']['field'] = 'field_location_name_line';
-  $handler->display->display_options['fields']['field_location_name_line']['label'] = '';
-  $handler->display->display_options['fields']['field_location_name_line']['element_label_colon'] = FALSE;
   /* Field: Content: Location - Locality (i.e. City) */
   $handler->display->display_options['fields']['field_location_locality']['id'] = 'field_location_locality';
   $handler->display->display_options['fields']['field_location_locality']['table'] = 'field_data_field_location';
   $handler->display->display_options['fields']['field_location_locality']['field'] = 'field_location_locality';
   $handler->display->display_options['fields']['field_location_locality']['label'] = '';
   $handler->display->display_options['fields']['field_location_locality']['element_label_colon'] = FALSE;
+  /* Field: Content: Location - Full name */
+  $handler->display->display_options['fields']['field_location_name_line']['id'] = 'field_location_name_line';
+  $handler->display->display_options['fields']['field_location_name_line']['table'] = 'field_data_field_location';
+  $handler->display->display_options['fields']['field_location_name_line']['field'] = 'field_location_name_line';
+  $handler->display->display_options['fields']['field_location_name_line']['label'] = '';
+  $handler->display->display_options['fields']['field_location_name_line']['element_label_colon'] = FALSE;
   /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';

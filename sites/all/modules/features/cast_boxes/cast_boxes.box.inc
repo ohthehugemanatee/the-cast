@@ -88,12 +88,11 @@ function cast_boxes_default_box() {
   $box->options = array(
     'body' => array(
       'value' => '<ul>
-	<li><a href="http://facebook.com/thecastofficial">facebook</a></li>
-	<li><a href="https://www.youtube.com/user/thecastde">Youtube</a></li>
-	<li><a href="http://www.amazon.com/Schweigen-Campbell-Scherzer-Brigitte-Bleckwedel/dp/B00HOXHC3O">Amazon</a></li>
-	<li><a href="http://open.spotify.com/local/The+Cast/Lippen+Schweigen+%28feat.+Campbell+Vertesi%2c+Bryn+Vertesi%2c+Kevin+Moreno%2c+Alison+Scherzer%2c+Brigitte+Heuser+%26+Till+Bleckwedel%29+-+Single/Lippen+Schweigen+%28feat.+Campbell+Vertesi%2c+Bryn+Vertesi%2c+Kevin+Moreno%2c+Alison+Scherzer%2c+Brigitte+Heuser+%26+Till+Bleckwedel%29/138">Spotify</a></li>
-</ul>
-',
+	<li class="facebook"><a href="http://facebook.com/thecastofficial">Facebook</a></li>
+	<li class="youtube"><a href="https://www.youtube.com/user/thecastde">Youtube</a></li>
+	<li class="amazon"><a href="http://www.amazon.com/Schweigen-Campbell-Scherzer-Brigitte-Bleckwedel/dp/B00HOXHC3O">Amazon</a></li>
+	<li class="spotify"><a href="http://open.spotify.com/local/The+Cast/Lippen+Schweigen+%28feat.+Campbell+Vertesi%2c+Bryn+Vertesi%2c+Kevin+Moreno%2c+Alison+Scherzer%2c+Brigitte+Heuser+%26+Till+Bleckwedel%29+-+Single/Lippen+Schweigen+%28feat.+Campbell+Vertesi%2c+Bryn+Vertesi%2c+Kevin+Moreno%2c+Alison+Scherzer%2c+Brigitte+Heuser+%26+Till+Bleckwedel%29/138">Spotify</a></li>
+</ul>',
       'format' => 'filtered_html',
     ),
     'additional_classes' => '',

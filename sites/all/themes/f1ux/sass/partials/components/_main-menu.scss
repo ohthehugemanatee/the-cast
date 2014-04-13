@@ -1,0 +1,40 @@
+// @file
+// Styles for the sitename.
+
+.block--system-main-menu {
+  background: #000;
+  color: #fff;
+  height: 60px;
+  text-align: center;
+  
+  h2 {
+    display: none; //not sure why this is even needed :/
+  }
+  
+  ul.nav {
+    display: inline-block;
+    margin: 0;
+    padding-top: 10px;
+    
+    li {
+      display: inline-block;
+      
+      a {
+        color: #646464;
+        display: block;
+        font-size: 1em;
+        padding: 0.1em 0.8em;
+        text-decoration: none;
+        
+        &:focus,
+        &:hover {
+          color: #dc5c14;
+        }
+        
+        &.active {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

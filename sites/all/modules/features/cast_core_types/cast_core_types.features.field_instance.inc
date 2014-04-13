@@ -1005,9 +1005,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'above',
         'module' => 'image',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'form',
-          ),
           'image_link' => '',
           'image_style' => 'flexslider_full',
           'linked_field' => array(
@@ -1070,9 +1067,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'plain_text',
-          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -1092,9 +1086,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'form',
-          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -1281,9 +1272,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'plain_text',
-          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -1303,9 +1291,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'form',
-          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -1355,9 +1340,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'above',
         'module' => 'file_entity',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'form',
-          ),
           'file_view_mode' => 'default',
           'linked_field' => array(
             'advanced' => array(

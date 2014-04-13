@@ -9,12 +9,15 @@ $breakpoint-to-ems: true;
 $max-page-width: 1200px;
 
 // Colors
+$red: #712024;
+$blue: #1a2243;
+
 $primary-text-color: #333;
 $secondary-text-color: #555;
-$heading-text-color: #333;
+$heading-text-color: #fff;
 $body-color: #fff;
-$link-color: blue;
-$link-hover-color: green;
+$link-color: #fff;
+$link-hover-color: #dc5c14;
 $selection-background: blue;
 $selection-foreground: #fff;
 $status-color: #4d8e4d;
@@ -28,9 +31,9 @@ $gradient-light: rgba(255, 255, 255, 0.2);
 $gradient-dark: rgba(0, 0, 0, 0.2);
 
 // Typography
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$header-font-family: $base-font-family;
-$monospace-font-family: Consolas, "Lucida Console", "Liberation Mono", "Courier New", monospace, sans-serif;
+$base-font-family: "ColabLig", "Times New Roman", serif;
+$header-font-family: "ColabLig", "Times New Roman", serif;
+$monospace-font-family: $base-font-family; //Consolas, "Lucida Console", "Liberation Mono", "Courier New", monospace, sans-serif;
 $base-font-size: 16px;
 $base-line-height: 21px;
 $font-size-xxl: 26px;

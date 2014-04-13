@@ -1,0 +1,16 @@
+// @file
+// Styles for the sitename.
+
+.block--page-site-name {
+  background: #000;
+  color: #fff;
+  font-family: $header-font-family;
+  font-size: 2.4em;
+  height: 90px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  
+  .content {
+    padding-top: 50px;
+  }
+}

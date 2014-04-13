@@ -1,2 +1,38 @@
 // @file
 // Font declarations.
+
+/* Colaborate */
+@font-face {
+	font-family: "ColabBol";
+	src: url("fonts/ColabBol-webfont.woff") format("woff"), url("fonts/ColabBol-webfont.eot") format("eot"), url("fonts/ColabBol-webfont.ttf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "ColabReg";
+	src: url("fonts/ColabReg-webfont.woff") format("woff"), url("fonts/ColabReg-webfont.eot") format("eot"), url("fonts/ColabReg-webfont.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "ColabMed";
+	src: url("fonts/ColabMed-webfont.woff") format("woff"), url("fonts/ColabMed-webfont.eot") format("eot"), url("fonts/ColabMed-webfont.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "ColabLig";
+	src: url("fonts/ColabLig-webfont.woff") format("woff"), url("fonts/ColabLig-webfont.eot") format("eot"), url("fonts/ColabLig-webfont.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "ColabThi";
+	src: url("fonts/ColabThi-webfont.woff") format("woff"), url("fonts/ColabThi-webfont.eot") format("eot"), url("fonts/ColabThi-webfont.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

@@ -1,0 +1,52 @@
+// @file
+// Styles for the footer.
+
+footer {
+  .pane {
+    .pane__content {
+      height: 32px;
+      text-align: center;
+      
+      .boxes-box-content {
+        
+        ul {
+          display: inline-block;
+          list-style: none;
+          margin: 0;
+          padding: 4px;
+          
+          li {
+            @include background-size(cover);
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            
+            a {
+              display: block;
+              text-indent: -9999em;
+            }
+            
+            /* &.amazon {
+              @include svg-background(amazon);
+            }*/
+            &.facebook {@include svg-background(facebook);
+              @include svg-background(facebook);
+            }
+            &.soundcloud {
+              @include svg-background(soundcloud);
+            }
+            &.spotify {
+              @include svg-background(spotify);
+            }
+            &.twitter {
+              @include svg-background(twitter);
+            }
+            &.youtube {
+              @include svg-background(youtube);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+// @file
+// Styles for the flexslider.
+
+.pane--frontpage-slideshow {
+  
+  .pane__content {
+    height: 300px !important;
+  
+    .flexslider {
+      border: none;
+      @include border-radius(0);
+      @include box-shadow(0);
+    }
+  }
+}
+
