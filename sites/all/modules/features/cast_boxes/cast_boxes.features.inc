@@ -14,6 +14,12 @@ function cast_boxes_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "ds" && $api == "ds") {
     return array("version" => "1");
   }
+  if ($module == "field_group" && $api == "field_group") {
+    return array("version" => "1");
+  }
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
+  }
 }
 
 /**
@@ -24,6 +30,13 @@ function cast_boxes_default_entity_boxes_type() {
   $items['banner_block'] = entity_import('entity_boxes_type', '{
     "type" : "banner_block",
     "label" : "Banner block",
+    "weight" : "0",
+    "data" : "",
+    "rdf_mapping" : []
+  }');
+  $items['link_block'] = entity_import('entity_boxes_type', '{
+    "type" : "link_block",
+    "label" : "Link block",
     "weight" : "0",
     "data" : "",
     "rdf_mapping" : []
