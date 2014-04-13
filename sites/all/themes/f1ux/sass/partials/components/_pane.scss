@@ -1,20 +1,71 @@
 // @file
 // Styles for panes.
 
-
-.panel-col-fifty {
-  .inside {
-    margin-left: 0;
-    margin-right: 4px;
+.line {
+  margin: 0;
+  padding: 0;
+  
+  &:after {
+    content: "";//maybe this breaks the panels...
+    
   }
 }
 
-.panel-col-fifty.lastUnit {
+.panel-panel  {
+  &.panel-one-hundred {
+    .inside {
+      margin: 0;
+    }
+  }
+  
   .inside {
     margin-left: 4px;
-    margin-right: 0;
+    margin-right: 4px;
+  }
+  
+  &:first-child {
+    .inside {
+      margin-left: 0;
+    }
+  }
+  
+  &.lastUnit {
+    .inside {
+      margin-right: 0;
+    }
+  }
+  
+  .panel-col-fifty {
+    .inside {
+      .pane {
+        .pane__content {
+          height: 250px;
+        }
+      }
+    }
+  }
+  
+  .panel-col-thirty-three {
+    .inside {
+      .pane {
+        .pane__content {
+          height: 175px;
+        }
+      }
+    }
+  }
+  
+  .panel-col-sixty-six {
+    .inside {
+      .pane {
+        .pane__content {
+          height: 500px;
+        }
+      }
+    }
   }
 }
+  
 
 .pane {
   margin: 0 0 8px;
@@ -31,10 +82,9 @@
   
   .pane__content {
     background: #000;
-    height: 250px;
     position: relative;
     
-    .field--body-text {
+    .group-bottomright {
       bottom: 10px;
       color: #fff;
       font-size: 1.6em;

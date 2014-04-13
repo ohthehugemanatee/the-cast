@@ -735,9 +735,8 @@ ul.panels-ipe-linkbar li {
 /* line 1, ../sass/partials/layout/_page.scss */
 .l-constrain {
   margin: 0 auto;
-  max-width: 75em;
-  padding: 0 1em;
-  width: 75em;
+  max-width: 60em;
+  width: 60em;
 }
 
 /* line 13, ../sass/partials/layout/panels/_sidebar.scss */
@@ -2004,6 +2003,7 @@ tr.drag-previous {
   -webkit-box-shadow: 0;
   -moz-box-shadow: 0;
   box-shadow: 0;
+  margin: 0;
 }
 
 /* line 6, ../sass/partials/components/_footer.scss */
@@ -2108,23 +2108,51 @@ footer .pane .pane__content .boxes-box-content ul li.youtube {
   color: #fff;
 }
 
-/* line 6, ../sass/partials/components/_pane.scss */
-.panel-col-fifty .inside {
-  margin-left: 0;
+/* line 4, ../sass/partials/components/_pane.scss */
+.line {
+  margin: 0;
+  padding: 0;
+}
+/* line 8, ../sass/partials/components/_pane.scss */
+.line:after {
+  content: "";
+}
+
+/* line 16, ../sass/partials/components/_pane.scss */
+.panel-panel.panel-one-hundred .inside {
+  margin: 0;
+}
+/* line 21, ../sass/partials/components/_pane.scss */
+.panel-panel .inside {
+  margin-left: 4px;
   margin-right: 4px;
 }
-
-/* line 13, ../sass/partials/components/_pane.scss */
-.panel-col-fifty.lastUnit .inside {
-  margin-left: 4px;
+/* line 27, ../sass/partials/components/_pane.scss */
+.panel-panel:first-child .inside {
+  margin-left: 0;
+}
+/* line 33, ../sass/partials/components/_pane.scss */
+.panel-panel.lastUnit .inside {
   margin-right: 0;
 }
+/* line 41, ../sass/partials/components/_pane.scss */
+.panel-panel .panel-col-fifty .inside .pane .pane__content {
+  height: 250px;
+}
+/* line 51, ../sass/partials/components/_pane.scss */
+.panel-panel .panel-col-thirty-three .inside .pane .pane__content {
+  height: 175px;
+}
+/* line 61, ../sass/partials/components/_pane.scss */
+.panel-panel .panel-col-sixty-six .inside .pane .pane__content {
+  height: 500px;
+}
 
-/* line 19, ../sass/partials/components/_pane.scss */
+/* line 70, ../sass/partials/components/_pane.scss */
 .pane {
   margin: 0 0 8px;
 }
-/* line 22, ../sass/partials/components/_pane.scss */
+/* line 73, ../sass/partials/components/_pane.scss */
 .pane h2.pane__title {
   background: #000;
   font-size: 1em;
@@ -2133,25 +2161,24 @@ footer .pane .pane__content .boxes-box-content ul li.youtube {
   padding: 5px;
   text-align: right;
 }
-/* line 32, ../sass/partials/components/_pane.scss */
+/* line 83, ../sass/partials/components/_pane.scss */
 .pane .pane__content {
   background: #000;
-  height: 250px;
   position: relative;
 }
-/* line 37, ../sass/partials/components/_pane.scss */
-.pane .pane__content .field--body-text {
+/* line 87, ../sass/partials/components/_pane.scss */
+.pane .pane__content .group-bottomright {
   bottom: 10px;
   color: #fff;
   font-size: 1.6em;
   position: absolute;
   right: 10px;
 }
-/* line 46, ../sass/partials/components/_pane.scss */
+/* line 96, ../sass/partials/components/_pane.scss */
 .pane.pane--admin-info {
   margin: 0;
 }
-/* line 49, ../sass/partials/components/_pane.scss */
+/* line 99, ../sass/partials/components/_pane.scss */
 .pane.pane--admin-info .pane__content {
   background: #fff;
   height: auto;
@@ -2161,7 +2188,6 @@ footer .pane .pane__content .boxes-box-content ul li.youtube {
 .block--page-site-name {
   background: #000;
   color: #fff;
-  font-family: "ColabLig", "Times New Roman", serif;
   font-size: 2.4em;
   height: 90px;
   letter-spacing: 0.1em;
