@@ -11,64 +11,54 @@
   }
 }
 
-.panel-panel  {
-  &.panel-one-hundred {
-    .inside {
-      margin: 0;
-    }
-  }
-  
-  .inside {
-    margin-left: 4px;
+.l-panels-two-column {  
+  .l-first .pane {
     margin-right: 4px;
   }
-  
-  &:first-child {
-    .inside {
-      margin-left: 0;
-    }
+  .l-second .pane {
+    margin-left: 4px;
   }
   
-  &.lastUnit {
-    .inside {
-      margin-right: 0;
-    }
-  }
-  
-  .panel-col-fifty {
-    .inside {
-      .pane {
-        .pane__content {
-          height: 250px;
-        }
-      }
-    }
-  }
-  
-  .panel-col-thirty-three {
-    .inside {
-      .pane {
-        .pane__content {
-          height: 175px;
-        }
-      }
-    }
-  }
-  
-  .panel-col-sixty-six {
-    .inside {
-      .pane {
-        .pane__content {
-          height: 500px;
-        }
-      }
+  .pane {
+    .pane__content {
+      height: 250px;
     }
   }
 }
+
+.l-panels-three-column,
+.l-panels-three-column-two-row {
+  .l-first .pane,
+  .l-second .pane,
+  .l-fourth .pane {
+    margin-right: 4px;
+  }
+  .l-second .pane,
+  .l-third .pane,
+  .l-fifth .pane {
+    margin-left: 4px;
+  }
+  .pane {
+    .pane__content {
+      height: 175px;
+    }
+  }
+}
+
+.panel-col-sixty-six {
+  .pane {
+    .pane__content {
+      height: 500px;
+    }
+  }
+}
+
   
 
 .pane {
-  margin: 0 0 8px;
+  margin-bottom: 8px;
+  text-align: right;
+  text-transform: uppercase;
   
   h2.pane__title {
     background: #000;
@@ -77,7 +67,6 @@
     height: 26px;
     margin: 0 0 4px;
     padding: 5px;
-    text-align: right;
   }
   
   .pane__content {
@@ -93,12 +82,17 @@
     }
   }
   
-  &.pane--admin-info {
+  &.pane--admin-info,
+  &.pane--nodebody,
+  &.pane--node-links {
     margin: 0;
     
     .pane__content {
       background: #fff;
       height: auto;
+      text-align: left;
+      text-transform: none;
     }
   }
+  
 }

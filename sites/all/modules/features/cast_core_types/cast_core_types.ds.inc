@@ -62,12 +62,14 @@ function cast_core_types_ds_layout_settings_info() {
         0 => 'field_image',
         1 => 'field_body_text',
         2 => 'field_audio',
+        3 => 'group_bottomright',
       ),
     ),
     'fields' => array(
       'field_image' => 'ds_content',
       'field_body_text' => 'ds_content',
       'field_audio' => 'ds_content',
+      'group_bottomright' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

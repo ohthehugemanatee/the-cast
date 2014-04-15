@@ -5,7 +5,7 @@
 function f1ux_sidebar_panels_layouts() {
   $items['sidebar'] = array(
     'title' => t('Preface and right sidebar'),
-    'category' => t('Responsive'),
+    'category' => t('F1ux'),
     'icon' => 'sidebar.png',
     'theme' => 'sidebar',
     'admin css' => '../../../css/panels-admin/sidebar.css',

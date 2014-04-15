@@ -5,7 +5,7 @@
 function f1ux_three_column_panels_layouts() {
   $items['three_column'] = array(
     'title' => t('Three column'),
-    'category' => t('Responsive'),
+    'category' => t('F1ux'),
     'icon' => 'three_column.png',
     'theme' => 'three_column',
     'admin css' => '../../../css/panels-admin/three-column.css',

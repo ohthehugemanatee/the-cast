@@ -20,9 +20,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'audiofield',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'form',
-          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -78,9 +75,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'plain_text',
-          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -132,9 +126,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'form',
-          ),
           'image_link' => '',
           'image_style' => '2col_tall_block',
           'linked_field' => array(
