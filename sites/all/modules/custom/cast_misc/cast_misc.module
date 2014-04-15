@@ -1,0 +1,12 @@
+<?php
+
+// @file: Miscellaneous between-the-cracks functionality for the Cast.
+
+
+/**
+ * Implements hook_magic_alter().
+ * Enable registry rebuild on every pageload.
+ */
+function cast_misc_magic_alter(&$magic_settings, $theme) {
+  $magic_settings['dev']['magic_rebuild_registry'] = '1';
+}

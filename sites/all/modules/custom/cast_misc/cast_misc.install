@@ -1,0 +1,10 @@
+<?php
+
+// @file: update hooks for the Cast.
+
+/**
+ * Enable magic_dev module.
+ */
+function cast_misc_update_7000() {
+  module_enable(array('magic_dev'));
+}
