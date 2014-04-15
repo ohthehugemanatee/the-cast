@@ -1,0 +1,61 @@
+@media (min-width: 43.75em) {
+  /* line 12, ../../sass/partials/layout/panels/_three-column-25-50-25.scss */
+  .l-panels-three-column-25-50-25 .l-first {
+    width: 25%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+  /* line 13, ../../sass/partials/layout/panels/_three-column-25-50-25.scss */
+  .l-panels-three-column-25-50-25 .l-second {
+    width: 50%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 25%;
+    clear: none;
+  }
+  /* line 14, ../../sass/partials/layout/panels/_three-column-25-50-25.scss */
+  .l-panels-three-column-25-50-25 .l-third {
+    width: 25%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+/* line 9, ../../sass/partials/global/mixins/_clearfix.scss */
+.l-panels-three-column-25-50-25:after {
+  display: table;
+  content: "";
+}
+/* line 14, ../../sass/partials/global/mixins/_clearfix.scss */
+.l-panels-three-column-25-50-25:after {
+  clear: both;
+}
+/* line 23, ../../sass/partials/layout/panels/_three-column-25-50-25.scss */
+.l-panels-three-column-25-50-25 .l-preface,
+.l-panels-three-column-25-50-25 .l-first,
+.l-panels-three-column-25-50-25 .l-second,
+.l-panels-three-column-25-50-25 .l-third {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 2em;
+}
+/* line 9, ../../sass/partials/global/mixins/_clearfix.scss */
+.l-panels-three-column-25-50-25 .l-preface:after,
+.l-panels-three-column-25-50-25 .l-first:after,
+.l-panels-three-column-25-50-25 .l-second:after,
+.l-panels-three-column-25-50-25 .l-third:after {
+  display: table;
+  content: "";
+}
+/* line 14, ../../sass/partials/global/mixins/_clearfix.scss */
+.l-panels-three-column-25-50-25 .l-preface:after,
+.l-panels-three-column-25-50-25 .l-first:after,
+.l-panels-three-column-25-50-25 .l-second:after,
+.l-panels-three-column-25-50-25 .l-third:after {
+  clear: both;
+}

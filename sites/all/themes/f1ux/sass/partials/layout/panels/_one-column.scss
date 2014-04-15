@@ -1,0 +1,22 @@
+// @file
+// Panels layout: one_column
+// Media queries use: http://breakpoint-sass.com
+// Media queries use: github.com/Team-Sass/breakpoint/wiki/No-Query-Fallbacks
+// Grid via: singularity.gs
+
+.l-panels-one-column {
+  
+}
+
+.l-panels-one-column {
+	@extend %clearfix;
+  .l-preface,
+  .l-main {
+    @extend %clearfix;
+
+    @if $panels-admin {
+      @include border-box;
+			margin-bottom: 2em;
+    }
+  }
+}

@@ -1,42 +1,45 @@
 // @file
 // Styles for views rows.
 
-.views-row-odd {
-  @extend %red;
-}
-
-.views-row-even {
-  @extend %blue;
-}
-
-.views-row {
-  color: #fff;
-  height: 125px;
-  padding: 8px;
-  text-align: right;
+.pane--upcoming-events-panel-pane-1 {
+  .views-row-odd {
+    @extend %red;
+  }
   
-  .views-field {
-    &.views-field-field-date,
-    &.views-field-field-location-locality {
-      font-size: 2.2em;
-      line-height: 0.9;
-    }
+  .views-row-even {
+    @extend %blue;
+  }
+  
+  
+  .views-row {
+    color: #fff;
+    height: 125px;
+    padding: 8px;
+    text-align: right;
     
-    &.views-field-field-location-name-line {
-      font-size: 1.3em;
-      line-height: 1.1;
-    }
-    
-    &.views-field-view-node {
+    .views-field {
+      &.views-field-field-date,
+      &.views-field-field-location-locality {
+        font-size: 2.2em;
+        line-height: 0.9;
+      }
       
-      a {
-        background: #000;
-        color: #fff;
-        display: block;
-        float: right;
-        font-size: 0.9em;
-        padding: 1px 2px;
-        text-decoration: none;
+      &.views-field-field-location-name-line {
+        font-size: 1.3em;
+        line-height: 1.1;
+      }
+      
+      &.views-field-view-node {
+        
+        a {
+          background: #000;
+          color: #fff;
+          display: block;
+          float: right;
+          font-size: 0.9em;
+          padding: 1px 2px;
+          text-decoration: none;
+        }
       }
     }
   }

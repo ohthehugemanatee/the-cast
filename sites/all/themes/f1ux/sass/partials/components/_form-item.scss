@@ -2,12 +2,13 @@
 // Styles for form items.
 
 .form-item {
-  margin: rhythm(1) 0;
+  margin: 0 0 rhythm(1);
 }
 
 .form-item__label {
   display: block;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .form-item__fieldset {

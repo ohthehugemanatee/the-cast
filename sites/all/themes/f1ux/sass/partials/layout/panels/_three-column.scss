@@ -43,6 +43,7 @@
 
     @if $panels-admin {
       @include border-box;
+      margin-bottom: 2em;
     }
   }
 }

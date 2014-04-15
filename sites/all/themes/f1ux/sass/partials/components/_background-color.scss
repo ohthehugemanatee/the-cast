@@ -9,12 +9,50 @@
   background-color: $blue;
 }
 
+%orange {
+  background-color: $orange;
+}
 
+%yellow {
+  background-color: $yellow;
+}
 
-.red {
+%green {
+  background-color: $green;
+}
+
+%dkgray {
+  background-color: $dark_gray;
+}
+
+%ltgray {
+  background-color: $light_gray;
+}
+
+.red .pane__content {
   @extend %red;
 }
 
-.blue {
+.blue .pane__content {
   @extend %blue;
+}
+
+.orange .pane__content {
+  @extend %orange;
+}
+
+.yellow .pane__content {
+  @extend %yellow;
+}
+
+.green .pane__content {
+  @extend %green;
+}
+
+.dkgray .pane__content {
+  @extend %dkgray;
+}
+
+.ltgray .pane__content {
+  @extend %ltgray;
 }

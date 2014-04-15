@@ -1,15 +1,50 @@
 // @file
-// Styles for panes.
+// Styles for panes.  
 
-.line {
-  margin: 0;
-  padding: 0;
+.pane {
+  margin-bottom: 8px;
+  text-align: right;
   
-  &:after {
-    content: "";//maybe this breaks the panels...
-    
+  
+  h2.pane__title {
+    background: #000;
+    font-size: 1em;
+    height: 26px;
+    margin: 0 0 4px;
+    padding: 5px;
+    text-transform: uppercase;
   }
+  
+  .pane__content {
+    background: #000;
+    color: #fff;
+    position: relative;
+    
+    .group-bottomright {
+      bottom: 10px;
+      font-size: 1.6em;
+      position: absolute;
+      right: 10px;
+      text-transform: uppercase;
+    }
+  }
+  
+  &.pane--admin-info,
+  &.pane--nodebody,
+  &.pane--node-links {
+    margin: 0;
+    
+    .pane__content {
+      background: #fff;
+      color: #333;
+      height: auto;
+      text-align: left;
+      text-transform: none;
+    }
+  } 
 }
+
+
 
 .l-panels-two-column {  
   .l-first .pane {
@@ -19,14 +54,18 @@
     margin-left: 4px;
   }
   
-  .pane {
-    .pane__content {
-      height: 250px;
+  .l-first,
+  .l-second {
+    .pane {
+      .pane__content {
+        height: 250px;
+      }
     }
   }
 }
 
 .l-panels-three-column,
+.l-panels-three-column-25-50-25,
 .l-panels-three-column-two-row {
   .l-first .pane,
   .l-second .pane,
@@ -38,11 +77,43 @@
   .l-fifth .pane {
     margin-left: 4px;
   }
-  .pane {
-    .pane__content {
-      height: 175px;
+}
+
+.l-panels-three-column-two-row {
+  &.first,
+  &.second,
+  &.third {
+    .pane {
+      .pane__content {
+        height: 175px;
+      }
     }
   }
+}
+
+.l-panels-three-column-25-50-25 {
+  
+  .l-first .pane__content,
+  .l-third .pane__content {
+    padding: 8px;
+    text-align: left;
+    
+    .group-left {
+      float: left;
+      width: 75%;
+    }
+    .group-right {
+      float: right;
+      text-align: right;
+      width: 25%;
+    }
+  }
+  .l-second .pane__content {
+    padding: 17px;
+    text-align: left;
+  }
+  
+
 }
 
 .panel-col-sixty-six {
@@ -51,48 +122,4 @@
       height: 500px;
     }
   }
-}
-
-  
-
-.pane {
-  margin-bottom: 8px;
-  text-align: right;
-  text-transform: uppercase;
-  
-  h2.pane__title {
-    background: #000;
-
-    font-size: 1em;
-    height: 26px;
-    margin: 0 0 4px;
-    padding: 5px;
-  }
-  
-  .pane__content {
-    background: #000;
-    position: relative;
-    
-    .group-bottomright {
-      bottom: 10px;
-      color: #fff;
-      font-size: 1.6em;
-      position: absolute;
-      right: 10px;
-    }
-  }
-  
-  &.pane--admin-info,
-  &.pane--nodebody,
-  &.pane--node-links {
-    margin: 0;
-    
-    .pane__content {
-      background: #fff;
-      height: auto;
-      text-align: left;
-      text-transform: none;
-    }
-  }
-  
 }

@@ -1,5 +1,6 @@
 /* line 65, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
-.l-grid__row:after {
+.l-grid__row:after, .l-panels-one-column:after, .l-panels-one-column .l-preface:after,
+.l-panels-one-column .l-main:after {
   content: "";
   display: table;
   clear: both;
@@ -474,7 +475,7 @@ ol ul {
 
 /* line 263, ../sass/partials/base/_html-elements.scss */
 p {
-  margin: 1.3125em 0;
+  margin: 0 0 1.3125em;
 }
 
 /* line 269, ../sass/partials/base/_html-elements.scss */
@@ -629,13 +630,19 @@ ul ul {
 
 /* line 9, ../sass/partials/global/mixins/_clearfix.scss */
 .clearfix:after,
-.l-grid__row:after {
+.l-grid__row:after,
+.l-panels-one-column:after,
+.l-panels-one-column .l-preface:after,
+.l-panels-one-column .l-main:after {
   display: table;
   content: "";
 }
 /* line 14, ../sass/partials/global/mixins/_clearfix.scss */
 .clearfix:after,
-.l-grid__row:after {
+.l-grid__row:after,
+.l-panels-one-column:after,
+.l-panels-one-column .l-preface:after,
+.l-panels-one-column .l-main:after {
   clear: both;
 }
 
@@ -873,6 +880,56 @@ ul.panels-ipe-linkbar li {
 .l-panels-three-column .l-first:after,
 .l-panels-three-column .l-second:after,
 .l-panels-three-column .l-third:after {
+  clear: both;
+}
+
+/* line 12, ../sass/partials/layout/panels/_three-column-25-50-25.scss */
+.l-panels-three-column-25-50-25 .l-first {
+  width: 25%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0%;
+  clear: none;
+}
+/* line 13, ../sass/partials/layout/panels/_three-column-25-50-25.scss */
+.l-panels-three-column-25-50-25 .l-second {
+  width: 50%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 25%;
+  clear: none;
+}
+/* line 14, ../sass/partials/layout/panels/_three-column-25-50-25.scss */
+.l-panels-three-column-25-50-25 .l-third {
+  width: 25%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+
+/* line 9, ../sass/partials/global/mixins/_clearfix.scss */
+.l-panels-three-column-25-50-25:after {
+  display: table;
+  content: "";
+}
+/* line 14, ../sass/partials/global/mixins/_clearfix.scss */
+.l-panels-three-column-25-50-25:after {
+  clear: both;
+}
+/* line 9, ../sass/partials/global/mixins/_clearfix.scss */
+.l-panels-three-column-25-50-25 .l-preface:after,
+.l-panels-three-column-25-50-25 .l-first:after,
+.l-panels-three-column-25-50-25 .l-second:after,
+.l-panels-three-column-25-50-25 .l-third:after {
+  display: table;
+  content: "";
+}
+/* line 14, ../sass/partials/global/mixins/_clearfix.scss */
+.l-panels-three-column-25-50-25 .l-preface:after,
+.l-panels-three-column-25-50-25 .l-first:after,
+.l-panels-three-column-25-50-25 .l-second:after,
+.l-panels-three-column-25-50-25 .l-third:after {
   clear: both;
 }
 
@@ -1283,48 +1340,49 @@ input.throbbing {
 
 /* line 4, ../sass/partials/components/_form-item.scss */
 .form-item {
-  margin: 1.3125em 0;
+  margin: 0 0 1.3125em;
 }
 
 /* line 8, ../sass/partials/components/_form-item.scss */
 .form-item__label {
   display: block;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
-/* line 13, ../sass/partials/components/_form-item.scss */
+/* line 14, ../sass/partials/components/_form-item.scss */
 .form-item__fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 19, ../sass/partials/components/_form-item.scss */
+/* line 20, ../sass/partials/components/_form-item.scss */
 .form-item__legend {
   font-weight: bold;
 }
 
-/* line 23, ../sass/partials/components/_form-item.scss */
+/* line 24, ../sass/partials/components/_form-item.scss */
 .form-item__description {
   font-size: 0.875em;
   line-height: 1.5em;
   color: #555555;
 }
 
-/* line 30, ../sass/partials/components/_form-item.scss */
+/* line 31, ../sass/partials/components/_form-item.scss */
 .form-item--checkbox .form-item__label,
 .form-item--radio .form-item__label {
   display: inline;
   font-weight: normal;
 }
 
-/* line 37, ../sass/partials/components/_form-item.scss */
+/* line 38, ../sass/partials/components/_form-item.scss */
 .form-item--checkboxes .form-item--checkbox,
 .form-item--radio {
   margin: 0;
 }
 
-/* line 43, ../sass/partials/components/_form-item.scss */
+/* line 44, ../sass/partials/components/_form-item.scss */
 .form-item--date-day,
 .form-item--date-month,
 .form-item--date-year {
@@ -1332,17 +1390,17 @@ input.throbbing {
   margin: 0;
 }
 
-/* line 48, ../sass/partials/components/_form-item.scss */
+/* line 49, ../sass/partials/components/_form-item.scss */
 .form-item--password-confirm-pass-1 {
   margin-bottom: 0.65625em;
 }
 
-/* line 52, ../sass/partials/components/_form-item.scss */
+/* line 53, ../sass/partials/components/_form-item.scss */
 .form-item--password-confirm-pass-2 {
   margin: 0.65625em 0;
 }
 
-/* line 58, ../sass/partials/components/_form-item.scss */
+/* line 59, ../sass/partials/components/_form-item.scss */
 .form-select,
 .form-text,
 .form-textarea {
@@ -1350,7 +1408,7 @@ input.throbbing {
   font-size: 1em;
   padding: 0.3125em 0.625em;
 }
-/* line 63, ../sass/partials/components/_form-item.scss */
+/* line 64, ../sass/partials/components/_form-item.scss */
 .form-select:focus,
 .form-text:focus,
 .form-textarea:focus {
@@ -2160,16 +2218,6 @@ tr.drag-previous {
   font-family: "ColabLig", "Times New Roman", serif;
 }
 
-/* line 4, ../sass/partials/components/_background-color.scss */
-.red, .views-row-odd {
-  background-color: #712024;
-}
-
-/* line 8, ../sass/partials/components/_background-color.scss */
-.blue, .views-row-even {
-  background-color: #1a2243;
-}
-
 /* line 6, ../sass/partials/components/_flexslider.scss */
 .pane--frontpage-slideshow .pane__content {
   height: 300px !important;
@@ -2293,94 +2341,118 @@ footer .pane .pane__content .boxes-box-content ul li.youtube {
 }
 
 /* line 4, ../sass/partials/components/_pane.scss */
-.line {
-  margin: 0;
-  padding: 0;
-}
-/* line 8, ../sass/partials/components/_pane.scss */
-.line:after {
-  content: "";
-}
-
-/* line 15, ../sass/partials/components/_pane.scss */
-.l-panels-two-column .l-first .pane {
-  margin-right: 4px;
-}
-/* line 18, ../sass/partials/components/_pane.scss */
-.l-panels-two-column .l-second .pane {
-  margin-left: 4px;
-}
-/* line 23, ../sass/partials/components/_pane.scss */
-.l-panels-two-column .pane .pane__content {
-  height: 250px;
-}
-
-/* line 33, ../sass/partials/components/_pane.scss */
-.l-panels-three-column .l-first .pane,
-.l-panels-three-column .l-second .pane,
-.l-panels-three-column .l-fourth .pane,
-.l-panels-three-column-two-row .l-first .pane,
-.l-panels-three-column-two-row .l-second .pane,
-.l-panels-three-column-two-row .l-fourth .pane {
-  margin-right: 4px;
-}
-/* line 38, ../sass/partials/components/_pane.scss */
-.l-panels-three-column .l-second .pane,
-.l-panels-three-column .l-third .pane,
-.l-panels-three-column .l-fifth .pane,
-.l-panels-three-column-two-row .l-second .pane,
-.l-panels-three-column-two-row .l-third .pane,
-.l-panels-three-column-two-row .l-fifth .pane {
-  margin-left: 4px;
-}
-/* line 42, ../sass/partials/components/_pane.scss */
-.l-panels-three-column .pane .pane__content,
-.l-panels-three-column-two-row .pane .pane__content {
-  height: 175px;
-}
-
-/* line 50, ../sass/partials/components/_pane.scss */
-.panel-col-sixty-six .pane .pane__content {
-  height: 500px;
-}
-
-/* line 58, ../sass/partials/components/_pane.scss */
 .pane {
   margin-bottom: 8px;
   text-align: right;
-  text-transform: uppercase;
 }
-/* line 63, ../sass/partials/components/_pane.scss */
+/* line 9, ../sass/partials/components/_pane.scss */
 .pane h2.pane__title {
   background: #000;
   font-size: 1em;
   height: 26px;
   margin: 0 0 4px;
   padding: 5px;
+  text-transform: uppercase;
 }
-/* line 72, ../sass/partials/components/_pane.scss */
+/* line 18, ../sass/partials/components/_pane.scss */
 .pane .pane__content {
   background: #000;
+  color: #fff;
   position: relative;
 }
-/* line 76, ../sass/partials/components/_pane.scss */
+/* line 23, ../sass/partials/components/_pane.scss */
 .pane .pane__content .group-bottomright {
   bottom: 10px;
-  color: #fff;
   font-size: 1.6em;
   position: absolute;
   right: 10px;
+  text-transform: uppercase;
 }
-/* line 87, ../sass/partials/components/_pane.scss */
+/* line 34, ../sass/partials/components/_pane.scss */
 .pane.pane--admin-info, .pane.pane--nodebody, .pane.pane--node-links {
   margin: 0;
 }
-/* line 90, ../sass/partials/components/_pane.scss */
+/* line 37, ../sass/partials/components/_pane.scss */
 .pane.pane--admin-info .pane__content, .pane.pane--nodebody .pane__content, .pane.pane--node-links .pane__content {
   background: #fff;
+  color: #333;
   height: auto;
   text-align: left;
   text-transform: none;
+}
+
+/* line 50, ../sass/partials/components/_pane.scss */
+.l-panels-two-column .l-first .pane {
+  margin-right: 4px;
+}
+/* line 53, ../sass/partials/components/_pane.scss */
+.l-panels-two-column .l-second .pane {
+  margin-left: 4px;
+}
+/* line 60, ../sass/partials/components/_pane.scss */
+.l-panels-two-column .l-first .pane .pane__content,
+.l-panels-two-column .l-second .pane .pane__content {
+  height: 250px;
+}
+
+/* line 72, ../sass/partials/components/_pane.scss */
+.l-panels-three-column .l-first .pane,
+.l-panels-three-column .l-second .pane,
+.l-panels-three-column .l-fourth .pane,
+.l-panels-three-column-25-50-25 .l-first .pane,
+.l-panels-three-column-25-50-25 .l-second .pane,
+.l-panels-three-column-25-50-25 .l-fourth .pane,
+.l-panels-three-column-two-row .l-first .pane,
+.l-panels-three-column-two-row .l-second .pane,
+.l-panels-three-column-two-row .l-fourth .pane {
+  margin-right: 4px;
+}
+/* line 77, ../sass/partials/components/_pane.scss */
+.l-panels-three-column .l-second .pane,
+.l-panels-three-column .l-third .pane,
+.l-panels-three-column .l-fifth .pane,
+.l-panels-three-column-25-50-25 .l-second .pane,
+.l-panels-three-column-25-50-25 .l-third .pane,
+.l-panels-three-column-25-50-25 .l-fifth .pane,
+.l-panels-three-column-two-row .l-second .pane,
+.l-panels-three-column-two-row .l-third .pane,
+.l-panels-three-column-two-row .l-fifth .pane {
+  margin-left: 4px;
+}
+
+/* line 87, ../sass/partials/components/_pane.scss */
+.l-panels-three-column-two-row.first .pane .pane__content, .l-panels-three-column-two-row.second .pane .pane__content, .l-panels-three-column-two-row.third .pane .pane__content {
+  height: 175px;
+}
+
+/* line 97, ../sass/partials/components/_pane.scss */
+.l-panels-three-column-25-50-25 .l-first .pane__content,
+.l-panels-three-column-25-50-25 .l-third .pane__content {
+  padding: 8px;
+  text-align: left;
+}
+/* line 101, ../sass/partials/components/_pane.scss */
+.l-panels-three-column-25-50-25 .l-first .pane__content .group-left,
+.l-panels-three-column-25-50-25 .l-third .pane__content .group-left {
+  float: left;
+  width: 75%;
+}
+/* line 105, ../sass/partials/components/_pane.scss */
+.l-panels-three-column-25-50-25 .l-first .pane__content .group-right,
+.l-panels-three-column-25-50-25 .l-third .pane__content .group-right {
+  float: right;
+  text-align: right;
+  width: 25%;
+}
+/* line 111, ../sass/partials/components/_pane.scss */
+.l-panels-three-column-25-50-25 .l-second .pane__content {
+  padding: 17px;
+  text-align: left;
+}
+
+/* line 121, ../sass/partials/components/_pane.scss */
+.panel-col-sixty-six .pane .pane__content {
+  height: 500px;
 }
 
 /* line 4, ../sass/partials/components/_sitename.scss */
@@ -2398,25 +2470,25 @@ footer .pane .pane__content .boxes-box-content ul li.youtube {
   padding-top: 50px;
 }
 
-/* line 12, ../sass/partials/components/_views-row.scss */
-.views-row {
+/* line 14, ../sass/partials/components/_views-row.scss */
+.pane--upcoming-events-panel-pane-1 .views-row {
   color: #fff;
   height: 125px;
   padding: 8px;
   text-align: right;
 }
-/* line 20, ../sass/partials/components/_views-row.scss */
-.views-row .views-field.views-field-field-date, .views-row .views-field.views-field-field-location-locality {
+/* line 22, ../sass/partials/components/_views-row.scss */
+.pane--upcoming-events-panel-pane-1 .views-row .views-field.views-field-field-date, .pane--upcoming-events-panel-pane-1 .views-row .views-field.views-field-field-location-locality {
   font-size: 2.2em;
   line-height: 0.9;
 }
-/* line 25, ../sass/partials/components/_views-row.scss */
-.views-row .views-field.views-field-field-location-name-line {
+/* line 27, ../sass/partials/components/_views-row.scss */
+.pane--upcoming-events-panel-pane-1 .views-row .views-field.views-field-field-location-name-line {
   font-size: 1.3em;
   line-height: 1.1;
 }
-/* line 32, ../sass/partials/components/_views-row.scss */
-.views-row .views-field.views-field-view-node a {
+/* line 34, ../sass/partials/components/_views-row.scss */
+.pane--upcoming-events-panel-pane-1 .views-row .views-field.views-field-view-node a {
   background: #000;
   color: #fff;
   display: block;
@@ -2424,4 +2496,39 @@ footer .pane .pane__content .boxes-box-content ul li.youtube {
   font-size: 0.9em;
   padding: 1px 2px;
   text-decoration: none;
+}
+
+/* line 4, ../sass/partials/components/_background-color.scss */
+.pane--upcoming-events-panel-pane-1 .views-row-odd, .red .pane__content {
+  background-color: #712024;
+}
+
+/* line 8, ../sass/partials/components/_background-color.scss */
+.pane--upcoming-events-panel-pane-1 .views-row-even, .blue .pane__content {
+  background-color: #1a2243;
+}
+
+/* line 12, ../sass/partials/components/_background-color.scss */
+.orange .pane__content {
+  background-color: #c15d22;
+}
+
+/* line 16, ../sass/partials/components/_background-color.scss */
+.yellow .pane__content {
+  background-color: #c18936;
+}
+
+/* line 20, ../sass/partials/components/_background-color.scss */
+.green .pane__content {
+  background-color: #2f524e;
+}
+
+/* line 24, ../sass/partials/components/_background-color.scss */
+.dkgray .pane__content {
+  background-color: #646464;
+}
+
+/* line 28, ../sass/partials/components/_background-color.scss */
+.ltgray .pane__content {
+  background-color: #a0a0a0;
 }
