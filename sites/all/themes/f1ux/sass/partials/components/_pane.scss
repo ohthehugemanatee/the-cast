@@ -80,9 +80,9 @@
 }
 
 .l-panels-three-column-two-row {
-  &.first,
-  &.second,
-  &.third {
+  .l-first,
+  .l-second,
+  .l-third {
     .pane {
       .pane__content {
         height: 175px;

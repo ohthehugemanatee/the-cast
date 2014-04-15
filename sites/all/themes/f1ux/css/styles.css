@@ -2493,7 +2493,9 @@ footer .pane .pane__content .boxes-box-content ul li.youtube {
 }
 
 /* line 87, ../sass/partials/components/_pane.scss */
-.l-panels-three-column-two-row.first .pane .pane__content, .l-panels-three-column-two-row.second .pane .pane__content, .l-panels-three-column-two-row.third .pane .pane__content {
+.l-panels-three-column-two-row .l-first .pane .pane__content,
+.l-panels-three-column-two-row .l-second .pane .pane__content,
+.l-panels-three-column-two-row .l-third .pane .pane__content {
   height: 175px;
 }
 
