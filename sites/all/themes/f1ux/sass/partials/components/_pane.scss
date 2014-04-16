@@ -1,5 +1,5 @@
 // @file
-// Styles for panes.  
+// Styles for panes.
 
 .pane {
   margin-bottom: 8px;
@@ -7,12 +7,7 @@
   
   
   h2.pane__title {
-    background: #000;
-    font-size: 1em;
-    height: 26px;
-    margin: 0 0 4px;
-    padding: 5px;
-    text-transform: uppercase;
+    @extend %pane-title;
   }
   
   .pane__content {
@@ -39,9 +34,23 @@
       color: #333;
       height: auto;
       text-align: left;
+     
+    }
+  }
+  
+  &.pane--quicktabs-media {
+    .pane__content {
+      background: #fff;
+    }
+  }
+  
+  &.pane--upcoming {
+    .pane__content {
+      
+      text-align: left;
       text-transform: none;
     }
-  } 
+  }
 }
 
 
@@ -58,7 +67,9 @@
   .l-second {
     .pane {
       .pane__content {
-        height: 250px;
+        .front &{
+           height: 250px;
+        }
       }
     }
   }
@@ -109,7 +120,7 @@
     }
   }
   .l-second .pane__content {
-    padding: 17px;
+    padding: 16px;
     text-align: left;
   }
   

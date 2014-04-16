@@ -22,25 +22,24 @@
       &.views-field-field-location-locality {
         font-size: 2.2em;
         line-height: 0.9;
+        text-transform: uppercase;
       }
       
       &.views-field-field-location-name-line {
         font-size: 1.3em;
         line-height: 1.1;
-      }
-      
-      &.views-field-view-node {
-        
-        a {
-          background: #000;
-          color: #fff;
-          display: block;
-          float: right;
-          font-size: 0.9em;
-          padding: 1px 2px;
-          text-decoration: none;
-        }
+        text-transform: uppercase;
       }
     }
   }
+}
+
+.view--upcoming {
+  .views-row {
+    background: #fff;
+  }
+}
+
+.views-field-view-node {
+  @extend %black-button;
 }

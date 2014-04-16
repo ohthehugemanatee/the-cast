@@ -53,3 +53,17 @@
     }
   }
 }
+
+%black-button {
+  a {
+    background: #000;
+    color: #fff;
+    display: block;
+    float: right;
+    font-size: 0.9em;
+    line-height: 0.9;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

@@ -89,32 +89,31 @@ function cast_core_types_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'bio';
   $ds_layout->view_mode = 'members_page';
-  $ds_layout->layout = 'ds_2col_stacked';
+  $ds_layout->layout = 'slat';
   $ds_layout->settings = array(
     'regions' => array(
       'header' => array(
         0 => 'field_fach',
         1 => 'title',
       ),
-      'left' => array(
+      'media' => array(
         2 => 'field_headshot',
       ),
-      'right' => array(
+      'main_content' => array(
         3 => 'body',
       ),
     ),
     'fields' => array(
       'field_fach' => 'header',
       'title' => 'header',
-      'field_headshot' => 'left',
-      'body' => 'right',
+      'field_headshot' => 'media',
+      'body' => 'main_content',
     ),
     'classes' => array(),
     'wrappers' => array(
       'header' => 'div',
-      'left' => 'div',
-      'right' => 'div',
-      'footer' => 'div',
+      'media' => 'div',
+      'main_content' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
@@ -130,16 +129,16 @@ function cast_core_types_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'event';
   $ds_layout->view_mode = 'members_page';
-  $ds_layout->layout = 'ds_2col_stacked';
+  $ds_layout->layout = 'slat';
   $ds_layout->settings = array(
     'regions' => array(
       'header' => array(
         0 => 'title',
       ),
-      'left' => array(
+      'media' => array(
         1 => 'field_image',
       ),
-      'right' => array(
+      'main_content' => array(
         2 => 'field_date',
         3 => 'field_location',
         4 => 'body',
@@ -148,18 +147,17 @@ function cast_core_types_ds_layout_settings_info() {
     ),
     'fields' => array(
       'title' => 'header',
-      'field_image' => 'left',
-      'field_date' => 'right',
-      'field_location' => 'right',
-      'body' => 'right',
-      'field_tickets_link' => 'right',
+      'field_image' => 'media',
+      'field_date' => 'main_content',
+      'field_location' => 'main_content',
+      'body' => 'main_content',
+      'field_tickets_link' => 'main_content',
     ),
     'classes' => array(),
     'wrappers' => array(
       'header' => 'div',
-      'left' => 'div',
-      'right' => 'div',
-      'footer' => 'div',
+      'media' => 'div',
+      'main_content' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',

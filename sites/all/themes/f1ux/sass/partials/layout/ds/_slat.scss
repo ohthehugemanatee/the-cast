@@ -2,19 +2,45 @@
 // Display Suite slat layout style
 
 $bp-first: 600px, 'no-query' true;
-$gutter: 1em;
+$gutter: 8px;
 
 .l-slat {
   @include clearfix;
+  background: $light_gray;
+  border-bottom: $gutter solid #fff;
+  margin: 0;
+}
+
+.l-slat__header {
+  background: #000;
+  border-bottom: 4px solid #fff;
+  height: 26px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: left;
+  
+  h2 {
+    font-size: 1em;
+    margin: 0;
+  }
+  
+  div {
+    display: inline-block;
+    
+    .field-item {
+      padding: 5px;
+    }
+  }
 }
 
 .l-slat__media {
   margin: 0;
-  padding: 0 0 rhythm(1);
+  padding: 0;
+
 
   @include breakpoint($bp-first) {
     float: left;
-    padding-right: $gutter;
+    border-right: $gutter solid #fff;
   }
 
   &:empty {
@@ -29,6 +55,8 @@ $gutter: 1em;
 
 .l-slat__content {
   display: table-cell;
+  padding: 16px;
+  text-align: left;
   width: 10000px;
 
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {

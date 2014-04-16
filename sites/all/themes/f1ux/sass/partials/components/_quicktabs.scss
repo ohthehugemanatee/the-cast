@@ -1,0 +1,25 @@
+// @file
+// Styles for quicktabs.
+
+ul.quicktabs-tabs {
+  background: $light_gray;
+  margin: 0 0 4px;
+  padding: 8px;
+  
+  li {
+    padding: 0 0 0 8px;
+    a {
+      background: #000;
+      display: inline-block;
+      line-height: 1;
+      padding: 6px 8px;
+      text-decoration: none;
+    }
+    
+    &.active {
+      a {
+        background: $orange;
+      }
+    }
+  }
+}

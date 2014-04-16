@@ -6,6 +6,16 @@
   clear: both;
 }
 
+/* line 4, ../sass/partials/global/mixins/_placeholders.scss */
+.pane h2.pane__title {
+  background: #000;
+  font-size: 1em;
+  height: 26px;
+  margin: 0 0 4px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
 /* Colaborate */
 @font-face {
   font-family: "ColabBol";
@@ -655,6 +665,12 @@ ul.panels-ipe-linkbar li {
   float: left;
 }
 
+/* line 7, ../sass/partials/layout/ds/_slat.scss */
+.l-slat {
+  background: #a0a0a0;
+  border-bottom: 8px solid white;
+  margin: 0;
+}
 /* line 9, ../sass/partials/global/mixins/_clearfix.scss */
 .l-slat:after {
   display: table;
@@ -665,33 +681,58 @@ ul.panels-ipe-linkbar li {
   clear: both;
 }
 
-/* line 11, ../sass/partials/layout/ds/_slat.scss */
+/* line 14, ../sass/partials/layout/ds/_slat.scss */
+.l-slat__header {
+  background: #000;
+  border-bottom: 4px solid #fff;
+  height: 26px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: left;
+}
+/* line 22, ../sass/partials/layout/ds/_slat.scss */
+.l-slat__header h2 {
+  font-size: 1em;
+  margin: 0;
+}
+/* line 27, ../sass/partials/layout/ds/_slat.scss */
+.l-slat__header div {
+  display: inline-block;
+}
+/* line 30, ../sass/partials/layout/ds/_slat.scss */
+.l-slat__header div .field-item {
+  padding: 5px;
+}
+
+/* line 36, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__media {
   margin: 0;
-  padding: 0 0 1.3125em;
+  padding: 0;
   float: left;
-  padding-right: 1em;
+  border-right: 8px solid white;
 }
-/* line 20, ../sass/partials/layout/ds/_slat.scss */
+/* line 46, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__media:empty {
   padding: 0;
 }
-/* line 25, ../sass/partials/layout/ds/_slat.scss */
+/* line 51, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__media a,
 .l-slat__media img {
   display: block;
 }
 
-/* line 30, ../sass/partials/layout/ds/_slat.scss */
+/* line 56, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__content {
   display: table-cell;
+  padding: 16px;
+  text-align: left;
   width: 10000px;
 }
 
-/* line 41, ../sass/partials/layout/ds/_slat.scss */
+/* line 69, ../sass/partials/layout/ds/_slat.scss */
 .l-slat--reversed .l-slat__media {
   float: right;
-  padding-left: 1em;
+  padding-left: 8px;
   padding-right: 0;
 }
 
@@ -741,8 +782,8 @@ ul.panels-ipe-linkbar li {
 /* line 1, ../sass/partials/layout/_page.scss */
 .l-constrain {
   margin: 0 auto;
-  max-width: 60em;
-  width: 60em;
+  max-width: 60.125em;
+  width: 60.125em;
 }
 
 /* line 13, ../sass/partials/layout/panels/_sidebar.scss */
@@ -1256,6 +1297,20 @@ input.throbbing {
 [dir="rtl"] .button + .button {
   margin-left: 0;
   margin-right: 1em;
+}
+
+/* line 58, ../sass/partials/components/_button.scss */
+.field--button-text a,
+.field--tickets-link a, .views-field-view-node a {
+  background: #000;
+  color: #fff;
+  display: block;
+  float: right;
+  font-size: 0.9em;
+  line-height: 0.9;
+  padding: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* line 4, ../sass/partials/components/_fieldset.scss */
@@ -2218,12 +2273,8 @@ tr.drag-previous {
   font-family: "ColabLig", "Times New Roman", serif;
 }
 
-/* line 6, ../sass/partials/components/_flexslider.scss */
-.pane--frontpage-slideshow .pane__content {
-  height: 300px !important;
-}
-/* line 9, ../sass/partials/components/_flexslider.scss */
-.pane--frontpage-slideshow .pane__content .flexslider {
+/* line 4, ../sass/partials/components/_flexslider.scss */
+.flexslider {
   border: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -2234,6 +2285,11 @@ tr.drag-previous {
   -moz-box-shadow: 0;
   box-shadow: 0;
   margin: 0;
+}
+
+/* line 12, ../sass/partials/components/_flexslider.scss */
+.pane--frontpage-slideshow .pane__content {
+  height: 300px !important;
 }
 
 /* line 6, ../sass/partials/components/_footer.scss */
@@ -2345,22 +2401,13 @@ footer .pane .pane__content .boxes-box-content ul li.youtube {
   margin-bottom: 8px;
   text-align: right;
 }
-/* line 9, ../sass/partials/components/_pane.scss */
-.pane h2.pane__title {
-  background: #000;
-  font-size: 1em;
-  height: 26px;
-  margin: 0 0 4px;
-  padding: 5px;
-  text-transform: uppercase;
-}
-/* line 18, ../sass/partials/components/_pane.scss */
+/* line 13, ../sass/partials/components/_pane.scss */
 .pane .pane__content {
   background: #000;
   color: #fff;
   position: relative;
 }
-/* line 23, ../sass/partials/components/_pane.scss */
+/* line 18, ../sass/partials/components/_pane.scss */
 .pane .pane__content .group-bottomright {
   bottom: 10px;
   font-size: 1.6em;
@@ -2368,34 +2415,42 @@ footer .pane .pane__content .boxes-box-content ul li.youtube {
   right: 10px;
   text-transform: uppercase;
 }
-/* line 34, ../sass/partials/components/_pane.scss */
+/* line 29, ../sass/partials/components/_pane.scss */
 .pane.pane--admin-info, .pane.pane--nodebody, .pane.pane--node-links {
   margin: 0;
 }
-/* line 37, ../sass/partials/components/_pane.scss */
+/* line 32, ../sass/partials/components/_pane.scss */
 .pane.pane--admin-info .pane__content, .pane.pane--nodebody .pane__content, .pane.pane--node-links .pane__content {
   background: #fff;
   color: #333;
   height: auto;
   text-align: left;
+}
+/* line 42, ../sass/partials/components/_pane.scss */
+.pane.pane--quicktabs-media .pane__content {
+  background: #fff;
+}
+/* line 48, ../sass/partials/components/_pane.scss */
+.pane.pane--upcoming .pane__content {
+  text-align: left;
   text-transform: none;
 }
 
-/* line 50, ../sass/partials/components/_pane.scss */
+/* line 59, ../sass/partials/components/_pane.scss */
 .l-panels-two-column .l-first .pane {
   margin-right: 4px;
 }
-/* line 53, ../sass/partials/components/_pane.scss */
+/* line 62, ../sass/partials/components/_pane.scss */
 .l-panels-two-column .l-second .pane {
   margin-left: 4px;
 }
-/* line 60, ../sass/partials/components/_pane.scss */
-.l-panels-two-column .l-first .pane .pane__content,
+/* line 70, ../sass/partials/components/_pane.scss */
+.front .l-panels-two-column .l-first .pane .pane__content, .front
 .l-panels-two-column .l-second .pane .pane__content {
   height: 250px;
 }
 
-/* line 72, ../sass/partials/components/_pane.scss */
+/* line 83, ../sass/partials/components/_pane.scss */
 .l-panels-three-column .l-first .pane,
 .l-panels-three-column .l-second .pane,
 .l-panels-three-column .l-fourth .pane,
@@ -2407,7 +2462,7 @@ footer .pane .pane__content .boxes-box-content ul li.youtube {
 .l-panels-three-column-two-row .l-fourth .pane {
   margin-right: 4px;
 }
-/* line 77, ../sass/partials/components/_pane.scss */
+/* line 88, ../sass/partials/components/_pane.scss */
 .l-panels-three-column .l-second .pane,
 .l-panels-three-column .l-third .pane,
 .l-panels-three-column .l-fifth .pane,
@@ -2420,41 +2475,64 @@ footer .pane .pane__content .boxes-box-content ul li.youtube {
   margin-left: 4px;
 }
 
-/* line 87, ../sass/partials/components/_pane.scss */
+/* line 98, ../sass/partials/components/_pane.scss */
 .l-panels-three-column-two-row .l-first .pane .pane__content,
 .l-panels-three-column-two-row .l-second .pane .pane__content,
 .l-panels-three-column-two-row .l-third .pane .pane__content {
   height: 175px;
 }
 
-/* line 97, ../sass/partials/components/_pane.scss */
+/* line 108, ../sass/partials/components/_pane.scss */
 .l-panels-three-column-25-50-25 .l-first .pane__content,
 .l-panels-three-column-25-50-25 .l-third .pane__content {
   padding: 8px;
   text-align: left;
 }
-/* line 101, ../sass/partials/components/_pane.scss */
+/* line 112, ../sass/partials/components/_pane.scss */
 .l-panels-three-column-25-50-25 .l-first .pane__content .group-left,
 .l-panels-three-column-25-50-25 .l-third .pane__content .group-left {
   float: left;
   width: 75%;
 }
-/* line 105, ../sass/partials/components/_pane.scss */
+/* line 116, ../sass/partials/components/_pane.scss */
 .l-panels-three-column-25-50-25 .l-first .pane__content .group-right,
 .l-panels-three-column-25-50-25 .l-third .pane__content .group-right {
   float: right;
   text-align: right;
   width: 25%;
 }
-/* line 111, ../sass/partials/components/_pane.scss */
+/* line 122, ../sass/partials/components/_pane.scss */
 .l-panels-three-column-25-50-25 .l-second .pane__content {
-  padding: 17px;
+  padding: 16px;
   text-align: left;
 }
 
-/* line 121, ../sass/partials/components/_pane.scss */
+/* line 132, ../sass/partials/components/_pane.scss */
 .panel-col-sixty-six .pane .pane__content {
   height: 500px;
+}
+
+/* line 4, ../sass/partials/components/_quicktabs.scss */
+ul.quicktabs-tabs {
+  background: #a0a0a0;
+  margin: 0 0 4px;
+  padding: 8px;
+}
+/* line 9, ../sass/partials/components/_quicktabs.scss */
+ul.quicktabs-tabs li {
+  padding: 0 0 0 8px;
+}
+/* line 11, ../sass/partials/components/_quicktabs.scss */
+ul.quicktabs-tabs li a {
+  background: #000;
+  display: inline-block;
+  line-height: 1;
+  padding: 6px 8px;
+  text-decoration: none;
+}
+/* line 20, ../sass/partials/components/_quicktabs.scss */
+ul.quicktabs-tabs li.active a {
+  background: #c15d22;
 }
 
 /* line 4, ../sass/partials/components/_sitename.scss */
@@ -2483,21 +2561,18 @@ footer .pane .pane__content .boxes-box-content ul li.youtube {
 .pane--upcoming-events-panel-pane-1 .views-row .views-field.views-field-field-date, .pane--upcoming-events-panel-pane-1 .views-row .views-field.views-field-field-location-locality {
   font-size: 2.2em;
   line-height: 0.9;
+  text-transform: uppercase;
 }
-/* line 27, ../sass/partials/components/_views-row.scss */
+/* line 28, ../sass/partials/components/_views-row.scss */
 .pane--upcoming-events-panel-pane-1 .views-row .views-field.views-field-field-location-name-line {
   font-size: 1.3em;
   line-height: 1.1;
+  text-transform: uppercase;
 }
-/* line 34, ../sass/partials/components/_views-row.scss */
-.pane--upcoming-events-panel-pane-1 .views-row .views-field.views-field-view-node a {
-  background: #000;
-  color: #fff;
-  display: block;
-  float: right;
-  font-size: 0.9em;
-  padding: 1px 2px;
-  text-decoration: none;
+
+/* line 38, ../sass/partials/components/_views-row.scss */
+.view--upcoming .views-row {
+  background: #fff;
 }
 
 /* line 4, ../sass/partials/components/_background-color.scss */

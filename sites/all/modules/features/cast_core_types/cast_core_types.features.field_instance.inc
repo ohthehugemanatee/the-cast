@@ -210,9 +210,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'plain_text',
-          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -289,9 +286,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'plain_text',
-          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -372,9 +366,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'form',
-          ),
           'image_link' => '',
           'image_style' => 'members_layout_image',
           'linked_field' => array(
@@ -550,9 +541,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'plain_text',
-          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -649,9 +637,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'form',
-          ),
           'format_type' => 'long',
           'fromto' => 'both',
           'linked_field' => array(
@@ -740,9 +725,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'form',
-          ),
           'image_link' => '',
           'image_style' => 'members_layout_image',
           'linked_field' => array(
@@ -841,9 +823,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'addressfield',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'form',
-          ),
           'format_handlers' => array(
             0 => 'address',
           ),
@@ -928,9 +907,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'link',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'form',
-          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
