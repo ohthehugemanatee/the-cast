@@ -1,0 +1,54 @@
+// @file
+// Panels layout: three column two row styles
+// Media queries use: http://breakpoint-sass.com
+// Media queries use: github.com/Team-Sass/breakpoint/wiki/No-Query-Fallbacks
+// Grid via: singularity.gs
+
+.l-panels-four-column-two-row {
+  $grids: 1;
+  $grids: add-grid(12 at 700px);
+  $gutters: 0;
+  @include breakpoint(700px, $no-query: true) {
+    .l-first { @include grid-span(3,1); }
+    .l-second { @include grid-span(3,4); }
+    .l-third { @include grid-span(3,7); }
+    .l-fourth { @include grid-span(3,10); }
+    
+    
+    &.fifth {
+      &.sixth { // 5, 6 have content
+        .l-fifth { @include grid-span(9,1); }
+        .l-sixth { @include grid-span(3,10); }
+      }
+    }
+    &.fifth.sixth-empty { // 5 has content
+      .l-fifth { @include grid-span(12,1); }
+    }
+    &.fifth-empty.sixth { // 6 has content
+      .l-sixth { @include grid-span(12,1); }
+    }
+  }
+}
+
+.l-panels-four-column-two-row {
+  @include clearfix;
+  .l-preface,
+  .l-first,
+  .l-second,
+  .l-third,
+  .l-fourth,
+  .l-fifth,
+  .l-sixth {
+    @include clearfix;
+
+    @if $panels-admin {
+      @include border-box;
+      margin-bottom: 2em;
+    }
+  }
+  
+  .l-first-row,
+  .l-second-row {
+    @include clearfix;
+  }
+}

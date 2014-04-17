@@ -1,0 +1,121 @@
+@media (min-width: 43.75em) {
+  /* line 12, ../../sass/partials/layout/panels/_four-column-two-row.scss */
+  .l-panels-four-column-two-row .l-first {
+    width: 25%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+  /* line 13, ../../sass/partials/layout/panels/_four-column-two-row.scss */
+  .l-panels-four-column-two-row .l-second {
+    width: 25%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 25%;
+    clear: none;
+  }
+  /* line 14, ../../sass/partials/layout/panels/_four-column-two-row.scss */
+  .l-panels-four-column-two-row .l-third {
+    width: 25%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 50%;
+    clear: none;
+  }
+  /* line 15, ../../sass/partials/layout/panels/_four-column-two-row.scss */
+  .l-panels-four-column-two-row .l-fourth {
+    width: 25%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+  /* line 20, ../../sass/partials/layout/panels/_four-column-two-row.scss */
+  .l-panels-four-column-two-row.fifth.sixth .l-fifth {
+    width: 75%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+  /* line 21, ../../sass/partials/layout/panels/_four-column-two-row.scss */
+  .l-panels-four-column-two-row.fifth.sixth .l-sixth {
+    width: 25%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+  /* line 25, ../../sass/partials/layout/panels/_four-column-two-row.scss */
+  .l-panels-four-column-two-row.fifth.sixth-empty .l-fifth {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+  /* line 28, ../../sass/partials/layout/panels/_four-column-two-row.scss */
+  .l-panels-four-column-two-row.fifth-empty.sixth .l-sixth {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+/* line 9, ../../sass/partials/global/mixins/_clearfix.scss */
+.l-panels-four-column-two-row:after {
+  display: table;
+  content: "";
+}
+/* line 14, ../../sass/partials/global/mixins/_clearfix.scss */
+.l-panels-four-column-two-row:after {
+  clear: both;
+}
+/* line 41, ../../sass/partials/layout/panels/_four-column-two-row.scss */
+.l-panels-four-column-two-row .l-preface,
+.l-panels-four-column-two-row .l-first,
+.l-panels-four-column-two-row .l-second,
+.l-panels-four-column-two-row .l-third,
+.l-panels-four-column-two-row .l-fourth,
+.l-panels-four-column-two-row .l-fifth,
+.l-panels-four-column-two-row .l-sixth {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 2em;
+}
+/* line 9, ../../sass/partials/global/mixins/_clearfix.scss */
+.l-panels-four-column-two-row .l-preface:after,
+.l-panels-four-column-two-row .l-first:after,
+.l-panels-four-column-two-row .l-second:after,
+.l-panels-four-column-two-row .l-third:after,
+.l-panels-four-column-two-row .l-fourth:after,
+.l-panels-four-column-two-row .l-fifth:after,
+.l-panels-four-column-two-row .l-sixth:after {
+  display: table;
+  content: "";
+}
+/* line 14, ../../sass/partials/global/mixins/_clearfix.scss */
+.l-panels-four-column-two-row .l-preface:after,
+.l-panels-four-column-two-row .l-first:after,
+.l-panels-four-column-two-row .l-second:after,
+.l-panels-four-column-two-row .l-third:after,
+.l-panels-four-column-two-row .l-fourth:after,
+.l-panels-four-column-two-row .l-fifth:after,
+.l-panels-four-column-two-row .l-sixth:after {
+  clear: both;
+}
+/* line 9, ../../sass/partials/global/mixins/_clearfix.scss */
+.l-panels-four-column-two-row .l-first-row:after,
+.l-panels-four-column-two-row .l-second-row:after {
+  display: table;
+  content: "";
+}
+/* line 14, ../../sass/partials/global/mixins/_clearfix.scss */
+.l-panels-four-column-two-row .l-first-row:after,
+.l-panels-four-column-two-row .l-second-row:after {
+  clear: both;
+}

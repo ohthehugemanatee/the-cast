@@ -12,7 +12,7 @@
     .l-first { @include grid-span(3,1); }
     .l-second { @include grid-span(6,4); }
     .l-third { @include grid-span(3,10); }
-}
+  }
 }
 
 .l-panels-three-column-25-50-25 {

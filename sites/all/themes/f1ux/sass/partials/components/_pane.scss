@@ -10,6 +10,10 @@
     @extend %pane-title;
   }
   
+  h2.node__title {
+    margin: 0;
+  }
+  
   .pane__content {
     background: #000;
     color: #fff;
@@ -49,88 +53,6 @@
       
       text-align: left;
       text-transform: none;
-    }
-  }
-}
-
-
-
-.l-panels-two-column {  
-  .l-first .pane {
-    margin-right: 4px;
-  }
-  .l-second .pane {
-    margin-left: 4px;
-  }
-  
-  .l-first,
-  .l-second {
-    .pane {
-      .pane__content {
-        .front &{
-           height: 250px;
-        }
-      }
-    }
-  }
-}
-
-.l-panels-three-column,
-.l-panels-three-column-25-50-25,
-.l-panels-three-column-two-row {
-  .l-first .pane,
-  .l-second .pane,
-  .l-fourth .pane {
-    margin-right: 4px;
-  }
-  .l-second .pane,
-  .l-third .pane,
-  .l-fifth .pane {
-    margin-left: 4px;
-  }
-}
-
-.l-panels-three-column-two-row {
-  .l-first,
-  .l-second,
-  .l-third {
-    .pane {
-      .pane__content {
-        height: 175px;
-      }
-    }
-  }
-}
-
-.l-panels-three-column-25-50-25 {
-  
-  .l-first .pane__content,
-  .l-third .pane__content {
-    padding: 8px;
-    text-align: left;
-    
-    .group-left {
-      float: left;
-      width: 75%;
-    }
-    .group-right {
-      float: right;
-      text-align: right;
-      width: 25%;
-    }
-  }
-  .l-second .pane__content {
-    padding: 16px;
-    text-align: left;
-  }
-  
-
-}
-
-.panel-col-sixty-six {
-  .pane {
-    .pane__content {
-      height: 500px;
     }
   }
 }
