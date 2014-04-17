@@ -6,6 +6,11 @@
   clear: both;
 }
 
+/* line 7, ../../sass/partials/layout/panels/_one-column.scss */
+.l-panels-one-column {
+  padding: 0 4px;
+}
+
 /* line 14, ../../sass/partials/layout/panels/_one-column.scss */
 .l-panels-one-column .l-preface,
 .l-panels-one-column .l-main {

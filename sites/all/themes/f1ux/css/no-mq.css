@@ -782,73 +782,89 @@ ul.panels-ipe-linkbar li {
 /* line 1, ../sass/partials/layout/_page.scss */
 .l-constrain {
   margin: 0 auto;
-  max-width: 60.125em;
-  width: 60.125em;
+  max-width: 60.5em;
+  width: 60.5em;
 }
 
-/* line 12, ../sass/partials/layout/panels/_four-column-two-row.scss */
+/* line 13, ../sass/partials/layout/panels/_four-column-two-row.scss */
 .l-panels-four-column-two-row .l-first {
   width: 25%;
   float: left;
   margin-right: -100%;
   margin-left: 0%;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 13, ../sass/partials/layout/panels/_four-column-two-row.scss */
+/* line 14, ../sass/partials/layout/panels/_four-column-two-row.scss */
 .l-panels-four-column-two-row .l-second {
   width: 25%;
   float: left;
   margin-right: -100%;
   margin-left: 25%;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 14, ../sass/partials/layout/panels/_four-column-two-row.scss */
+/* line 15, ../sass/partials/layout/panels/_four-column-two-row.scss */
 .l-panels-four-column-two-row .l-third {
   width: 25%;
   float: left;
   margin-right: -100%;
   margin-left: 50%;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 15, ../sass/partials/layout/panels/_four-column-two-row.scss */
+/* line 16, ../sass/partials/layout/panels/_four-column-two-row.scss */
 .l-panels-four-column-two-row .l-fourth {
   width: 25%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 20, ../sass/partials/layout/panels/_four-column-two-row.scss */
+/* line 21, ../sass/partials/layout/panels/_four-column-two-row.scss */
 .l-panels-four-column-two-row.fifth.sixth .l-fifth {
   width: 75%;
   float: left;
   margin-right: -100%;
   margin-left: 0%;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 21, ../sass/partials/layout/panels/_four-column-two-row.scss */
+/* line 22, ../sass/partials/layout/panels/_four-column-two-row.scss */
 .l-panels-four-column-two-row.fifth.sixth .l-sixth {
   width: 25%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 25, ../sass/partials/layout/panels/_four-column-two-row.scss */
+/* line 26, ../sass/partials/layout/panels/_four-column-two-row.scss */
 .l-panels-four-column-two-row.fifth.sixth-empty .l-fifth {
   width: 100%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 28, ../sass/partials/layout/panels/_four-column-two-row.scss */
+/* line 29, ../sass/partials/layout/panels/_four-column-two-row.scss */
 .l-panels-four-column-two-row.fifth-empty.sixth .l-sixth {
   width: 100%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 /* line 9, ../sass/partials/global/mixins/_clearfix.scss */
@@ -891,22 +907,27 @@ ul.panels-ipe-linkbar li {
 .l-panels-four-column-two-row .l-first-row:after,
 .l-panels-four-column-two-row .l-second-row:after {
   clear: both;
+}
+
+/* line 7, ../sass/partials/layout/panels/_one-column.scss */
+.l-panels-one-column {
+  padding: 0 4px;
 }
 
 /* line 13, ../sass/partials/layout/panels/_sidebar.scss */
 .l-panels-sidebar.main.sidebar .l-main {
-  width: 65.21739%;
+  width: 62.5%;
   float: left;
   margin-right: -100%;
-  margin-left: 0%;
+  margin-left: 2.08333%;
   clear: none;
 }
 /* line 16, ../sass/partials/layout/panels/_sidebar.scss */
 .l-panels-sidebar.main.sidebar .l-sidebar {
-  width: 30.43478%;
+  width: 29.16667%;
   float: right;
   margin-left: 0;
-  margin-right: 0;
+  margin-right: 2.08333%;
   clear: none;
 }
 
@@ -933,77 +954,95 @@ ul.panels-ipe-linkbar li {
   clear: both;
 }
 
-/* line 15, ../sass/partials/layout/panels/_three-column.scss */
+/* line 16, ../sass/partials/layout/panels/_three-column.scss */
 .l-panels-three-column.first.second.third .l-first {
-  width: 30.43478%;
+  width: 33.33333%;
   float: left;
   margin-right: -100%;
   margin-left: 0%;
   clear: none;
-}
-/* line 16, ../sass/partials/layout/panels/_three-column.scss */
-.l-panels-three-column.first.second.third .l-second {
-  width: 30.43478%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 34.78261%;
-  clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 /* line 17, ../sass/partials/layout/panels/_three-column.scss */
+.l-panels-three-column.first.second.third .l-second {
+  width: 33.33333%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 33.33333%;
+  clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 18, ../sass/partials/layout/panels/_three-column.scss */
 .l-panels-three-column.first.second.third .l-third {
-  width: 30.43478%;
+  width: 33.33333%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
-}
-/* line 20, ../sass/partials/layout/panels/_three-column.scss */
-.l-panels-three-column.first.second.third-empty .l-first {
-  width: 47.82609%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0%;
-  clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 /* line 21, ../sass/partials/layout/panels/_three-column.scss */
-.l-panels-three-column.first.second.third-empty .l-second {
-  width: 47.82609%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-}
-/* line 25, ../sass/partials/layout/panels/_three-column.scss */
-.l-panels-three-column.first.second-empty.third .l-first {
-  width: 47.82609%;
+.l-panels-three-column.first.second.third-empty .l-first {
+  width: 50%;
   float: left;
   margin-right: -100%;
   margin-left: 0%;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 22, ../sass/partials/layout/panels/_three-column.scss */
+.l-panels-three-column.first.second.third-empty .l-second {
+  width: 50%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 /* line 26, ../sass/partials/layout/panels/_three-column.scss */
-.l-panels-three-column.first.second-empty.third .l-third {
-  width: 47.82609%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-}
-/* line 30, ../sass/partials/layout/panels/_three-column.scss */
-.l-panels-three-column.first-empty.second.third .l-second {
-  width: 47.82609%;
+.l-panels-three-column.first.second-empty.third .l-first {
+  width: 50%;
   float: left;
   margin-right: -100%;
   margin-left: 0%;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 31, ../sass/partials/layout/panels/_three-column.scss */
-.l-panels-three-column.first-empty.second.third .l-third {
-  width: 47.82609%;
+/* line 27, ../sass/partials/layout/panels/_three-column.scss */
+.l-panels-three-column.first.second-empty.third .l-third {
+  width: 50%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 31, ../sass/partials/layout/panels/_three-column.scss */
+.l-panels-three-column.first-empty.second.third .l-second {
+  width: 50%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0%;
+  clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 32, ../sass/partials/layout/panels/_three-column.scss */
+.l-panels-three-column.first-empty.second.third .l-third {
+  width: 50%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 /* line 9, ../sass/partials/global/mixins/_clearfix.scss */
@@ -1031,29 +1070,35 @@ ul.panels-ipe-linkbar li {
   clear: both;
 }
 
-/* line 12, ../sass/partials/layout/panels/_three-column-25-50-25.scss */
+/* line 13, ../sass/partials/layout/panels/_three-column-25-50-25.scss */
 .l-panels-three-column-25-50-25 .l-first {
   width: 25%;
   float: left;
   margin-right: -100%;
   margin-left: 0%;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 13, ../sass/partials/layout/panels/_three-column-25-50-25.scss */
+/* line 14, ../sass/partials/layout/panels/_three-column-25-50-25.scss */
 .l-panels-three-column-25-50-25 .l-second {
   width: 50%;
   float: left;
   margin-right: -100%;
   margin-left: 25%;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 14, ../sass/partials/layout/panels/_three-column-25-50-25.scss */
+/* line 15, ../sass/partials/layout/panels/_three-column-25-50-25.scss */
 .l-panels-three-column-25-50-25 .l-third {
   width: 25%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 /* line 9, ../sass/partials/global/mixins/_clearfix.scss */
@@ -1081,109 +1126,135 @@ ul.panels-ipe-linkbar li {
   clear: both;
 }
 
-/* line 15, ../sass/partials/layout/panels/_three-column-two-row.scss */
+/* line 16, ../sass/partials/layout/panels/_three-column-two-row.scss */
 .l-panels-three-column-two-row.first.second.third .l-first {
   width: 33.33333%;
   float: left;
   margin-right: -100%;
   margin-left: 0%;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 16, ../sass/partials/layout/panels/_three-column-two-row.scss */
+/* line 17, ../sass/partials/layout/panels/_three-column-two-row.scss */
 .l-panels-three-column-two-row.first.second.third .l-second {
   width: 33.33333%;
   float: left;
   margin-right: -100%;
   margin-left: 33.33333%;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 17, ../sass/partials/layout/panels/_three-column-two-row.scss */
+/* line 18, ../sass/partials/layout/panels/_three-column-two-row.scss */
 .l-panels-three-column-two-row.first.second.third .l-third {
   width: 33.33333%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 20, ../sass/partials/layout/panels/_three-column-two-row.scss */
+/* line 21, ../sass/partials/layout/panels/_three-column-two-row.scss */
 .l-panels-three-column-two-row.first.second.third-empty .l-first {
   width: 50%;
   float: left;
   margin-right: -100%;
   margin-left: 0%;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 21, ../sass/partials/layout/panels/_three-column-two-row.scss */
+/* line 22, ../sass/partials/layout/panels/_three-column-two-row.scss */
 .l-panels-three-column-two-row.first.second.third-empty .l-second {
   width: 50%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 25, ../sass/partials/layout/panels/_three-column-two-row.scss */
+/* line 26, ../sass/partials/layout/panels/_three-column-two-row.scss */
 .l-panels-three-column-two-row.first.second-empty.third .l-first {
   width: 50%;
   float: left;
   margin-right: -100%;
   margin-left: 0%;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 26, ../sass/partials/layout/panels/_three-column-two-row.scss */
+/* line 27, ../sass/partials/layout/panels/_three-column-two-row.scss */
 .l-panels-three-column-two-row.first.second-empty.third .l-third {
   width: 50%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 30, ../sass/partials/layout/panels/_three-column-two-row.scss */
+/* line 31, ../sass/partials/layout/panels/_three-column-two-row.scss */
 .l-panels-three-column-two-row.first-empty.second.third .l-second {
   width: 50%;
   float: left;
   margin-right: -100%;
   margin-left: 0%;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 31, ../sass/partials/layout/panels/_three-column-two-row.scss */
+/* line 32, ../sass/partials/layout/panels/_three-column-two-row.scss */
 .l-panels-three-column-two-row.first-empty.second.third .l-third {
   width: 50%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 37, ../sass/partials/layout/panels/_three-column-two-row.scss */
+/* line 38, ../sass/partials/layout/panels/_three-column-two-row.scss */
 .l-panels-three-column-two-row.fourth.fifth .l-fourth {
   width: 66.66667%;
   float: left;
   margin-right: -100%;
   margin-left: 0%;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 38, ../sass/partials/layout/panels/_three-column-two-row.scss */
+/* line 39, ../sass/partials/layout/panels/_three-column-two-row.scss */
 .l-panels-three-column-two-row.fourth.fifth .l-fifth {
   width: 33.33333%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 42, ../sass/partials/layout/panels/_three-column-two-row.scss */
+/* line 43, ../sass/partials/layout/panels/_three-column-two-row.scss */
 .l-panels-three-column-two-row.fourth.fifth-empty .l-fourth {
   width: 100%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 45, ../sass/partials/layout/panels/_three-column-two-row.scss */
+/* line 46, ../sass/partials/layout/panels/_three-column-two-row.scss */
 .l-panels-three-column-two-row.fourth-empty.fifth .l-fifth {
   width: 100%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 /* line 9, ../sass/partials/global/mixins/_clearfix.scss */
@@ -1226,21 +1297,25 @@ ul.panels-ipe-linkbar li {
   clear: both;
 }
 
-/* line 13, ../sass/partials/layout/panels/_two-column.scss */
+/* line 14, ../sass/partials/layout/panels/_two-column.scss */
 .l-panels-two-column.first.second .l-first {
   width: 50%;
   float: left;
   margin-right: -100%;
   margin-left: 0%;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-/* line 16, ../sass/partials/layout/panels/_two-column.scss */
+/* line 17, ../sass/partials/layout/panels/_two-column.scss */
 .l-panels-two-column.first.second .l-second {
   width: 50%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 /* line 9, ../sass/partials/global/mixins/_clearfix.scss */
@@ -1413,7 +1488,7 @@ input.throbbing {
   color: #fff;
   display: block;
   float: right;
-  font-size: 0.9em;
+  font-size: 12px;
   line-height: 0.9;
   padding: 4px;
   text-decoration: none;
@@ -2401,17 +2476,18 @@ tr.drag-previous {
 
 /* line 6, ../sass/partials/components/_footer.scss */
 footer .pane .pane__content {
+  background: #000;
   height: 32px;
   text-align: center;
 }
-/* line 12, ../sass/partials/components/_footer.scss */
+/* line 13, ../sass/partials/components/_footer.scss */
 footer .pane .pane__content .boxes-box-content ul {
   display: inline-block;
   list-style: none;
   margin: 0;
   padding: 4px;
 }
-/* line 18, ../sass/partials/components/_footer.scss */
+/* line 19, ../sass/partials/components/_footer.scss */
 footer .pane .pane__content .boxes-box-content ul li {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2424,12 +2500,12 @@ footer .pane .pane__content .boxes-box-content ul li {
     @include svg-background(amazon);
   }*/
 }
-/* line 24, ../sass/partials/components/_footer.scss */
+/* line 25, ../sass/partials/components/_footer.scss */
 footer .pane .pane__content .boxes-box-content ul li a {
   display: block;
   text-indent: -9999em;
 }
-/* line 32, ../sass/partials/components/_footer.scss */
+/* line 33, ../sass/partials/components/_footer.scss */
 footer .pane .pane__content .boxes-box-content ul li.facebook {
   background-image: url('../images/bg/facebook.png');
   background-image: -webkit-linear-gradient(transparent, transparent), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ikljb25zIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQ4cHgiIGhlaWdodD0iNDhweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OCA0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiLz4NCjxwYXRoIGlkPSJGYWNlYm9va18xXyIgZmlsbD0iI0ZGRkZGRiIgZD0iTTIwLjE4NCwxNS4xNzhjMCwwLjcyNywwLDMuOTY3LDAsMy45NjdoLTIuOTA0djQuODQ4aDIuOTA0VjM4LjRoNS45NjlWMjMuOTkzaDQuMDA0DQoJYzAsMCwwLjM3NS0yLjMyNSwwLjU1Ny00Ljg2N2MtMC41MjEsMC00LjUzNywwLTQuNTM3LDBzMC0yLjgyMSwwLTMuMzE1czAuNjQ5LTEuMTYyLDEuMjkzLTEuMTYyYzAuNjQzLDAsMS45OTYsMCwzLjI1MiwwDQoJYzAtMC42NiwwLTIuOTM5LDAtNS4wNDdjLTEuNjc2LDAtMy41ODIsMC00LjQyMiwwQzIwLjAzNyw5LjYwMiwyMC4xODQsMTQuNDUzLDIwLjE4NCwxNS4xNzh6Ii8+DQo8L3N2Zz4NCg==');
@@ -2438,120 +2514,90 @@ footer .pane .pane__content .boxes-box-content ul li.facebook {
   background-image: -webkit-linear-gradient(transparent, transparent), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ikljb25zIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQ4cHgiIGhlaWdodD0iNDhweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OCA0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiLz4NCjxwYXRoIGlkPSJGYWNlYm9va18xXyIgZmlsbD0iI0ZGRkZGRiIgZD0iTTIwLjE4NCwxNS4xNzhjMCwwLjcyNywwLDMuOTY3LDAsMy45NjdoLTIuOTA0djQuODQ4aDIuOTA0VjM4LjRoNS45NjlWMjMuOTkzaDQuMDA0DQoJYzAsMCwwLjM3NS0yLjMyNSwwLjU1Ny00Ljg2N2MtMC41MjEsMC00LjUzNywwLTQuNTM3LDBzMC0yLjgyMSwwLTMuMzE1czAuNjQ5LTEuMTYyLDEuMjkzLTEuMTYyYzAuNjQzLDAsMS45OTYsMCwzLjI1MiwwDQoJYzAtMC42NiwwLTIuOTM5LDAtNS4wNDdjLTEuNjc2LDAtMy41ODIsMC00LjQyMiwwQzIwLjAzNyw5LjYwMiwyMC4xODQsMTQuNDUzLDIwLjE4NCwxNS4xNzh6Ii8+DQo8L3N2Zz4NCg==');
   background-image: linear-gradient(transparent, transparent), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ikljb25zIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQ4cHgiIGhlaWdodD0iNDhweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OCA0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiLz4NCjxwYXRoIGlkPSJGYWNlYm9va18xXyIgZmlsbD0iI0ZGRkZGRiIgZD0iTTIwLjE4NCwxNS4xNzhjMCwwLjcyNywwLDMuOTY3LDAsMy45NjdoLTIuOTA0djQuODQ4aDIuOTA0VjM4LjRoNS45NjlWMjMuOTkzaDQuMDA0DQoJYzAsMCwwLjM3NS0yLjMyNSwwLjU1Ny00Ljg2N2MtMC41MjEsMC00LjUzNywwLTQuNTM3LDBzMC0yLjgyMSwwLTMuMzE1czAuNjQ5LTEuMTYyLDEuMjkzLTEuMTYyYzAuNjQzLDAsMS45OTYsMCwzLjI1MiwwDQoJYzAtMC42NiwwLTIuOTM5LDAtNS4wNDdjLTEuNjc2LDAtMy41ODIsMC00LjQyMiwwQzIwLjAzNyw5LjYwMiwyMC4xODQsMTQuNDUzLDIwLjE4NCwxNS4xNzh6Ii8+DQo8L3N2Zz4NCg==');
 }
-/* line 35, ../sass/partials/components/_footer.scss */
+/* line 36, ../sass/partials/components/_footer.scss */
 footer .pane .pane__content .boxes-box-content ul li.soundcloud {
   background-image: url('../images/bg/soundcloud.png');
   background-image: -webkit-linear-gradient(transparent, transparent), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ikljb25zIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQ4cHgiIGhlaWdodD0iNDhweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OCA0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiLz4NCjxwYXRoIGlkPSJTb3VuZENsb3VkXzFfIiBmaWxsPSIjRkZGRkZGIiBkPSJNOS42LDI2Ljg4OWMwLDAuOTczLDAuNDQyLDEuODQ0LDEuMTQyLDIuNDN2LTQuODU5QzEwLjA0MywyNS4wNDMsOS42LDI1LjkxNCw5LjYsMjYuODg5DQoJIE0xMS45NDksMjMuODE4djYuMTM5YzAuMjg1LDAuMDc5LDAuNTg2LDAuMTIzLDAuODk2LDAuMTIzaDAuMzEydi02LjM3Yy0wLjEwNC0wLjAwOS0wLjIwOC0wLjAxNS0wLjMxMy0wLjAxNQ0KCUMxMi41MzIsMjMuNjk1LDEyLjIzMywyMy43MzgsMTEuOTQ5LDIzLjgxOCBNMTQuNjE3LDI0LjIxN2MtMC4wODMtMC4wNTQtMC4xNjUtMC4xMDItMC4yNTMtMC4xNDZ2Ni4wMTFoMS4yMDd2LTguMDM4DQoJQzE1LjA5MiwyMi42NjksMTQuNzU2LDIzLjQwOSwxNC42MTcsMjQuMjE3IE0xNi43NzksMjAuOTExdjkuMTY5aDEuMjA4di05Ljc2NEMxNy41NTUsMjAuNDYyLDE3LjE1LDIwLjY2NSwxNi43NzksMjAuOTExDQoJIE0xOS4xOTQsMjAuMDY2VjMwLjA4aDEuMjA4di05Ljk3N2MtMC4yNDgtMC4wMzctMC41MDItMC4wNTctMC43NjItMC4wNTdDMTkuNDg5LDIwLjA0OCwxOS4zNDIsMjAuMDU3LDE5LjE5NCwyMC4wNjYNCgkgTTIyLjI3NSwyMC43NzFjLTAuMzk1LTAuMjMxLTAuODE4LTAuNDE2LTEuMjctMC41Mzl2OS44NDhoMS44MTJWMjAuMDQ2QzIyLjYyLDIwLjI3MywyMi40MzgsMjAuNTIsMjIuMjc1LDIwLjc3MSBNMjMuNDIyLDE5LjQ0MQ0KCVYzMC4wOGgxMS40NzN2LTAuMDE2YzIuNDE2LTAuMTUzLDMuNTA2LTEuNjUxLDMuNTA2LTMuNDhjMC0xLjkzMi0xLjQ2LTMuNDk2LTMuNDI2LTMuNDk2Yy0wLjUwNCwwLTAuOTIsMC4xMDQtMS4zNTcsMC4yOTINCgljLTAuMzE0LTMuMDY1LTIuOTE1LTUuNDYtNi4xMTgtNS40NkMyNS45MzIsMTcuOTIsMjQuNTA4LDE4LjQ5MywyMy40MjIsMTkuNDQxIi8+DQo8L3N2Zz4NCg==');
   background-image: linear-gradient(transparent, transparent), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ikljb25zIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQ4cHgiIGhlaWdodD0iNDhweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OCA0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiLz4NCjxwYXRoIGlkPSJTb3VuZENsb3VkXzFfIiBmaWxsPSIjRkZGRkZGIiBkPSJNOS42LDI2Ljg4OWMwLDAuOTczLDAuNDQyLDEuODQ0LDEuMTQyLDIuNDN2LTQuODU5QzEwLjA0MywyNS4wNDMsOS42LDI1LjkxNCw5LjYsMjYuODg5DQoJIE0xMS45NDksMjMuODE4djYuMTM5YzAuMjg1LDAuMDc5LDAuNTg2LDAuMTIzLDAuODk2LDAuMTIzaDAuMzEydi02LjM3Yy0wLjEwNC0wLjAwOS0wLjIwOC0wLjAxNS0wLjMxMy0wLjAxNQ0KCUMxMi41MzIsMjMuNjk1LDEyLjIzMywyMy43MzgsMTEuOTQ5LDIzLjgxOCBNMTQuNjE3LDI0LjIxN2MtMC4wODMtMC4wNTQtMC4xNjUtMC4xMDItMC4yNTMtMC4xNDZ2Ni4wMTFoMS4yMDd2LTguMDM4DQoJQzE1LjA5MiwyMi42NjksMTQuNzU2LDIzLjQwOSwxNC42MTcsMjQuMjE3IE0xNi43NzksMjAuOTExdjkuMTY5aDEuMjA4di05Ljc2NEMxNy41NTUsMjAuNDYyLDE3LjE1LDIwLjY2NSwxNi43NzksMjAuOTExDQoJIE0xOS4xOTQsMjAuMDY2VjMwLjA4aDEuMjA4di05Ljk3N2MtMC4yNDgtMC4wMzctMC41MDItMC4wNTctMC43NjItMC4wNTdDMTkuNDg5LDIwLjA0OCwxOS4zNDIsMjAuMDU3LDE5LjE5NCwyMC4wNjYNCgkgTTIyLjI3NSwyMC43NzFjLTAuMzk1LTAuMjMxLTAuODE4LTAuNDE2LTEuMjctMC41Mzl2OS44NDhoMS44MTJWMjAuMDQ2QzIyLjYyLDIwLjI3MywyMi40MzgsMjAuNTIsMjIuMjc1LDIwLjc3MSBNMjMuNDIyLDE5LjQ0MQ0KCVYzMC4wOGgxMS40NzN2LTAuMDE2YzIuNDE2LTAuMTUzLDMuNTA2LTEuNjUxLDMuNTA2LTMuNDhjMC0xLjkzMi0xLjQ2LTMuNDk2LTMuNDI2LTMuNDk2Yy0wLjUwNCwwLTAuOTIsMC4xMDQtMS4zNTcsMC4yOTINCgljLTAuMzE0LTMuMDY1LTIuOTE1LTUuNDYtNi4xMTgtNS40NkMyNS45MzIsMTcuOTIsMjQuNTA4LDE4LjQ5MywyMy40MjIsMTkuNDQxIi8+DQo8L3N2Zz4NCg==');
 }
-/* line 38, ../sass/partials/components/_footer.scss */
+/* line 39, ../sass/partials/components/_footer.scss */
 footer .pane .pane__content .boxes-box-content ul li.spotify {
   background-image: url('../images/bg/spotify.png');
   background-image: -webkit-linear-gradient(transparent, transparent), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ikljb25zIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQ4cHgiIGhlaWdodD0iNDhweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OCA0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiLz4NCjxwYXRoIGlkPSJTcG90aWZ5XzFfIiBmaWxsPSIjRkZGRkZGIiBkPSJNMTQuNTIzLDM0Ljk3YzIuMjE3LTMuMTk0LDUuOTAxLTUuMjk1LDEwLjA4NS01LjI5NWMzLjgxLDAsNy4yMDEsMS43NCw5LjQ1Myw0LjQ2NA0KCWMyLjU4Mi0yLjYwNCw0LjE3OC02LjE4NCw0LjE3OC0xMC4xMzhjMC03Ljk1My02LjQ0Ni0xNC4zOTktMTQuMzk4LTE0LjM5OWMtNy45NTMsMC0xNC40LDYuNDQ2LTE0LjQsMTQuMzk5DQoJQzkuNDM5LDI4LjM5NiwxMS40MTYsMzIuMzI5LDE0LjUyMywzNC45N3ogTTMxLjUzNywyOC4zMThjLTAuMjA5LDAuNDY4LTAuNTg0LDAuNTYzLTEuMDIyLDAuMzU5DQoJYy0xLjkxNi0wLjg4Ny00LjA1MS0xLjM4NC02LjMwMy0xLjM4NGMtMi4zMTEsMC00LjQ5NiwwLjUyMi02LjQ1MywxLjQ1NWMtMC4yMTEsMC4xMDEtMC42NzIsMC4xNDQtMC44NzktMC40NTMNCgljLTAuMjA3LTAuNTk5LDAuMTItMC45MzUsMC4zMDktMS4wMjJjMi4xMzctMC45OTgsNC41MTMtMS41NjQsNy4wMjMtMS41NjRjMi40NjksMCw0Ljg0NCwwLjQ2OSw2LjkxLDEuNTE0DQoJQzMxLjQ0OCwyNy4zODcsMzEuNzQ2LDI3Ljg1NCwzMS41MzcsMjguMzE4eiBNMzIuNzYzLDI0LjY0M2MtMC4xNDgsMC4yMDktMC4zODEsMC4zNTQtMC42NTYsMC4zNTQNCgljLTAuMDc2LDAtMC4xNDYtMC4wMjMtMC4yMTUtMC4wNDVjLTIuMzUyLTEuMDM3LTQuOTQ1LTEuNjIxLTcuNjgtMS42MjFjLTIuNzE0LDAtNS4yOTEsMC41NzQtNy42MjgsMS41OTgNCgljLTAuMDg0LDAuMDMtMC4xNzEsMC4wNTctMC4yNjYsMC4wNTdjLTAuMjgxLDAtMC41MTktMC4xNDktMC42NjUtMC4zNjZsLTAuMTU1LTAuNDY2YzAuMDAyLTAuMjQzLDAuMTE1LTAuNDUyLDAuMjg1LTAuNjAzDQoJYzIuNTc0LTEuMTU1LDUuNDI0LTEuODA2LDguNDI5LTEuODA2YzMuMDA0LDAsNS44NTQsMC42NDgsOC40MjYsMS44MDVjMC4xNzQsMC4xNDYsMC4yODMsMC4zNjMsMC4yODksMC42MDVMMzIuNzYzLDI0LjY0M3oNCgkgTTE0LjczNiwxOC44MjZjMi45My0xLjE4NCw2LjEyNC0xLjg0NCw5LjQ3Ni0xLjg0NGMzLjMyMSwwLDYuNDg3LDAuNjQ2LDkuMzk1LDEuODFjMC4zOTMsMC4yMDEsMC42NjksMC41OTcsMC42NjksMS4wNjUNCgljMCwwLjY3LTAuNTQyLDEuMjExLTEuMjEsMS4yMTFjLTAuMDk0LDAtMC4xODItMC4wMjEtMC4yNjgtMC4wNDFjLTIuNjU0LTEuMDY5LTUuNTUtMS42NjYtOC41ODYtMS42NjYNCgljLTMuMDM3LDAtNS45MzYsMC41OTctOC41OSwxLjY2OGMtMC4wODYsMC4wMi0wLjE3MSwwLjAzOS0wLjI2MywwLjAzOWMtMC42NjcsMC0xLjIwOS0wLjU0MS0xLjIwOS0xLjIxMQ0KCUMxNC4xNSwxOS40MTksMTQuMzg4LDE5LjAzOCwxNC43MzYsMTguODI2eiBNMjQuNjA4LDM0LjQzNmMtMi40MzgsMC00LjYsMS4xNzYtNS45NzksMi45NzljMS42MTgsMC42MjksMy4zNjksMC45ODYsNS4yMDksMC45ODYNCgljMi4yNzksMCw0LjQyNi0wLjU0Myw2LjM0Mi0xLjQ4NkMyOC44MDQsMzUuMzk1LDI2LjgxNywzNC40MzYsMjQuNjA4LDM0LjQzNnoiLz4NCjwvc3ZnPg0K');
   background-image: linear-gradient(transparent, transparent), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ikljb25zIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQ4cHgiIGhlaWdodD0iNDhweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OCA0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiLz4NCjxwYXRoIGlkPSJTcG90aWZ5XzFfIiBmaWxsPSIjRkZGRkZGIiBkPSJNMTQuNTIzLDM0Ljk3YzIuMjE3LTMuMTk0LDUuOTAxLTUuMjk1LDEwLjA4NS01LjI5NWMzLjgxLDAsNy4yMDEsMS43NCw5LjQ1Myw0LjQ2NA0KCWMyLjU4Mi0yLjYwNCw0LjE3OC02LjE4NCw0LjE3OC0xMC4xMzhjMC03Ljk1My02LjQ0Ni0xNC4zOTktMTQuMzk4LTE0LjM5OWMtNy45NTMsMC0xNC40LDYuNDQ2LTE0LjQsMTQuMzk5DQoJQzkuNDM5LDI4LjM5NiwxMS40MTYsMzIuMzI5LDE0LjUyMywzNC45N3ogTTMxLjUzNywyOC4zMThjLTAuMjA5LDAuNDY4LTAuNTg0LDAuNTYzLTEuMDIyLDAuMzU5DQoJYy0xLjkxNi0wLjg4Ny00LjA1MS0xLjM4NC02LjMwMy0xLjM4NGMtMi4zMTEsMC00LjQ5NiwwLjUyMi02LjQ1MywxLjQ1NWMtMC4yMTEsMC4xMDEtMC42NzIsMC4xNDQtMC44NzktMC40NTMNCgljLTAuMjA3LTAuNTk5LDAuMTItMC45MzUsMC4zMDktMS4wMjJjMi4xMzctMC45OTgsNC41MTMtMS41NjQsNy4wMjMtMS41NjRjMi40NjksMCw0Ljg0NCwwLjQ2OSw2LjkxLDEuNTE0DQoJQzMxLjQ0OCwyNy4zODcsMzEuNzQ2LDI3Ljg1NCwzMS41MzcsMjguMzE4eiBNMzIuNzYzLDI0LjY0M2MtMC4xNDgsMC4yMDktMC4zODEsMC4zNTQtMC42NTYsMC4zNTQNCgljLTAuMDc2LDAtMC4xNDYtMC4wMjMtMC4yMTUtMC4wNDVjLTIuMzUyLTEuMDM3LTQuOTQ1LTEuNjIxLTcuNjgtMS42MjFjLTIuNzE0LDAtNS4yOTEsMC41NzQtNy42MjgsMS41OTgNCgljLTAuMDg0LDAuMDMtMC4xNzEsMC4wNTctMC4yNjYsMC4wNTdjLTAuMjgxLDAtMC41MTktMC4xNDktMC42NjUtMC4zNjZsLTAuMTU1LTAuNDY2YzAuMDAyLTAuMjQzLDAuMTE1LTAuNDUyLDAuMjg1LTAuNjAzDQoJYzIuNTc0LTEuMTU1LDUuNDI0LTEuODA2LDguNDI5LTEuODA2YzMuMDA0LDAsNS44NTQsMC42NDgsOC40MjYsMS44MDVjMC4xNzQsMC4xNDYsMC4yODMsMC4zNjMsMC4yODksMC42MDVMMzIuNzYzLDI0LjY0M3oNCgkgTTE0LjczNiwxOC44MjZjMi45My0xLjE4NCw2LjEyNC0xLjg0NCw5LjQ3Ni0xLjg0NGMzLjMyMSwwLDYuNDg3LDAuNjQ2LDkuMzk1LDEuODFjMC4zOTMsMC4yMDEsMC42NjksMC41OTcsMC42NjksMS4wNjUNCgljMCwwLjY3LTAuNTQyLDEuMjExLTEuMjEsMS4yMTFjLTAuMDk0LDAtMC4xODItMC4wMjEtMC4yNjgtMC4wNDFjLTIuNjU0LTEuMDY5LTUuNTUtMS42NjYtOC41ODYtMS42NjYNCgljLTMuMDM3LDAtNS45MzYsMC41OTctOC41OSwxLjY2OGMtMC4wODYsMC4wMi0wLjE3MSwwLjAzOS0wLjI2MywwLjAzOWMtMC42NjcsMC0xLjIwOS0wLjU0MS0xLjIwOS0xLjIxMQ0KCUMxNC4xNSwxOS40MTksMTQuMzg4LDE5LjAzOCwxNC43MzYsMTguODI2eiBNMjQuNjA4LDM0LjQzNmMtMi40MzgsMC00LjYsMS4xNzYtNS45NzksMi45NzljMS42MTgsMC42MjksMy4zNjksMC45ODYsNS4yMDksMC45ODYNCgljMi4yNzksMCw0LjQyNi0wLjU0Myw2LjM0Mi0xLjQ4NkMyOC44MDQsMzUuMzk1LDI2LjgxNywzNC40MzYsMjQuNjA4LDM0LjQzNnoiLz4NCjwvc3ZnPg0K');
 }
-/* line 41, ../sass/partials/components/_footer.scss */
+/* line 42, ../sass/partials/components/_footer.scss */
 footer .pane .pane__content .boxes-box-content ul li.twitter {
   background-image: url('../images/bg/twitter.png');
   background-image: -webkit-linear-gradient(transparent, transparent), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ikljb25zIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQ4cHgiIGhlaWdodD0iNDhweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OCA0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiLz4NCjxwYXRoIGlkPSJUd2l0dGVyXzFfIiBmaWxsPSIjRkZGRkZGIiBkPSJNMzEuMTIzLDMxLjE5N2gtNy4xMDVjLTAuOTg3LDAtMS44MjctMC4zNDYtMi41MTgtMS4wMzgNCgljLTAuNjkzLTAuNjk1LTEuMDM1LTEuNTM1LTEuMDM1LTIuNTI4di0yLjUyOUgzMC41OWMwLjkxMiwwLDEuNjk5LTAuMzI4LDIuMzU0LTAuOTc5YzAuNjUyLTAuNjU3LDAuOTgtMS40NDMsMC45OC0yLjM1Nw0KCWMwLTAuOTE4LTAuMzI4LTEuNzAxLTAuOTgyLTIuMzU2Yy0wLjY1NS0wLjY1My0xLjQ0NC0wLjk4LTIuMzYyLTAuOThIMjAuNDYzdi01LjIyNmMwLTAuOTg5LTAuMzUzLTEuODM1LTEuMDUzLTIuNTQNCgljLTAuNjk3LTAuNzA3LTEuNTQxLTEuMDYyLTIuNTItMS4wNjJjLTEuMDA2LDAtMS44NjQsMC4zNS0yLjU2MywxLjAzOWMtMC42OTksMC42OTMtMS4wNDksMS41NDctMS4wNDksMi41NjR2MTQuNDI5DQoJYzAsMi45NjgsMS4wNDksNS41MDMsMy4xNDgsNy42MDdjMi4xMDEsMi4xMDgsNC42MzMsMy4xNTksNy41OTIsMy4xNTloNy4xMDVjMC45ODYsMCwxLjgzMy0wLjM1NCwyLjUzOC0xLjA2Mg0KCWMwLjcwNS0wLjcwMywxLjA1OC0xLjU1MSwxLjA1OC0yLjUzOWMwLTAuOTg3LTAuMzUzLTEuODM1LTEuMDU4LTIuNTQxQzMyLjk1OSwzMS41NTQsMzIuMTExLDMxLjE5NywzMS4xMjMsMzEuMTk3eiIvPg0KPC9zdmc+DQo=');
   background-image: linear-gradient(transparent, transparent), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ikljb25zIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQ4cHgiIGhlaWdodD0iNDhweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OCA0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiLz4NCjxwYXRoIGlkPSJUd2l0dGVyXzFfIiBmaWxsPSIjRkZGRkZGIiBkPSJNMzEuMTIzLDMxLjE5N2gtNy4xMDVjLTAuOTg3LDAtMS44MjctMC4zNDYtMi41MTgtMS4wMzgNCgljLTAuNjkzLTAuNjk1LTEuMDM1LTEuNTM1LTEuMDM1LTIuNTI4di0yLjUyOUgzMC41OWMwLjkxMiwwLDEuNjk5LTAuMzI4LDIuMzU0LTAuOTc5YzAuNjUyLTAuNjU3LDAuOTgtMS40NDMsMC45OC0yLjM1Nw0KCWMwLTAuOTE4LTAuMzI4LTEuNzAxLTAuOTgyLTIuMzU2Yy0wLjY1NS0wLjY1My0xLjQ0NC0wLjk4LTIuMzYyLTAuOThIMjAuNDYzdi01LjIyNmMwLTAuOTg5LTAuMzUzLTEuODM1LTEuMDUzLTIuNTQNCgljLTAuNjk3LTAuNzA3LTEuNTQxLTEuMDYyLTIuNTItMS4wNjJjLTEuMDA2LDAtMS44NjQsMC4zNS0yLjU2MywxLjAzOWMtMC42OTksMC42OTMtMS4wNDksMS41NDctMS4wNDksMi41NjR2MTQuNDI5DQoJYzAsMi45NjgsMS4wNDksNS41MDMsMy4xNDgsNy42MDdjMi4xMDEsMi4xMDgsNC42MzMsMy4xNTksNy41OTIsMy4xNTloNy4xMDVjMC45ODYsMCwxLjgzMy0wLjM1NCwyLjUzOC0xLjA2Mg0KCWMwLjcwNS0wLjcwMywxLjA1OC0xLjU1MSwxLjA1OC0yLjUzOWMwLTAuOTg3LTAuMzUzLTEuODM1LTEuMDU4LTIuNTQxQzMyLjk1OSwzMS41NTQsMzIuMTExLDMxLjE5NywzMS4xMjMsMzEuMTk3eiIvPg0KPC9zdmc+DQo=');
 }
-/* line 44, ../sass/partials/components/_footer.scss */
+/* line 45, ../sass/partials/components/_footer.scss */
 footer .pane .pane__content .boxes-box-content ul li.youtube {
   background-image: url('../images/bg/youtube.png');
   background-image: -webkit-linear-gradient(transparent, transparent), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ikljb25zIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQ4cHgiIGhlaWdodD0iNDhweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OCA0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiLz4NCjxwYXRoIGlkPSJZb3VUdWJlXzFfIiBmaWxsPSIjRkZGRkZGIiBkPSJNMzIuMzAxLDMwLjY2NmgtMS41OGwwLjAwOC0wLjkxOGMwLTAuNDA4LDAuMzM1LTAuNzQyLDAuNzQ0LTAuNzQyaDAuMTAxDQoJYzAuNDEsMCwwLjc0NiwwLjMzNCwwLjc0NiwwLjc0MkwzMi4zMDEsMzAuNjY2eiBNMjYuMzcyLDI4LjY5N2MtMC40MDEsMC0wLjcyOSwwLjI3MS0wLjcyOSwwLjYwMXY0LjQ2Ng0KCWMwLDAuMzI5LDAuMzI4LDAuNTk4LDAuNzI5LDAuNTk4YzAuNDAyLDAsMC43MzEtMC4yNjksMC43MzEtMC41OTh2LTQuNDY2QzI3LjEwNCwyOC45NjgsMjYuNzc0LDI4LjY5NywyNi4zNzIsMjguNjk3eiBNMzYsMjYuMjAxDQoJdjguNDk0YzAsMi4wMzctMS43NjgsMy43MDMtMy45MjYsMy43MDNIMTUuOTI4Yy0yLjE2MiwwLTMuOTI4LTEuNjY2LTMuOTI4LTMuNzAzdi04LjQ5NGMwLTIuMDM4LDEuNzY2LTMuNzA1LDMuOTI4LTMuNzA1aDE2LjE0Ng0KCUMzNC4yMzIsMjIuNDk2LDM2LDI0LjE2MywzNiwyNi4yMDF6IE0xNy4wMDQsMzUuNjE3bC0wLjAwMi04Ljk0N2wyLjAwMiwwLjAwMXYtMS4zMjZsLTUuMzM2LTAuMDA4djEuMzA0bDEuNjY2LDAuMDA2djguOTcyDQoJTDE3LjAwNCwzNS42MTdMMTcuMDA0LDM1LjYxN3ogTTIzLjAwNCwyOC4wMDNoLTEuNjY5djQuNzc2YzAsMC42OTEsMC4wNDIsMS4wMzctMC4wMDMsMS4xNmMtMC4xMzUsMC4zNjktMC43NDQsMC43NjQtMC45ODIsMC4wMzkNCgljLTAuMDQxLTAuMTI3LTAuMDA2LTAuNTEtMC4wMDYtMS4xNjZsLTAuMDA2LTQuODExaC0xLjY2bDAuMDA2LDQuNzM0YzAsMC43MjctMC4wMTgsMS4yNjgsMC4wMDQsMS41MTQNCgljMC4wNDEsMC40MzYsMC4wMjcsMC45NDEsMC40MzEsMS4yM2MwLjc1MSwwLjUzOSwyLjE4OC0wLjA4MiwyLjU1LTAuODU0bC0wLjAwMywwLjk4N2gxLjM0MXYtNy42MUgyMy4wMDR6IE0yOC4zNDIsMzMuNDc1DQoJbC0wLjAwMi0zLjk3OGMtMC4wMDItMS41MTctMS4xMzctMi40MjMtMi42NzYtMS4xOTZsMC4wMDgtMi45NTdsLTEuNjY4LDAuMDA0bC0wLjAwOCwxMC4yMDRsMS4zNzEtMC4wMjFsMC4xMjQtMC42MzcNCglDMjcuMjQ0LDM2LjUwMywyOC4zNDYsMzUuNCwyOC4zNDIsMzMuNDc1eiBNMzMuNTY0LDMyLjk0N2wtMS4yNTIsMC4wMDdjMCwwLjA0OS0wLjAwMiwwLjEwNi0wLjAwMiwwLjE2OXYwLjY5Nw0KCWMwLDAuMzczLTAuMzEsMC42NzktMC42ODUsMC42NzloLTAuMjQ1Yy0wLjM3NSwwLTAuNjg1LTAuMzA2LTAuNjg1LTAuNjc5di0wLjA3NnYtMC43N3YtMC45OWgyLjg2NHYtMS4wNzgNCgljMC0wLjc4OC0wLjAyLTEuNTc1LTAuMDg0LTIuMDI2Yy0wLjIwNS0xLjQyNi0yLjIwNy0xLjY1MS0zLjIxNy0wLjkyMmMtMC4zMTcsMC4yMjgtMC41NjEsMC41MzMtMC43MDEsMC45NDINCgljLTAuMTQyLDAuNDEtMC4yMTMsMC45Ny0wLjIxMywxLjY4MnYyLjM3MUMyOS4zNDgsMzYuODk1LDM0LjEzNywzNi4zMzcsMzMuNTY0LDMyLjk0N3ogTTI3LjE0NiwyMC4wNzQNCgljMC4wODYsMC4yMDksMC4yMiwwLjM3OSwwLjQsMC41MDdjMC4xOCwwLjEyNiwwLjQwOCwwLjE4OCwwLjY4NCwwLjE4OGMwLjI0LDAsMC40NTMtMC4wNjMsMC42NC0wLjE5OQ0KCWMwLjE4NS0wLjEzMywwLjM0MS0wLjMzMiwwLjQ2OC0wLjU5OGwtMC4wMzEsMC42NTRoMS44NnYtNy45MTFoLTEuNDY1djYuMTU3YzAsMC4zMzMtMC4yNzQsMC42MDUtMC42MSwwLjYwNQ0KCWMtMC4zMzQsMC0wLjYwOC0wLjI3Mi0wLjYwOC0wLjYwNXYtNi4xNTdoLTEuNTI4djUuMzM2YzAsMC42ODEsMC4wMTQsMS4xMzQsMC4wMzIsMS4zNjJDMjcuMDA4LDE5LjY0NSwyNy4wNjEsMTkuODYxLDI3LjE0NiwyMC4wNzQNCgl6IE0yMS41MSwxNS42MDVjMC0wLjc2LDAuMDYzLTEuMzUzLDAuMTg5LTEuNzc4YzAuMTI2LTAuNDI3LDAuMzU0LTAuNzY5LDAuNjg0LTEuMDI3YzAuMzI4LTAuMjYsMC43NS0wLjM4OSwxLjI2Mi0wLjM4OQ0KCWMwLjQzMSwwLDAuNzk5LDAuMDg0LDEuMTA1LDAuMjQ5YzAuMzExLDAuMTY3LDAuNTQ5LDAuMzgzLDAuNzE1LDAuNjQ4YzAuMTY4LDAuMjY5LDAuMjgzLDAuNTQzLDAuMzQ0LDAuODIzDQoJYzAuMDYzLDAuMjg2LDAuMDk1LDAuNzE2LDAuMDk1LDEuMjk2djJjMCwwLjczNC0wLjAyOSwxLjI3My0wLjA4NywxLjYxN2MtMC4wNTcsMC4zNDQtMC4xOCwwLjY2Mi0wLjM2NiwwLjk2MQ0KCWMtMC4xODcsMC4yOTUtMC40MjYsMC41MTgtMC43MTcsMC42NThjLTAuMjkzLDAuMTQzLTAuNjMsMC4yMTItMS4wMDksMC4yMTJjLTAuNDI2LDAtMC43ODEtMC4wNi0xLjA3NS0wLjE4MQ0KCWMtMC4yOTYtMC4xMjItMC41MjQtMC4zMDctMC42ODctMC41NDljLTAuMTY0LTAuMjQ0LTAuMjgxLTAuNTQxLTAuMzUxLTAuODg4Yy0wLjA3LTAuMzQ2LTAuMTA0LTAuODY2LTAuMTA0LTEuNTZMMjEuNTEsMTUuNjA1DQoJTDIxLjUxLDE1LjYwNXogTTIyLjk2NywxOC43NDljMCwwLjQ0NiwwLjMzNCwwLjgxMywwLjczOSwwLjgxM2MwLjQwNiwwLDAuNzM4LTAuMzY3LDAuNzM4LTAuODEzdi00LjIxMQ0KCWMwLTAuNDQ3LTAuMzMyLTAuODEzLTAuNzM4LTAuODEzYy0wLjQwNSwwLTAuNzM5LDAuMzY2LTAuNzM5LDAuODEzVjE4Ljc0OXogTTE3LjgxOCwyMC44NzVoMS43NTVsMC4wMDItNi4wNjZsMi4wNzMtNS4xOTdoLTEuOTINCglsLTEuMTAzLDMuODU5bC0xLjExOC0zLjg2OWgtMS44OThsMi4yMDYsNS4yMTFMMTcuODE4LDIwLjg3NXoiLz4NCjwvc3ZnPg0K');
   background-image: linear-gradient(transparent, transparent), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ikljb25zIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQ4cHgiIGhlaWdodD0iNDhweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OCA0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiLz4NCjxwYXRoIGlkPSJZb3VUdWJlXzFfIiBmaWxsPSIjRkZGRkZGIiBkPSJNMzIuMzAxLDMwLjY2NmgtMS41OGwwLjAwOC0wLjkxOGMwLTAuNDA4LDAuMzM1LTAuNzQyLDAuNzQ0LTAuNzQyaDAuMTAxDQoJYzAuNDEsMCwwLjc0NiwwLjMzNCwwLjc0NiwwLjc0MkwzMi4zMDEsMzAuNjY2eiBNMjYuMzcyLDI4LjY5N2MtMC40MDEsMC0wLjcyOSwwLjI3MS0wLjcyOSwwLjYwMXY0LjQ2Ng0KCWMwLDAuMzI5LDAuMzI4LDAuNTk4LDAuNzI5LDAuNTk4YzAuNDAyLDAsMC43MzEtMC4yNjksMC43MzEtMC41OTh2LTQuNDY2QzI3LjEwNCwyOC45NjgsMjYuNzc0LDI4LjY5NywyNi4zNzIsMjguNjk3eiBNMzYsMjYuMjAxDQoJdjguNDk0YzAsMi4wMzctMS43NjgsMy43MDMtMy45MjYsMy43MDNIMTUuOTI4Yy0yLjE2MiwwLTMuOTI4LTEuNjY2LTMuOTI4LTMuNzAzdi04LjQ5NGMwLTIuMDM4LDEuNzY2LTMuNzA1LDMuOTI4LTMuNzA1aDE2LjE0Ng0KCUMzNC4yMzIsMjIuNDk2LDM2LDI0LjE2MywzNiwyNi4yMDF6IE0xNy4wMDQsMzUuNjE3bC0wLjAwMi04Ljk0N2wyLjAwMiwwLjAwMXYtMS4zMjZsLTUuMzM2LTAuMDA4djEuMzA0bDEuNjY2LDAuMDA2djguOTcyDQoJTDE3LjAwNCwzNS42MTdMMTcuMDA0LDM1LjYxN3ogTTIzLjAwNCwyOC4wMDNoLTEuNjY5djQuNzc2YzAsMC42OTEsMC4wNDIsMS4wMzctMC4wMDMsMS4xNmMtMC4xMzUsMC4zNjktMC43NDQsMC43NjQtMC45ODIsMC4wMzkNCgljLTAuMDQxLTAuMTI3LTAuMDA2LTAuNTEtMC4wMDYtMS4xNjZsLTAuMDA2LTQuODExaC0xLjY2bDAuMDA2LDQuNzM0YzAsMC43MjctMC4wMTgsMS4yNjgsMC4wMDQsMS41MTQNCgljMC4wNDEsMC40MzYsMC4wMjcsMC45NDEsMC40MzEsMS4yM2MwLjc1MSwwLjUzOSwyLjE4OC0wLjA4MiwyLjU1LTAuODU0bC0wLjAwMywwLjk4N2gxLjM0MXYtNy42MUgyMy4wMDR6IE0yOC4zNDIsMzMuNDc1DQoJbC0wLjAwMi0zLjk3OGMtMC4wMDItMS41MTctMS4xMzctMi40MjMtMi42NzYtMS4xOTZsMC4wMDgtMi45NTdsLTEuNjY4LDAuMDA0bC0wLjAwOCwxMC4yMDRsMS4zNzEtMC4wMjFsMC4xMjQtMC42MzcNCglDMjcuMjQ0LDM2LjUwMywyOC4zNDYsMzUuNCwyOC4zNDIsMzMuNDc1eiBNMzMuNTY0LDMyLjk0N2wtMS4yNTIsMC4wMDdjMCwwLjA0OS0wLjAwMiwwLjEwNi0wLjAwMiwwLjE2OXYwLjY5Nw0KCWMwLDAuMzczLTAuMzEsMC42NzktMC42ODUsMC42NzloLTAuMjQ1Yy0wLjM3NSwwLTAuNjg1LTAuMzA2LTAuNjg1LTAuNjc5di0wLjA3NnYtMC43N3YtMC45OWgyLjg2NHYtMS4wNzgNCgljMC0wLjc4OC0wLjAyLTEuNTc1LTAuMDg0LTIuMDI2Yy0wLjIwNS0xLjQyNi0yLjIwNy0xLjY1MS0zLjIxNy0wLjkyMmMtMC4zMTcsMC4yMjgtMC41NjEsMC41MzMtMC43MDEsMC45NDINCgljLTAuMTQyLDAuNDEtMC4yMTMsMC45Ny0wLjIxMywxLjY4MnYyLjM3MUMyOS4zNDgsMzYuODk1LDM0LjEzNywzNi4zMzcsMzMuNTY0LDMyLjk0N3ogTTI3LjE0NiwyMC4wNzQNCgljMC4wODYsMC4yMDksMC4yMiwwLjM3OSwwLjQsMC41MDdjMC4xOCwwLjEyNiwwLjQwOCwwLjE4OCwwLjY4NCwwLjE4OGMwLjI0LDAsMC40NTMtMC4wNjMsMC42NC0wLjE5OQ0KCWMwLjE4NS0wLjEzMywwLjM0MS0wLjMzMiwwLjQ2OC0wLjU5OGwtMC4wMzEsMC42NTRoMS44NnYtNy45MTFoLTEuNDY1djYuMTU3YzAsMC4zMzMtMC4yNzQsMC42MDUtMC42MSwwLjYwNQ0KCWMtMC4zMzQsMC0wLjYwOC0wLjI3Mi0wLjYwOC0wLjYwNXYtNi4xNTdoLTEuNTI4djUuMzM2YzAsMC42ODEsMC4wMTQsMS4xMzQsMC4wMzIsMS4zNjJDMjcuMDA4LDE5LjY0NSwyNy4wNjEsMTkuODYxLDI3LjE0NiwyMC4wNzQNCgl6IE0yMS41MSwxNS42MDVjMC0wLjc2LDAuMDYzLTEuMzUzLDAuMTg5LTEuNzc4YzAuMTI2LTAuNDI3LDAuMzU0LTAuNzY5LDAuNjg0LTEuMDI3YzAuMzI4LTAuMjYsMC43NS0wLjM4OSwxLjI2Mi0wLjM4OQ0KCWMwLjQzMSwwLDAuNzk5LDAuMDg0LDEuMTA1LDAuMjQ5YzAuMzExLDAuMTY3LDAuNTQ5LDAuMzgzLDAuNzE1LDAuNjQ4YzAuMTY4LDAuMjY5LDAuMjgzLDAuNTQzLDAuMzQ0LDAuODIzDQoJYzAuMDYzLDAuMjg2LDAuMDk1LDAuNzE2LDAuMDk1LDEuMjk2djJjMCwwLjczNC0wLjAyOSwxLjI3My0wLjA4NywxLjYxN2MtMC4wNTcsMC4zNDQtMC4xOCwwLjY2Mi0wLjM2NiwwLjk2MQ0KCWMtMC4xODcsMC4yOTUtMC40MjYsMC41MTgtMC43MTcsMC42NThjLTAuMjkzLDAuMTQzLTAuNjMsMC4yMTItMS4wMDksMC4yMTJjLTAuNDI2LDAtMC43ODEtMC4wNi0xLjA3NS0wLjE4MQ0KCWMtMC4yOTYtMC4xMjItMC41MjQtMC4zMDctMC42ODctMC41NDljLTAuMTY0LTAuMjQ0LTAuMjgxLTAuNTQxLTAuMzUxLTAuODg4Yy0wLjA3LTAuMzQ2LTAuMTA0LTAuODY2LTAuMTA0LTEuNTZMMjEuNTEsMTUuNjA1DQoJTDIxLjUxLDE1LjYwNXogTTIyLjk2NywxOC43NDljMCwwLjQ0NiwwLjMzNCwwLjgxMywwLjczOSwwLjgxM2MwLjQwNiwwLDAuNzM4LTAuMzY3LDAuNzM4LTAuODEzdi00LjIxMQ0KCWMwLTAuNDQ3LTAuMzMyLTAuODEzLTAuNzM4LTAuODEzYy0wLjQwNSwwLTAuNzM5LDAuMzY2LTAuNzM5LDAuODEzVjE4Ljc0OXogTTE3LjgxOCwyMC44NzVoMS43NTVsMC4wMDItNi4wNjZsMi4wNzMtNS4xOTdoLTEuOTINCglsLTEuMTAzLDMuODU5bC0xLjExOC0zLjg2OWgtMS44OThsMi4yMDYsNS4yMTFMMTcuODE4LDIwLjg3NXoiLz4NCjwvc3ZnPg0K');
 }
 
-/* line 7, ../sass/partials/components/_layout-adjustment.scss */
-.l-panels-two-column .l-first .pane {
-  margin-right: 4px;
+/* line 6, ../sass/partials/components/_layout-adjustment.scss */
+header .content,
+.l-preface .pane,
+footer .pane {
+  margin: 0 4px 8px;
 }
-/* line 10, ../sass/partials/components/_layout-adjustment.scss */
-.l-panels-two-column .l-second .pane {
-  margin-left: 4px;
-}
-/* line 18, ../sass/partials/components/_layout-adjustment.scss */
+
+/* line 15, ../sass/partials/components/_layout-adjustment.scss */
 .front .l-panels-two-column .l-first .pane .pane__content, .front
 .l-panels-two-column .l-second .pane .pane__content {
   height: 250px;
 }
 
-/* line 31, ../sass/partials/components/_layout-adjustment.scss */
-.l-panels-three-column .l-first .pane,
-.l-panels-three-column .l-second .pane,
-.l-panels-three-column .l-fourth .pane,
-.l-panels-three-column-25-50-25 .l-first .pane,
-.l-panels-three-column-25-50-25 .l-second .pane,
-.l-panels-three-column-25-50-25 .l-fourth .pane,
-.l-panels-three-column-two-row .l-first .pane,
-.l-panels-three-column-two-row .l-second .pane,
-.l-panels-three-column-two-row .l-fourth .pane {
-  margin-right: 4px;
-}
-/* line 36, ../sass/partials/components/_layout-adjustment.scss */
-.l-panels-three-column .l-second .pane,
-.l-panels-three-column .l-third .pane,
-.l-panels-three-column .l-fifth .pane,
-.l-panels-three-column-25-50-25 .l-second .pane,
-.l-panels-three-column-25-50-25 .l-third .pane,
-.l-panels-three-column-25-50-25 .l-fifth .pane,
-.l-panels-three-column-two-row .l-second .pane,
-.l-panels-three-column-two-row .l-third .pane,
-.l-panels-three-column-two-row .l-fifth .pane {
-  margin-left: 4px;
-}
-
-/* line 45, ../sass/partials/components/_layout-adjustment.scss */
-.l-panels-four-column-two-row .l-first .pane,
-.l-panels-four-column-two-row .l-second .pane,
-.l-panels-four-column-two-row .l-third .pane,
-.l-panels-four-column-two-row .l-fifth .pane {
-  margin-right: 4px;
-}
-/* line 52, ../sass/partials/components/_layout-adjustment.scss */
-.l-panels-four-column-two-row .l-second .pane,
-.l-panels-four-column-two-row .l-third .pane,
-.l-panels-four-column-two-row .l-fourth .pane,
-.l-panels-four-column-two-row .l-sixth .pane {
-  margin-left: 4px;
-}
-/* line 61, ../sass/partials/components/_layout-adjustment.scss */
+/* line 29, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-four-column-two-row .l-first .pane .pane__content,
 .l-panels-four-column-two-row .l-second .pane .pane__content,
 .l-panels-four-column-two-row .l-third .pane .pane__content,
 .l-panels-four-column-two-row .l-fourth .pane .pane__content {
-  height: 125px;
+  height: 123px;
 }
 
-/* line 74, ../sass/partials/components/_layout-adjustment.scss */
+/* line 42, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-two-row .l-first .pane .pane__content,
 .l-panels-three-column-two-row .l-second .pane .pane__content,
 .l-panels-three-column-two-row .l-third .pane .pane__content {
-  height: 175px;
+  height: 165px;
 }
 
-/* line 84, ../sass/partials/components/_layout-adjustment.scss */
+/* line 52, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-25-50-25 .l-first .pane__content,
 .l-panels-three-column-25-50-25 .l-third .pane__content {
   padding: 8px;
   text-align: left;
 }
-/* line 88, ../sass/partials/components/_layout-adjustment.scss */
+/* line 56, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-25-50-25 .l-first .pane__content .group-left,
 .l-panels-three-column-25-50-25 .l-third .pane__content .group-left {
   float: left;
   width: 75%;
 }
-/* line 92, ../sass/partials/components/_layout-adjustment.scss */
+/* line 60, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-25-50-25 .l-first .pane__content .group-right,
 .l-panels-three-column-25-50-25 .l-third .pane__content .group-right {
   float: right;
   text-align: right;
   width: 25%;
 }
-/* line 98, ../sass/partials/components/_layout-adjustment.scss */
+/* line 66, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-25-50-25 .l-second .pane__content {
+  padding: 16px;
+  text-align: left;
+}
+
+/* line 74, ../sass/partials/components/_layout-adjustment.scss */
+.l-panels-four-column-two-row .pane__content {
+  text-align: left;
+}
+/* line 78, ../sass/partials/components/_layout-adjustment.scss */
+.l-panels-four-column-two-row .l-fifth .pane__content {
   padding: 16px;
   text-align: left;
 }
@@ -2561,25 +2607,24 @@ footer .pane .pane__content .boxes-box-content ul li.youtube {
   background: #000;
   color: #fff;
   height: 60px;
-  margin-bottom: 8px;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 12, ../sass/partials/components/_main-menu.scss */
+/* line 11, ../sass/partials/components/_main-menu.scss */
 .block--system-main-menu h2 {
   display: none;
 }
-/* line 16, ../sass/partials/components/_main-menu.scss */
+/* line 15, ../sass/partials/components/_main-menu.scss */
 .block--system-main-menu ul.nav {
   display: inline-block;
   margin: 0;
   padding-top: 10px;
 }
-/* line 21, ../sass/partials/components/_main-menu.scss */
+/* line 20, ../sass/partials/components/_main-menu.scss */
 .block--system-main-menu ul.nav li {
   display: inline-block;
 }
-/* line 24, ../sass/partials/components/_main-menu.scss */
+/* line 23, ../sass/partials/components/_main-menu.scss */
 .block--system-main-menu ul.nav li a {
   color: #646464;
   display: block;
@@ -2587,11 +2632,11 @@ footer .pane .pane__content .boxes-box-content ul li.youtube {
   padding: 0.1em 0.8em;
   text-decoration: none;
 }
-/* line 32, ../sass/partials/components/_main-menu.scss */
+/* line 31, ../sass/partials/components/_main-menu.scss */
 .block--system-main-menu ul.nav li a:focus, .block--system-main-menu ul.nav li a:hover {
   color: #dc5c14;
 }
-/* line 36, ../sass/partials/components/_main-menu.scss */
+/* line 35, ../sass/partials/components/_main-menu.scss */
 .block--system-main-menu ul.nav li a.active {
   color: #fff;
 }
@@ -2607,37 +2652,52 @@ footer .pane .pane__content .boxes-box-content ul li.youtube {
 }
 /* line 17, ../sass/partials/components/_pane.scss */
 .pane .pane__content {
-  background: #000;
-  color: #fff;
   position: relative;
 }
-/* line 22, ../sass/partials/components/_pane.scss */
+/* line 20, ../sass/partials/components/_pane.scss */
 .pane .pane__content .group-bottomright {
   bottom: 10px;
   font-size: 1.6em;
   position: absolute;
   right: 10px;
+  text-align: right;
   text-transform: uppercase;
 }
-/* line 33, ../sass/partials/components/_pane.scss */
+/* line 32, ../sass/partials/components/_pane.scss */
 .pane.pane--admin-info, .pane.pane--nodebody, .pane.pane--node-links {
   margin: 0;
 }
-/* line 36, ../sass/partials/components/_pane.scss */
+/* line 35, ../sass/partials/components/_pane.scss */
 .pane.pane--admin-info .pane__content, .pane.pane--nodebody .pane__content, .pane.pane--node-links .pane__content {
   background: #fff;
   color: #333;
   height: auto;
   text-align: left;
 }
-/* line 46, ../sass/partials/components/_pane.scss */
+/* line 45, ../sass/partials/components/_pane.scss */
 .pane.pane--quicktabs-media .pane__content {
   background: #fff;
 }
-/* line 52, ../sass/partials/components/_pane.scss */
+/* line 51, ../sass/partials/components/_pane.scss */
 .pane.pane--upcoming .pane__content {
   text-align: left;
   text-transform: none;
+}
+
+/* line 61, ../sass/partials/components/_pane.scss */
+.block-boxes-social_block .pane__content {
+  padding: 8px;
+}
+/* line 64, ../sass/partials/components/_pane.scss */
+.block-boxes-social_block .pane__content .group-left {
+  float: left;
+  width: 75%;
+}
+/* line 68, ../sass/partials/components/_pane.scss */
+.block-boxes-social_block .pane__content .group-right {
+  float: right;
+  text-align: right;
+  width: 25%;
 }
 
 /* line 4, ../sass/partials/components/_quicktabs.scss */
@@ -2704,36 +2764,49 @@ ul.quicktabs-tabs li.active a {
 }
 
 /* line 4, ../sass/partials/components/_background-color.scss */
+.black .pane__content {
+  background-color: #000;
+  color: #fff;
+}
+
+/* line 9, ../sass/partials/components/_background-color.scss */
 .pane--upcoming-events-panel-pane-1 .views-row-odd, .red .pane__content {
   background-color: #712024;
+  color: #fff;
 }
 
-/* line 8, ../sass/partials/components/_background-color.scss */
+/* line 14, ../sass/partials/components/_background-color.scss */
 .pane--upcoming-events-panel-pane-1 .views-row-even, .blue .pane__content {
   background-color: #1a2243;
+  color: #fff;
 }
 
-/* line 12, ../sass/partials/components/_background-color.scss */
+/* line 19, ../sass/partials/components/_background-color.scss */
 .orange .pane__content {
   background-color: #c15d22;
-}
-
-/* line 16, ../sass/partials/components/_background-color.scss */
-.yellow .pane__content {
-  background-color: #c18936;
-}
-
-/* line 20, ../sass/partials/components/_background-color.scss */
-.green .pane__content {
-  background-color: #2f524e;
+  color: #fff;
 }
 
 /* line 24, ../sass/partials/components/_background-color.scss */
-.dkgray .pane__content {
-  background-color: #646464;
+.yellow .pane__content {
+  background-color: #c18936;
+  color: #fff;
 }
 
-/* line 28, ../sass/partials/components/_background-color.scss */
+/* line 29, ../sass/partials/components/_background-color.scss */
+.green .pane__content {
+  background-color: #2f524e;
+  color: #fff;
+}
+
+/* line 34, ../sass/partials/components/_background-color.scss */
+.dkgray .pane__content {
+  background-color: #646464;
+  color: #fff;
+}
+
+/* line 39, ../sass/partials/components/_background-color.scss */
 .ltgray .pane__content {
   background-color: #a0a0a0;
+  color: #fff;
 }

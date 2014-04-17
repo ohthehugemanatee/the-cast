@@ -7,7 +7,8 @@
 .l-panels-two-column {
   $grids: 1;
   $grids: add-grid(12 at 700px);
-  $gutters: 0; //handled in _pane.scss for more precision
+  $gutters: 8px;
+  $gutter-styles: 'split';
   @include breakpoint(700px, $no-query: true) {
     &.first.second {
       .l-first {

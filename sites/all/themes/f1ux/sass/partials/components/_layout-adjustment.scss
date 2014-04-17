@@ -1,16 +1,13 @@
 // @file
 // Styles for layouts.
 
-
+header .content,
+.l-preface .pane,
+footer .pane {
+  margin: 0 4px 8px;
+}
 
 .l-panels-two-column {  
-  .l-first .pane {
-    margin-right: 4px;
-  }
-  .l-second .pane {
-    margin-left: 4px;
-  }
-  
   .l-first,
   .l-second {
     .pane {
@@ -23,43 +20,14 @@
   }
 }
 
-.l-panels-three-column,
-.l-panels-three-column-25-50-25,
-.l-panels-three-column-two-row {
-  .l-first .pane,
-  .l-second .pane,
-  .l-fourth .pane {
-    margin-right: 4px;
-  }
-  .l-second .pane,
-  .l-third .pane,
-  .l-fifth .pane {
-    margin-left: 4px;
-  }
-}
-
 .l-panels-four-column-two-row {
-  .l-first .pane,
-  .l-second .pane,
-  .l-third .pane,
-  .l-fifth .pane {
-    margin-right: 4px;
-  }
-  
-  .l-second .pane,
-  .l-third .pane,
-  .l-fourth .pane,
-  .l-sixth .pane {
-    margin-left: 4px;
-  }
-  
   .l-first,
   .l-second,
   .l-third,
   .l-fourth {
     .pane {
       .pane__content {
-        height: 125px;
+        height: 123px;
       }
     }
   }
@@ -72,7 +40,7 @@
   .l-third {
     .pane {
       .pane__content {
-        height: 175px;
+        height: 165px;
       }
     }
   }
@@ -101,3 +69,14 @@
   }
 }
 
+.l-panels-four-column-two-row {
+  
+  .pane__content {
+    text-align: left;
+  
+  }
+  .l-fifth .pane__content {
+    padding: 16px;
+    text-align: left;
+  }
+}

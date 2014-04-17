@@ -7,7 +7,8 @@
 .l-panels-three-column-25-50-25 {
   $grids: 1;
   $grids: add-grid(12 at 700px);
-  $gutters: 0;
+  $gutters: 8px;
+  $gutter-styles: 'split';
   @include breakpoint(700px, $no-query: true) {
     .l-first { @include grid-span(3,1); }
     .l-second { @include grid-span(6,4); }

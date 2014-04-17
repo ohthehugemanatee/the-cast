@@ -1,19 +1,23 @@
 @media (min-width: 43.75em) {
-  /* line 13, ../../sass/partials/layout/panels/_two-column.scss */
+  /* line 14, ../../sass/partials/layout/panels/_two-column.scss */
   .l-panels-two-column.first.second .l-first {
     width: 50%;
     float: left;
     margin-right: -100%;
     margin-left: 0%;
     clear: none;
+    padding-left: 4px;
+    padding-right: 4px;
   }
-  /* line 16, ../../sass/partials/layout/panels/_two-column.scss */
+  /* line 17, ../../sass/partials/layout/panels/_two-column.scss */
   .l-panels-two-column.first.second .l-second {
     width: 50%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
+    padding-left: 4px;
+    padding-right: 4px;
   }
 }
 
@@ -26,7 +30,7 @@
 .l-panels-two-column:after {
   clear: both;
 }
-/* line 26, ../../sass/partials/layout/panels/_two-column.scss */
+/* line 27, ../../sass/partials/layout/panels/_two-column.scss */
 .l-panels-two-column .l-first,
 .l-panels-two-column .l-second {
   -webkit-box-sizing: border-box;

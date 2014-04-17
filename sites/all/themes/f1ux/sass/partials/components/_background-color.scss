@@ -1,32 +1,48 @@
 // @file
 // Styles for background colors.
 
+%black {
+  background-color: #000;
+  color: #fff;
+}
+
 %red {
   background-color: $red;
+  color: #fff;
 }
 
 %blue {
   background-color: $blue;
+  color: #fff;
 }
 
 %orange {
   background-color: $orange;
+  color: #fff;
 }
 
 %yellow {
   background-color: $yellow;
+  color: #fff;
 }
 
 %green {
   background-color: $green;
+  color: #fff;
 }
 
 %dkgray {
   background-color: $dark_gray;
+  color: #fff;
 }
 
 %ltgray {
   background-color: $light_gray;
+  color: #fff;
+}
+
+.black .pane__content {
+  @extend %black;
 }
 
 .red .pane__content {

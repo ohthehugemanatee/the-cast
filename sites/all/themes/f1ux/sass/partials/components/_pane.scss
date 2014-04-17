@@ -15,8 +15,6 @@
   }
   
   .pane__content {
-    background: #000;
-    color: #fff;
     position: relative;
     
     .group-bottomright {
@@ -24,6 +22,7 @@
       font-size: 1.6em;
       position: absolute;
       right: 10px;
+      text-align: right;
       text-transform: uppercase;
     }
   }
@@ -56,3 +55,22 @@
     }
   }
 }
+
+
+.block-boxes-social_block {
+  .pane__content {
+    padding: 8px;
+    
+    .group-left {
+      float: left;
+      width: 75%;
+    }
+    .group-right {
+      float: right;
+      text-align: right;
+      width: 25%;
+    }
+  }
+
+}
+
