@@ -749,7 +749,7 @@ function cast_panels_default_page_manager_pages() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'orange',
+      'css_class' => '',
     );
     $pane->extras = array();
     $pane->position = 0;
