@@ -1,0 +1,11 @@
+<?php
+
+// @file: Install hooks for maintaining cast_panels functionality.
+
+/**
+ * Disable panelizer for blog posts and photo galleries.
+ */
+function cast_panels_update_7000() {
+  variable_del('panelizer_defaults_node_blog_post');
+  variable_del('panelizer_defaults_node_photo_gallery');
+}

@@ -2,7 +2,6 @@ name = Cast Panels
 description = Panels layouts for The Cast
 core = 7.x
 package = The Cast
-version = 7.x-1.0
 project = cast_panels
 dependencies[] = boxes
 dependencies[] = entity_boxes
