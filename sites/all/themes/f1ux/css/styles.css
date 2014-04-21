@@ -12,14 +12,23 @@
   color: #fff;
   font-size: 1em;
   height: 26px;
+  line-height: 26px;
   margin: 0 0 4px;
-  padding: 5px;
+  padding: 3px 4px;
   text-transform: uppercase;
 }
-/* line 13, ../sass/partials/global/mixins/_placeholders.scss */
+/* line 14, ../sass/partials/global/mixins/_placeholders.scss */
 .pane h2.pane__title a {
   color: #fff;
   text-decoration: none;
+}
+
+/* Orator */
+@font-face {
+  font-family: "Orator";
+  src: url("fonts/OratorStd.woff") format("woff"), url("fonts/OratorStd.eot") format("eot"), url("fonts/OratorStd.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
 }
 
 /* Colaborate */
@@ -404,7 +413,7 @@ dt + dt {
 /* line 115, ../sass/partials/base/_html-elements.scss */
 h1, h2, h3, h4, h5, h6 {
   color: white;
-  font-family: "ColabLig", "Times New Roman", serif;
+  font-family: "OratorStd", helvetica, sans-serif;
   line-height: 1.1;
   text-rendering: optimizeLegibility;
 }
@@ -688,48 +697,61 @@ ul.panels-ipe-linkbar li {
 .l-slat__header {
   background: #000;
   border-bottom: 4px solid #fff;
+  box-sizing: content-box;
   height: 26px;
   margin: 0;
   text-transform: uppercase;
   text-align: left;
 }
-/* line 22, ../sass/partials/layout/ds/_slat.scss */
+/* line 23, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__header h2 {
   font-size: 1em;
   margin: 0;
 }
-/* line 27, ../sass/partials/layout/ds/_slat.scss */
+/* line 28, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__header div {
   display: inline-block;
 }
-/* line 30, ../sass/partials/layout/ds/_slat.scss */
-.l-slat__header div .field-item {
-  padding: 5px;
+/* line 31, ../sass/partials/layout/ds/_slat.scss */
+.l-slat__header div.field--title {
+  padding: 3px 5px 3px 0;
+}
+/* line 34, ../sass/partials/layout/ds/_slat.scss */
+.l-slat__header div.field--title:after {
+  color: #fff;
+  content: ', ';
+}
+/* line 40, ../sass/partials/layout/ds/_slat.scss */
+.l-slat__header div.field--fach {
+  color: #fff;
+  font-family: "OratorStd", helvetica, sans-serif;
+  font-size: 0.9em;
+  padding: 3px 5px 3px 0;
 }
 
-/* line 36, ../sass/partials/layout/ds/_slat.scss */
+/* line 49, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__media {
   margin: 0;
   padding: 0;
 }
 @media (min-width: 37.5em) {
-  /* line 36, ../sass/partials/layout/ds/_slat.scss */
+  /* line 49, ../sass/partials/layout/ds/_slat.scss */
   .l-slat__media {
     float: left;
     border-right: 8px solid white;
   }
 }
-/* line 46, ../sass/partials/layout/ds/_slat.scss */
+/* line 59, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__media:empty {
   padding: 0;
 }
-/* line 51, ../sass/partials/layout/ds/_slat.scss */
+/* line 64, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__media a,
 .l-slat__media img {
   display: block;
 }
 
-/* line 56, ../sass/partials/layout/ds/_slat.scss */
+/* line 69, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__content {
   color: #fff;
   display: table-cell;
@@ -739,7 +761,7 @@ ul.panels-ipe-linkbar li {
 }
 
 @media (min-width: 37.5em) {
-  /* line 70, ../sass/partials/layout/ds/_slat.scss */
+  /* line 83, ../sass/partials/layout/ds/_slat.scss */
   .l-slat--reversed .l-slat__media {
     float: right;
     padding-left: 8px;
@@ -2546,7 +2568,7 @@ tr.drag-previous {
   font-size: 0.875em;
   line-height: 1.5em;
   display: block;
-  font-family: "ColabLig", "Times New Roman", serif;
+  font-family: "OratorStd", helvetica, sans-serif;
 }
 
 /* line 7, ../sass/partials/components/_banner.scss */
@@ -2577,6 +2599,15 @@ tr.drag-previous {
 /* line 9, ../sass/partials/components/_field.scss */
 .field--body {
   font-family: "ColabThi", "Times New Roman", serif;
+}
+
+/* line 13, ../sass/partials/components/_field.scss */
+.field--body-text {
+  text-shadow: black 1px 1px 0;
+}
+/* line 18, ../sass/partials/components/_field.scss */
+.field--body-text a:focus, .field--body-text a:hover {
+  color: #fff;
 }
 
 /* line 4, ../sass/partials/components/_flexslider.scss */
@@ -2676,46 +2707,47 @@ footer .pane {
 .l-panels-four-column-two-row .l-second .pane .pane__content,
 .l-panels-four-column-two-row .l-third .pane .pane__content,
 .l-panels-four-column-two-row .l-fourth .pane .pane__content {
+  font-size: 0.9em;
   height: 123px;
 }
 
-/* line 42, ../sass/partials/components/_layout-adjustment.scss */
+/* line 43, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-two-row .l-first .pane .pane__content,
 .l-panels-three-column-two-row .l-second .pane .pane__content,
 .l-panels-three-column-two-row .l-third .pane .pane__content {
   height: 165px;
 }
 
-/* line 52, ../sass/partials/components/_layout-adjustment.scss */
+/* line 53, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-25-50-25 .l-first .pane__content,
 .l-panels-three-column-25-50-25 .l-third .pane__content {
   padding: 8px;
   text-align: left;
 }
-/* line 56, ../sass/partials/components/_layout-adjustment.scss */
+/* line 57, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-25-50-25 .l-first .pane__content .group-left,
 .l-panels-three-column-25-50-25 .l-third .pane__content .group-left {
   float: left;
   width: 75%;
 }
-/* line 60, ../sass/partials/components/_layout-adjustment.scss */
+/* line 61, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-25-50-25 .l-first .pane__content .group-right,
 .l-panels-three-column-25-50-25 .l-third .pane__content .group-right {
   float: right;
   text-align: right;
   width: 25%;
 }
-/* line 66, ../sass/partials/components/_layout-adjustment.scss */
+/* line 67, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-25-50-25 .l-second .pane__content {
   padding: 16px;
   text-align: left;
 }
 
-/* line 74, ../sass/partials/components/_layout-adjustment.scss */
+/* line 75, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-four-column-two-row .pane__content {
   text-align: left;
 }
-/* line 78, ../sass/partials/components/_layout-adjustment.scss */
+/* line 79, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-four-column-two-row .l-fifth .pane__content {
   padding: 16px;
   text-align: left;
@@ -2725,25 +2757,26 @@ footer .pane {
 .block--system-main-menu {
   background: #000;
   color: #fff;
+  font-family: "OratorStd", helvetica, sans-serif;
   height: 60px;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 11, ../sass/partials/components/_main-menu.scss */
+/* line 12, ../sass/partials/components/_main-menu.scss */
 .block--system-main-menu h2 {
   display: none;
 }
-/* line 15, ../sass/partials/components/_main-menu.scss */
+/* line 16, ../sass/partials/components/_main-menu.scss */
 .block--system-main-menu ul.nav {
   display: inline-block;
   margin: 0;
   padding-top: 10px;
 }
-/* line 20, ../sass/partials/components/_main-menu.scss */
+/* line 21, ../sass/partials/components/_main-menu.scss */
 .block--system-main-menu ul.nav li {
   display: inline-block;
 }
-/* line 23, ../sass/partials/components/_main-menu.scss */
+/* line 24, ../sass/partials/components/_main-menu.scss */
 .block--system-main-menu ul.nav li a {
   color: #646464;
   display: block;
@@ -2751,11 +2784,11 @@ footer .pane {
   padding: 0.1em 0.8em;
   text-decoration: none;
 }
-/* line 31, ../sass/partials/components/_main-menu.scss */
+/* line 32, ../sass/partials/components/_main-menu.scss */
 .block--system-main-menu ul.nav li a:focus, .block--system-main-menu ul.nav li a:hover {
   color: #dc5c14;
 }
-/* line 35, ../sass/partials/components/_main-menu.scss */
+/* line 36, ../sass/partials/components/_main-menu.scss */
 .block--system-main-menu ul.nav li a.active {
   color: #fff;
 }
@@ -2821,17 +2854,21 @@ footer .pane {
   color: #c15d22;
   text-decoration: none;
 }
+/* line 79, ../sass/partials/components/_pane.scss */
+.pane.pane--bios {
+  margin-bottom: 0;
+}
 
-/* line 82, ../sass/partials/components/_pane.scss */
+/* line 86, ../sass/partials/components/_pane.scss */
 .block-boxes-social_block .pane__content {
   padding: 8px;
 }
-/* line 85, ../sass/partials/components/_pane.scss */
+/* line 89, ../sass/partials/components/_pane.scss */
 .block-boxes-social_block .pane__content .group-left {
   float: left;
   width: 75%;
 }
-/* line 89, ../sass/partials/components/_pane.scss */
+/* line 93, ../sass/partials/components/_pane.scss */
 .block-boxes-social_block .pane__content .group-right {
   float: right;
   text-align: right;
@@ -2872,6 +2909,7 @@ ul.quicktabs-tabs li.active a {
 .block--page-site-name {
   background: #000;
   color: #fff;
+  font-family: "OratorStd", helvetica, sans-serif;
   font-size: 2.4em;
   height: 90px;
   letter-spacing: 0.1em;

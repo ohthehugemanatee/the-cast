@@ -9,3 +9,14 @@
 .field--body {
   font-family: $body-font-family;
 }
+
+.field--body-text {
+  @include text-shadow(#000 1px 1px 0);
+  
+  a {
+    &:focus,
+    &:hover {
+      color: #fff;
+    }
+  }
+}

@@ -1,6 +1,15 @@
 // @file
 // Font declarations.
 
+/* Orator */
+@font-face {
+	font-family: "Orator";
+	src: url("fonts/OratorStd.woff") format("woff"), url("fonts/OratorStd.eot") format("eot"), url("fonts/OratorStd.ttf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
+
+
 /* Colaborate */
 @font-face {
 	font-family: "ColabBol";

@@ -14,6 +14,7 @@ $gutter: 8px;
 .l-slat__header {
   background: #000;
   border-bottom: 4px solid #fff;
+  box-sizing: content-box;
   height: 26px;
   margin: 0;
   text-transform: uppercase;
@@ -27,8 +28,20 @@ $gutter: 8px;
   div {
     display: inline-block;
     
-    .field-item {
-      padding: 5px;
+    &.field--title {
+      padding: 3px 5px 3px 0;
+      
+      &:after {
+        color: #fff;
+        content: ', ';
+      }
+    }
+    
+    &.field--fach {
+      color: #fff;
+      font-family: $header-font-family;
+      font-size: 0.9em;
+      padding: 3px 5px 3px 0;
     }
   }
 }
