@@ -1,7 +1,7 @@
 // @file
 // Styles for views rows.
 
-.pane--upcoming-events-panel-pane-1 {
+.view--upcoming-events {
   .views-row-odd {
     @extend %red;
   }
@@ -13,9 +13,15 @@
   
   .views-row {
     color: #fff;
-    height: 125px;
+    float: left;
+    margin-bottom: 4px;
     padding: 8px;
     text-align: right;
+    width: 100%;
+    
+    .front & {
+      height: 123px;
+    }
     
     .views-field {
       &.views-field-field-date,
@@ -30,6 +36,10 @@
         line-height: 1.1;
         text-transform: uppercase;
       }
+    }
+    
+    &.views-row-last {
+      margin-bottom: 0;
     }
   }
 }

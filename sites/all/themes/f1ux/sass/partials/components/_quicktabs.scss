@@ -11,9 +11,17 @@ ul.quicktabs-tabs {
     a {
       background: #000;
       display: inline-block;
+      font-size: 0.9em;
       line-height: 1;
       padding: 6px 8px;
       text-decoration: none;
+      text-transform: uppercase;
+      
+      &:focus,
+      &:hover {
+        background: $orange;
+        color: #fff;
+      }
     }
     
     &.active {

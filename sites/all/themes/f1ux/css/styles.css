@@ -9,11 +9,17 @@
 /* line 4, ../sass/partials/global/mixins/_placeholders.scss */
 .pane h2.pane__title {
   background: #000;
+  color: #fff;
   font-size: 1em;
   height: 26px;
   margin: 0 0 4px;
   padding: 5px;
   text-transform: uppercase;
+}
+/* line 13, ../sass/partials/global/mixins/_placeholders.scss */
+.pane h2.pane__title a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Colaborate */
@@ -664,7 +670,7 @@ ul.panels-ipe-linkbar li {
 
 /* line 7, ../sass/partials/layout/ds/_slat.scss */
 .l-slat {
-  background: #a0a0a0;
+  background: #a0a0a4;
   border-bottom: 8px solid white;
   margin: 0;
 }
@@ -725,6 +731,7 @@ ul.panels-ipe-linkbar li {
 
 /* line 56, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__content {
+  color: #fff;
   display: table-cell;
   padding: 16px;
   text-align: left;
@@ -732,7 +739,7 @@ ul.panels-ipe-linkbar li {
 }
 
 @media (min-width: 37.5em) {
-  /* line 69, ../sass/partials/layout/ds/_slat.scss */
+  /* line 70, ../sass/partials/layout/ds/_slat.scss */
   .l-slat--reversed .l-slat__media {
     float: right;
     padding-left: 8px;
@@ -1495,9 +1502,17 @@ input.throbbing {
   float: right;
   font-size: 12px;
   line-height: 0.9;
+  margin: 4px 0 0;
   padding: 4px;
   text-decoration: none;
   text-transform: uppercase;
+}
+/* line 71, ../sass/partials/components/_button.scss */
+.field--button-text a:focus,
+.field--tickets-link a:focus, .views-field-view-node a:focus, .field--button-text a:hover,
+.field--tickets-link a:hover, .views-field-view-node a:hover {
+  background: #c15d22;
+  color: #fff;
 }
 
 /* line 4, ../sass/partials/components/_fieldset.scss */
@@ -2508,6 +2523,11 @@ tr.drag-previous {
   margin-bottom: 1.3125em;
 }
 
+/* line 10, ../sass/partials/components/_view.scss */
+.view--photo-galleries-grid {
+  background: #a0a0a4;
+}
+
 /* line 4, ../sass/partials/components/_views-widget.scss */
 .views-widget {
   display: inline-block;
@@ -2529,6 +2549,36 @@ tr.drag-previous {
   font-family: "ColabLig", "Times New Roman", serif;
 }
 
+/* line 7, ../sass/partials/components/_banner.scss */
+.l-preface .pane--frontpage-slideshow .pane__content, .l-preface
+.pane--photo-gallery .pane__content {
+  height: 300px !important;
+}
+/* line 10, ../sass/partials/components/_banner.scss */
+.l-preface .pane--frontpage-slideshow .pane__content a, .l-preface
+.pane--photo-gallery .pane__content a {
+  font-size: 2em;
+  line-height: 1;
+  text-decoration: none;
+}
+
+/* line 20, ../sass/partials/components/_banner.scss */
+.entity-boxes--banner-block .content {
+  height: 300px !important;
+  position: relative;
+}
+/* line 25, ../sass/partials/components/_banner.scss */
+.entity-boxes--banner-block .content .field--body-text a {
+  font-size: 2em;
+  line-height: 1;
+  text-decoration: none;
+}
+
+/* line 9, ../sass/partials/components/_field.scss */
+.field--body {
+  font-family: "ColabThi", "Times New Roman", serif;
+}
+
 /* line 4, ../sass/partials/components/_flexslider.scss */
 .flexslider {
   border: none;
@@ -2541,11 +2591,6 @@ tr.drag-previous {
   -moz-box-shadow: 0;
   box-shadow: 0;
   margin: 0;
-}
-
-/* line 12, ../sass/partials/components/_flexslider.scss */
-.pane--frontpage-slideshow .pane__content {
-  height: 300px !important;
 }
 
 /* line 6, ../sass/partials/components/_footer.scss */
@@ -2736,38 +2781,57 @@ footer .pane {
   right: 10px;
   text-align: right;
   text-transform: uppercase;
+  width: 50%;
 }
-/* line 32, ../sass/partials/components/_pane.scss */
+/* line 29, ../sass/partials/components/_pane.scss */
+.pane .pane__content .group-bottomright .field--body-text {
+  color: #fff;
+  line-height: 1.1;
+}
+/* line 33, ../sass/partials/components/_pane.scss */
+.pane .pane__content .group-bottomright .field--body-text a {
+  text-decoration: none;
+}
+/* line 42, ../sass/partials/components/_pane.scss */
 .pane.pane--admin-info, .pane.pane--nodebody, .pane.pane--node-links {
   margin: 0;
 }
-/* line 35, ../sass/partials/components/_pane.scss */
+/* line 45, ../sass/partials/components/_pane.scss */
 .pane.pane--admin-info .pane__content, .pane.pane--nodebody .pane__content, .pane.pane--node-links .pane__content {
   background: #fff;
   color: #333;
   height: auto;
   text-align: left;
 }
-/* line 45, ../sass/partials/components/_pane.scss */
+/* line 55, ../sass/partials/components/_pane.scss */
 .pane.pane--quicktabs-media .pane__content {
   background: #fff;
 }
-/* line 51, ../sass/partials/components/_pane.scss */
+/* line 61, ../sass/partials/components/_pane.scss */
 .pane.pane--upcoming .pane__content {
   text-align: left;
   text-transform: none;
 }
+/* line 69, ../sass/partials/components/_pane.scss */
+.pane.pane--blog .pane__content {
+  padding: 0;
+}
+/* line 72, ../sass/partials/components/_pane.scss */
+.pane.pane--blog .pane__content a {
+  color: #c15d22;
+  text-decoration: none;
+}
 
-/* line 61, ../sass/partials/components/_pane.scss */
+/* line 82, ../sass/partials/components/_pane.scss */
 .block-boxes-social_block .pane__content {
   padding: 8px;
 }
-/* line 64, ../sass/partials/components/_pane.scss */
+/* line 85, ../sass/partials/components/_pane.scss */
 .block-boxes-social_block .pane__content .group-left {
   float: left;
   width: 75%;
 }
-/* line 68, ../sass/partials/components/_pane.scss */
+/* line 89, ../sass/partials/components/_pane.scss */
 .block-boxes-social_block .pane__content .group-right {
   float: right;
   text-align: right;
@@ -2776,7 +2840,7 @@ footer .pane {
 
 /* line 4, ../sass/partials/components/_quicktabs.scss */
 ul.quicktabs-tabs {
-  background: #a0a0a0;
+  background: #a0a0a4;
   margin: 0 0 4px;
   padding: 8px;
 }
@@ -2788,11 +2852,18 @@ ul.quicktabs-tabs li {
 ul.quicktabs-tabs li a {
   background: #000;
   display: inline-block;
+  font-size: 0.9em;
   line-height: 1;
   padding: 6px 8px;
   text-decoration: none;
+  text-transform: uppercase;
 }
-/* line 20, ../sass/partials/components/_quicktabs.scss */
+/* line 21, ../sass/partials/components/_quicktabs.scss */
+ul.quicktabs-tabs li a:focus, ul.quicktabs-tabs li a:hover {
+  background: #c15d22;
+  color: #fff;
+}
+/* line 28, ../sass/partials/components/_quicktabs.scss */
 ul.quicktabs-tabs li.active a {
   background: #c15d22;
 }
@@ -2813,26 +2884,36 @@ ul.quicktabs-tabs li.active a {
 }
 
 /* line 14, ../sass/partials/components/_views-row.scss */
-.pane--upcoming-events-panel-pane-1 .views-row {
+.view--upcoming-events .views-row {
   color: #fff;
-  height: 125px;
+  float: left;
+  margin-bottom: 4px;
   padding: 8px;
   text-align: right;
+  width: 100%;
 }
 /* line 22, ../sass/partials/components/_views-row.scss */
-.pane--upcoming-events-panel-pane-1 .views-row .views-field.views-field-field-date, .pane--upcoming-events-panel-pane-1 .views-row .views-field.views-field-field-location-locality {
+.front .view--upcoming-events .views-row {
+  height: 123px;
+}
+/* line 28, ../sass/partials/components/_views-row.scss */
+.view--upcoming-events .views-row .views-field.views-field-field-date, .view--upcoming-events .views-row .views-field.views-field-field-location-locality {
   font-size: 2.2em;
   line-height: 0.9;
   text-transform: uppercase;
 }
-/* line 28, ../sass/partials/components/_views-row.scss */
-.pane--upcoming-events-panel-pane-1 .views-row .views-field.views-field-field-location-name-line {
+/* line 34, ../sass/partials/components/_views-row.scss */
+.view--upcoming-events .views-row .views-field.views-field-field-location-name-line {
   font-size: 1.3em;
   line-height: 1.1;
   text-transform: uppercase;
 }
+/* line 41, ../sass/partials/components/_views-row.scss */
+.view--upcoming-events .views-row.views-row-last {
+  margin-bottom: 0;
+}
 
-/* line 38, ../sass/partials/components/_views-row.scss */
+/* line 48, ../sass/partials/components/_views-row.scss */
 .view--upcoming .views-row {
   background: #fff;
 }
@@ -2844,13 +2925,13 @@ ul.quicktabs-tabs li.active a {
 }
 
 /* line 9, ../sass/partials/components/_background-color.scss */
-.pane--upcoming-events-panel-pane-1 .views-row-odd, .red .pane__content {
+.view--upcoming-events .views-row-odd, .red .pane__content {
   background-color: #712024;
   color: #fff;
 }
 
 /* line 14, ../sass/partials/components/_background-color.scss */
-.pane--upcoming-events-panel-pane-1 .views-row-even, .blue .pane__content {
+.view--upcoming-events .views-row-even, .blue .pane__content {
   background-color: #1a2243;
   color: #fff;
 }
@@ -2881,6 +2962,6 @@ ul.quicktabs-tabs li.active a {
 
 /* line 39, ../sass/partials/components/_background-color.scss */
 .ltgray .pane__content {
-  background-color: #a0a0a0;
+  background-color: #a0a0a4;
   color: #fff;
 }

@@ -62,8 +62,15 @@
     float: right;
     font-size: 12px;
     line-height: 0.9;
+    margin: 4px 0 0;
     padding: 4px;
     text-decoration: none;
     text-transform: uppercase;
+    
+    &:focus,
+    &:hover {
+      background: $orange;
+      color: #fff;
+    }
   }
 }

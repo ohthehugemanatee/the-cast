@@ -5,3 +5,7 @@
 .field--tickets-link {
   @extend %black-button;
 }
+
+.field--body {
+  font-family: $body-font-family;
+}

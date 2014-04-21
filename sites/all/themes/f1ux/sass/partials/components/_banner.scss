@@ -1,0 +1,32 @@
+// @file
+// Styles for the banner.
+
+.pane--frontpage-slideshow,
+.pane--photo-gallery {
+  .l-preface & {
+    .pane__content {
+      height: 300px !important;
+      
+      a {
+        font-size: 2em;
+        line-height: 1;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.entity-boxes--banner-block {
+  .content {
+    height: 300px !important;
+    position: relative;
+    
+    .field--body-text {
+      a {
+        font-size: 2em;
+        line-height: 1;
+        text-decoration: none;
+      }
+    }
+  }
+}
