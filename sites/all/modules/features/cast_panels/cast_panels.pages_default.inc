@@ -75,6 +75,31 @@ function cast_panels_default_page_manager_handlers() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
+    $pane->pid = 'new-ae5545c7-9687-4ee1-ab97-14bd66d3cf4e';
+    $pane->panel = 'first';
+    $pane->type = 'block';
+    $pane->subtype = 'mailchimp_lists-the_cast_newsletter';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => 'The Cast Newsletter',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'yellow',
+    );
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'ae5545c7-9687-4ee1-ab97-14bd66d3cf4e';
+    $display->content['new-ae5545c7-9687-4ee1-ab97-14bd66d3cf4e'] = $pane;
+    $display->panels['first'][0] = 'new-ae5545c7-9687-4ee1-ab97-14bd66d3cf4e';
+    $pane = new stdClass();
     $pane->pid = 'new-8f25ae6e-4ec4-46bf-978c-7d2a506ac5db';
     $pane->panel = 'first';
     $pane->type = 'block';
@@ -94,11 +119,11 @@ function cast_panels_default_page_manager_handlers() {
       'css_class' => 'yellow',
     );
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = '8f25ae6e-4ec4-46bf-978c-7d2a506ac5db';
     $display->content['new-8f25ae6e-4ec4-46bf-978c-7d2a506ac5db'] = $pane;
-    $display->panels['first'][0] = 'new-8f25ae6e-4ec4-46bf-978c-7d2a506ac5db';
+    $display->panels['first'][1] = 'new-8f25ae6e-4ec4-46bf-978c-7d2a506ac5db';
     $pane = new stdClass();
     $pane->pid = 'new-026cd75a-a4f8-42b2-ace7-43858d21299d';
     $pane->panel = 'first';
@@ -119,11 +144,11 @@ function cast_panels_default_page_manager_handlers() {
       'css_class' => 'ltgray',
     );
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 2;
     $pane->locks = array();
     $pane->uuid = '026cd75a-a4f8-42b2-ace7-43858d21299d';
     $display->content['new-026cd75a-a4f8-42b2-ace7-43858d21299d'] = $pane;
-    $display->panels['first'][1] = 'new-026cd75a-a4f8-42b2-ace7-43858d21299d';
+    $display->panels['first'][2] = 'new-026cd75a-a4f8-42b2-ace7-43858d21299d';
     $pane = new stdClass();
     $pane->pid = 'new-53da8d90-3842-4714-a997-0abd9c45936a';
     $pane->panel = 'preface';
@@ -176,8 +201,8 @@ function cast_panels_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_title' => 1,
+      'override_title_text' => 'Contact us',
     );
     $pane->cache = array();
     $pane->style = array(
