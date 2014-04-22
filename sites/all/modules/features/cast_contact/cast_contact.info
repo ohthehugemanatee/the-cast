@@ -1,0 +1,17 @@
+name = Cast Contact
+description = Contact us page and related functionality
+core = 7.x
+package = The Cast
+dependencies[] = contact
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = strongarm
+features[contact_categories][] = category_1
+features[contact_categories][] = category_2
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[user_permission][] = access site-wide contact form
+features[user_permission][] = access user contact forms
+features[user_permission][] = administer contact forms
+features[variable][] = contact_default_status
+project path = sites/all/modules/features

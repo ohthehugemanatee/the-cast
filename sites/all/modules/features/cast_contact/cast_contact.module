@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Cast Contact feature.
+ */
+
+include_once 'cast_contact.features.inc';

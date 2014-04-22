@@ -8,3 +8,10 @@
 function cast_misc_update_7000() {
   module_enable(array('magic_dev'));
 }
+
+/**
+ * Enable cast_contact Feature.
+ */
+function cast_misc_update_7001() {
+  module_enable(array('cast_contact'));
+}
