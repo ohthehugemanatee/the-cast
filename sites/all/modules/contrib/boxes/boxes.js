@@ -98,7 +98,7 @@
       //to the contextual dropdown
       $('.boxes-box-controls', context).each(function () {
         // See if we are within a panel.
-        if ($(this).parent().parent().hasClass("pane-content")) {
+        if ($(this).parent().parent().hasClass("pane__content") || $(this).parent().parent().hasClass("pane-content")) {
           $(this).hide();
         }
         if($(this).parents(".block").find(".block-configure").length > 0) {

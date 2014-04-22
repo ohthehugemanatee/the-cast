@@ -1,0 +1,13 @@
+diff --git a/boxes.js b/boxes.js
+index 067226d..69f49c9 100644
+--- a/boxes.js
++++ b/boxes.js
+@@ -98,7 +98,7 @@
+       //to the contextual dropdown
+       $('.boxes-box-controls', context).each(function () {
+         // See if we are within a panel.
+-        if ($(this).parent().parent().hasClass("pane-content")) {
++        if ($(this).parent().parent().hasClass("pane__content") || $(this).parent().parent().hasClass("pane-content")) {
+           $(this).hide();
+         }
+         if($(this).parents(".block").find(".block-configure").length > 0) {
