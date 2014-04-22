@@ -46,7 +46,7 @@ function cast_boxes_default_box() {
   $box->title = 'Facebook';
   $box->description = 'Facebook demo social block';
   $box->options = array(
-    'entity_boxes_id' => '',
+    'additional_classes' => 'orange',
   );
   $export['facebook_demo'] = $box;
 
@@ -107,7 +107,7 @@ function cast_boxes_default_box() {
   $box->title = 'Block title';
   $box->description = 'Twitter demo social block';
   $box->options = array(
-    'entity_boxes_id' => '',
+    'additional_classes' => 'yellow',
   );
   $export['twitter_demo'] = $box;
 
