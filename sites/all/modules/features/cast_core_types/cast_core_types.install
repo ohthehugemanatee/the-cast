@@ -13,5 +13,12 @@ function cast_core_types_update_7000() {
  * Enable cast_misc module.
  */
 function cast_core_types_update_7001() {
-  module_enable(array('cast_misc'));
+  module_enable(array('cast_misc', 'cast_contact', 'cast_media'));
+}
+
+/**
+ * Enable scheduler module.
+ */
+function cast_core_types_update_7002() {
+  module_enable(array('scheduler'));
 }
