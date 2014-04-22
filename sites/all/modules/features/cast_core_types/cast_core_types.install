@@ -1,0 +1,10 @@
+<?php
+
+// @update hooks for cast core content types, contexts, display modes, etc.
+
+/**
+ * Enable mediaelement module.
+ */
+function cast_core_types_update_7000() {
+    module_enable(array('mediaelement'));
+}
