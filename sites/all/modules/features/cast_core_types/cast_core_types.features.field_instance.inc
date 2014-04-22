@@ -18,8 +18,12 @@ function cast_core_types_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'audiofield',
+        'module' => 'mediaelement',
         'settings' => array(
+          'controls' => 1,
+          'download_link' => 0,
+          'download_text' => 'Download',
+          'height' => 24,
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -31,8 +35,9 @@ function cast_core_types_field_default_field_instances() {
             'destination' => '',
             'linked' => 0,
           ),
+          'width' => 220,
         ),
-        'type' => 'audiofield_nodownload',
+        'type' => 'mediaelement_audio',
         'weight' => 2,
       ),
       'teaser' => array(
@@ -210,6 +215,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -286,6 +294,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -366,6 +377,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'image_link' => '',
           'image_style' => 'members_layout_image',
           'linked_field' => array(
@@ -519,9 +533,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'plain_text',
-          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -537,10 +548,32 @@ function cast_core_types_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
       'members_page' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -610,9 +643,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'form',
-          ),
           'format_type' => 'long',
           'fromto' => 'both',
           'linked_field' => array(
@@ -633,10 +663,37 @@ function cast_core_types_field_default_field_instances() {
         'type' => 'date_default',
         'weight' => 1,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+        ),
+        'type' => 'date_default',
+        'weight' => 2,
+      ),
       'members_page' => array(
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'format_type' => 'long',
           'fromto' => 'both',
           'linked_field' => array(
@@ -701,9 +758,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'above',
         'module' => 'image',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'form',
-          ),
           'image_link' => '',
           'image_style' => '',
           'linked_field' => array(
@@ -721,10 +775,34 @@ function cast_core_types_field_default_field_instances() {
         'type' => 'image',
         'weight' => 3,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'medium',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'image',
+        'weight' => 1,
+      ),
       'members_page' => array(
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'image_link' => '',
           'image_style' => 'members_layout_image',
           'linked_field' => array(
@@ -797,9 +875,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'above',
         'module' => 'addressfield',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'form',
-          ),
           'format_handlers' => array(
             0 => 'address',
           ),
@@ -819,10 +894,36 @@ function cast_core_types_field_default_field_instances() {
         'type' => 'addressfield_default',
         'weight' => 2,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => 3,
+      ),
       'members_page' => array(
         'label' => 'hidden',
         'module' => 'addressfield',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'format_handlers' => array(
             0 => 'address',
           ),
@@ -885,9 +986,25 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'above',
         'module' => 'link',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'form',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
           ),
+        ),
+        'type' => 'link_default',
+        'weight' => 4,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'link',
+        'settings' => array(
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -907,6 +1024,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'link',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -972,6 +1092,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'above',
         'module' => 'image',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'image_link' => '',
           'image_style' => 'flexslider_full',
           'linked_field' => array(
@@ -1034,6 +1157,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -1053,6 +1179,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -1239,6 +1368,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -1258,6 +1390,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -1307,6 +1442,9 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'above',
         'module' => 'file_entity',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'file_view_mode' => 'default',
           'linked_field' => array(
             'advanced' => array(
