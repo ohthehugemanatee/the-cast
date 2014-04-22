@@ -164,7 +164,11 @@ function cast_panels_default_panels_mini() {
     $pane->subtype = 'page_site_name';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'linked' => 1,
+    );
     $pane->cache = array(
       'method' => 0,
     );
