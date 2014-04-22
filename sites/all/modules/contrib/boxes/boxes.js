@@ -9,8 +9,8 @@
       data: { 'boxes_delta': data.delta },
       global: true,
       success: function(response, status) {
-        if($('#boxes-box-form').dialog('isOpen')){
-          $('#boxes-box-form').dialog('close');
+        if ($('#boxes-box-form-wrapper').dialog('isOpen')) {
+          $('#boxes-box-form-wrapper').dialog('close');
         }
         $('.hasPopup').removeClass('hasPopup');
         box.removeClass('boxes-box-editing').find('.box-editor').remove().end().find('.boxes-box-content').show();
@@ -21,12 +21,13 @@
     });
   };
   Drupal.ajax.prototype.commands['showBoxForm'] = function(ajax, response, status) {
-    if(!$('#boxes-box-form').size() || !$('#boxes-box-form').dialog('isOpen')){
+    if (!$('#boxes-box-form-wrapper').size() || !$('#boxes-box-form-wrapper').dialog('isOpen')) {
       Drupal.ajax.prototype.commands.insert(ajax, response, status);
       $(response.selector).addClass('hasPopup');
-      $('#boxes-box-form')
+      $('#boxes-box-form-wrapper')
         .dialog({
           modal : true,
+          zIndex: -1,
           close: function(e){
             //handle someone closing the box without clicking any buttons
             if (Drupal.wysiwygDetach && $('.wysiwyg', this).val()) {
@@ -50,7 +51,7 @@
         });  
     } else {
       //change the selector to just update the current form - in place (in the popup)
-      response.selector = '#boxes-box-form';
+      response.selector = '#boxes-box-form-wrapper';
       Drupal.ajax.prototype.commands.insert(ajax, response, status);
     }
     
@@ -119,9 +120,10 @@
         }
       });
 
-      //apply the popup form to 'add boxes' also  
-      $('.boxes-box-editing .box-editor #boxes-box-form').not('.processed').addClass('processed').dialog({
+      //apply the popup form to 'add boxes' also
+      $('.boxes-box-editing .box-editor #boxes-box-form-wrapper').not('.processed').addClass('processed').dialog({
         modal : true,
+        zIndex: -1,
         close: function(e){
            //handle someone closing the box without clicking any buttons
            $(this).remove();
