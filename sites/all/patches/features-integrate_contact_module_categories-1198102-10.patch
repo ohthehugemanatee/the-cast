@@ -1,0 +1,90 @@
+diff --git a/features.module b/features.module
+index ba5b9fe..e92761d 100644
+--- a/features.module
++++ b/features.module
+@@ -365,7 +365,7 @@ function features_include($reset = FALSE) {
+     // Features provides integration on behalf of these modules.
+     // The features include provides handling for the feature dependencies.
+     // Note that ctools is placed last because it implements hooks "dynamically" for other modules.
+-    $modules = array('features', 'block', 'context', 'field', 'filter', 'image', 'locale', 'menu', 'node', 'taxonomy', 'user', 'views', 'ctools');
++    $modules = array('features', 'block', 'contact', 'context', 'field', 'filter', 'image', 'locale', 'menu', 'node', 'taxonomy', 'user', 'views', 'ctools');
+
+     foreach (array_filter($modules, 'module_exists') as $module) {
+       module_load_include('inc', 'features', "includes/features.$module");
+diff --git a/includes/features.contact.inc b/includes/features.contact.inc
+new file mode 100644
+index 0000000..0dac95d
+--- /dev/null
++++ b/includes/features.contact.inc
+@@ -0,0 +1,71 @@
++<?php
++/**
++ * Implements hook_features_api().
++ */
++function contact_features_api() {
++  return array(
++    'contact_categories' => array(
++      'name'           => t('Contact categories'),
++      'feature_source' => TRUE,
++      'default_hook'   => 'contact_categories_defaults',
++      'default_file'   => FEATURES_DEFAULTS_INCLUDED,
++    ),
++  );
++}
++
++/**
++ * Implements hook_features_export_options().
++ */
++function contact_categories_features_export_options() {
++  $options = array();
++  foreach (db_select('contact', 'c')->fields('c')->execute()->fetchAll() as $category) {
++    $options["category_{$category->cid}"] = "category_{$category->category}";
++  }
++  return $options;
++}
++
++/**
++ * Implements hook_features_export().
++ */
++function contact_categories_features_export($data, &$export, $module_name = '') {
++  $export['dependencies']['features'] = 'features';
++  $export['dependencies']['contact']  = 'contact';
++
++  foreach ($data as $name) {
++    $export['features']['contact_categories'][$name] = $name;
++  }
++
++  return array();
++}
++
++/**
++ * Implements hook_features_export_render().
++ */
++function contact_categories_features_export_render($module, $data, $export = NULL) {
++  $render = array();
++  foreach ($data as $name) {
++    $cid = explode('_', $name);
++    if (isset($cid[1]) && ($category = contact_load($cid[1]))) {
++      $render[$name] = $category;
++    }
++  }
++  return array('contact_categories_defaults' => '  return '. features_var_export($render, '  ') .';');
++}
++
++/**
++ * Implements hook_features_revert().
++ */
++function contact_categories_features_revert($module) {
++  return contact_categories_features_rebuild($module);
++}
++
++/**
++ * Implements hook_features_rebuild().
++ */
++function contact_categories_features_rebuild($module) {
++  if ($defaults = features_get_default('contact_categories', $module)) {
++    foreach ($defaults as $category) {
++      db_merge('contact')->key(array('cid' => $category['cid']))->fields($category)->execute();
++    }
++  }
++}
