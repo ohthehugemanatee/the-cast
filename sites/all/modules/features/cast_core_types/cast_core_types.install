@@ -8,3 +8,10 @@
 function cast_core_types_update_7000() {
     module_enable(array('mediaelement'));
 }
+
+/**
+ * Enable cast_misc module.
+ */
+function cast_core_types_update_7001() {
+  module_enable(array('cast_misc'));
+}
