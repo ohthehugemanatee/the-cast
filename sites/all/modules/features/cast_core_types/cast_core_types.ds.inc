@@ -57,6 +57,11 @@ function cast_core_types_ds_field_settings_info() {
       'label' => 'hidden',
       'format' => 'default',
     ),
+    'links' => array(
+      'weight' => '3',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
   );
   $export['node|event|members_page'] = $ds_fieldsetting;
 
@@ -207,18 +212,24 @@ function cast_core_types_ds_layout_settings_info() {
         1 => 'field_image',
       ),
       'main_content' => array(
-        2 => 'field_date',
-        3 => 'field_location',
-        4 => 'body',
-        5 => 'field_tickets_link',
+        2 => 'body',
+        3 => 'field_date',
+        4 => 'group_left',
+        5 => 'field_location',
+        6 => 'links',
+        7 => 'group_right',
+        8 => 'field_tickets_link',
       ),
     ),
     'fields' => array(
       'title' => 'header',
       'field_image' => 'media',
-      'field_date' => 'main_content',
-      'field_location' => 'main_content',
       'body' => 'main_content',
+      'field_date' => 'main_content',
+      'group_left' => 'main_content',
+      'field_location' => 'main_content',
+      'links' => 'main_content',
+      'group_right' => 'main_content',
       'field_tickets_link' => 'main_content',
     ),
     'classes' => array(),
