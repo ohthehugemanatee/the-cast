@@ -507,6 +507,181 @@ function cast_panels_default_page_manager_handlers() {
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
+  $handler->name = 'node_view_panel_context_2';
+  $handler->task = 'node_view';
+  $handler->subtask = '';
+  $handler->handler = 'panel_context';
+  $handler->weight = -98;
+  $handler->conf = array(
+    'title' => 'Blog post',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => '',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'node_type',
+          'settings' => array(
+            'type' => array(
+              'blog_post' => 'blog_post',
+            ),
+          ),
+          'context' => 'argument_entity_id:node_1',
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+  );
+  $display = new panels_display();
+  $display->layout = 'three_column_two_row';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'preface' => NULL,
+      'first' => NULL,
+      'second' => NULL,
+      'third' => NULL,
+      'fourth' => NULL,
+      'fifth' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '%node:title';
+  $display->uuid = 'ae109378-4145-42ee-a32b-12ec07c8bf26';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-933f172c-a2d3-4fc9-8616-7985e056117b';
+    $pane->panel = 'fifth';
+    $pane->type = 'block';
+    $pane->subtype = 'boxes-twitter_demo';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '933f172c-a2d3-4fc9-8616-7985e056117b';
+    $display->content['new-933f172c-a2d3-4fc9-8616-7985e056117b'] = $pane;
+    $display->panels['fifth'][0] = 'new-933f172c-a2d3-4fc9-8616-7985e056117b';
+    $pane = new stdClass();
+    $pane->pid = 'new-c08d9844-57a7-4b94-a31d-9afb2483cfa0';
+    $pane->panel = 'first';
+    $pane->type = 'block';
+    $pane->subtype = 'boxes-facebook_demo';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'c08d9844-57a7-4b94-a31d-9afb2483cfa0';
+    $display->content['new-c08d9844-57a7-4b94-a31d-9afb2483cfa0'] = $pane;
+    $display->panels['first'][0] = 'new-c08d9844-57a7-4b94-a31d-9afb2483cfa0';
+    $pane = new stdClass();
+    $pane->pid = 'new-1d6b12cd-b854-4748-8340-adbf4e0bcb8e';
+    $pane->panel = 'fourth';
+    $pane->type = 'node_content';
+    $pane->subtype = 'node_content';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'links' => 1,
+      'no_extras' => 0,
+      'override_title' => 0,
+      'override_title_text' => '',
+      'identifier' => '',
+      'link' => 0,
+      'leave_node_title' => 0,
+      'build_mode' => 'full',
+      'context' => 'argument_entity_id:node_1',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '1d6b12cd-b854-4748-8340-adbf4e0bcb8e';
+    $display->content['new-1d6b12cd-b854-4748-8340-adbf4e0bcb8e'] = $pane;
+    $display->panels['fourth'][0] = 'new-1d6b12cd-b854-4748-8340-adbf4e0bcb8e';
+    $pane = new stdClass();
+    $pane->pid = 'new-70554093-57ab-4d1a-825e-cc74bd0e38f8';
+    $pane->panel = 'second';
+    $pane->type = 'block';
+    $pane->subtype = 'boxes-link_about';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '70554093-57ab-4d1a-825e-cc74bd0e38f8';
+    $display->content['new-70554093-57ab-4d1a-825e-cc74bd0e38f8'] = $pane;
+    $display->panels['second'][0] = 'new-70554093-57ab-4d1a-825e-cc74bd0e38f8';
+    $pane = new stdClass();
+    $pane->pid = 'new-4e52214d-4129-4ff3-a5b3-8aeaabf62888';
+    $pane->panel = 'third';
+    $pane->type = 'block';
+    $pane->subtype = 'boxes-link_lippen_schweigen';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '4e52214d-4129-4ff3-a5b3-8aeaabf62888';
+    $display->content['new-4e52214d-4129-4ff3-a5b3-8aeaabf62888'] = $pane;
+    $display->panels['third'][0] = 'new-4e52214d-4129-4ff3-a5b3-8aeaabf62888';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-c08d9844-57a7-4b94-a31d-9afb2483cfa0';
+  $handler->conf['display'] = $display;
+  $export['node_view_panel_context_2'] = $handler;
+
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
   $handler->name = 'user_view_panel_context';
   $handler->task = 'user_view';
   $handler->subtask = '';

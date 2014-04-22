@@ -26,6 +26,7 @@ features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[page_manager_handlers][] = contact_site_panel_context
 features[page_manager_handlers][] = node_view_panel_context
+features[page_manager_handlers][] = node_view_panel_context_2
 features[page_manager_handlers][] = user_view_panel_context
 features[page_manager_pages][] = blog
 features[page_manager_pages][] = frontpage
