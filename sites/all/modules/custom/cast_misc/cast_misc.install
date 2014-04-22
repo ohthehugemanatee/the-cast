@@ -15,3 +15,10 @@ function cast_misc_update_7000() {
 function cast_misc_update_7001() {
   module_enable(array('cast_contact'));
 }
+
+/**
+ * Enable cast_media Feature.
+ */
+function cast_misc_update_7002() {
+  module_enable(array('cast_media'));
+}

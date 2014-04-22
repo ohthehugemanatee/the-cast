@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Cast Media feature.
+ */
+
+include_once 'cast_media.features.inc';
