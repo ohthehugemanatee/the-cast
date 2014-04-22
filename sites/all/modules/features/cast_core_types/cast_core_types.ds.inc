@@ -143,21 +143,27 @@ function cast_core_types_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'header' => array(
-        0 => 'field_fach',
-        1 => 'title',
-      ),
-      'media' => array(
-        2 => 'field_headshot',
+        0 => 'title',
+        2 => 'field_fach',
       ),
       'main_content' => array(
-        3 => 'body',
+        1 => 'field_body_right',
+        4 => 'group_left',
+        5 => 'body',
+        6 => 'group_right',
+      ),
+      'media' => array(
+        3 => 'field_headshot',
       ),
     ),
     'fields' => array(
-      'field_fach' => 'header',
       'title' => 'header',
+      'field_body_right' => 'main_content',
+      'field_fach' => 'header',
       'field_headshot' => 'media',
+      'group_left' => 'main_content',
       'body' => 'main_content',
+      'group_right' => 'main_content',
     ),
     'classes' => array(),
     'wrappers' => array(

@@ -45,6 +45,37 @@ function cast_core_types_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_left|node|bio|members_page';
+  $field_group->group_name = 'group_left';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'bio';
+  $field_group->mode = 'members_page';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Left',
+    'weight' => '3',
+    'children' => array(
+      0 => 'body',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Left',
+      'instance_settings' => array(
+        'classes' => 'group-left field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_left|node|bio|members_page'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_left|node|event|members_page';
   $field_group->group_name = 'group_left';
   $field_group->entity_type = 'node';
@@ -74,6 +105,37 @@ function cast_core_types_field_group_info() {
     ),
   );
   $export['group_left|node|event|members_page'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_right|node|bio|members_page';
+  $field_group->group_name = 'group_right';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'bio';
+  $field_group->mode = 'members_page';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'right',
+    'weight' => '5',
+    'children' => array(
+      0 => 'field_body_right',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'right',
+      'instance_settings' => array(
+        'classes' => 'group-right field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_right|node|bio|members_page'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
