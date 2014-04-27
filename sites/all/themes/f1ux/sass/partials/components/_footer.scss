@@ -27,11 +27,14 @@ footer {
               text-indent: -9999em;
             }
             
-            /* &.amazon {
+            &.amazon {
               @include svg-background(amazon);
-            }*/
+            }
             &.facebook {@include svg-background(facebook);
               @include svg-background(facebook);
+            }
+            &.itunes {@include svg-background(itunes);
+              @include svg-background(itunes);
             }
             &.soundcloud {
               @include svg-background(soundcloud);

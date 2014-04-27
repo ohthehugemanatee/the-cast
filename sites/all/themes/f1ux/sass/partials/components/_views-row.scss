@@ -24,6 +24,16 @@
     }
     
     .views-field {
+      
+      a {
+        text-decoration: none;
+        
+        &:focus,
+        &:hover {
+          color: #fff;
+        }
+      }
+      
       &.views-field-field-date,
       &.views-field-field-location-locality {
         font-size: 2.2em;
