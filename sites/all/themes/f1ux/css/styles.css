@@ -2589,13 +2589,18 @@ tr.drag-previous {
   line-height: 1;
   text-decoration: none;
 }
+/* line 16, ../sass/partials/components/_banner.scss */
+.l-preface .pane--frontpage-slideshow .pane__content img, .l-preface
+.pane--photo-gallery .pane__content img {
+  height: 300px !important;
+}
 
-/* line 20, ../sass/partials/components/_banner.scss */
+/* line 24, ../sass/partials/components/_banner.scss */
 .entity-boxes--banner-block .content {
   height: 300px !important;
   position: relative;
 }
-/* line 25, ../sass/partials/components/_banner.scss */
+/* line 29, ../sass/partials/components/_banner.scss */
 .entity-boxes--banner-block .content .field--body-text a {
   font-size: 2em;
   line-height: 1;
