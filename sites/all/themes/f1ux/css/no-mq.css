@@ -414,7 +414,7 @@ dt + dt {
 /* line 115, ../sass/partials/base/_html-elements.scss */
 h1, h2, h3, h4, h5, h6 {
   color: white;
-  font-family: "OratorStd", helvetica, sans-serif;
+  font-family: "Orator", helvetica, sans-serif;
   line-height: 1.1;
   text-rendering: optimizeLegibility;
 }
@@ -727,7 +727,7 @@ ul.panels-ipe-linkbar li {
 /* line 40, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__header div.field--fach {
   color: #fff;
-  font-family: "OratorStd", helvetica, sans-serif;
+  font-family: "Orator", helvetica, sans-serif;
   font-size: 0.9em;
   padding: 3px 5px 3px 0;
 }
@@ -2494,7 +2494,7 @@ tr.drag-previous {
   font-size: 0.875em;
   line-height: 1.5em;
   display: block;
-  font-family: "OratorStd", helvetica, sans-serif;
+  font-family: "Orator", helvetica, sans-serif;
 }
 
 /* line 4, ../sass/partials/components/_audio.scss */
@@ -2701,7 +2701,7 @@ footer .pane {
 .block--system-main-menu {
   background: #000;
   color: #fff;
-  font-family: "OratorStd", helvetica, sans-serif;
+  font-family: "Orator", helvetica, sans-serif;
   height: 60px;
   text-align: center;
   text-transform: uppercase;
@@ -2853,7 +2853,7 @@ ul.quicktabs-tabs li.active a {
 .block--page-site-name {
   background: #000;
   color: #fff;
-  font-family: "OratorStd", helvetica, sans-serif;
+  font-family: "Orator", helvetica, sans-serif;
   font-size: 2.4em;
   height: 90px;
   letter-spacing: 0.1em;
