@@ -1,6 +1,11 @@
 // @file
 // Styles for views rows.
 
+//generic views row 
+.views-row {
+  padding: 1em 0 2em;
+}
+
 .view--upcoming-events {
   .views-row-odd {
     @extend %red;
@@ -14,7 +19,7 @@
   .views-row {
     color: #fff;
     float: left;
-    margin-bottom: 4px;
+    margin:  0 0 4px;
     padding: 8px;
     text-align: right;
     width: 100%;

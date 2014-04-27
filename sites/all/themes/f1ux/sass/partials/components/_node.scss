@@ -1,0 +1,35 @@
+// @file
+// Styles for nodes.
+
+
+.l-panels-three-column-two-row .l-fourth,
+.l-panels-four-column-two-row .l-fifth {
+  .pane,
+  .pane--node-content {
+    padding-right: 8px;
+    text-align: left !important;
+  
+    a {
+      color: $orange;
+      text-decoration: none;
+      
+      &:focus,
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
+    h2 {
+      background: none;
+      color: $orange;
+      margin: 0;
+      padding: 0;
+      text-transform: inherit;
+      
+      &.pane__title {
+        font-size: 1.3em;
+        margin-top: 0.8em;
+      }
+    }
+  }
+}

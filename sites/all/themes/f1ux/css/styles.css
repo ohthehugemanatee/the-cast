@@ -499,7 +499,7 @@ ol ul {
 
 /* line 263, ../sass/partials/base/_html-elements.scss */
 p {
-  margin: 0 0 1.3125em;
+  margin: 0 0 0.65625em;
 }
 
 /* line 269, ../sass/partials/base/_html-elements.scss */
@@ -2616,6 +2616,16 @@ tr.drag-previous {
   color: #fff;
 }
 
+/* line 24, ../sass/partials/components/_field.scss */
+.field--submitted-by {
+  margin-bottom: 0.5em;
+}
+
+/* line 28, ../sass/partials/components/_field.scss */
+.field--node-link {
+  float: right;
+}
+
 /* line 4, ../sass/partials/components/_flexslider.scss */
 .flexslider {
   border: none;
@@ -2811,6 +2821,52 @@ footer .pane {
   color: #fff;
 }
 
+/* line 8, ../sass/partials/components/_node.scss */
+.l-panels-three-column-two-row .l-fourth .pane,
+.l-panels-three-column-two-row .l-fourth .pane--node-content,
+.l-panels-four-column-two-row .l-fifth .pane,
+.l-panels-four-column-two-row .l-fifth .pane--node-content {
+  padding-right: 8px;
+  text-align: left !important;
+}
+/* line 12, ../sass/partials/components/_node.scss */
+.l-panels-three-column-two-row .l-fourth .pane a,
+.l-panels-three-column-two-row .l-fourth .pane--node-content a,
+.l-panels-four-column-two-row .l-fifth .pane a,
+.l-panels-four-column-two-row .l-fifth .pane--node-content a {
+  color: #c15d22;
+  text-decoration: none;
+}
+/* line 17, ../sass/partials/components/_node.scss */
+.l-panels-three-column-two-row .l-fourth .pane a:focus, .l-panels-three-column-two-row .l-fourth .pane a:hover,
+.l-panels-three-column-two-row .l-fourth .pane--node-content a:focus,
+.l-panels-three-column-two-row .l-fourth .pane--node-content a:hover,
+.l-panels-four-column-two-row .l-fifth .pane a:focus,
+.l-panels-four-column-two-row .l-fifth .pane a:hover,
+.l-panels-four-column-two-row .l-fifth .pane--node-content a:focus,
+.l-panels-four-column-two-row .l-fifth .pane--node-content a:hover {
+  text-decoration: underline;
+}
+/* line 22, ../sass/partials/components/_node.scss */
+.l-panels-three-column-two-row .l-fourth .pane h2,
+.l-panels-three-column-two-row .l-fourth .pane--node-content h2,
+.l-panels-four-column-two-row .l-fifth .pane h2,
+.l-panels-four-column-two-row .l-fifth .pane--node-content h2 {
+  background: none;
+  color: #c15d22;
+  margin: 0;
+  padding: 0;
+  text-transform: inherit;
+}
+/* line 29, ../sass/partials/components/_node.scss */
+.l-panels-three-column-two-row .l-fourth .pane h2.pane__title,
+.l-panels-three-column-two-row .l-fourth .pane--node-content h2.pane__title,
+.l-panels-four-column-two-row .l-fifth .pane h2.pane__title,
+.l-panels-four-column-two-row .l-fifth .pane--node-content h2.pane__title {
+  font-size: 1.3em;
+  margin-top: 0.8em;
+}
+
 /* line 4, ../sass/partials/components/_pane.scss */
 .pane {
   margin-bottom: 8px;
@@ -2947,45 +3003,50 @@ ul.quicktabs-tabs li.active a {
   color: #fff;
 }
 
-/* line 14, ../sass/partials/components/_views-row.scss */
+/* line 5, ../sass/partials/components/_views-row.scss */
+.views-row {
+  padding: 1em 0 2em;
+}
+
+/* line 19, ../sass/partials/components/_views-row.scss */
 .view--upcoming-events .views-row {
   color: #fff;
   float: left;
-  margin-bottom: 4px;
+  margin: 0 0 4px;
   padding: 8px;
   text-align: right;
   width: 100%;
 }
-/* line 22, ../sass/partials/components/_views-row.scss */
+/* line 27, ../sass/partials/components/_views-row.scss */
 .front .view--upcoming-events .views-row {
   height: 123px;
 }
-/* line 28, ../sass/partials/components/_views-row.scss */
+/* line 33, ../sass/partials/components/_views-row.scss */
 .view--upcoming-events .views-row .views-field a {
   text-decoration: none;
 }
-/* line 32, ../sass/partials/components/_views-row.scss */
+/* line 37, ../sass/partials/components/_views-row.scss */
 .view--upcoming-events .views-row .views-field a:focus, .view--upcoming-events .views-row .views-field a:hover {
   color: #fff;
 }
-/* line 38, ../sass/partials/components/_views-row.scss */
+/* line 43, ../sass/partials/components/_views-row.scss */
 .view--upcoming-events .views-row .views-field.views-field-field-date, .view--upcoming-events .views-row .views-field.views-field-field-location-locality {
   font-size: 2.2em;
   line-height: 0.9;
   text-transform: uppercase;
 }
-/* line 44, ../sass/partials/components/_views-row.scss */
+/* line 49, ../sass/partials/components/_views-row.scss */
 .view--upcoming-events .views-row .views-field.views-field-field-location-name-line {
   font-size: 1.3em;
   line-height: 1.1;
   text-transform: uppercase;
 }
-/* line 51, ../sass/partials/components/_views-row.scss */
+/* line 56, ../sass/partials/components/_views-row.scss */
 .view--upcoming-events .views-row.views-row-last {
   margin-bottom: 0;
 }
 
-/* line 58, ../sass/partials/components/_views-row.scss */
+/* line 63, ../sass/partials/components/_views-row.scss */
 .view--upcoming .views-row {
   background: #fff;
 }
