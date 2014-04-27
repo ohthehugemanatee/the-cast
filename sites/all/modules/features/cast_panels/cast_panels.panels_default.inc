@@ -107,14 +107,14 @@ function cast_panels_default_panels_mini() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-0ed22b75-c75b-4d41-a145-f79c72011130';
+    $pane->pid = 'new-26d66678-6e69-40c9-99c4-d66cb8243870';
     $pane->panel = 'middle';
     $pane->type = 'block';
-    $pane->subtype = 'boxes-social_links';
+    $pane->subtype = 'menu-menu-footer-social-links';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
+      'override_title' => 1,
       'override_title_text' => '',
     );
     $pane->cache = array();
@@ -125,9 +125,9 @@ function cast_panels_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '0ed22b75-c75b-4d41-a145-f79c72011130';
-    $display->content['new-0ed22b75-c75b-4d41-a145-f79c72011130'] = $pane;
-    $display->panels['middle'][0] = 'new-0ed22b75-c75b-4d41-a145-f79c72011130';
+    $pane->uuid = '26d66678-6e69-40c9-99c4-d66cb8243870';
+    $display->content['new-26d66678-6e69-40c9-99c4-d66cb8243870'] = $pane;
+    $display->panels['middle'][0] = 'new-26d66678-6e69-40c9-99c4-d66cb8243870';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $mini->display = $display;
