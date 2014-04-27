@@ -1062,7 +1062,10 @@ function cast_panels_default_page_manager_pages() {
   $page->admin_title = 'Blog';
   $page->admin_description = '';
   $page->path = 'blog';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'normal',
     'title' => 'Blog',
@@ -1600,7 +1603,10 @@ function cast_panels_default_page_manager_pages() {
   $page->admin_title = 'members';
   $page->admin_description = 'members as a panel';
   $page->path = 'members';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -1758,7 +1764,10 @@ function cast_panels_default_page_manager_pages() {
   $page->admin_title = 'Upcoming';
   $page->admin_description = 'members as a panel';
   $page->path = 'upcoming';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
