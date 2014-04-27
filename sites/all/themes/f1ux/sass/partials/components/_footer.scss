@@ -2,31 +2,30 @@
 // Styles for the footer.
 
 footer {
-  .pane {
+  .pane--menu-menu-footer-social-links {
     .pane__content {
       background: #000;
       height: 32px;
       text-align: center;
-      
-      .boxes-box-content {
         
-        ul {
+      ul {
+        display: inline-block;
+        list-style: none;
+        margin: 0;
+        padding: 4px;
+        
+        li {
           display: inline-block;
-          list-style: none;
-          margin: 0;
-          padding: 4px;
+          height: 24px;
+          width: 24px;
           
-          li {
+          a {
             @include background-size(cover);
-            display: inline-block;
+            display: block;
             height: 24px;
+            text-indent: -9999em;
             width: 24px;
-            
-            a {
-              display: block;
-              text-indent: -9999em;
-            }
-            
+          
             &.amazon {
               @include svg-background(amazon);
             }
