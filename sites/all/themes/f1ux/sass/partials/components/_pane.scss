@@ -47,6 +47,10 @@
       color: #333;
       height: auto;
       text-align: left;
+      
+      .node-type-photo-gallery & {
+        padding: 16px;
+      }
      
     }
   }
