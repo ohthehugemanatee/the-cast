@@ -756,13 +756,14 @@ ul.panels-ipe-linkbar li {
   background: #a0a0a4;
   color: #fff;
   display: table-cell;
+  min-height: 300px;
   padding: 16px;
   text-align: left;
   width: 10000px;
 }
 
 @media (min-width: 37.5em) {
-  /* line 86, ../sass/partials/layout/ds/_slat.scss */
+  /* line 87, ../sass/partials/layout/ds/_slat.scss */
   .l-slat--reversed .l-slat__media {
     float: right;
     padding-left: 8px;
