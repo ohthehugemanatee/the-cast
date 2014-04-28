@@ -125,7 +125,7 @@ function cast_core_types_image_default_styles() {
     'name' => 'photo_gallery_main_image',
     'label' => 'photo gallery main image',
     'effects' => array(
-      9 => array(
+      2 => array(
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
         'effect callback' => 'image_scale_effect',
@@ -135,8 +135,8 @@ function cast_core_types_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '',
-          'height' => 514,
+          'width' => 960,
+          'height' => 420,
           'upscale' => 0,
         ),
         'weight' => 1,
@@ -149,7 +149,7 @@ function cast_core_types_image_default_styles() {
     'name' => 'photo_gallery_thumbnail',
     'label' => 'photo gallery thumbnail',
     'effects' => array(
-      8 => array(
+      1 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
