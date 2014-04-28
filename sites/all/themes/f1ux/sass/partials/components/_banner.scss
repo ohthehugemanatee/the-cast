@@ -5,7 +5,6 @@
 .pane--photo-gallery {
   .l-preface & {
     .pane__content {
-      height: 300px !important;
       
       a {
         font-size: 2em;
@@ -14,7 +13,7 @@
       }
       
       img {
-        height: 300px !important;
+        
       }
     }
   }
