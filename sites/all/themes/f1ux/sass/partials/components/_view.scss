@@ -17,6 +17,10 @@
     padding: 0;
     position: relative;
     
+    img {
+      display: block;
+    }
+    
     &.views-row-odd {
       margin-right: 8px;
     }

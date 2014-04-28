@@ -2558,6 +2558,10 @@ tr.drag-previous {
   position: relative;
 }
 /* line 20, ../sass/partials/components/_view.scss */
+.view--photo-galleries-grid .views-row img {
+  display: block;
+}
+/* line 24, ../sass/partials/components/_view.scss */
 .view--photo-galleries-grid .views-row.views-row-odd {
   margin-right: 8px;
 }
