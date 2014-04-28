@@ -125,7 +125,7 @@ function cast_core_types_image_default_styles() {
     'name' => 'photo_gallery_main_image',
     'label' => 'photo gallery main image',
     'effects' => array(
-      2 => array(
+      3 => array(
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
         'effect callback' => 'image_scale_effect',
@@ -135,11 +135,27 @@ function cast_core_types_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => 960,
+          'width' => '',
           'height' => 420,
-          'upscale' => 0,
+          'upscale' => 1,
         ),
         'weight' => 1,
+      ),
+      4 => array(
+        'label' => 'Crop',
+        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
+        'effect callback' => 'image_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_crop_form',
+        'summary theme' => 'image_crop_summary',
+        'module' => 'image',
+        'name' => 'image_crop',
+        'data' => array(
+          'width' => 960,
+          'height' => 420,
+          'anchor' => 'center-center',
+        ),
+        'weight' => 2,
       ),
     ),
   );
