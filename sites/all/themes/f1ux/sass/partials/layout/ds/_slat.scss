@@ -6,7 +6,6 @@ $gutter: 8px;
 
 .l-slat {
   @include clearfix;
-  background: $light_gray;
   border-bottom: $gutter solid #fff;
   margin: 0;
 }
@@ -17,6 +16,7 @@ $gutter: 8px;
   box-sizing: content-box;
   height: 26px;
   margin: 0;
+  padding-left: 4px;
   text-transform: uppercase;
   text-align: left;
   
@@ -29,19 +29,21 @@ $gutter: 8px;
     display: inline-block;
     
     &.field--title {
-      padding: 3px 5px 3px 0;
+      padding: 3px 0;
       
-      &:after {
-        color: #fff;
-        content: ', ';
-      }
+      
     }
     
     &.field--fach {
       color: #fff;
       font-family: $header-font-family;
       font-size: 0.9em;
-      padding: 3px 5px 3px 0;
+      padding: 3px 0;
+      
+      &:before {
+        color: #fff;
+        content: ', ';
+      }
     }
   }
 }
@@ -67,6 +69,7 @@ $gutter: 8px;
 }
 
 .l-slat__content {
+  background: $light_gray;
   color: #fff;
   display: table-cell;
   padding: 16px;

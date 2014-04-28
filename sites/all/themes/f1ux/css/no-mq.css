@@ -682,7 +682,6 @@ ul.panels-ipe-linkbar li {
 
 /* line 7, ../sass/partials/layout/ds/_slat.scss */
 .l-slat {
-  background: #a0a0a4;
   border-bottom: 8px solid white;
   margin: 0;
 }
@@ -696,13 +695,14 @@ ul.panels-ipe-linkbar li {
   clear: both;
 }
 
-/* line 14, ../sass/partials/layout/ds/_slat.scss */
+/* line 13, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__header {
   background: #000;
   border-bottom: 4px solid #fff;
   box-sizing: content-box;
   height: 26px;
   margin: 0;
+  padding-left: 4px;
   text-transform: uppercase;
   text-align: left;
 }
@@ -717,40 +717,41 @@ ul.panels-ipe-linkbar li {
 }
 /* line 31, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__header div.field--title {
-  padding: 3px 5px 3px 0;
+  padding: 3px 0;
 }
-/* line 34, ../sass/partials/layout/ds/_slat.scss */
-.l-slat__header div.field--title:after {
-  color: #fff;
-  content: ', ';
-}
-/* line 40, ../sass/partials/layout/ds/_slat.scss */
+/* line 37, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__header div.field--fach {
   color: #fff;
   font-family: "Orator", helvetica, sans-serif;
   font-size: 0.9em;
-  padding: 3px 5px 3px 0;
+  padding: 3px 0;
+}
+/* line 43, ../sass/partials/layout/ds/_slat.scss */
+.l-slat__header div.field--fach:before {
+  color: #fff;
+  content: ', ';
 }
 
-/* line 49, ../sass/partials/layout/ds/_slat.scss */
+/* line 51, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__media {
   margin: 0;
   padding: 0;
   float: left;
   border-right: 8px solid white;
 }
-/* line 59, ../sass/partials/layout/ds/_slat.scss */
+/* line 61, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__media:empty {
   padding: 0;
 }
-/* line 64, ../sass/partials/layout/ds/_slat.scss */
+/* line 66, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__media a,
 .l-slat__media img {
   display: block;
 }
 
-/* line 69, ../sass/partials/layout/ds/_slat.scss */
+/* line 71, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__content {
+  background: #a0a0a4;
   color: #fff;
   display: table-cell;
   padding: 16px;
@@ -758,7 +759,7 @@ ul.panels-ipe-linkbar li {
   width: 10000px;
 }
 
-/* line 83, ../sass/partials/layout/ds/_slat.scss */
+/* line 86, ../sass/partials/layout/ds/_slat.scss */
 .l-slat--reversed .l-slat__media {
   float: right;
   padding-left: 8px;
@@ -2965,7 +2966,7 @@ ul.quicktabs-tabs li.active a {
 }
 
 /* line 5, ../sass/partials/components/_views-row.scss */
-.views-row {
+.page-blog .views-row {
   padding: 1em 0 2em;
 }
 
