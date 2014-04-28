@@ -30,25 +30,40 @@ function views_slideshow_jcarousel_theme($existing, $type, $theme, $path) {
  *   The path to the jCarousel library js file, or FALSE if not found.
  */
 function _views_slideshow_jcarousel_library_path() {
-  $jcarousel_path = libraries_get_path('jcarousel');
+  if (module_exists('jcarousel')) {
+    $jcarousel_path = drupal_get_path('module', 'jcarousel');
 
-  if (!empty($jcarousel_path)) {
-    // Attempt to use minified version of jCarousel plugin.
-    if (file_exists($jcarousel_path . '/lib/jquery.jcarousel.min.js')) {
-      $jcarousel_path .= '/lib/jquery.jcarousel.min.js';
-    }
-    // Otherwise use non-minified version if available.
-    elseif (file_exists($jcarousel_path . '/lib/jquery.jcarousel.js')) {
-      $jcarousel_path .= '/lib/jquery.jcarousel.js';
-    }
-    else {
-      $jcarousel_path = FALSE;
+    if (!empty($jcarousel_path)) {
+      // Attempt to use minified version of jCarousel plugin.
+      if (file_exists($jcarousel_path . '/js/jquery.jcarousel.min.js')) {
+        $jcarousel_path .= '/js/jquery.jcarousel.min.js';
+      }
+      // Otherwise use non-minified version if available.
+      elseif (file_exists($jcarousel_path . '/js/jquery.jcarousel.js')) {
+        $jcarousel_path .= '/js/jquery.jcarousel.js';
+      }
+      else {
+        $jcarousel_path = FALSE;
+      }
     }
   }
   else {
-    $jcarousel_path = FALSE;
-  }
+    $jcarousel_path = libraries_get_path('jcarousel');
 
+    if (!empty($jcarousel_path)) {
+      // Attempt to use minified version of jCarousel plugin.
+      if (file_exists($jcarousel_path . '/lib/jquery.jcarousel.min.js')) {
+        $jcarousel_path .= '/lib/jquery.jcarousel.min.js';
+      }
+      // Otherwise use non-minified version if available.
+      elseif (file_exists($jcarousel_path . '/lib/jquery.jcarousel.js')) {
+        $jcarousel_path .= '/lib/jquery.jcarousel.js';
+      }
+      else {
+        $jcarousel_path = FALSE;
+      }
+    }
+  }
   return $jcarousel_path;
 }
 
@@ -151,7 +166,13 @@ function views_slideshow_jcarousel_pager_views_slideshow_widget_pager_form_optio
     ),
   );
 
-  $skin_directory = libraries_get_path('jcarousel') . '/skins';
+  if (module_exists('module', 'jcarousel')) {
+    $skin_directory = drupal_get_path('module', 'jcarousel') . '/skins';
+  }
+  else {
+    $skin_directory = libraries_get_path('jcarousel') . '/skins';
+  }
+
   $skins = array();
   foreach (scandir($skin_directory) as $dir) {
     if ($dir !== '.' && $dir !== '..' && is_dir($skin_directory . '/' . $dir)) {

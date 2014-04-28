@@ -6,31 +6,35 @@
 // Add views slieshow api calls for views slideshow jCarousel pager.
 Drupal.behaviors.viewsSlideshowJcarouselPager = { 
   attach: function (context) {
-    // Process pause on hover.
-    $('.views_slideshow_jcarousel_pager:not(.views-slideshow-jcarousel-pager-processed)', context).addClass('views-slideshow-jcarousel-pager-processed').each(function() {
-      // Parse out the unique id from the full id.
-      var pagerInfo = $(this).attr('id').split('_');
-      var location = pagerInfo[2];
-      pagerInfo.splice(0, 3);
-      var uniqueID = pagerInfo.join('_');
+    // Wrap pager initialisation in window.load to make sure that
+    // thumbnail images are loaded before pager container width is set.
+    $(window).load(function(){
+      // Process pause on hover.
+      $('.views_slideshow_jcarousel_pager:not(.views-slideshow-jcarousel-pager-processed)', context).addClass('views-slideshow-jcarousel-pager-processed').each(function() {
+        // Parse out the unique id from the full id.
+        var pagerInfo = $(this).attr('id').split('_');
+        var location = pagerInfo[2];
+        pagerInfo.splice(0, 3);
+        var uniqueID = pagerInfo.join('_');
 
-      $(this).jcarousel({
-        vertical: parseInt(Drupal.settings.viewsSlideshowJCarouselPager[uniqueID][location].orientation),
-        scroll: parseInt(Drupal.settings.viewsSlideshowJCarouselPager[uniqueID][location].scroll),
-        visible: parseInt(Drupal.settings.viewsSlideshowJCarouselPager[uniqueID][location].visible),
-        wrap: Drupal.settings.viewsSlideshowJCarouselPager[uniqueID][location].wrap,
-        animation: (isNaN(Drupal.settings.viewsSlideshowJCarouselPager[uniqueID][location].animation)) ? Drupal.settings.viewsSlideshowJCarouselPager[uniqueID][location].animation : parseInt(Drupal.settings.viewsSlideshowJCarouselPager[uniqueID][location].animation),
-        initCallback: function(carousel) {
-          Drupal.settings.viewsSlideshowJCarouselPager[uniqueID][location]['carouselObj'] = carousel;
-        }
-      });
+        $(this).jcarousel({
+          vertical: parseInt(Drupal.settings.viewsSlideshowJCarouselPager[uniqueID][location].orientation),
+          scroll: parseInt(Drupal.settings.viewsSlideshowJCarouselPager[uniqueID][location].scroll),
+          visible: parseInt(Drupal.settings.viewsSlideshowJCarouselPager[uniqueID][location].visible),
+          wrap: Drupal.settings.viewsSlideshowJCarouselPager[uniqueID][location].wrap,
+          animation: (isNaN(Drupal.settings.viewsSlideshowJCarouselPager[uniqueID][location].animation)) ? Drupal.settings.viewsSlideshowJCarouselPager[uniqueID][location].animation : parseInt(Drupal.settings.viewsSlideshowJCarouselPager[uniqueID][location].animation),
+          initCallback: function(carousel) {
+            Drupal.settings.viewsSlideshowJCarouselPager[uniqueID][location]['carouselObj'] = carousel;
+          }
+        });
 
-      $(this).find('.views_slideshow_jcarousel_pager_item').each(function(index, pagerItem) {
-        $(pagerItem).click(function() {
-          Drupal.viewsSlideshow.action({ "action": 'goToSlide', "slideshowID": uniqueID, "slideNum": index });
+        $(this).find('.views_slideshow_jcarousel_pager_item').each(function(index, pagerItem) {
+          $(pagerItem).click(function() {
+            Drupal.viewsSlideshow.action({ "action": 'goToSlide', "slideshowID": uniqueID, "slideNum": index });
+          });
         });
       });
-    });
+    })
   }
 };
 

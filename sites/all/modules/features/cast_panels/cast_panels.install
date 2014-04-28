@@ -16,3 +16,10 @@ function cast_panels_update_7000() {
 function cast_panels_update_7001() {
   module_enable(array('views_slideshow', 'views_slideshow_jcarousel', 'views_slideshow_cycle'));
 }
+
+/**
+ * Enable jcarousel module.
+ */
+function cast_panels_update_7002() {
+  module_enable(array('jcarousel'));
+}
