@@ -3,9 +3,16 @@
 // @file: Install hooks for maintaining cast_panels functionality.
 
 /**
- * Disable panelizer for blog posts and photo galleries.
+ * disable panelizer for blog posts and photo galleries.
  */
 function cast_panels_update_7000() {
   variable_del('panelizer_defaults_node_blog_post');
   variable_del('panelizer_defaults_node_photo_gallery');
+}
+
+/**
+ * Enable views_slideshow and views_slideshow_jcarousel.
+ */
+function cast_panels_update_7001() {
+  module_enable(array('views_slideshow', 'views_slideshow_jcarousel', 'views_slideshow_cycle'));
 }
