@@ -2555,10 +2555,14 @@ tr.drag-previous {
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
-  -webkit-box-shadow: 0;
-  -moz-box-shadow: 0;
-  box-shadow: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   margin: 0;
+}
+/* line 10, ../sass/partials/components/_flexslider.scss */
+.flexslider .flex-viewport {
+  background: #000;
 }
 
 /* line 6, ../sass/partials/components/_footer.scss */

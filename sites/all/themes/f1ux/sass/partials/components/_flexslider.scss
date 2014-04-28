@@ -4,6 +4,10 @@
 .flexslider {
   border: none;
   @include border-radius(0);
-  @include box-shadow(0);
+  @include box-shadow(none);
   margin: 0;
+  
+  .flex-viewport {
+    background: #000;
+  }
 }
