@@ -2798,6 +2798,20 @@ footer .pane {
   text-align: left;
 }
 
+/* line 85, ../sass/partials/components/_layout-adjustment.scss */
+.group-left {
+  float: left;
+  margin-right: 8px;
+  width: 48.8%;
+}
+
+/* line 92, ../sass/partials/components/_layout-adjustment.scss */
+.group-right {
+  float: left;
+  margin-left: 8px;
+  width: 48.8%;
+}
+
 /* line 4, ../sass/partials/components/_main-menu.scss */
 .block--system-main-menu {
   background: #000;
