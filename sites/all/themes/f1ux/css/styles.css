@@ -2602,13 +2602,18 @@ tr.drag-previous {
   text-decoration: none;
 }
 
-/* line 23, ../sass/partials/components/_banner.scss */
-.entity-boxes--banner-block .content {
+/* line 22, ../sass/partials/components/_banner.scss */
+.l-preface .pane.pane--boxes-demo-banner {
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 27, ../sass/partials/components/_banner.scss */
+.l-preface .pane.pane--boxes-demo-banner .entity-boxes--banner-block .content {
   height: 300px !important;
   position: relative;
 }
-/* line 28, ../sass/partials/components/_banner.scss */
-.entity-boxes--banner-block .content .field--body-text a {
+/* line 32, ../sass/partials/components/_banner.scss */
+.l-preface .pane.pane--boxes-demo-banner .entity-boxes--banner-block .content .field--body-text a {
   font-size: 2em;
   line-height: 1;
   text-decoration: none;

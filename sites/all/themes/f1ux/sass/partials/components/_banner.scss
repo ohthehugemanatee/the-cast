@@ -19,16 +19,21 @@
   }
 }
 
-.entity-boxes--banner-block {
-  .content {
-    height: 300px !important;
-    position: relative;
-    
-    .field--body-text {
-      a {
-        font-size: 2em;
-        line-height: 1;
-        text-decoration: none;
+.l-preface .pane.pane--boxes-demo-banner {
+  margin-left: 0;
+  margin-right: 0;
+  
+  .entity-boxes--banner-block {
+    .content {
+      height: 300px !important;
+      position: relative;
+      
+      .field--body-text {
+        a {
+          font-size: 2em;
+          line-height: 1;
+          text-decoration: none;
+        }
       }
     }
   }
