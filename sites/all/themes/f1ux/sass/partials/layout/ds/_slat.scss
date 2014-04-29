@@ -80,6 +80,23 @@ $gutter: 8px;
     *width: auto;
     *zoom: 1;
   }
+  
+  
+  .group-left {
+    float: left;
+    margin-right: 8px;
+    min-height: 268px;
+    width: 48.8%;
+  }
+  
+  
+  .group-right {
+    float: left;
+    margin-left: 8px;
+    min-height: 268px;
+    width: 48.8%;
+  }
+  
 }
 
 .l-slat--reversed {

@@ -15,8 +15,11 @@
 }
 
 .l-preface .pane.pane--boxes-demo-banner {
-  margin-left: 0;
-  margin-right: 0;
+  .page-upcoming & {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   
   .entity-boxes--banner-block {
     .content {

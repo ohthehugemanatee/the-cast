@@ -55,6 +55,12 @@
     }
   }
   
+  &.pane--admin-info {
+    .not-logged-in & {
+      display: none;
+    }
+  }
+  
   &.pane--quicktabs-media {
     .pane__content {
       background: #fff;
