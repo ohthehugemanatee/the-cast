@@ -1,8 +1,7 @@
 // @file
 // Styles for the banner.
 
-.pane--frontpage-slideshow,
-.pane--photo-gallery {
+.pane--frontpage-slideshow {
   .l-preface & {
     .pane__content {
       
@@ -10,10 +9,6 @@
         font-size: 2em;
         line-height: 1;
         text-decoration: none;
-      }
-      
-      img {
-        
       }
     }
   }

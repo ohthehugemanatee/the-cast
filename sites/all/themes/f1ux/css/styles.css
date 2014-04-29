@@ -2594,25 +2594,24 @@ tr.drag-previous {
   margin-top: 8px;
 }
 
-/* line 9, ../sass/partials/components/_banner.scss */
-.l-preface .pane--frontpage-slideshow .pane__content a, .l-preface
-.pane--photo-gallery .pane__content a {
+/* line 8, ../sass/partials/components/_banner.scss */
+.l-preface .pane--frontpage-slideshow .pane__content a {
   font-size: 2em;
   line-height: 1;
   text-decoration: none;
 }
 
-/* line 22, ../sass/partials/components/_banner.scss */
+/* line 17, ../sass/partials/components/_banner.scss */
 .l-preface .pane.pane--boxes-demo-banner {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 27, ../sass/partials/components/_banner.scss */
+/* line 22, ../sass/partials/components/_banner.scss */
 .l-preface .pane.pane--boxes-demo-banner .entity-boxes--banner-block .content {
   height: 300px !important;
   position: relative;
 }
-/* line 32, ../sass/partials/components/_banner.scss */
+/* line 27, ../sass/partials/components/_banner.scss */
 .l-preface .pane.pane--boxes-demo-banner .entity-boxes--banner-block .content .field--body-text a {
   font-size: 2em;
   line-height: 1;
@@ -2766,6 +2765,72 @@ footer .pane--menu-menu-footer-social-links .pane__content ul li a.youtube {
   height: auto;
   margin: 0;
   padding: 0;
+}
+
+/* line 12, ../sass/partials/components/_jcarousel.scss */
+.view--photo-gallery {
+  position: relative;
+}
+
+/* line 18, ../sass/partials/components/_jcarousel.scss */
+.views-slideshow-controls-text .views-slideshow-controls-text-previous,
+.views-slideshow-controls-text .views-slideshow-controls-text-next {
+  position: absolute;
+  top: 200px;
+  z-index: 100;
+}
+/* line 23, ../sass/partials/components/_jcarousel.scss */
+.views-slideshow-controls-text .views-slideshow-controls-text-previous a,
+.views-slideshow-controls-text .views-slideshow-controls-text-next a {
+  font-size: 2em;
+  opacity: 0.3;
+  text-decoration: none;
+}
+/* line 29, ../sass/partials/components/_jcarousel.scss */
+.views-slideshow-controls-text .views-slideshow-controls-text-previous a:focus, .views-slideshow-controls-text .views-slideshow-controls-text-previous a:hover,
+.views-slideshow-controls-text .views-slideshow-controls-text-next a:focus,
+.views-slideshow-controls-text .views-slideshow-controls-text-next a:hover {
+  color: #fff;
+  opacity: 1;
+}
+/* line 36, ../sass/partials/components/_jcarousel.scss */
+.views-slideshow-controls-text .views-slideshow-controls-text-previous {
+  left: 10px;
+}
+/* line 39, ../sass/partials/components/_jcarousel.scss */
+.views-slideshow-controls-text .views-slideshow-controls-text-previous a:before {
+  content: "\00AB";
+  padding-right: 8px;
+}
+/* line 45, ../sass/partials/components/_jcarousel.scss */
+.views-slideshow-controls-text .views-slideshow-controls-text-next {
+  right: 10px;
+}
+/* line 48, ../sass/partials/components/_jcarousel.scss */
+.views-slideshow-controls-text .views-slideshow-controls-text-next a:after {
+  content: "\00BB";
+  padding-left: 8px;
+}
+/* line 54, ../sass/partials/components/_jcarousel.scss */
+.views-slideshow-controls-text .views-slideshow-controls-text-pause {
+  display: none;
+}
+
+/* line 60, ../sass/partials/components/_jcarousel.scss */
+.views-slideshow-pager-fields {
+  background: #646464;
+  float: left;
+  padding: 8px 4px;
+  width: 100%;
+}
+/* line 66, ../sass/partials/components/_jcarousel.scss */
+.views-slideshow-pager-fields .views-slideshow-pager-field-item {
+  float: left;
+  padding: 0 4px;
+}
+/* line 70, ../sass/partials/components/_jcarousel.scss */
+.views-slideshow-pager-fields .views-slideshow-pager-field-item img {
+  display: block;
 }
 
 /* line 6, ../sass/partials/components/_layout-adjustment.scss */
