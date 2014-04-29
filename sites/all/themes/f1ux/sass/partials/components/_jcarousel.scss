@@ -3,7 +3,7 @@
 
 .views_slideshow_cycle_main {                                                      
   width: 100%;                                                                     
- .views-slideshow-cycle-main-frame {width: 100% !important; height: auto;}         
+ .views-slideshow-cycle-main-frame {width: 100% !important; height: auto; min-height: 420px;}         
  .views-slideshow-cycle-main-frame-row {width: 100% !important; height: auto;}     
  .field-content { max-width: 100%; width: 100%;}                                   
  .field-content img { max-width: 100%; width: 100%; height: auto; margin: 0; padding:0;} 
@@ -60,12 +60,12 @@
 .views-slideshow-pager-fields {
   background: $dark_gray;
   float: left;
-  padding: 8px 4px;
+  padding: 8px 4px 0;
   width: 100%;
   
   .views-slideshow-pager-field-item  {
     float: left;
-    padding: 0 4px;
+    padding: 0 4px 8px;
     
     img {
       display: block;

@@ -2673,6 +2673,7 @@ footer .pane--menu-menu-footer-social-links .pane__content ul li a.youtube {
 .views_slideshow_cycle_main .views-slideshow-cycle-main-frame {
   width: 100% !important;
   height: auto;
+  min-height: 420px;
 }
 /* line 7, ../sass/partials/components/_jcarousel.scss */
 .views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row {
@@ -2748,13 +2749,13 @@ footer .pane--menu-menu-footer-social-links .pane__content ul li a.youtube {
 .views-slideshow-pager-fields {
   background: #646464;
   float: left;
-  padding: 8px 4px;
+  padding: 8px 4px 0;
   width: 100%;
 }
 /* line 66, ../sass/partials/components/_jcarousel.scss */
 .views-slideshow-pager-fields .views-slideshow-pager-field-item {
   float: left;
-  padding: 0 4px;
+  padding: 0 4px 8px;
 }
 /* line 70, ../sass/partials/components/_jcarousel.scss */
 .views-slideshow-pager-fields .views-slideshow-pager-field-item img {
