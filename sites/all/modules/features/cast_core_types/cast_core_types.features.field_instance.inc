@@ -65,7 +65,7 @@ function cast_core_types_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'audiofield_widget',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -74,7 +74,7 @@ function cast_core_types_field_default_field_instances() {
     'bundle' => 'audio',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This text will only appear when the audio is highlighted on the front page.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -107,17 +107,39 @@ function cast_core_types_field_default_field_instances() {
     'label' => 'Body text',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'filtered_html' => 0,
+          'full_html' => 0,
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 1,
+        'default_order_toggle' => 1,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'filtered_html' => array(
+              'weight' => -49,
+            ),
+            'full_html' => array(
+              'weight' => -48,
+            ),
+            'plain_text' => array(
+              'weight' => -50,
+            ),
+          ),
+        ),
+      ),
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 1,
+        'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -178,7 +200,7 @@ function cast_core_types_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -1384,9 +1406,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'plain_text',
-          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -1442,7 +1461,81 @@ function cast_core_types_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-photo_gallery-field_gallery_grid_title'
+  $field_instances['node-photo_gallery-field_gallery_grid_title'] = array(
+    'bundle' => 'photo_gallery',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'The title which will appear when this gallery is listed in the Gallery Grid layout on the Media page.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_gallery_grid_title',
+    'label' => 'Gallery grid title',
+    'required' => 1,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'filtered_html' => 0,
+          'full_html' => 0,
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 1,
+        'default_order_toggle' => 1,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'filtered_html' => array(
+              'weight' => -49,
+            ),
+            'full_html' => array(
+              'weight' => -48,
+            ),
+            'plain_text' => array(
+              'weight' => -50,
+            ),
+          ),
+        ),
+      ),
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 1,
     ),
   );
 
@@ -1454,12 +1547,9 @@ function cast_core_types_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'flexslider_fields',
+        'module' => 'image',
         'settings' => array(
-          'caption' => 0,
-          'edit' => array(
-            'editor' => 'form',
-          ),
+          'image_link' => '',
           'image_style' => 'thumbnail',
           'linked_field' => array(
             'advanced' => array(
@@ -1472,9 +1562,8 @@ function cast_core_types_field_default_field_instances() {
             'destination' => '',
             'linked' => 0,
           ),
-          'optionset' => 'photo_gallery',
         ),
-        'type' => 'flexslider',
+        'type' => 'image',
         'weight' => 1,
       ),
       'teaser' => array(
@@ -1507,7 +1596,7 @@ function cast_core_types_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_miw',
-      'weight' => 32,
+      'weight' => 4,
     ),
   );
 
@@ -1522,9 +1611,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'plain_text',
-          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -1581,7 +1667,68 @@ function cast_core_types_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-video-field_gallery_grid_title'
+  $field_instances['node-video-field_gallery_grid_title'] = array(
+    'bundle' => 'video',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'The title which will appear when this video is listed in the Gallery Grid layout on the Media page.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_gallery_grid_title',
+    'label' => 'Gallery grid title',
+    'required' => 1,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'filtered_html' => 0,
+          'full_html' => 0,
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 1,
+        'default_order_toggle' => 1,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'filtered_html' => array(
+              'weight' => -49,
+            ),
+            'full_html' => array(
+              'weight' => -48,
+            ),
+            'plain_text' => array(
+              'weight' => -50,
+            ),
+          ),
+        ),
+      ),
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 1,
     ),
   );
 
@@ -1596,9 +1743,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'above',
         'module' => 'file_entity',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'form',
-          ),
           'file_view_mode' => 'default',
           'linked_field' => array(
             'advanced' => array(
@@ -1640,7 +1784,7 @@ function cast_core_types_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'enfield_widget',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -1655,6 +1799,7 @@ function cast_core_types_field_default_field_instances() {
   t('Date');
   t('Description');
   t('Fach');
+  t('Gallery grid title');
   t('Headshot');
   t('Image');
   t('Images');
@@ -1663,8 +1808,11 @@ function cast_core_types_field_default_field_instances() {
   t('Select multiple files by holding down SHIFT, CTRL, or CMD keys.');
   t('The image will automatically be scaled and cropped to 234 × 300 px');
   t('The image will automatically be scaled and cropped to 234 × 300 px.');
-  t('The image will be automatically cropped to 960px × 300px');
+  t('The image will automatically be scaled and cropped to 960px × 300px');
+  t('The title which will appear when this gallery is listed in the Gallery Grid layout on the Media page.');
+  t('The title which will appear when this video is listed in the Gallery Grid layout on the Media page.');
   t('This information is displayed under the event location and date. It\'s a good place to mention after parties, before parties, and other special aspects of the show.');
+  t('This text will only appear when the audio is highlighted on the front page.');
   t('Tickets link');
   t('Video');
 
