@@ -167,10 +167,10 @@ function cast_core_types_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '2',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '4',
+          'weight' => '7',
         ),
       ),
       'display' => array(),

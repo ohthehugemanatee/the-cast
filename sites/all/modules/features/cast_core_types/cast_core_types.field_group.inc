@@ -13,6 +13,37 @@ function cast_core_types_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_body_wrapper|node|event|members_page';
+  $field_group->group_name = 'group_body_wrapper';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'members_page';
+  $field_group->parent_name = 'group_right';
+  $field_group->data = array(
+    'label' => 'body wrapper',
+    'weight' => '8',
+    'children' => array(
+      0 => 'field_additional_info',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'body wrapper',
+      'instance_settings' => array(
+        'classes' => 'group-body-wrapper field-group-div field--body',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_body_wrapper|node|event|members_page'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_bottomright|node|audio|default';
   $field_group->group_name = 'group_bottomright';
   $field_group->entity_type = 'node';
@@ -41,6 +72,37 @@ function cast_core_types_field_group_info() {
     ),
   );
   $export['group_bottomright|node|audio|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_bottomright|node|event|members_page';
+  $field_group->group_name = 'group_bottomright';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'event';
+  $field_group->mode = 'members_page';
+  $field_group->parent_name = 'group_right';
+  $field_group->data = array(
+    'label' => 'Bottom Right',
+    'weight' => '9',
+    'children' => array(
+      0 => 'field_tickets_link',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Bottom Right',
+      'instance_settings' => array(
+        'classes' => 'group-bottomright field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_bottomright|node|event|members_page'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -84,11 +146,10 @@ function cast_core_types_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'left',
-    'weight' => '3',
+    'weight' => '2',
     'children' => array(
-      0 => 'field_date',
-      1 => 'field_location',
-      2 => 'field_tickets_link',
+      0 => 'body',
+      1 => 'links',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -125,7 +186,7 @@ function cast_core_types_field_group_info() {
     'format_settings' => array(
       'label' => 'right',
       'instance_settings' => array(
-        'classes' => 'group-right field-group-div',
+        'classes' => 'group-right field-group-div field--body',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -148,10 +209,12 @@ function cast_core_types_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'right',
-    'weight' => '4',
+    'weight' => '3',
     'children' => array(
-      0 => 'body',
-      1 => 'links',
+      0 => 'field_date',
+      1 => 'field_location',
+      2 => 'group_bottomright',
+      3 => 'group_body_wrapper',
     ),
     'format_type' => 'div',
     'format_settings' => array(
