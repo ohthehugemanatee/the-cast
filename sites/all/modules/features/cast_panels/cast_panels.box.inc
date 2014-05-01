@@ -60,7 +60,6 @@ This disclaimer is to be regarded as part of the internet publication which you 
   $box->title = 'About the Cast';
   $box->description = 'Front > About the Cast';
   $box->options = array(
-    'entity_boxes_id' => '1',
     'additional_classes' => '',
   );
   $export['link_about'] = $box;

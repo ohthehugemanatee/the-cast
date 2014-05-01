@@ -636,23 +636,13 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['hide_empty'] = TRUE;
-  /* Field: Content: Path */
-  $handler->display->display_options['fields']['path']['id'] = 'path';
-  $handler->display->display_options['fields']['path']['table'] = 'node';
-  $handler->display->display_options['fields']['path']['field'] = 'path';
-  $handler->display->display_options['fields']['path']['label'] = '';
-  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['path']['alter']['strip_tags'] = TRUE;
-  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['path']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['path']['absolute'] = TRUE;
   /* Field: Content: Date */
   $handler->display->display_options['fields']['field_date']['id'] = 'field_date';
   $handler->display->display_options['fields']['field_date']['table'] = 'field_data_field_date';
   $handler->display->display_options['fields']['field_date']['field'] = 'field_date';
   $handler->display->display_options['fields']['field_date']['label'] = '';
   $handler->display->display_options['fields']['field_date']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_date']['alter']['path'] = '[path]';
+  $handler->display->display_options['fields']['field_date']['alter']['path'] = 'upcoming';
   $handler->display->display_options['fields']['field_date']['alter']['absolute'] = TRUE;
   $handler->display->display_options['fields']['field_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_date']['settings'] = array(
@@ -679,7 +669,7 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['fields']['field_location_locality']['field'] = 'field_location_locality';
   $handler->display->display_options['fields']['field_location_locality']['label'] = '';
   $handler->display->display_options['fields']['field_location_locality']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_location_locality']['alter']['path'] = '[path]';
+  $handler->display->display_options['fields']['field_location_locality']['alter']['path'] = 'upcoming';
   $handler->display->display_options['fields']['field_location_locality']['element_label_colon'] = FALSE;
   /* Field: Content: Location - Full name */
   $handler->display->display_options['fields']['field_location_name_line']['id'] = 'field_location_name_line';
@@ -687,7 +677,7 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['fields']['field_location_name_line']['field'] = 'field_location_name_line';
   $handler->display->display_options['fields']['field_location_name_line']['label'] = '';
   $handler->display->display_options['fields']['field_location_name_line']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_location_name_line']['alter']['path'] = '[path]';
+  $handler->display->display_options['fields']['field_location_name_line']['alter']['path'] = 'upcoming';
   $handler->display->display_options['fields']['field_location_name_line']['element_label_colon'] = FALSE;
   /* Field: Content: Tickets link */
   $handler->display->display_options['fields']['field_tickets_link']['id'] = 'field_tickets_link';
