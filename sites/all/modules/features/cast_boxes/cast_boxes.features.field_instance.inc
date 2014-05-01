@@ -21,9 +21,6 @@ function cast_boxes_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'plain_text',
-          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -32,7 +29,7 @@ function cast_boxes_field_default_field_instances() {
               'text' => '',
               'title' => '',
             ),
-            'destination' => '[entity_boxes:field_destination_url]',
+            'destination' => '[entity_boxes:field-destination-url:url]',
             'linked' => 1,
           ),
         ),
@@ -70,9 +67,6 @@ function cast_boxes_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'plain_text',
-          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -81,7 +75,7 @@ function cast_boxes_field_default_field_instances() {
               'text' => '',
               'title' => '',
             ),
-            'destination' => '[entity_boxes:field_destination_url]',
+            'destination' => '[entity_boxes:field-destination-url:url]',
             'linked' => 1,
           ),
         ),
@@ -159,15 +153,12 @@ function cast_boxes_field_default_field_instances() {
   $field_instances['entity_boxes-banner_block-field_headshot'] = array(
     'bundle' => 'banner_block',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'The image will automatically be cropped to 960px × 300px',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'form',
-          ),
           'image_link' => '',
           'image_style' => 'banner_image',
           'linked_field' => array(
@@ -178,8 +169,8 @@ function cast_boxes_field_default_field_instances() {
               'text' => '',
               'title' => '',
             ),
-            'destination' => '',
-            'linked' => 0,
+            'destination' => '[entity_boxes:field-destination-url:url]',
+            'linked' => 1,
           ),
         ),
         'type' => 'image',
@@ -197,7 +188,7 @@ function cast_boxes_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '',
+      'min_resolution' => '960x300',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -205,7 +196,7 @@ function cast_boxes_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'preview_image_style' => 'flexslider_full',
+        'preview_image_style' => 'banner_image',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
@@ -362,7 +353,7 @@ function cast_boxes_field_default_field_instances() {
   $field_instances['entity_boxes-link_block-field_image'] = array(
     'bundle' => 'link_block',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'The image will automatically be scaled and cropped to 476 × 250 px.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -400,7 +391,7 @@ function cast_boxes_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '',
+      'min_resolution' => '476x250',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -615,7 +606,7 @@ function cast_boxes_field_default_field_instances() {
   $field_instances['entity_boxes-social_block-field_image'] = array(
     'bundle' => 'social_block',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'The image will automatically be scaled and cropped to 48 × 48  px',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -700,6 +691,9 @@ function cast_boxes_field_default_field_instances() {
   t('Destination URL');
   t('Image');
   t('Keep it short to fit in the block!');
+  t('The image will automatically be cropped to 960px × 300px');
+  t('The image will automatically be scaled and cropped to 476 × 250 px.');
+  t('The image will automatically be scaled and cropped to 48 × 48  px');
 
   return $field_instances;
 }

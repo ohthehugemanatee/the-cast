@@ -689,13 +689,27 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['fields']['field_location_name_line']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_location_name_line']['alter']['path'] = '[path]';
   $handler->display->display_options['fields']['field_location_name_line']['element_label_colon'] = FALSE;
-  /* Field: Content: Link */
-  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
-  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['label'] = '';
-  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['text'] = 'Tickets';
+  /* Field: Content: Tickets link */
+  $handler->display->display_options['fields']['field_tickets_link']['id'] = 'field_tickets_link';
+  $handler->display->display_options['fields']['field_tickets_link']['table'] = 'field_data_field_tickets_link';
+  $handler->display->display_options['fields']['field_tickets_link']['field'] = 'field_tickets_link';
+  $handler->display->display_options['fields']['field_tickets_link']['label'] = '';
+  $handler->display->display_options['fields']['field_tickets_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_tickets_link']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_tickets_link']['settings'] = array(
+    'linked_field' => array(
+      'linked' => 0,
+      'destination' => '',
+      'advanced' => array(
+        'title' => '',
+        'target' => '',
+        'class' => '',
+        'rel' => '',
+        'text' => '',
+      ),
+    ),
+  );
+  $handler->display->display_options['fields']['field_tickets_link']['field_api_classes'] = TRUE;
   /* Sort criterion: Content: Date (field_date) */
   $handler->display->display_options['sorts']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['sorts']['field_date_value']['table'] = 'field_data_field_date';

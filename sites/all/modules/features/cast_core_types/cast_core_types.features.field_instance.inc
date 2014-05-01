@@ -408,7 +408,7 @@ function cast_core_types_field_default_field_instances() {
   $field_instances['node-bio-field_headshot'] = array(
     'bundle' => 'bio',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'The image will automatically be scaled and cropped to 234 × 300 px',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -496,7 +496,7 @@ function cast_core_types_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '',
+      'min_resolution' => '234x300',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -825,7 +825,7 @@ function cast_core_types_field_default_field_instances() {
   $field_instances['node-event-field_image'] = array(
     'bundle' => 'event',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'The image will automatically be scaled and cropped to 234 × 300 px.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -908,7 +908,7 @@ function cast_core_types_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '',
+      'min_resolution' => '234x300',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1150,7 +1150,7 @@ function cast_core_types_field_default_field_instances() {
   $field_instances['node-frontpage_slide-field_image'] = array(
     'bundle' => 'frontpage_slide',
     'deleted' => 0,
-    'description' => 'The image will be automatically cropped to 800x350.',
+    'description' => 'The image will be automatically cropped to 960px × 300px',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1194,7 +1194,7 @@ function cast_core_types_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '',
+      'min_resolution' => '960x300',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1202,7 +1202,7 @@ function cast_core_types_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'preview_image_style' => 'flexslider_full',
+        'preview_image_style' => 'banner_image',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
@@ -1570,7 +1570,9 @@ function cast_core_types_field_default_field_instances() {
   t('Location');
   t('Paste the URL to a Vimeo or Youtube video here.');
   t('Select multiple files by holding down SHIFT, CTRL, or CMD keys.');
-  t('The image will be automatically cropped to 800x350.');
+  t('The image will automatically be scaled and cropped to 234 × 300 px');
+  t('The image will automatically be scaled and cropped to 234 × 300 px.');
+  t('The image will be automatically cropped to 960px × 300px');
   t('Tickets link');
   t('Video');
 
