@@ -1,0 +1,10 @@
+<?php
+
+// @file: install and update hooks for cast_boxes.
+
+/**
+ * Enable better_formats module.
+ */
+function cast_boxes_update_7000() {
+  module_enable(array('better_formats'));
+}
