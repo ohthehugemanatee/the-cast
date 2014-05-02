@@ -24,11 +24,14 @@
       right: 10px;
       text-align: right;
       text-transform: uppercase;
-      width: 50%;
       
       .field--body-text {
         color: #fff;
         line-height: 1.1;
+        
+        p {
+          margin: 0;
+        }
         
         a {
           text-decoration: none;
@@ -78,11 +81,6 @@
   &.pane--blog {
     .pane__content {
       padding: 0;
-      
-      a {
-        color: $orange;
-        text-decoration: none;
-      }
     }
   }
   
@@ -109,3 +107,10 @@
 
 }
 
+a {
+  .l-panels-three-column-two-row .l-fourth .pane__content &,
+  .l-panels-four-column-two-row .l-fifth .pane__content & {
+    color: $orange;
+    text-decoration: none;
+  }
+}

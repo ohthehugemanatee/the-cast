@@ -2953,73 +2953,77 @@ footer .pane {
   right: 10px;
   text-align: right;
   text-transform: uppercase;
-  width: 50%;
 }
-/* line 29, ../sass/partials/components/_pane.scss */
+/* line 28, ../sass/partials/components/_pane.scss */
 .pane .pane__content .group-bottomright .field--body-text {
   color: #fff;
   line-height: 1.1;
 }
-/* line 33, ../sass/partials/components/_pane.scss */
+/* line 32, ../sass/partials/components/_pane.scss */
+.pane .pane__content .group-bottomright .field--body-text p {
+  margin: 0;
+}
+/* line 36, ../sass/partials/components/_pane.scss */
 .pane .pane__content .group-bottomright .field--body-text a {
   text-decoration: none;
 }
-/* line 42, ../sass/partials/components/_pane.scss */
+/* line 45, ../sass/partials/components/_pane.scss */
 .pane.pane--admin-info, .pane.pane--nodebody, .pane.pane--node-links {
   margin: 0;
 }
-/* line 45, ../sass/partials/components/_pane.scss */
+/* line 48, ../sass/partials/components/_pane.scss */
 .pane.pane--admin-info .pane__content, .pane.pane--nodebody .pane__content, .pane.pane--node-links .pane__content {
   background: #fff;
   color: #333;
   height: auto;
   text-align: left;
 }
-/* line 51, ../sass/partials/components/_pane.scss */
+/* line 54, ../sass/partials/components/_pane.scss */
 .node-type-photo-gallery .pane.pane--admin-info .pane__content, .node-type-photo-gallery .pane.pane--nodebody .pane__content, .node-type-photo-gallery .pane.pane--node-links .pane__content {
   padding: 16px;
 }
-/* line 59, ../sass/partials/components/_pane.scss */
+/* line 62, ../sass/partials/components/_pane.scss */
 .not-logged-in .pane.pane--admin-info {
   display: none;
 }
-/* line 65, ../sass/partials/components/_pane.scss */
+/* line 68, ../sass/partials/components/_pane.scss */
 .pane.pane--quicktabs-media .pane__content {
   background: #fff;
 }
-/* line 71, ../sass/partials/components/_pane.scss */
+/* line 74, ../sass/partials/components/_pane.scss */
 .pane.pane--upcoming .pane__content {
   text-align: left;
   text-transform: none;
 }
-/* line 79, ../sass/partials/components/_pane.scss */
+/* line 82, ../sass/partials/components/_pane.scss */
 .pane.pane--blog .pane__content {
   padding: 0;
 }
-/* line 82, ../sass/partials/components/_pane.scss */
-.pane.pane--blog .pane__content a {
-  color: #c15d22;
-  text-decoration: none;
-}
-/* line 89, ../sass/partials/components/_pane.scss */
+/* line 87, ../sass/partials/components/_pane.scss */
 .pane.pane--bios {
   margin-bottom: 0;
 }
 
-/* line 96, ../sass/partials/components/_pane.scss */
+/* line 94, ../sass/partials/components/_pane.scss */
 .block-boxes-social_block .pane__content {
   padding: 8px;
 }
-/* line 99, ../sass/partials/components/_pane.scss */
+/* line 97, ../sass/partials/components/_pane.scss */
 .block-boxes-social_block .pane__content .group-left {
   float: left;
   width: 75%;
 }
-/* line 103, ../sass/partials/components/_pane.scss */
+/* line 101, ../sass/partials/components/_pane.scss */
 .block-boxes-social_block .pane__content .group-right {
   float: right;
   text-align: right;
   width: 25%;
+}
+
+/* line 112, ../sass/partials/components/_pane.scss */
+.l-panels-three-column-two-row .l-fourth .pane__content a, .l-panels-four-column-two-row .l-fifth .pane__content a {
+  color: #c15d22;
+  text-decoration: none;
 }
 
 /* line 4, ../sass/partials/components/_quicktabs.scss */
