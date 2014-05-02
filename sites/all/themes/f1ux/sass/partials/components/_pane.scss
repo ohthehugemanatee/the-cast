@@ -108,9 +108,15 @@
 }
 
 a {
+  .pane--nodebody &,
   .l-panels-three-column-two-row .l-fourth .pane__content &,
   .l-panels-four-column-two-row .l-fifth .pane__content & {
     color: $orange;
     text-decoration: none;
+    
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

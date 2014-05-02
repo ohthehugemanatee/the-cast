@@ -3092,10 +3092,14 @@ footer .pane {
   width: 25%;
 }
 
-/* line 112, ../sass/partials/components/_pane.scss */
-.l-panels-three-column-two-row .l-fourth .pane__content a, .l-panels-four-column-two-row .l-fifth .pane__content a {
+/* line 113, ../sass/partials/components/_pane.scss */
+.pane--nodebody a, .l-panels-three-column-two-row .l-fourth .pane__content a, .l-panels-four-column-two-row .l-fifth .pane__content a {
   color: #c15d22;
   text-decoration: none;
+}
+/* line 118, ../sass/partials/components/_pane.scss */
+.pane--nodebody a:focus, .pane--nodebody a:hover, .l-panels-three-column-two-row .l-fourth .pane__content a:focus, .l-panels-three-column-two-row .l-fourth .pane__content a:hover, .l-panels-four-column-two-row .l-fifth .pane__content a:focus, .l-panels-four-column-two-row .l-fifth .pane__content a:hover {
+  text-decoration: underline;
 }
 
 /* line 4, ../sass/partials/components/_quicktabs.scss */
