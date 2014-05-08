@@ -72,7 +72,7 @@ This disclaimer is to be regarded as part of the internet publication which you 
   $box->title = 'Music';
   $box->description = 'Front > Lippen Schweigen';
   $box->options = array(
-    'entity_boxes_id' => '',
+    'additional_classes' => '',
   );
   $export['link_lippen_schweigen'] = $box;
 
@@ -84,7 +84,7 @@ This disclaimer is to be regarded as part of the internet publication which you 
   $box->title = 'Video';
   $box->description = 'Front > Verdi Underground';
   $box->options = array(
-    'entity_boxes_id' => '',
+    'additional_classes' => '',
   );
   $export['link_verdi_underground'] = $box;
 

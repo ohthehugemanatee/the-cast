@@ -128,6 +128,32 @@ function cast_panels_default_panels_mini() {
     $pane->uuid = '26d66678-6e69-40c9-99c4-d66cb8243870';
     $display->content['new-26d66678-6e69-40c9-99c4-d66cb8243870'] = $pane;
     $display->panels['middle'][0] = 'new-26d66678-6e69-40c9-99c4-d66cb8243870';
+    $pane = new stdClass();
+    $pane->pid = 'new-7a2606e5-a9e2-4fd0-bd25-b96a708554c6';
+    $pane->panel = 'middle';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '',
+      'format' => 'filtered_html',
+      'substitute' => TRUE,
+      'name' => 'impressum_link',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '7a2606e5-a9e2-4fd0-bd25-b96a708554c6';
+    $display->content['new-7a2606e5-a9e2-4fd0-bd25-b96a708554c6'] = $pane;
+    $display->panels['middle'][1] = 'new-7a2606e5-a9e2-4fd0-bd25-b96a708554c6';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $mini->display = $display;

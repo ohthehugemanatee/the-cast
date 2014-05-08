@@ -44,7 +44,7 @@ function cast_boxes_default_box() {
   $box->delta = 'facebook_demo';
   $box->plugin_key = 'social_block';
   $box->title = 'Facebook';
-  $box->description = 'Facebook demo social block';
+  $box->description = 'Facebook social block';
   $box->options = array(
     'additional_classes' => 'orange',
   );
@@ -67,14 +67,24 @@ function cast_boxes_default_box() {
   $box->api_version = 1;
   $box->delta = 'press';
   $box->plugin_key = 'simple';
-  $box->title = 'Press';
-  $box->description = 'Press';
+  $box->title = 'Impressum';
+  $box->description = 'Impressum';
   $box->options = array(
     'body' => array(
-      'value' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mi risus, cursus et velit sed, scelerisque rutrum lacus. Sed eget vehicula mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris euismod lacus mi, sit amet faucibus massa rhoncus in.</p>
+      'value' => '<p>Bryn Vertesi<br />
+Campbell Vertesi<br />
+Herausgeber und Geschäftsführer<br />
+Am Kümpchenshof 21<br />
+50670 Köln</p>
+
+<p>Telefon: +49 (0) 15 - 146621809<br />
+Mail:&nbsp;<a href="mailto:booking@the-cast.de">booking@the-cast.de</a></p>
+
+<p>More information <a href="http://the-cast.de/impressum">here</a>&nbsp;</p>
 ',
       'format' => 'filtered_html',
     ),
+    'additional_classes' => '',
   );
   $export['press'] = $box;
 
@@ -104,8 +114,8 @@ function cast_boxes_default_box() {
   $box->api_version = 1;
   $box->delta = 'twitter_demo';
   $box->plugin_key = 'social_block';
-  $box->title = 'Block title';
-  $box->description = 'Twitter demo social block';
+  $box->title = 'Twitter';
+  $box->description = 'Twitter';
   $box->options = array(
     'additional_classes' => 'yellow',
   );

@@ -462,9 +462,6 @@ function cast_boxes_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'plain_text',
-          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -533,9 +530,6 @@ function cast_boxes_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'plain_text',
-          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -544,7 +538,7 @@ function cast_boxes_field_default_field_instances() {
               'text' => '',
               'title' => '',
             ),
-            'destination' => '[entity_boxes:field_destination_url]',
+            'destination' => '[entity_boxes:field-destination-url:url]',
             'linked' => 1,
           ),
         ),
@@ -656,9 +650,6 @@ function cast_boxes_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'form',
-          ),
           'image_link' => '',
           'image_style' => 'social_block',
           'linked_field' => array(
@@ -669,7 +660,7 @@ function cast_boxes_field_default_field_instances() {
               'text' => '',
               'title' => '',
             ),
-            'destination' => '[entity_boxes:field_destination_url]',
+            'destination' => '[entity_boxes:field-destination-url:url]',
             'linked' => 1,
           ),
         ),
