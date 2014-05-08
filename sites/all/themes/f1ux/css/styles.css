@@ -762,17 +762,18 @@ ul.panels-ipe-linkbar li {
   color: #fff;
   display: table-cell;
   padding: 16px;
+  position: relative;
   text-align: left;
   width: 10000px;
 }
-/* line 85, ../sass/partials/layout/ds/_slat.scss */
+/* line 86, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__content .group-left {
   float: left;
   margin-right: 8px;
   min-height: 268px;
   width: 48.8%;
 }
-/* line 93, ../sass/partials/layout/ds/_slat.scss */
+/* line 94, ../sass/partials/layout/ds/_slat.scss */
 .l-slat__content .group-right {
   float: left;
   margin-left: 8px;
@@ -781,7 +782,7 @@ ul.panels-ipe-linkbar li {
 }
 
 @media (min-width: 37.5em) {
-  /* line 103, ../sass/partials/layout/ds/_slat.scss */
+  /* line 104, ../sass/partials/layout/ds/_slat.scss */
   .l-slat--reversed .l-slat__media {
     float: right;
     padding-left: 8px;
