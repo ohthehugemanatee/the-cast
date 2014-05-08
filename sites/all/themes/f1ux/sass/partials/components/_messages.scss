@@ -11,6 +11,7 @@
   margin: rhythm(1, $font-size-md) 0;
   padding: rhythm(0.5, $font-size-md) rhythm(0.5, $font-size-md) rhythm(0.5, $font-size-md) rhythm(2, $font-size-md); // LTR
   position: relative;
+  text-align: left;
   word-wrap: break-word;
 
   [dir="rtl"] & {

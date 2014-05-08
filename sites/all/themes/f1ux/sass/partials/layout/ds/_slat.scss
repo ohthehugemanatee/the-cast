@@ -73,7 +73,6 @@ $gutter: 8px;
   color: #fff;
   display: table-cell;
   padding: 16px;
-  position: relative;
   text-align: left;
   width: 10000px;
 
@@ -95,6 +94,7 @@ $gutter: 8px;
     float: left;
     margin-left: 8px;
     min-height: 268px;
+    position: relative;
     width: 48.8%;
   }
   
