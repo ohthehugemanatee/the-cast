@@ -10,6 +10,42 @@
 function cast_boxes_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'entity_boxes-banner_block-field_bannerblock_frontpage'
+  $field_instances['entity_boxes-banner_block-field_bannerblock_frontpage'] = array(
+    'bundle' => 'banner_block',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Enable this checkbox to include this banner block in the frontpage slideshow.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
+    ),
+    'entity_type' => 'entity_boxes',
+    'field_name' => 'field_bannerblock_frontpage',
+    'label' => 'Promote to frontpage',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance: 'entity_boxes-banner_block-field_body_text'
   $field_instances['entity_boxes-banner_block-field_body_text'] = array(
     'bundle' => 'banner_block',
@@ -23,7 +59,7 @@ function cast_boxes_field_default_field_instances() {
         'settings' => array(
           'linked_field' => array(
             'advanced' => array(
-              'class' => '',
+              'class' => 'flex-caption',
               'rel' => '',
               'target' => '',
               'text' => '',
@@ -724,8 +760,10 @@ function cast_boxes_field_default_field_instances() {
   t('Body text');
   t('Button text');
   t('Destination URL');
+  t('Enable this checkbox to include this banner block in the frontpage slideshow.');
   t('Image');
   t('Keep it short to fit in the block!');
+  t('Promote to frontpage');
   t('The image will automatically be cropped to 960px × 300px');
   t('The image will automatically be scaled and cropped to 476 × 250 px.');
   t('The image will automatically be scaled and cropped to 48 × 48  px');

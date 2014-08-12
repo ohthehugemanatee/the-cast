@@ -21,11 +21,11 @@ function cast_core_types_field_group_info() {
   $field_group->parent_name = 'group_right';
   $field_group->data = array(
     'label' => 'body wrapper',
-    'weight' => '8',
+    'weight' => '16',
     'children' => array(
       0 => 'field_additional_info',
     ),
-    'format_type' => 'div',
+    'format_type' => 'html-element',
     'format_settings' => array(
       'label' => 'body wrapper',
       'instance_settings' => array(
@@ -35,6 +35,9 @@ function cast_core_types_field_group_info() {
         'label_element' => 'h3',
         'effect' => 'none',
         'speed' => 'none',
+        'element' => 'div',
+        'attributes' => '',
+        'required_fields' => 1,
       ),
       'formatter' => 'open',
     ),
@@ -84,7 +87,7 @@ function cast_core_types_field_group_info() {
   $field_group->parent_name = 'group_right';
   $field_group->data = array(
     'label' => 'Bottom Right',
-    'weight' => '9',
+    'weight' => '17',
     'children' => array(
       0 => 'field_tickets_link',
     ),
@@ -149,7 +152,8 @@ function cast_core_types_field_group_info() {
     'weight' => '2',
     'children' => array(
       0 => 'body',
-      1 => 'links',
+      1 => 'field_date',
+      2 => 'links',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -211,10 +215,10 @@ function cast_core_types_field_group_info() {
     'label' => 'right',
     'weight' => '3',
     'children' => array(
-      0 => 'field_date',
-      1 => 'field_location',
-      2 => 'group_bottomright',
-      3 => 'group_body_wrapper',
+      0 => 'field_location',
+      1 => 'group_bold',
+      2 => 'group_body_wrapper',
+      3 => 'group_bottomright',
     ),
     'format_type' => 'div',
     'format_settings' => array(

@@ -26,8 +26,8 @@ function cast_contact_default_mailchimp_list() {
     "settings" : {
       "roles" : { "1" : 1 },
       "mergefields" : { "EMAIL" : "mail", "FNAME" : "", "LNAME" : "" },
-      "mergefields_display" : { "EMAIL" : true, "FNAME" : 0, "LNAME" : 0 },
-      "doublein" : 0,
+      "mergefields_display" : { "EMAIL" : true, "FNAME" : 1, "LNAME" : 1 },
+      "doublein" : 1,
       "show_register_form" : 0,
       "default_register_form_optin" : 0,
       "show_account_form" : 0,

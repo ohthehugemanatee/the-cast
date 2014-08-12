@@ -685,7 +685,7 @@ function cast_core_types_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -879,7 +879,7 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'long',
+          'format_type' => 'short',
           'fromto' => 'both',
           'linked_field' => array(
             'advanced' => array(
@@ -897,7 +897,7 @@ function cast_core_types_field_default_field_instances() {
           'multiple_to' => '',
         ),
         'type' => 'date_default',
-        'weight' => 6,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1120,7 +1120,7 @@ function cast_core_types_field_default_field_instances() {
           'use_widget_handlers' => 1,
         ),
         'type' => 'addressfield_default',
-        'weight' => 7,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1132,7 +1132,7 @@ function cast_core_types_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_location',
     'label' => 'Location',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -1333,9 +1333,6 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'edit' => array(
-            'editor' => 'plain_text',
-          ),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -1392,6 +1389,60 @@ function cast_core_types_field_default_field_instances() {
       ),
       'type' => 'text_textarea_with_summary',
       'weight' => 31,
+    ),
+  );
+
+  // Exported field_instance: 'node-page-field_files'
+  $field_instances['node-page-field_files'] = array(
+    'bundle' => 'page',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'file',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'file_default',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_files',
+    'label' => 'Files',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 1,
+      'file_directory' => '',
+      'file_extensions' => 'txt png pdf jpeg jpg zip psd doc docx xls xlsx',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'multiupload_filefield_widget',
+      'settings' => array(
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_mfw',
+      'weight' => 32,
     ),
   );
 
@@ -1799,6 +1850,7 @@ function cast_core_types_field_default_field_instances() {
   t('Date');
   t('Description');
   t('Fach');
+  t('Files');
   t('Gallery grid title');
   t('Headshot');
   t('Image');

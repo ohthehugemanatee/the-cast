@@ -30,7 +30,7 @@ function cast_boxes_field_group_info() {
     'format_settings' => array(
       'label' => 'Bottom Right',
       'instance_settings' => array(
-        'classes' => 'group-bottomright field-group-div',
+        'classes' => 'group-bottomright field-group-div pane--boxes-demo-banner',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
