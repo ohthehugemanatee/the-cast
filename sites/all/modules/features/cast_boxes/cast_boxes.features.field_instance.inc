@@ -127,7 +127,7 @@ function cast_boxes_field_default_field_instances() {
         'settings' => array(
           'linked_field' => array(
             'advanced' => array(
-              'class' => '',
+              'class' => 'banner',
               'rel' => '',
               'target' => '',
               'text' => '',
