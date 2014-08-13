@@ -16,6 +16,7 @@ features[mailchimp_list][] = the_cast_newsletter
 features[user_permission][] = access site-wide contact form
 features[user_permission][] = access user contact forms
 features[user_permission][] = administer contact forms
+features[user_permission][] = view disqus comments
 features[variable][] = contact_default_status
 features[variable][] = disqus_domain
 features[variable][] = disqus_inherit_login

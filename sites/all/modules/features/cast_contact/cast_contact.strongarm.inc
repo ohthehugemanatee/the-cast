@@ -42,7 +42,7 @@ function cast_contact_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'disqus_location';
-  $strongarm->value = 'content_area';
+  $strongarm->value = 'block';
   $export['disqus_location'] = $strongarm;
 
   $strongarm = new stdClass();

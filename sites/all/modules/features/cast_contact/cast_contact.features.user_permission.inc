@@ -39,5 +39,15 @@ function cast_contact_user_default_permissions() {
     'module' => 'contact',
   );
 
+  // Exported permission: 'view disqus comments'.
+  $permissions['view disqus comments'] = array(
+    'name' => 'view disqus comments',
+    'roles' => array(
+      'admin' => 'admin',
+      'anonymous user' => 'anonymous user',
+    ),
+    'module' => 'disqus',
+  );
+
   return $permissions;
 }
