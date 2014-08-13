@@ -5,5 +5,6 @@ sites/*/settings*.php
 sites/*/files
 sites/*/private
 
-# Ignore DS_Store
+# Ignore DS_Store and .idea
 */.DS_Store
+*/.idea
