@@ -1,0 +1,10 @@
+<?php
+
+// @file: Update hooks for Cast Contact feature.
+
+/**
+ * Enable Disqus module.
+ */
+function cast_contact_update_7001() {
+  module_enable(array('disqus'));
+}
