@@ -48,5 +48,7 @@ drush -r $REPO_ROOT/public -p -y updb > $PARENT_DIR/last_deploy.log
 echo 'Reverting Features'
 drush -r $REPO_ROOT/public -p -y fra >> $PARENT_DIR/last_deploy.log
 
-echo 'Resetting admin password'
-drush -r $REPO_ROOT/public -p -y upwd admin --password="admin" >> $PARENT_DIR/last_deploy.log
+if [[ $ENV == 'dev' ]]; then
+  echo 'Resetting admin password'
+  drush -r $REPO_ROOT/public -p -y upwd ""--password="admin" >> $PARENT_DIR/last_deploy.log
+fi
