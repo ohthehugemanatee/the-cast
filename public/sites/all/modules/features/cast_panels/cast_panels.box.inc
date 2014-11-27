@@ -57,7 +57,7 @@ This disclaimer is to be regarded as part of the internet publication which you 
   $box->api_version = 1;
   $box->delta = 'link_about';
   $box->plugin_key = 'link_block';
-  $box->title = 'About the Cast';
+  $box->title = 'Who We Are';
   $box->description = 'Front > About the Cast';
   $box->options = array(
     'additional_classes' => '',
