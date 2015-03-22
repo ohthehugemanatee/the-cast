@@ -7,21 +7,24 @@
  */
 
 /**
- * Plugins are described by creating a $plugin array which will be used
- * by the system that includes this file.
+ * Plugins are described by creating a $plugin array which will be used by the
+ * system that includes this file.
  */
 $plugin = array(
   'title' => t('Site name'),
   'single' => TRUE,
   'icon' => 'icon_page.png',
-  'description' => t('The name of the site.'),
+  'description' => t('The name of the site, optionally links to the front page.'),
   'category' => t('Page elements'),
   'render last' => TRUE,
   'defaults' => array(
-    'linked' => '',
+    'linked' => FALSE,
   ),
 );
 
+/**
+ * Settings form for the Site Name pane.
+ */
 function ctools_page_site_name_content_type_edit_form($form, &$form_state) {
   $conf = $form_state['conf'];
 
@@ -29,7 +32,7 @@ function ctools_page_site_name_content_type_edit_form($form, &$form_state) {
     '#title' => t('Linked'),
     '#description' => t('Link the site name to the home page.'),
     '#type' => 'checkbox',
-    '#default_value' => empty($conf['linked']) ? '' : $conf['linked'],
+    '#default_value' => isset($conf['linked']) ? $conf['linked'] : FALSE,
   );
 
   return $form;
@@ -52,12 +55,14 @@ function ctools_page_site_name_content_type_edit_form_submit($form, &$form_state
  * Outputs the site_name for the current page.
  */
 function ctools_page_site_name_content_type_render($subtype, $conf, $panel_args) {
-  $site_name = filter_xss_admin(variable_get('site_name', 'Drupal'));
-  if ($conf['linked']) {
-    $site_name = l($site_name, $GLOBALS['base_url']);
-  }
   $block = new stdClass();
-  $block->content = $site_name;
+
+  $block->content = filter_xss_admin(variable_get('site_name', 'Drupal'));
+
+  // Optionally link the site name to the homepage.
+  if (!empty($conf['linked'])) {
+    $block->content = l($block->content, '<front>');
+  }
 
   return $block;
 }
