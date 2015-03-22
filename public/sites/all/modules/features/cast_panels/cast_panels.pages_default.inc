@@ -964,6 +964,25 @@ function cast_panels_default_page_manager_handlers() {
     $display->content['new-d2185545-3d7b-4534-85ee-81830983a0dd'] = $pane;
     $display->panels['21'][0] = 'new-d2185545-3d7b-4534-85ee-81830983a0dd';
     $pane = new stdClass();
+    $pane->pid = 'new-ddd49894-4098-41cf-bb75-ba4d145ee824';
+    $pane->panel = '22';
+    $pane->type = 'page_messages';
+    $pane->subtype = 'page_messages';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'ddd49894-4098-41cf-bb75-ba4d145ee824';
+    $display->content['new-ddd49894-4098-41cf-bb75-ba4d145ee824'] = $pane;
+    $display->panels['22'][0] = 'new-ddd49894-4098-41cf-bb75-ba4d145ee824';
+    $pane = new stdClass();
     $pane->pid = 'new-d2e76d0c-cd68-429c-9db7-21bccc2e3517';
     $pane->panel = '31';
     $pane->type = 'token';
@@ -1577,28 +1596,6 @@ function cast_panels_default_page_manager_pages() {
     $display->content['new-db45053c-5658-484c-8150-9efbc81f6e95'] = $pane;
     $display->panels['preface'][2] = 'new-db45053c-5658-484c-8150-9efbc81f6e95';
     $pane = new stdClass();
-    $pane->pid = 'new-212fd229-2bae-4178-ae3d-eeaf50514d7d';
-    $pane->panel = 'second';
-    $pane->type = 'block';
-    $pane->subtype = 'boxes-link_about';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '212fd229-2bae-4178-ae3d-eeaf50514d7d';
-    $display->content['new-212fd229-2bae-4178-ae3d-eeaf50514d7d'] = $pane;
-    $display->panels['second'][0] = 'new-212fd229-2bae-4178-ae3d-eeaf50514d7d';
-    $pane = new stdClass();
     $pane->pid = 'new-edfb02d5-a0fa-4387-b3e9-49963bd4db5b';
     $pane->panel = 'second';
     $pane->type = 'views_panes';
@@ -1612,11 +1609,33 @@ function cast_panels_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
     $pane->uuid = 'edfb02d5-a0fa-4387-b3e9-49963bd4db5b';
     $display->content['new-edfb02d5-a0fa-4387-b3e9-49963bd4db5b'] = $pane;
-    $display->panels['second'][1] = 'new-edfb02d5-a0fa-4387-b3e9-49963bd4db5b';
+    $display->panels['second'][0] = 'new-edfb02d5-a0fa-4387-b3e9-49963bd4db5b';
+    $pane = new stdClass();
+    $pane->pid = 'new-212fd229-2bae-4178-ae3d-eeaf50514d7d';
+    $pane->panel = 'second';
+    $pane->type = 'block';
+    $pane->subtype = 'boxes-link_about';
+    $pane->shown = FALSE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '212fd229-2bae-4178-ae3d-eeaf50514d7d';
+    $display->content['new-212fd229-2bae-4178-ae3d-eeaf50514d7d'] = $pane;
+    $display->panels['second'][1] = 'new-212fd229-2bae-4178-ae3d-eeaf50514d7d';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1862,6 +1881,59 @@ function cast_panels_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
+    $pane->pid = 'new-676cff68-4159-4fe9-a1a9-0eee8b22f6f3';
+    $pane->panel = 'main';
+    $pane->type = 'block';
+    $pane->subtype = 'boxes-backdrop_2015upcoming';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '676cff68-4159-4fe9-a1a9-0eee8b22f6f3';
+    $display->content['new-676cff68-4159-4fe9-a1a9-0eee8b22f6f3'] = $pane;
+    $display->panels['main'][0] = 'new-676cff68-4159-4fe9-a1a9-0eee8b22f6f3';
+    $pane = new stdClass();
+    $pane->pid = 'new-b7b48c14-0cb6-4514-a496-c0096df24b49';
+    $pane->panel = 'main';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = FALSE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => 'Upcoming teaser',
+      'title' => '',
+      'body' => '<p>2014 was a great year for The Cast, with two German tours, an EP, and a special tour to Paris! 2015 will see the release of a feature-length documentary about The Cast. Stay tuned here and on our Facebook page for premiere and screening dates.</p>
+
+<p>&nbsp;</p>
+',
+      'format' => 'filtered_html',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'pane--nodebody',
+    );
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'b7b48c14-0cb6-4514-a496-c0096df24b49';
+    $display->content['new-b7b48c14-0cb6-4514-a496-c0096df24b49'] = $pane;
+    $display->panels['main'][1] = 'new-b7b48c14-0cb6-4514-a496-c0096df24b49';
+    $pane = new stdClass();
     $pane->pid = 'new-a9fd6d6f-bd11-4e79-8f11-e8112aac19df';
     $pane->panel = 'main';
     $pane->type = 'views';
@@ -1890,11 +1962,11 @@ function cast_panels_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 2;
     $pane->locks = array();
     $pane->uuid = 'a9fd6d6f-bd11-4e79-8f11-e8112aac19df';
     $display->content['new-a9fd6d6f-bd11-4e79-8f11-e8112aac19df'] = $pane;
-    $display->panels['main'][0] = 'new-a9fd6d6f-bd11-4e79-8f11-e8112aac19df';
+    $display->panels['main'][2] = 'new-a9fd6d6f-bd11-4e79-8f11-e8112aac19df';
     $pane = new stdClass();
     $pane->pid = 'new-4e84b212-6349-4926-bb43-86c4d09b4f92';
     $pane->panel = 'preface';
