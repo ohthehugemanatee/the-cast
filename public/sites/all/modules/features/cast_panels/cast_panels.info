@@ -66,4 +66,5 @@ features_exclude[menu_links][menu-footer-social-links_soundcloud:http://soundclo
 features_exclude[menu_links][menu-footer-social-links_itunes:http://itunes.com] = menu-footer-social-links_itunes:http://itunes.com
 features_exclude[menu_links][menu-footer-social-links_amazon:http://amazon.com/] = menu-footer-social-links_amazon:http://amazon.com/
 features_exclude[menu_links][menu-footer-social-links_spotify:http://spotify.com] = menu-footer-social-links_spotify:http://spotify.com
+mtime = 1424018610
 project path = sites/all/modules/features
