@@ -242,8 +242,8 @@ function clean_markup_blocks_preprocess_block(&$vars) {
   // Only output a title if one is set.
   if ($vars['block']->subject) {
     $vars['title'] = array(
-      '#prefix' => render($vars['title_prefix']),
-      '#suffix' => render($vars['title_suffix']),
+      '#prefix' => $vars['title_prefix'],
+      '#suffix' => $vars['title_suffix'],
       '#type' => 'html_tag',
       '#tag' => $current_block_settings['title_wrapper'],
       '#attributes' => isset($vars['title_attributes']) ? $vars['title_attributes'] : array(),
@@ -256,10 +256,6 @@ function clean_markup_blocks_preprocess_block(&$vars) {
     if ($current_block_settings['title_hide']) {
       $vars['title']['#attributes']['class'][] = 'element-invisible';
     }
-
-    // Core's block.tpl.php assumes the block subject is a string. While this is
-    // a different variable entirely, it's worth being consistent.
-    $vars['title'] = render($vars['title']);
   }
   else {
     $vars['title'] = '';
@@ -276,17 +272,36 @@ function clean_markup_blocks_preprocess_block(&$vars) {
       '#value' => $vars['content'],
     );
     $vars['content']['#attributes'] += $vars['content_attributes_array'];
-
-    // Core's block.tpl.php assumes the content is a string (it doesn't call
-    // render() on it). Even though we're overriding that tpl file, it's worth
-    // being consistent.
-    $vars['content'] = render($vars['content']);
   }
 
   // Output the block HTML ID as a class if requested.
   if ($current_block_settings['block_html_id_as_class']) {
     $vars['classes_array'][] = $vars['block_html_id'];
   }
+}
+
+/**
+ * Implements MODULE_process_HOOK().
+ */
+function clean_markup_blocks_process_block(&$vars) {
+  // Only output a title if one is set.
+  if ($vars['block']->subject) {
+    // Render title prefix and suffix.
+    $vars['title']['#prefix'] = render($vars['title_prefix']);
+    $vars['title']['#suffix'] = render($vars['title_suffix']);
+
+    // Core's block.tpl.php assumes the block subject is a string. While this is
+    // a different variable entirely, it's worth being consistent.
+    $vars['title'] = render($vars['title']);
+  }
+  else {
+    $vars['title'] = '';
+  }
+
+  // Core's block.tpl.php assumes the content is a string (it doesn't call
+  // render() on it). Even though we're overriding that tpl file, it's worth
+  // being consistent.
+  $vars['content'] = render($vars['content']);
 }
 
 /**

@@ -6,88 +6,6 @@
  */
 
 /**
- * Implements hook_install().
- */
-function media_youtube_install() {
-  _media_youtube_import_file_displays();
-}
-
-/**
- * Import default file displays.
- */
-function _media_youtube_import_file_displays() {
-  // Create initial display settings.
-  module_load_include('inc', 'file_entity', 'file_entity.file_api');
-
-  $existing_display = file_displays_load('video', 'default');
-  if (empty($existing_display)) {
-    // Video previews should be displayed using a large filetype icon.
-    $display = array(
-      'api_version' => 1,
-      'name' => 'video__default__media_youtube_video',
-      'weight' => 0,
-      'status' => 1,
-      'settings' => array(
-        'width' => '640',
-        'height' => '390',
-        'theme' => 'dark',
-        'color' => 'red',
-        'autohide' => '2',
-        'autoplay' => 0,
-        'loop' => 0,
-        'showinfo' => 1,
-        'modestbranding' => 0,
-        'rel' => 1,
-        'nocookie' => 0,
-        'protocol_specify' => 0,
-        'protocol' => 'https:',
-        'enablejsapi' => 0,
-        'origin' => '',
-      ),
-    );
-    file_display_save((object) $display);
-
-    $display = array(
-      'api_version' => 1,
-      'name' => 'video__preview__media_youtube_image',
-      'weight' => 0,
-      'status' => 1,
-      'settings' => array(
-        'image_style' => 'media_thumbnail',
-      ),
-    );
-    file_display_save((object) $display);
-
-    $display = array(
-      'api_version' => 1,
-      'name' => 'video__teaser__media_youtube_video',
-      'weight' => 0,
-      'status' => 1,
-      'settings' => array(
-        'width' => '560',
-        'height' => '340',
-        'theme' => 'dark',
-        'color' => 'red',
-        'autohide' => '2',
-        'autoplay' => 0,
-        'loop' => 0,
-        'showinfo' => 1,
-        'modestbranding' => 0,
-        'rel' => 1,
-        'nocookie' => 0,
-        'protocol_specify' => 0,
-        'protocol' => 'https:',
-        'enablejsapi' => 0,
-        'origin' => '',
-      ),
-    );
-    file_display_save((object) $display);
-
-  }
-
-}
-
-/**
  * Clear style and preset caches.
  */
 function media_youtube_update_7001() {
@@ -240,9 +158,11 @@ function media_youtube_update_7203() {
 }
 
 /**
- * Move display defaults to the db instead of hook_file_default_displays_alter().
+ * Update the Media YouTube browser's access check.
+ *
+ * Check your permissions; after this update the Media YouTube browser will be
+ * available to users with the "administer files" or "add media from remote
+ * sources" permissions only.
  */
 function media_youtube_update_7204() {
-  _media_youtube_import_file_displays();
-  return t('The Media Youtube default file displays were moved to the database.');
 }
