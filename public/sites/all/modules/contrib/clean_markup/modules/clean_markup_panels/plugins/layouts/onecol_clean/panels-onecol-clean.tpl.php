@@ -15,4 +15,4 @@
 ?>
 <section class="<?php print $panel_classes; ?>"<?php print $panel_id; ?>>
   <?php print $content['middle']; ?>
-</div>
+</section>

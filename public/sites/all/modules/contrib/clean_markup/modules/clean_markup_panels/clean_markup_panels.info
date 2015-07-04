@@ -6,9 +6,9 @@ package = Clean markup
 dependencies[] = clean_markup
 dependencies[] = panels
 
-; Information added by Drupal.org packaging script on 2014-02-15
-version = "7.x-2.4"
+; Information added by Drupal.org packaging script on 2014-07-21
+version = "7.x-2.7"
 core = "7.x"
 project = "clean_markup"
-datestamp = "1392476913"
+datestamp = "1405950528"
 

@@ -1,5 +1,14 @@
-Clean Markup 7.x-2.x, xxxx-xx-xx
+Clean Markup 7.x-2.7, 2014-07-21
 --------------------------------
+
+#2305717 by dcmouyard: Fixed Regression: Allow block title and content
+  attributes to be overridden.
+
+Clean Markup 7.x-2.6, 2014-05-30
+--------------------------------
+
+#2269651 by joelpittet: panels-onecol-clean.tpl.php starts it's tag as a section
+  and ends with a div.
 
 Clean Markup 7.x-2.4, 2014-02-15
 --------------------------------
