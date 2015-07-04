@@ -443,6 +443,7 @@ function cast_core_types_field_default_field_instances() {
           'colorbox_image_style' => 'photo_large',
           'colorbox_multivalue_index' => NULL,
           'colorbox_node_style' => 'bio_headshot',
+          'colorbox_node_style_first' => '',
           'edit' => array(
             'editor' => 'form',
           ),
@@ -1039,17 +1040,7 @@ function cast_core_types_field_default_field_instances() {
   // Exported field_instance: 'node-event-field_location'
   $field_instances['node-event-field_location'] = array(
     'bundle' => 'event',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'node|event|field_location|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'postal_code' => '',
-        'locality' => '',
-        'country' => 'DE',
-        'name_line' => '',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -1141,6 +1132,7 @@ function cast_core_types_field_default_field_instances() {
       'module' => 'addressfield',
       'settings' => array(
         'available_countries' => array(),
+        'default_country' => '',
         'format_handlers' => array(
           'address' => 'address',
           'name-oneline' => 'name-oneline',
@@ -1230,6 +1222,7 @@ function cast_core_types_field_default_field_instances() {
     'label' => 'Tickets link',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -1243,6 +1236,7 @@ function cast_core_types_field_default_field_instances() {
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'required',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 'optional',
@@ -1860,7 +1854,7 @@ function cast_core_types_field_default_field_instances() {
   t('Select multiple files by holding down SHIFT, CTRL, or CMD keys.');
   t('The image will automatically be scaled and cropped to 234 × 300 px');
   t('The image will automatically be scaled and cropped to 234 × 300 px.');
-  t('The image will automatically be scaled and cropped to 960px × 300px');
+  t('The image will be automatically cropped to 960px × 300px');
   t('The title which will appear when this gallery is listed in the Gallery Grid layout on the Media page.');
   t('The title which will appear when this video is listed in the Gallery Grid layout on the Media page.');
   t('This information is displayed under the event location and date. It\'s a good place to mention after parties, before parties, and other special aspects of the show.');
