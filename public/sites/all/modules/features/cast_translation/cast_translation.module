@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Cast translation feature.
+ */
+
+include_once 'cast_translation.features.inc';
