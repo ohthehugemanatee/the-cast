@@ -22,3 +22,28 @@ function cast_misc_update_7001() {
 function cast_misc_update_7002() {
   module_enable(array('cast_media'));
 }
+
+/**
+ * Remove dead old tables that bork translation install.
+ */
+function cast_misc_update_7003() {
+  $dead_tables_walking = array(
+    'cache_variable',
+    'entity_translation',
+    'entity_translation_revision',
+    'field_data_field_link',
+    'field_revision_field_link',
+    'i18n_block_language',
+    'i18n_path',
+    'i18n_string',
+    'i18n_translation_set',
+    'languages',
+    'locales_source',
+    'locales_target',
+    'translation_overview_priority',
+    'variable_store',
+  );
+  foreach ($dead_tables_walking as $table) {
+    db_drop_table($table);
+  }
+}
