@@ -47,3 +47,10 @@ function cast_misc_update_7003() {
     db_drop_table($table);
   }
 }
+
+/**
+ * [translation] Enable translation-related modules.
+ */
+function cast_misc_update_7004() {
+  module_enable(array('cast_translation'));
+}
