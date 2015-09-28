@@ -31,7 +31,7 @@ function cast_contact_default_mailchimp_list() {
       "show_register_form" : 0,
       "default_register_form_optin" : 0,
       "show_account_form" : 0,
-      "form_label" : "The Cast Newsletter",
+      "form_label" : "",
       "submit_label" : "Subscribe",
       "include_interest_groups" : 0,
       "opt_in_interest_groups" : 0,
