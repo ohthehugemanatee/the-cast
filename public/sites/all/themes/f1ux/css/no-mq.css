@@ -2834,7 +2834,7 @@ footer .pane {
 /* line 22, ../sass/partials/components/_layout-adjustment.scss */
 .front .l-panels-two-column .l-first .pane.short .pane__content, .front
 .l-panels-two-column .l-second .pane.short .pane__content {
-  height: 170px;
+  height: 166px;
 }
 
 /* line 36, ../sass/partials/components/_layout-adjustment.scss */
@@ -2931,23 +2931,27 @@ footer .pane {
 /* line 6, ../sass/partials/components/_mailchimp-block.scss */
 .l-panels-two-column .mailchimp-lists-user-subscribe-form .button--submit {
   float: left;
+  line-height: 1em;
+  margin-top: 1.03em;
+  font-size: 1.2em;
+  padding: 0.3125em;
 }
-/* line 11, ../sass/partials/components/_mailchimp-block.scss */
+/* line 15, ../sass/partials/components/_mailchimp-block.scss */
 .l-panels-two-column .mailchimp-lists-user-subscribe-form .mailchimp-newsletter-wrapper {
   text-align: left;
   padding: 8px;
 }
-/* line 15, ../sass/partials/components/_mailchimp-block.scss */
+/* line 19, ../sass/partials/components/_mailchimp-block.scss */
 .l-panels-two-column .mailchimp-lists-user-subscribe-form .mailchimp-newsletter-wrapper #edit-mailchimp-lists-mailchimp-the-cast-newsletter-title {
   width: 100%;
 }
-/* line 19, ../sass/partials/components/_mailchimp-block.scss */
+/* line 23, ../sass/partials/components/_mailchimp-block.scss */
 .l-panels-two-column .mailchimp-lists-user-subscribe-form .mailchimp-newsletter-wrapper .form-item {
   float: left;
   width: 50%;
-  padding-bottom: 0.4em;
+  margin: 0;
 }
-/* line 25, ../sass/partials/components/_mailchimp-block.scss */
+/* line 30, ../sass/partials/components/_mailchimp-block.scss */
 .l-panels-two-column .mailchimp-lists-user-subscribe-form .mailchimp-newsletter-wrapper .form-item__description {
   color: #FFF;
   text-shadow: 1px 1px 0px #000;
