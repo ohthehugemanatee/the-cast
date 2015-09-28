@@ -2831,8 +2831,13 @@ footer .pane {
 .l-panels-two-column .l-second .pane .pane__content {
   height: 250px;
 }
+/* line 22, ../sass/partials/components/_layout-adjustment.scss */
+.front .l-panels-two-column .l-first .pane.short .pane__content, .front
+.l-panels-two-column .l-second .pane.short .pane__content {
+  height: 170px;
+}
 
-/* line 29, ../sass/partials/components/_layout-adjustment.scss */
+/* line 36, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-four-column-two-row .l-first .pane .pane__content,
 .l-panels-four-column-two-row .l-second .pane .pane__content,
 .l-panels-four-column-two-row .l-third .pane .pane__content,
@@ -2841,43 +2846,43 @@ footer .pane {
   height: 123px;
 }
 
-/* line 43, ../sass/partials/components/_layout-adjustment.scss */
+/* line 50, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-two-row .l-first .pane .pane__content,
 .l-panels-three-column-two-row .l-second .pane .pane__content,
 .l-panels-three-column-two-row .l-third .pane .pane__content {
   height: 165px;
 }
 
-/* line 53, ../sass/partials/components/_layout-adjustment.scss */
+/* line 60, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-25-50-25 .l-first .pane__content,
 .l-panels-three-column-25-50-25 .l-third .pane__content {
   padding: 8px;
   text-align: left;
 }
-/* line 57, ../sass/partials/components/_layout-adjustment.scss */
+/* line 64, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-25-50-25 .l-first .pane__content .group-left,
 .l-panels-three-column-25-50-25 .l-third .pane__content .group-left {
   float: left;
   width: 75%;
 }
-/* line 61, ../sass/partials/components/_layout-adjustment.scss */
+/* line 68, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-25-50-25 .l-first .pane__content .group-right,
 .l-panels-three-column-25-50-25 .l-third .pane__content .group-right {
   float: right;
   text-align: right;
   width: 25%;
 }
-/* line 67, ../sass/partials/components/_layout-adjustment.scss */
+/* line 74, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-25-50-25 .l-second .pane__content {
   padding: 16px;
   text-align: left;
 }
 
-/* line 75, ../sass/partials/components/_layout-adjustment.scss */
+/* line 82, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-four-column-two-row .pane__content {
   text-align: left;
 }
-/* line 79, ../sass/partials/components/_layout-adjustment.scss */
+/* line 86, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-four-column-two-row .l-fifth .pane__content {
   padding: 16px;
   text-align: left;
