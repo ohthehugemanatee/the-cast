@@ -23,16 +23,22 @@
       .form-item {
         float: left;
         width: 50%;
-        //padding-bottom: 0.4em;
         margin: 0;
       }
-
-      .form-item__description {
-        color: #FFF;
-        text-shadow: 1px 1px 0px #000;
-        font-size: 1em;
-      }
-
     }
+  }
+}
+
+.mailchimp-lists-user-subscribe-form {
+  padding-bottom: 2em;
+
+  .button--submit {
+    @extend %black-submit;
+    float: left;
+  }
+  .form-item__description {
+    color: #FFF;
+    text-shadow: 1px 1px 0px #000;
+    font-size: 1em;
   }
 }
