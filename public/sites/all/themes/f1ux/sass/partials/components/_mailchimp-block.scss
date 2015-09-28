@@ -1,0 +1,19 @@
+// @file
+// Styles for mailchimp blocks.
+
+.l-panels-two-column {
+  .mailchimp-newsletter-wrapper {
+    text-align: left;
+    padding: 8px;
+
+    .form-item--textfield {
+      float: left;
+    }
+    .form-item--emailfield {
+      clear: left;
+    }
+    .form-item--mailchimp-lists-mailchimp-the-cast-newsletter-mergevars-fname {
+      margin-right: 10px;
+    }
+  }
+}

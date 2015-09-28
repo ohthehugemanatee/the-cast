@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 65, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+/* line 65, ../../../../../../../../.rvm/gems/ruby-2.1.2/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
 .l-grid__row:after, .l-panels-one-column:after, .l-panels-one-column .l-preface:after,
 .l-panels-one-column .l-main:after {
   content: "";
@@ -2895,6 +2895,24 @@ footer .pane {
 /* line 36, ../sass/partials/components/_main-menu.scss */
 .block--system-main-menu ul.nav li a.active {
   color: #fff;
+}
+
+/* line 5, ../sass/partials/components/_mailchimp-block.scss */
+.l-panels-two-column .mailchimp-newsletter-wrapper {
+  text-align: left;
+  padding: 8px;
+}
+/* line 9, ../sass/partials/components/_mailchimp-block.scss */
+.l-panels-two-column .mailchimp-newsletter-wrapper .form-item--textfield {
+  float: left;
+}
+/* line 12, ../sass/partials/components/_mailchimp-block.scss */
+.l-panels-two-column .mailchimp-newsletter-wrapper .form-item--emailfield {
+  clear: left;
+}
+/* line 15, ../sass/partials/components/_mailchimp-block.scss */
+.l-panels-two-column .mailchimp-newsletter-wrapper .form-item--mailchimp-lists-mailchimp-the-cast-newsletter-mergevars-fname {
+  margin-right: 10px;
 }
 
 /* line 8, ../sass/partials/components/_node.scss */
