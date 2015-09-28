@@ -1538,7 +1538,7 @@ input.throbbing {
 }
 
 /* line 57, ../sass/partials/components/_button.scss */
-.l-panels-two-column .mailchimp-lists-user-subscribe-form .button--submit {
+.l-panels-two-column .mailchimp-lists-user-subscribe-form .button--submit, .mailchimp-lists-user-subscribe-form .button--submit {
   background: #000;
   color: #fff;
   display: block;
@@ -1557,7 +1557,7 @@ input.throbbing {
   border-radius: 0px;
 }
 /* line 73, ../sass/partials/components/_button.scss */
-.l-panels-two-column .mailchimp-lists-user-subscribe-form .button--submit:focus, .l-panels-two-column .mailchimp-lists-user-subscribe-form .button--submit:hover {
+.mailchimp-lists-user-subscribe-form .button--submit:focus, .mailchimp-lists-user-subscribe-form .button--submit:hover {
   border: none;
   background: #c15d22;
   color: #fff;
@@ -3023,8 +3023,17 @@ footer .pane {
   width: 50%;
   margin: 0;
 }
-/* line 30, ../sass/partials/components/_mailchimp-block.scss */
-.l-panels-two-column .mailchimp-lists-user-subscribe-form .mailchimp-newsletter-wrapper .form-item__description {
+
+/* line 32, ../sass/partials/components/_mailchimp-block.scss */
+.mailchimp-lists-user-subscribe-form {
+  padding-bottom: 2em;
+}
+/* line 35, ../sass/partials/components/_mailchimp-block.scss */
+.mailchimp-lists-user-subscribe-form .button--submit {
+  float: left;
+}
+/* line 39, ../sass/partials/components/_mailchimp-block.scss */
+.mailchimp-lists-user-subscribe-form .form-item__description {
   color: #FFF;
   text-shadow: 1px 1px 0px #000;
   font-size: 1em;
