@@ -1,0 +1,38 @@
+// @file
+// Styles for mailchimp blocks.
+
+.l-panels-two-column {
+  .mailchimp-lists-user-subscribe-form {
+    .button--submit {
+      @extend %black-submit;
+      float: left;
+      line-height: 1em;
+      margin-top: 1.03em;
+      font-size: 1.2em;
+      padding: 0.3125em;
+    }
+
+    .mailchimp-newsletter-wrapper {
+      text-align: left;
+      padding: 8px;
+
+      #edit-mailchimp-lists-mailchimp-the-cast-newsletter-title {
+        width: 100%;
+      }
+
+      .form-item {
+        float: left;
+        width: 50%;
+        //padding-bottom: 0.4em;
+        margin: 0;
+      }
+
+      .form-item__description {
+        color: #FFF;
+        text-shadow: 1px 1px 0px #000;
+        font-size: 1em;
+      }
+
+    }
+  }
+}
