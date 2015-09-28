@@ -3,23 +3,24 @@
 
 .l-panels-two-column {
   .mailchimp-lists-user-subscribe-form {
+    .button--submit {
+      @extend %black-submit;
+      float: left;
+    }
+
     .mailchimp-newsletter-wrapper {
       text-align: left;
       padding: 8px;
 
-      .form-item {
-        float: left;
-      }
-      .form-item--emailfield {
-        clear: left;
-      }
-      .form-item--mailchimp-lists-mailchimp-the-cast-newsletter-mergevars-fname {
-        margin-right: 10px;
+      #edit-mailchimp-lists-mailchimp-the-cast-newsletter-title {
+        width: 100%;
       }
 
-    }
-    .button--submit {
-      @extend %black-submit;
+      .form-item {
+        float: left;
+        width: 50%;
+      }
+
     }
   }
 }

@@ -1538,7 +1538,7 @@ input.throbbing {
   color: #fff;
   display: block;
   float: right;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 0.9;
   margin: 4px 0 0;
   padding: 4px;
@@ -2924,21 +2924,22 @@ footer .pane {
 }
 
 /* line 6, ../sass/partials/components/_mailchimp-block.scss */
+.l-panels-two-column .mailchimp-lists-user-subscribe-form .button--submit {
+  float: left;
+}
+/* line 11, ../sass/partials/components/_mailchimp-block.scss */
 .l-panels-two-column .mailchimp-lists-user-subscribe-form .mailchimp-newsletter-wrapper {
   text-align: left;
   padding: 8px;
 }
-/* line 10, ../sass/partials/components/_mailchimp-block.scss */
+/* line 15, ../sass/partials/components/_mailchimp-block.scss */
+.l-panels-two-column .mailchimp-lists-user-subscribe-form .mailchimp-newsletter-wrapper #edit-mailchimp-lists-mailchimp-the-cast-newsletter-title {
+  width: 100%;
+}
+/* line 19, ../sass/partials/components/_mailchimp-block.scss */
 .l-panels-two-column .mailchimp-lists-user-subscribe-form .mailchimp-newsletter-wrapper .form-item {
   float: left;
-}
-/* line 13, ../sass/partials/components/_mailchimp-block.scss */
-.l-panels-two-column .mailchimp-lists-user-subscribe-form .mailchimp-newsletter-wrapper .form-item--emailfield {
-  clear: left;
-}
-/* line 16, ../sass/partials/components/_mailchimp-block.scss */
-.l-panels-two-column .mailchimp-lists-user-subscribe-form .mailchimp-newsletter-wrapper .form-item--mailchimp-lists-mailchimp-the-cast-newsletter-mergevars-fname {
-  margin-right: 10px;
+  width: 50%;
 }
 
 /* line 8, ../sass/partials/components/_node.scss */
