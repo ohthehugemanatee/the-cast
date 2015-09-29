@@ -7,7 +7,7 @@ REPO_ROOT=`/bin/pwd`
 PARENT_DIR=`/usr/bin/dirname "$REPO_ROOT"`
 NOW=`date`
 
-echo "Beginning deployment on $NOW..."
+echo "Beginning deployment on $NOW..." >> $PARENT_DIR/last_deploy.log
 if [[ -f "$REPO_ROOT/public/htaccess.$ENV" ]]; then
   echo 'Copying .htaccess'  >> $PARENT_DIR/last_deploy.log
   cd "$REPO_ROOT"/public && cp htaccess.$ENV .htaccess >> $PARENT_DIR/last_deploy.log
@@ -55,4 +55,4 @@ if [[ $ENV == 'dev' ]]; then
   drush -r $REPO_ROOT/public -p -y upwd "The Cast Admin" --password="admin" >> $PARENT_DIR/last_deploy.log
 fi
 
-echo "Deployment on $NOW finished!"
+echo "Deployment on $NOW finished!" >> $PARENT_DIR/last_deploy.log
