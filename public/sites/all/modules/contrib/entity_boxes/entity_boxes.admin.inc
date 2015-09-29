@@ -158,7 +158,7 @@ function entity_boxes_form_alter (&$form, &$form_state, $form_id) {
     return;
   }
 
-  $entity_boxes = $form_state['entity_boxes'];
+  $entity_boxes = isset($form_state['entity_boxes']) ? $form_state['entity_boxes'] : array();
   //figure out which part of the form to attach the fields to
   if ($form_id == 'boxes_add_form' || $form_id == 'boxes_box_form') {
     $portion = &$form['options'];
