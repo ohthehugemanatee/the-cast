@@ -48,11 +48,11 @@ echo 'Running DB updates' >> $PARENT_DIR/last_deploy.log
 drush -r $REPO_ROOT/public -p -y updb >> $PARENT_DIR/last_deploy.log
 
 echo 'Reverting Features' >> $PARENT_DIR/last_deploy.log
-drush -r $REPO_ROOT/public -p -y fra >>> $PARENT_DIR/last_deploy.log
+drush -r $REPO_ROOT/public -p -y fra >> $PARENT_DIR/last_deploy.log
 
 if [[ $ENV == 'dev' ]]; then
   echo 'Resetting admin password' >> $PARENT_DIR/last_deploy.log
-  drush -r $REPO_ROOT/public -p -y upwd "The Cast Admin" --password="admin" >>> $PARENT_DIR/last_deploy.log
+  drush -r $REPO_ROOT/public -p -y upwd "The Cast Admin" --password="admin" >> $PARENT_DIR/last_deploy.log
 fi
 
 echo "Deployment on $NOW finished!"
