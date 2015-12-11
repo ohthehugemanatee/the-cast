@@ -22,3 +22,10 @@ function cast_misc_update_7001() {
 function cast_misc_update_7002() {
   module_enable(array('cast_media'));
 }
+
+/**
+ * Enable cast_commerce Feature.
+ */
+function cast_misc_update_7003() {
+  module_enable(array('cast_commerce'));
+}
