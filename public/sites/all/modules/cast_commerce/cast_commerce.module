@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Cast commerce feature.
+ */
+
+include_once 'cast_commerce.features.inc';
