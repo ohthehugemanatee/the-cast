@@ -51,28 +51,6 @@ function cast_commerce_field_default_field_bases() {
     'type' => 'commerce_customer_profile_reference',
   );
 
-  // Exported field_base: 'commerce_price'.
-  $field_bases['commerce_price'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(
-      0 => 'commerce_product',
-    ),
-    'field_name' => 'commerce_price',
-    'indexes' => array(
-      'currency_price' => array(
-        0 => 'amount',
-        1 => 'currency_code',
-      ),
-    ),
-    'locked' => 1,
-    'module' => 'commerce_price',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'commerce_price',
-  );
-
   // Exported field_base: 'commerce_shipping_service'.
   $field_bases['commerce_shipping_service'] = array(
     'active' => 1,

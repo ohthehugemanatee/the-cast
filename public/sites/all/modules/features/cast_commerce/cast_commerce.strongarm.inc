@@ -20,6 +20,27 @@ function cast_commerce_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'commerce_customer_profile_billing_profile_copy';
+  $strongarm->value = 1;
+  $export['commerce_customer_profile_billing_profile_copy'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'commerce_customer_profile_billing_profile_copy_default';
+  $strongarm->value = 1;
+  $export['commerce_customer_profile_billing_profile_copy_default'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'commerce_customer_profile_billing_profile_copy_source';
+  $strongarm->value = 'shipping';
+  $export['commerce_customer_profile_billing_profile_copy_source'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'commerce_customer_profile_shipping_field';
   $strongarm->value = 'commerce_customer_shipping';
   $export['commerce_customer_profile_shipping_field'] = $strongarm;
@@ -185,6 +206,20 @@ function cast_commerce_strongarm() {
     'ZMK' => 0,
   );
   $export['commerce_enabled_currencies'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'commerce_shipping_pane_require_service';
+  $strongarm->value = 0;
+  $export['commerce_shipping_pane_require_service'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'commerce_shipping_recalculate_services';
+  $strongarm->value = 1;
+  $export['commerce_shipping_recalculate_services'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
