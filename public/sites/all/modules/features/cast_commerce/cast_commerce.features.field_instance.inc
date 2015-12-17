@@ -10,6 +10,803 @@
 function cast_commerce_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance:
+  // 'commerce_customer_profile-billing-commerce_customer_address'.
+  $field_instances['commerce_customer_profile-billing-commerce_customer_address'] = array(
+    'bundle' => 'billing',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'administrator' => array(
+        'label' => 'hidden',
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => -10,
+      ),
+      'customer' => array(
+        'label' => 'hidden',
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => -10,
+      ),
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => -10,
+      ),
+    ),
+    'entity_type' => 'commerce_customer_profile',
+    'field_name' => 'commerce_customer_address',
+    'label' => 'Address',
+    'required' => TRUE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'addressfield',
+      'settings' => array(
+        'available_countries' => array(),
+        'default_country' => 'site_default',
+        'format_handlers' => array(
+          0 => 'address',
+          1 => 'name-oneline',
+        ),
+      ),
+      'type' => 'addressfield_standard',
+      'weight' => -10,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'commerce_customer_profile-shipping-commerce_customer_address'.
+  $field_instances['commerce_customer_profile-shipping-commerce_customer_address'] = array(
+    'bundle' => 'shipping',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'administrator' => array(
+        'label' => 'hidden',
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => -10,
+      ),
+      'customer' => array(
+        'label' => 'hidden',
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => -10,
+      ),
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => -10,
+      ),
+    ),
+    'entity_type' => 'commerce_customer_profile',
+    'field_name' => 'commerce_customer_address',
+    'label' => 'Address',
+    'required' => TRUE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'addressfield',
+      'settings' => array(
+        'available_countries' => array(),
+        'default_country' => 'site_default',
+        'format_handlers' => array(
+          0 => 'address',
+          1 => 'name-oneline',
+        ),
+      ),
+      'type' => 'addressfield_standard',
+      'weight' => -10,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'commerce_line_item-shipping-commerce_shipping_service'.
+  $field_instances['commerce_line_item-shipping-commerce_shipping_service'] = array(
+    'bundle' => 'shipping',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 2,
+      ),
+      'display' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'commerce_line_item',
+    'field_name' => 'commerce_shipping_service',
+    'label' => 'Shipping service',
+    'required' => TRUE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'commerce_line_item-shipping-commerce_total'.
+  $field_instances['commerce_line_item-shipping-commerce_total'] = array(
+    'bundle' => 'shipping',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => FALSE,
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 1,
+      ),
+      'diff_standard' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => FALSE,
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 1,
+      ),
+      'display' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => FALSE,
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 1,
+      ),
+      'node_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => FALSE,
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 1,
+      ),
+      'token' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => FALSE,
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'commerce_line_item',
+    'field_name' => 'commerce_total',
+    'label' => 'Total',
+    'required' => TRUE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'commerce_price',
+      'settings' => array(
+        'currency_code' => 'default',
+      ),
+      'type' => 'commerce_price_full',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'commerce_line_item-shipping-commerce_unit_price'.
+  $field_instances['commerce_line_item-shipping-commerce_unit_price'] = array(
+    'bundle' => 'shipping',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => FALSE,
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+      'diff_standard' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => FALSE,
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+      'display' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => FALSE,
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+      'node_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => FALSE,
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+      'token' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => FALSE,
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'commerce_line_item',
+    'field_name' => 'commerce_unit_price',
+    'label' => 'Unit price',
+    'required' => TRUE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'commerce_price',
+      'settings' => array(
+        'currency_code' => 'default',
+      ),
+      'type' => 'commerce_price_full',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'commerce_order-commerce_order-commerce_customer_shipping'.
+  $field_instances['commerce_order-commerce_order-commerce_customer_shipping'] = array(
+    'bundle' => 'commerce_order',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'administrator' => array(
+        'label' => 'above',
+        'module' => 'commerce_customer',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_customer_profile_reference_display',
+        'weight' => -5,
+      ),
+      'customer' => array(
+        'label' => 'above',
+        'module' => 'commerce_customer',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_customer_profile_reference_display',
+        'weight' => -5,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'commerce_customer',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_customer_profile_reference_display',
+        'weight' => -5,
+      ),
+    ),
+    'entity_type' => 'commerce_order',
+    'field_name' => 'commerce_customer_shipping',
+    'label' => 'Shipping information',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'commerce_customer',
+      'settings' => array(),
+      'type' => 'commerce_customer_profile_manager',
+      'weight' => -5,
+    ),
+  );
+
+  // Exported field_instance: 'commerce_product-product-commerce_price'.
+  $field_instances['commerce_product-product-commerce_price'] = array(
+    'bundle' => 'product',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'commerce_line_item_diff_standard' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => 'calculated_sell_price',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+      'commerce_line_item_display' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => 'calculated_sell_price',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+      'commerce_line_item_token' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => 'calculated_sell_price',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => 'calculated_sell_price',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+      'diff_standard' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => 'calculated_sell_price',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => 'calculated_sell_price',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+      'line_item' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => 'calculated_sell_price',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+      'node_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => 'calculated_sell_price',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+      'token' => array(
+        'label' => 'hidden',
+        'module' => 'commerce_price',
+        'settings' => array(
+          'calculation' => 'calculated_sell_price',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'commerce_price_formatted_amount',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'commerce_product',
+    'field_name' => 'commerce_price',
+    'label' => 'Price',
+    'required' => TRUE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'commerce_price',
+      'settings' => array(
+        'currency_code' => 'default',
+      ),
+      'type' => 'commerce_price_full',
+      'weight' => 0,
+    ),
+  );
+
   // Exported field_instance: 'node-product_display-body'.
   $field_instances['node-product_display-body'] = array(
     'bundle' => 'product_display',
@@ -180,8 +977,14 @@ function cast_commerce_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Address');
   t('Body');
+  t('Price');
   t('Product');
+  t('Shipping information');
+  t('Shipping service');
+  t('Total');
+  t('Unit price');
 
   return $field_instances;
 }
