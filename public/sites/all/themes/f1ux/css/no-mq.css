@@ -3084,29 +3084,33 @@ footer .pane {
 .pane.pane--bios {
   margin-bottom: 0;
 }
+/* line 91, ../sass/partials/components/_pane.scss */
+.pane.sidebar--content .pane__content {
+  padding: 8px;
+}
 
-/* line 94, ../sass/partials/components/_pane.scss */
+/* line 98, ../sass/partials/components/_pane.scss */
 .block-boxes-social_block .pane__content {
   padding: 8px;
 }
-/* line 97, ../sass/partials/components/_pane.scss */
+/* line 101, ../sass/partials/components/_pane.scss */
 .block-boxes-social_block .pane__content .group-left {
   float: left;
   width: 75%;
 }
-/* line 101, ../sass/partials/components/_pane.scss */
+/* line 105, ../sass/partials/components/_pane.scss */
 .block-boxes-social_block .pane__content .group-right {
   float: right;
   text-align: right;
   width: 25%;
 }
 
-/* line 113, ../sass/partials/components/_pane.scss */
+/* line 117, ../sass/partials/components/_pane.scss */
 .pane--nodebody a, .l-panels-three-column-two-row .l-fourth .pane__content a, .l-panels-four-column-two-row .l-fifth .pane__content a {
   color: #c15d22;
   text-decoration: none;
 }
-/* line 118, ../sass/partials/components/_pane.scss */
+/* line 122, ../sass/partials/components/_pane.scss */
 .pane--nodebody a:focus, .pane--nodebody a:hover, .l-panels-three-column-two-row .l-fourth .pane__content a:focus, .l-panels-three-column-two-row .l-fourth .pane__content a:hover, .l-panels-four-column-two-row .l-fifth .pane__content a:focus, .l-panels-four-column-two-row .l-fifth .pane__content a:hover {
   text-decoration: underline;
 }
