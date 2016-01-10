@@ -21,8 +21,25 @@ function cast_commerce_panelizer_defaults() {
   $panelizer->css_id = '';
   $panelizer->css = '';
   $panelizer->pipeline = 'standard';
-  $panelizer->contexts = array();
-  $panelizer->relationships = array();
+  $panelizer->contexts = array(
+    0 => array(
+      'identifier' => 'User',
+      'keyword' => 'user',
+      'name' => 'user',
+      'type' => 'current',
+      'uid' => '',
+      'id' => 1,
+    ),
+  );
+  $panelizer->relationships = array(
+    0 => array(
+      'identifier' => 'Commerce Order from User (on commerce_order.owner)',
+      'keyword' => 'commerce_order',
+      'name' => 'entity_from_schema:uid-user-commerce_order',
+      'context' => 'context_user_1',
+      'id' => 1,
+    ),
+  );
   $panelizer->access = array();
   $panelizer->view_mode = 'page_manager';
   $panelizer->css_class = '';
@@ -49,13 +66,28 @@ function cast_commerce_panelizer_defaults() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-a532fb7a-2a38-43ab-84f0-e582b36741b3';
+    $pane->pid = 'new-6f808e57-6268-416d-bd76-d67a91cbe071';
     $pane->panel = 'fifth';
-    $pane->type = 'block';
-    $pane->subtype = 'commerce_cart-cart';
+    $pane->type = 'views';
+    $pane->subtype = 'cast_shopping_cart_block';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '0',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'default',
+      'context' => array(
+        0 => 'relationship_entity_from_schema:uid-user-commerce_order_1.order-id',
+      ),
       'override_title' => 0,
       'override_title_text' => '',
       'override_title_heading' => 'h2',
@@ -64,13 +96,16 @@ function cast_commerce_panelizer_defaults() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'sidebar--content ltgray',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'a532fb7a-2a38-43ab-84f0-e582b36741b3';
-    $display->content['new-a532fb7a-2a38-43ab-84f0-e582b36741b3'] = $pane;
-    $display->panels['fifth'][0] = 'new-a532fb7a-2a38-43ab-84f0-e582b36741b3';
+    $pane->uuid = '6f808e57-6268-416d-bd76-d67a91cbe071';
+    $display->content['new-6f808e57-6268-416d-bd76-d67a91cbe071'] = $pane;
+    $display->panels['fifth'][0] = 'new-6f808e57-6268-416d-bd76-d67a91cbe071';
     $pane = new stdClass();
     $pane->pid = 'new-1dac6c11-3c27-483c-9405-8267576576d9';
     $pane->panel = 'first';
@@ -230,6 +265,25 @@ function cast_commerce_panelizer_defaults() {
     $pane->uuid = '8754c3a8-5784-45e9-8479-7569a6f17fa5';
     $display->content['new-8754c3a8-5784-45e9-8479-7569a6f17fa5'] = $pane;
     $display->panels['preface'][0] = 'new-8754c3a8-5784-45e9-8479-7569a6f17fa5';
+    $pane = new stdClass();
+    $pane->pid = 'new-9aaf5e5d-5436-45d6-9172-45292ee132a9';
+    $pane->panel = 'preface';
+    $pane->type = 'page_messages';
+    $pane->subtype = 'page_messages';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '9aaf5e5d-5436-45d6-9172-45292ee132a9';
+    $display->content['new-9aaf5e5d-5436-45d6-9172-45292ee132a9'] = $pane;
+    $display->panels['preface'][1] = 'new-9aaf5e5d-5436-45d6-9172-45292ee132a9';
     $pane = new stdClass();
     $pane->pid = 'new-3dc77a48-84e0-41c9-9a7d-21e8c98ba1fb';
     $pane->panel = 'second';

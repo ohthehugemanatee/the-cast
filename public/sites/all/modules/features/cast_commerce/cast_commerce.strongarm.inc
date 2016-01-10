@@ -13,6 +13,13 @@ function cast_commerce_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'commerce_cart_contents_pane_view';
+  $strongarm->value = 'cast_shopping_cart_summary|default';
+  $export['commerce_cart_contents_pane_view'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'commerce_customer_profile_billing_field';
   $strongarm->value = 'commerce_customer_billing';
   $export['commerce_customer_profile_billing_field'] = $strongarm;
