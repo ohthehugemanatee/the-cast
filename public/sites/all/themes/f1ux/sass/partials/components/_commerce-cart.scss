@@ -1,6 +1,14 @@
 // @file
 // Styles for Commerce cart.
 
-.pane--commerce-cart-cart table {
+.view--cast-shopping-cart-block table {
   width: 100%;
+}
+
+.view--commerce-cart-summary table {
+  width: 100%;
+
+  th {
+    text-align: left;
+  }
 }

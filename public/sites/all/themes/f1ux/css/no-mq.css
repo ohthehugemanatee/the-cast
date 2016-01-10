@@ -2593,8 +2593,17 @@ tr.drag-previous {
 }
 
 /* line 4, ../sass/partials/components/_commerce-cart.scss */
-.pane--commerce-cart-cart table {
+.view--cast-shopping-cart-block table {
   width: 100%;
+}
+
+/* line 8, ../sass/partials/components/_commerce-cart.scss */
+.view--commerce-cart-summary table {
+  width: 100%;
+}
+/* line 11, ../sass/partials/components/_commerce-cart.scss */
+.view--commerce-cart-summary table th {
+  text-align: left;
 }
 
 /* line 7, ../sass/partials/components/_field.scss */
