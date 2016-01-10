@@ -2592,6 +2592,11 @@ tr.drag-previous {
   text-decoration: none;
 }
 
+/* line 4, ../sass/partials/components/_commerce-cart.scss */
+.pane--commerce-cart-cart table {
+  width: 100%;
+}
+
 /* line 7, ../sass/partials/components/_field.scss */
 .field--button-text a.banner,
 .field--tickets-link a.banner {
