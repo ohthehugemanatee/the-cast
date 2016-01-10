@@ -1538,7 +1538,7 @@ input.throbbing {
 }
 
 /* line 57, ../sass/partials/components/_button.scss */
-.l-panels-two-column .mailchimp-lists-user-subscribe-form .button--submit, .mailchimp-lists-user-subscribe-form .button--submit {
+.black-button, .l-panels-two-column .mailchimp-lists-user-subscribe-form .button--submit, .mailchimp-lists-user-subscribe-form .button--submit {
   background: #000;
   color: #fff;
   display: block;
@@ -1557,7 +1557,7 @@ input.throbbing {
   border-radius: 0px;
 }
 /* line 73, ../sass/partials/components/_button.scss */
-.mailchimp-lists-user-subscribe-form .button--submit:focus, .mailchimp-lists-user-subscribe-form .button--submit:hover {
+.black-button:focus, .mailchimp-lists-user-subscribe-form .button--submit:focus, .black-button:hover, .mailchimp-lists-user-subscribe-form .button--submit:hover {
   border: none;
   background: #c15d22;
   color: #fff;
@@ -1583,6 +1583,12 @@ input.throbbing {
 .field--tickets-link a:hover, .views-field-view-node a:hover {
   background: #c15d22;
   color: #fff;
+}
+
+/* line 101, ../sass/partials/components/_button.scss */
+.black-button {
+  display: inline-block;
+  float: none;
 }
 
 /* line 4, ../sass/partials/components/_fieldset.scss */
