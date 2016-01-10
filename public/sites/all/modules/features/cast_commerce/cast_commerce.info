@@ -75,6 +75,7 @@ features[variable][] = node_options_product_display
 features[variable][] = node_preview_product_display
 features[variable][] = node_submitted_product_display
 features[views_view][] = cast_shopping_cart_block
+features[views_view][] = cast_shopping_cart_summary
 features_exclude[dependencies][commerce_product_reference] = commerce_product_reference
 features_exclude[dependencies][options] = options
 features_exclude[dependencies][entity] = entity
