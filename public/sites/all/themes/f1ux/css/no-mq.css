@@ -2604,12 +2604,32 @@ tr.drag-previous {
 }
 
 /* line 8, ../sass/partials/components/_commerce-cart.scss */
-.view--cast-shopping-cart-summary table {
+.view--commerce-cart-summary table {
   width: 100%;
 }
 /* line 11, ../sass/partials/components/_commerce-cart.scss */
-.view--cast-shopping-cart-summary table th {
+.view--commerce-cart-summary table th {
   text-align: left;
+}
+
+/* line 16, ../sass/partials/components/_commerce-cart.scss */
+table.checkout-review {
+  width: 100%;
+}
+/* line 18, ../sass/partials/components/_commerce-cart.scss */
+table.checkout-review tr {
+  border: 1px solid #CCC;
+}
+/* line 21, ../sass/partials/components/_commerce-cart.scss */
+table.checkout-review .pane-title {
+  background-color: #EEE;
+  line-height: 2;
+  text-shadow: 0px 1px 0px #FFF;
+  border-bottom: none;
+}
+/* line 26, ../sass/partials/components/_commerce-cart.scss */
+table.checkout-review .pane-title td {
+  font-weight: normal;
 }
 
 /* line 7, ../sass/partials/components/_field.scss */
