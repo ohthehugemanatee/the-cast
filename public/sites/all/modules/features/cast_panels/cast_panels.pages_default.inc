@@ -1891,7 +1891,7 @@ function cast_panels_default_page_manager_pages() {
     $pane->panel = 'main';
     $pane->type = 'block';
     $pane->subtype = 'boxes-backdrop_2015upcoming';
-    $pane->shown = TRUE;
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'override_title' => 0,

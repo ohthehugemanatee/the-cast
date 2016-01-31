@@ -10,7 +10,7 @@
 function cast_core_types_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'body'
+  // Exported field_base: 'body'.
   $field_bases['body'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -31,7 +31,7 @@ function cast_core_types_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_additional_info'
+  // Exported field_base: 'field_additional_info'.
   $field_bases['field_additional_info'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -50,7 +50,7 @@ function cast_core_types_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_audio'
+  // Exported field_base: 'field_audio'.
   $field_bases['field_audio'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -73,7 +73,7 @@ function cast_core_types_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_body_right'
+  // Exported field_base: 'field_body_right'.
   $field_bases['field_body_right'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -92,7 +92,7 @@ function cast_core_types_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_date'
+  // Exported field_base: 'field_date'.
   $field_bases['field_date'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -121,7 +121,7 @@ function cast_core_types_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_fach'
+  // Exported field_base: 'field_fach'.
   $field_bases['field_fach'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -142,7 +142,7 @@ function cast_core_types_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_files'
+  // Exported field_base: 'field_files'.
   $field_bases['field_files'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -165,7 +165,7 @@ function cast_core_types_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_gallery_grid_title'
+  // Exported field_base: 'field_gallery_grid_title'.
   $field_bases['field_gallery_grid_title'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -184,7 +184,7 @@ function cast_core_types_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_images'
+  // Exported field_base: 'field_images'.
   $field_bases['field_images'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -206,7 +206,7 @@ function cast_core_types_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_location'
+  // Exported field_base: 'field_location'.
   $field_bases['field_location'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -221,7 +221,7 @@ function cast_core_types_field_default_field_bases() {
     'type' => 'addressfield',
   );
 
-  // Exported field_base: 'field_tickets_link'
+  // Exported field_base: 'field_tickets_link'.
   $field_bases['field_tickets_link'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -250,7 +250,7 @@ function cast_core_types_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_video'
+  // Exported field_base: 'field_video'.
   $field_bases['field_video'] = array(
     'active' => 1,
     'cardinality' => 1,
