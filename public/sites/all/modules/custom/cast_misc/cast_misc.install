@@ -23,7 +23,7 @@ function cast_misc_update_7002() {
   module_enable(array('cast_media'));
 }
 
-*/
+/**
  * Enable cast_commerce Feature.
  */
 function cast_misc_update_7003() {
@@ -57,7 +57,7 @@ function cast_misc_update_7004() {
 
 /**
  * [translation] Enable translation-related modules.
- *
+ */
 function cast_misc_update_7005() {
   module_enable(array('cast_translation'));
 }
