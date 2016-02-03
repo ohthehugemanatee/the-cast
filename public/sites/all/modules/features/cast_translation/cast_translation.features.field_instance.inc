@@ -10,7 +10,7 @@
 function cast_translation_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-page-title_field'
+  // Exported field_instance: 'node-page-title_field'.
   $field_instances['node-page-title_field'] = array(
     'bundle' => 'page',
     'default_value' => NULL,
