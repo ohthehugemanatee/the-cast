@@ -107,6 +107,29 @@ function cast_panels_default_panels_mini() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
+    $pane->pid = 'new-0fd456c3-edd9-4035-ad3f-20ef780532c8';
+    $pane->panel = 'middle';
+    $pane->type = 'block';
+    $pane->subtype = 'locale-language_content';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '0fd456c3-edd9-4035-ad3f-20ef780532c8';
+    $display->content['new-0fd456c3-edd9-4035-ad3f-20ef780532c8'] = $pane;
+    $display->panels['middle'][0] = 'new-0fd456c3-edd9-4035-ad3f-20ef780532c8';
+    $pane = new stdClass();
     $pane->pid = 'new-26d66678-6e69-40c9-99c4-d66cb8243870';
     $pane->panel = 'middle';
     $pane->type = 'block';
@@ -123,11 +146,11 @@ function cast_panels_default_panels_mini() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = '26d66678-6e69-40c9-99c4-d66cb8243870';
     $display->content['new-26d66678-6e69-40c9-99c4-d66cb8243870'] = $pane;
-    $display->panels['middle'][0] = 'new-26d66678-6e69-40c9-99c4-d66cb8243870';
+    $display->panels['middle'][1] = 'new-26d66678-6e69-40c9-99c4-d66cb8243870';
     $pane = new stdClass();
     $pane->pid = 'new-7a2606e5-a9e2-4fd0-bd25-b96a708554c6';
     $pane->panel = 'middle';
@@ -149,11 +172,11 @@ function cast_panels_default_panels_mini() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 2;
     $pane->locks = array();
     $pane->uuid = '7a2606e5-a9e2-4fd0-bd25-b96a708554c6';
     $display->content['new-7a2606e5-a9e2-4fd0-bd25-b96a708554c6'] = $pane;
-    $display->panels['middle'][1] = 'new-7a2606e5-a9e2-4fd0-bd25-b96a708554c6';
+    $display->panels['middle'][2] = 'new-7a2606e5-a9e2-4fd0-bd25-b96a708554c6';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $mini->display = $display;

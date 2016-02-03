@@ -62,3 +62,9 @@ function cast_misc_update_7005() {
   module_enable(array('cast_translation'));
 }
 
+/**
+ * [translation] Enable language icons module.
+ */
+function cast_misc_update_7006() {
+  module_enable(array('languageicons'));
+}
