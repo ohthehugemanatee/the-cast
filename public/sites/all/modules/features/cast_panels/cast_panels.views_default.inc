@@ -59,6 +59,16 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'bio' => 'bio',
   );
+  $translatables['bios'] = array(
+    t('Master'),
+    t('Members'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+  );
   $export['bios'] = $view;
 
   $view = new view();
@@ -106,6 +116,23 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['filters']['status_extra']['id'] = 'status_extra';
   $handler->display->display_options['filters']['status_extra']['table'] = 'node';
   $handler->display->display_options['filters']['status_extra']['field'] = 'status_extra';
+  $translatables['blog'] = array(
+    t('Master'),
+    t('Blog'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+  );
   $export['blog'] = $view;
 
   $view = new view();
@@ -211,6 +238,20 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['menu']['name'] = 'management';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
+  $translatables['frontpage_banner_slideshow'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Box ID'),
+    t('.'),
+    t(','),
+    t('Block'),
+    t('Page'),
+  );
   $export['frontpage_banner_slideshow'] = $view;
 
   $view = new view();
@@ -354,6 +395,18 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['menu']['name'] = 'management';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
+  $translatables['frontpage_slideshow'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Block'),
+    t('Page'),
+    t('Edit link'),
+  );
   $export['frontpage_slideshow'] = $view;
 
   $view = new view();
@@ -586,6 +639,20 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'video' => 'video',
   );
+  $translatables['photo_galleries_grid'] = array(
+    t('Master'),
+    t('Photos'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('[title]'),
+    t('View'),
+    t('<div class="group-bottomright field-group-div"><div class="field--body-text">[field_gallery_grid_title]</div> <div class="field--button-text">[view_node]</div></div>'),
+    t('Videos'),
+  );
   $export['photo_galleries_grid'] = $view;
 
   $view = new view();
@@ -783,6 +850,18 @@ function cast_panels_views_default_views() {
   );
   $handler->display->display_options['fields']['field_images']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_images']['delta_offset'] = '0';
+  $translatables['photo_gallery'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('All'),
+    t('Main image'),
+    t('Thumbnails'),
+  );
   $export['photo_gallery'] = $view;
 
   $view = new view();
@@ -840,6 +919,16 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['operator'] = '>=';
   $handler->display->display_options['filters']['field_date_value']['default_date'] = 'now';
+  $translatables['upcoming'] = array(
+    t('Master'),
+    t('Upcoming'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+  );
   $export['upcoming'] = $view;
 
   $view = new view();
@@ -961,6 +1050,20 @@ function cast_panels_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  $translatables['upcoming_events'] = array(
+    t('Master'),
+    t('Upcoming shows'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Date (field_date)'),
+    t('Block'),
+    t('Content pane'),
+    t('View panes'),
+  );
   $export['upcoming_events'] = $view;
 
   return $export;

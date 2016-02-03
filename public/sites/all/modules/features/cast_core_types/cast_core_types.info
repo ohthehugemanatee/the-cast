@@ -6,6 +6,7 @@ version = 7.x-0.1
 project = cast_core_types
 dependencies[] = addressfield
 dependencies[] = audiofield
+dependencies[] = cast_translation
 dependencies[] = colorbox
 dependencies[] = context
 dependencies[] = ctools
