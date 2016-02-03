@@ -1,0 +1,11 @@
+<?php
+/**
+ * @file
+ * Code for the Cast commerce feature.
+ */
+
+include_once 'cast_commerce.features.inc';
+
+function cast_commerce_commerce_line_item_summary_link_info_alter(&$links) {
+  $links['checkout']['attributes']['class'] = array('black-button');
+}

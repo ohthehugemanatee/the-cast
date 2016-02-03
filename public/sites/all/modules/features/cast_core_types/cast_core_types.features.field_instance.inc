@@ -10,7 +10,7 @@
 function cast_core_types_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-audio-field_audio'
+  // Exported field_instance: 'node-audio-field_audio'.
   $field_instances['node-audio-field_audio'] = array(
     'bundle' => 'audio',
     'deleted' => 0,
@@ -69,7 +69,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-audio-field_body_text'
+  // Exported field_instance: 'node-audio-field_body_text'.
   $field_instances['node-audio-field_body_text'] = array(
     'bundle' => 'audio',
     'default_value' => NULL,
@@ -143,7 +143,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-audio-field_image'
+  // Exported field_instance: 'node-audio-field_image'.
   $field_instances['node-audio-field_image'] = array(
     'bundle' => 'audio',
     'deleted' => 0,
@@ -204,7 +204,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-bio-body'
+  // Exported field_instance: 'node-bio-body'.
   $field_instances['node-bio-body'] = array(
     'bundle' => 'bio',
     'default_value' => NULL,
@@ -297,7 +297,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-bio-field_body_right'
+  // Exported field_instance: 'node-bio-field_body_right'.
   $field_instances['node-bio-field_body_right'] = array(
     'bundle' => 'bio',
     'default_value' => NULL,
@@ -368,7 +368,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-bio-field_fach'
+  // Exported field_instance: 'node-bio-field_fach'.
   $field_instances['node-bio-field_fach'] = array(
     'bundle' => 'bio',
     'default_value' => NULL,
@@ -426,7 +426,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-bio-field_headshot'
+  // Exported field_instance: 'node-bio-field_headshot'.
   $field_instances['node-bio-field_headshot'] = array(
     'bundle' => 'bio',
     'deleted' => 0,
@@ -535,7 +535,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog_post-body'
+  // Exported field_instance: 'node-blog_post-body'.
   $field_instances['node-blog_post-body'] = array(
     'bundle' => 'blog_post',
     'default_value' => NULL,
@@ -624,7 +624,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-body'
+  // Exported field_instance: 'node-event-body'.
   $field_instances['node-event-body'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -732,7 +732,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_additional_info'
+  // Exported field_instance: 'node-event-field_additional_info'.
   $field_instances['node-event-field_additional_info'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -822,7 +822,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_date'
+  // Exported field_instance: 'node-event-field_date'.
   $field_instances['node-event-field_date'] = array(
     'bundle' => 'event',
     'deleted' => 0,
@@ -848,6 +848,7 @@ function cast_core_types_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 1,
@@ -872,6 +873,7 @@ function cast_core_types_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 2,
@@ -896,6 +898,7 @@ function cast_core_types_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 13,
@@ -934,7 +937,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_image'
+  // Exported field_instance: 'node-event-field_image'.
   $field_instances['node-event-field_image'] = array(
     'bundle' => 'event',
     'deleted' => 0,
@@ -1037,7 +1040,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_location'
+  // Exported field_instance: 'node-event-field_location'.
   $field_instances['node-event-field_location'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -1146,7 +1149,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_tickets_link'
+  // Exported field_instance: 'node-event-field_tickets_link'.
   $field_instances['node-event-field_tickets_link'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -1252,7 +1255,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-frontpage_slide-field_image'
+  // Exported field_instance: 'node-frontpage_slide-field_image'.
   $field_instances['node-frontpage_slide-field_image'] = array(
     'bundle' => 'frontpage_slide',
     'deleted' => 0,
@@ -1316,7 +1319,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-body'
+  // Exported field_instance: 'node-page-body'.
   $field_instances['node-page-body'] = array(
     'bundle' => 'page',
     'default_value' => NULL,
@@ -1386,7 +1389,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_files'
+  // Exported field_instance: 'node-page-field_files'.
   $field_instances['node-page-field_files'] = array(
     'bundle' => 'page',
     'deleted' => 0,
@@ -1440,7 +1443,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-photo_gallery-body'
+  // Exported field_instance: 'node-photo_gallery-body'.
   $field_instances['node-photo_gallery-body'] = array(
     'bundle' => 'photo_gallery',
     'default_value' => NULL,
@@ -1510,7 +1513,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-photo_gallery-field_gallery_grid_title'
+  // Exported field_instance: 'node-photo_gallery-field_gallery_grid_title'.
   $field_instances['node-photo_gallery-field_gallery_grid_title'] = array(
     'bundle' => 'photo_gallery',
     'default_value' => NULL,
@@ -1584,7 +1587,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-photo_gallery-field_images'
+  // Exported field_instance: 'node-photo_gallery-field_images'.
   $field_instances['node-photo_gallery-field_images'] = array(
     'bundle' => 'photo_gallery',
     'deleted' => 0,
@@ -1645,7 +1648,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-video-body'
+  // Exported field_instance: 'node-video-body'.
   $field_instances['node-video-body'] = array(
     'bundle' => 'video',
     'default_value' => NULL,
@@ -1716,7 +1719,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-video-field_gallery_grid_title'
+  // Exported field_instance: 'node-video-field_gallery_grid_title'.
   $field_instances['node-video-field_gallery_grid_title'] = array(
     'bundle' => 'video',
     'default_value' => NULL,
@@ -1777,7 +1780,7 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-video-field_video'
+  // Exported field_instance: 'node-video-field_video'.
   $field_instances['node-video-field_video'] = array(
     'bundle' => 'video',
     'default_value' => NULL,

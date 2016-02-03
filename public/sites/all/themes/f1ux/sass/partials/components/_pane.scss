@@ -87,6 +87,10 @@
   &.pane--bios {
     margin-bottom: 0;
   }
+
+  &.sidebar--content .pane__content {
+    padding: 8px;
+  }
 }
 
 

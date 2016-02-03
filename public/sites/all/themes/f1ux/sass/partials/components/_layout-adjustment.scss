@@ -13,7 +13,14 @@ footer .pane {
     .pane {
       .pane__content {
         .front &{
-           height: 250px;
+          height: 250px;
+        }
+      }
+    }
+    .pane.short {
+      .pane__content {
+        .front &{
+          height: 166px;
         }
       }
     }
