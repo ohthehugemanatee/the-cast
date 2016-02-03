@@ -68,3 +68,10 @@ function cast_misc_update_7005() {
 function cast_misc_update_7006() {
   module_enable(array('languageicons'));
 }
+
+/**
+ * [translation] Enable i18n_block module.
+ */
+function cast_misc_update_7007() {
+  module_enable(array('i18n_block'));
+}
