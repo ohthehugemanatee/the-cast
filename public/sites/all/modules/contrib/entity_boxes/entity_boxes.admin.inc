@@ -12,7 +12,7 @@
 /**
  * UI controller.
  */
-class BoxEntityUIController extends EntityDefaultUIController {
+class BoxEntityUIController extends EntityContentUIController {
 
   /**
    * Overrides hook_menu() defaults. Main reason for doing this is that
@@ -44,6 +44,13 @@ class BoxEntityUIController extends EntityDefaultUIController {
       'access arguments' => array('view', 1),
       'type' => MENU_CALLBACK,
     );
+
+    $items['entity_boxes/' . $wildcard . '/edit'] = array(
+      'title' => 'Edit',
+      'load arguments' => array($this->entityType),
+      'type' => MENU_DEFAULT_LOCAL_TASK,
+    );
+
     return $items;
   }
   
