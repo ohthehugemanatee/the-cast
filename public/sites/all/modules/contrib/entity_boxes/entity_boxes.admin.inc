@@ -165,7 +165,14 @@ function entity_boxes_form_alter (&$form, &$form_state, $form_id) {
     return;
   }
 
-  $entity_boxes = isset($form_state['entity_boxes']) ? $form_state['entity_boxes'] : array();
+  if (isset($form_state['entity_boxes'])) {
+    $entity_boxes = $form_state['entity_boxes'];
+  }
+  else {
+    $entity_boxes = new BoxEntity(array('type' => $form_state['build_info']['args'][0]));
+    $form_state['entity_boxes'] = $entity_boxes;
+  }
+
   //figure out which part of the form to attach the fields to
   if ($form_id == 'boxes_add_form' || $form_id == 'boxes_box_form') {
     $portion = &$form['options'];
