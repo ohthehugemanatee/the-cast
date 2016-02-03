@@ -350,7 +350,7 @@ function cast_panels_panelizer_defaults() {
     ),
   );
   $display->cache = array();
-  $display->title = '%node:title';
+  $display->title = '%node:title_field';
   $display->uuid = '8b703fc8-43e8-4872-a979-8680efb52f9f';
   $display->content = array();
   $display->panels = array();
