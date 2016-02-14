@@ -1,0 +1,25 @@
+// @file
+// Styles for the language switcher.
+
+.pane--locale-language-content {
+  float:right;
+  //right: 10px;
+
+  ul.language-switcher-locale-url {
+    list-style: none;
+    display: inline;
+
+    li {
+      list-style: none;
+      display: inline;
+      a {
+        color: black;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+          color: $link-hover-color;
+        }
+      }
+    }
+  }
+}
