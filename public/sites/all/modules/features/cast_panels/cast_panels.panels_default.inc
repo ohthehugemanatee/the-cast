@@ -188,7 +188,7 @@ function cast_panels_default_panels_mini() {
     $pane->panel = 'middle';
     $pane->type = 'block';
     $pane->subtype = 'locale-language_content';
-    $pane->shown = TRUE;
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'override_title' => 1,
