@@ -130,6 +130,21 @@ function cast_commerce_views_default_views() {
   $handler->display->display_options['filters']['product_line_item_type']['field'] = 'product_line_item_type';
   $handler->display->display_options['filters']['product_line_item_type']['relationship'] = 'commerce_line_items_line_item_id';
   $handler->display->display_options['filters']['product_line_item_type']['value'] = '1';
+  $translatables['cast_shopping_cart_block'] = array(
+    t('Defaults'),
+    t('Shopping cart'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Line items referenced by commerce_line_items'),
+    t('.'),
+    t(','),
+    t(' × '),
+    t('All'),
+  );
   $export['cast_shopping_cart_block'] = $view;
 
   $view = new view();
@@ -249,6 +264,22 @@ function cast_commerce_views_default_views() {
   $handler->display->display_options['filters']['product_line_item_type']['relationship'] = 'commerce_line_items_line_item_id';
   $handler->display->display_options['filters']['product_line_item_type']['value'] = '1';
   $handler->display->display_options['filters']['product_line_item_type']['group'] = 0;
+  $translatables['cast_shopping_cart_summary'] = array(
+    t('Defaults'),
+    t('Shopping cart'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Line items referenced by commerce_line_items'),
+    t('Product'),
+    t('Quantity'),
+    t('Price'),
+    t('Total'),
+    t('All'),
+  );
   $export['cast_shopping_cart_summary'] = $view;
 
   return $export;

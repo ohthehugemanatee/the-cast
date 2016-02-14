@@ -243,6 +243,29 @@ function cast_commerce_panelizer_defaults() {
     $display->content['new-937aa738-1783-47d6-b6a2-6f82120276ec'] = $pane;
     $display->panels['fourth'][2] = 'new-937aa738-1783-47d6-b6a2-6f82120276ec';
     $pane = new stdClass();
+    $pane->pid = 'new-a3303b47-6948-4ab3-9711-47ae72fff1e3';
+    $pane->panel = 'preface';
+    $pane->type = 'panels_mini';
+    $pane->subtype = 'admin_info';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'a3303b47-6948-4ab3-9711-47ae72fff1e3';
+    $display->content['new-a3303b47-6948-4ab3-9711-47ae72fff1e3'] = $pane;
+    $display->panels['preface'][0] = 'new-a3303b47-6948-4ab3-9711-47ae72fff1e3';
+    $pane = new stdClass();
     $pane->pid = 'new-8754c3a8-5784-45e9-8479-7569a6f17fa5';
     $pane->panel = 'preface';
     $pane->type = 'block';
@@ -260,11 +283,11 @@ function cast_commerce_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = '8754c3a8-5784-45e9-8479-7569a6f17fa5';
     $display->content['new-8754c3a8-5784-45e9-8479-7569a6f17fa5'] = $pane;
-    $display->panels['preface'][0] = 'new-8754c3a8-5784-45e9-8479-7569a6f17fa5';
+    $display->panels['preface'][1] = 'new-8754c3a8-5784-45e9-8479-7569a6f17fa5';
     $pane = new stdClass();
     $pane->pid = 'new-9aaf5e5d-5436-45d6-9172-45292ee132a9';
     $pane->panel = 'preface';
@@ -279,11 +302,11 @@ function cast_commerce_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 2;
     $pane->locks = array();
     $pane->uuid = '9aaf5e5d-5436-45d6-9172-45292ee132a9';
     $display->content['new-9aaf5e5d-5436-45d6-9172-45292ee132a9'] = $pane;
-    $display->panels['preface'][1] = 'new-9aaf5e5d-5436-45d6-9172-45292ee132a9';
+    $display->panels['preface'][2] = 'new-9aaf5e5d-5436-45d6-9172-45292ee132a9';
     $pane = new stdClass();
     $pane->pid = 'new-3dc77a48-84e0-41c9-9a7d-21e8c98ba1fb';
     $pane->panel = 'second';

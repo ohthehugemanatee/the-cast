@@ -22,7 +22,9 @@ function cast_commerce_field_default_field_bases() {
     'indexes' => array(),
     'locked' => 0,
     'module' => 'addressfield',
-    'settings' => array(),
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
     'translatable' => 0,
     'type' => 'addressfield',
   );
@@ -44,6 +46,7 @@ function cast_commerce_field_default_field_bases() {
     'locked' => 0,
     'module' => 'commerce_customer',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'options_list_limit' => 50,
       'profile_type' => 'shipping',
     ),
@@ -70,6 +73,7 @@ function cast_commerce_field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(),
       'allowed_values_function' => 'commerce_shipping_service_options_list',
+      'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'list_text',
@@ -92,7 +96,9 @@ function cast_commerce_field_default_field_bases() {
     ),
     'locked' => 1,
     'module' => 'commerce_price',
-    'settings' => array(),
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
     'translatable' => 0,
     'type' => 'commerce_price',
   );
@@ -114,7 +120,9 @@ function cast_commerce_field_default_field_bases() {
     ),
     'locked' => 1,
     'module' => 'commerce_price',
-    'settings' => array(),
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
     'translatable' => 0,
     'type' => 'commerce_price',
   );
@@ -134,6 +142,7 @@ function cast_commerce_field_default_field_bases() {
     'locked' => 0,
     'module' => 'commerce_product_reference',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'options_list_limit' => '',
     ),
     'translatable' => 0,
