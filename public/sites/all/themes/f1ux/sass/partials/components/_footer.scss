@@ -2,25 +2,6 @@
 // Styles for the footer.
 
 footer {
-  .pane--locale-language-content {
-    ul.language-switcher-locale-url {
-      list-style: none;
-      display: inline;
-
-      li {
-        list-style: none;
-        display: inline;
-        a {
-          color: black;
-          text-decoration: none;
-          &:hover,
-          &:focus {
-            color: $link-hover-color;
-          }
-        }
-      }
-    }
-  }
   .pane--menu-menu-footer-social-links {
     .pane__content {
       background: #000;
