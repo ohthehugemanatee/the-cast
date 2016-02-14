@@ -69,6 +69,7 @@ features[variable][] = commerce_enabled_currencies
 features[variable][] = commerce_shipping_pane_require_service
 features[variable][] = commerce_shipping_recalculate_services
 features[variable][] = field_bundle_settings_node__product_display
+features[variable][] = language_content_type_product_display
 features[variable][] = menu_options_product_display
 features[variable][] = menu_parent_product_display
 features[variable][] = node_options_product_display
