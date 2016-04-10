@@ -6,28 +6,44 @@
   padding: 1em 0 2em;
 }
 
-.view--upcoming-events {
-  .views-row-odd {
+.view--upcoming-events, .view--upcoming {
+  .views-row-odd, .odd {
     @extend %red;
   }
-  
-  .views-row-even {
+
+  .views-row-even, .even {
     @extend %blue;
   }
-  
-  
+
   .views-row {
     color: #fff;
     float: left;
-    margin:  0 0 4px;
+    margin: 0 0 4px;
     padding: 8px;
     text-align: right;
     width: 100%;
-    
+
     .front & {
       height: 123px;
     }
-    
+
+    tr {
+      color: #fff;
+      margin: 0 0 4px;
+      padding: 8px;
+      width: 100%;
+    }
+  }
+  table {
+    width: 100%;
+    line-height: 3em;
+
+    td, th {
+      padding-left: 24px;
+    }
+  }
+}
+.view--upcoming-events {
     .views-field {
       
       a {
@@ -57,7 +73,7 @@
       margin-bottom: 0;
     }
   }
-}
+
 
 .view--upcoming {
   .views-row {
