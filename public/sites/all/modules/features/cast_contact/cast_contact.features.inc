@@ -20,7 +20,7 @@ function cast_contact_default_mailchimp_list() {
   $items = array();
   $items['the_cast_newsletter'] = entity_import('mailchimp_list', '{
     "name" : "the_cast_newsletter",
-    "mc_list_id" : "9ddb2bde98",
+    "mc_list_id" : "ae856802b1",
     "label" : "The Cast newsletter",
     "description" : "Subscribe to our newsletter and we\\u0027ll keep you updated on upcoming events and special offers!",
     "settings" : {
@@ -35,7 +35,7 @@ function cast_contact_default_mailchimp_list() {
       "submit_label" : "Subscribe",
       "include_interest_groups" : 0,
       "opt_in_interest_groups" : 0,
-      "interest_groups_label" : "Interest Groups",
+      "interest_groups_label" : "",
       "cron" : 0,
       "webhooks" : 0,
       "allow_anonymous" : 1,

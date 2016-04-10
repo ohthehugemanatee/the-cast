@@ -1412,6 +1412,29 @@ function cast_panels_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
+    $pane->pid = 'new-81f80e6a-8d9d-4dfe-b419-40109f427f24';
+    $pane->panel = 'first';
+    $pane->type = 'block';
+    $pane->subtype = 'boxes-operatic_film_special_edition';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '81f80e6a-8d9d-4dfe-b419-40109f427f24';
+    $display->content['new-81f80e6a-8d9d-4dfe-b419-40109f427f24'] = $pane;
+    $display->panels['first'][0] = 'new-81f80e6a-8d9d-4dfe-b419-40109f427f24';
+    $pane = new stdClass();
     $pane->pid = 'new-117979cc-713d-4622-986c-8e0017422149';
     $pane->panel = 'first';
     $pane->type = 'custom';
@@ -1435,17 +1458,17 @@ function cast_panels_default_page_manager_pages() {
       'css_class' => 'short',
     );
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = '117979cc-713d-4622-986c-8e0017422149';
     $display->content['new-117979cc-713d-4622-986c-8e0017422149'] = $pane;
-    $display->panels['first'][0] = 'new-117979cc-713d-4622-986c-8e0017422149';
+    $display->panels['first'][1] = 'new-117979cc-713d-4622-986c-8e0017422149';
     $pane = new stdClass();
     $pane->pid = 'new-0d71851b-fca1-4f9a-85ac-0e4a09802114';
     $pane->panel = 'first';
     $pane->type = 'block';
     $pane->subtype = 'boxes-live_from_paris_album';
-    $pane->shown = TRUE;
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'override_title' => 0,
@@ -1458,33 +1481,11 @@ function cast_panels_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 2;
     $pane->locks = array();
     $pane->uuid = '0d71851b-fca1-4f9a-85ac-0e4a09802114';
     $display->content['new-0d71851b-fca1-4f9a-85ac-0e4a09802114'] = $pane;
-    $display->panels['first'][1] = 'new-0d71851b-fca1-4f9a-85ac-0e4a09802114';
-    $pane = new stdClass();
-    $pane->pid = 'new-f7f878b3-7a8d-432f-9390-67831f38d7b3';
-    $pane->panel = 'first';
-    $pane->type = 'block';
-    $pane->subtype = 'boxes-o_mio_babbino_caro_live_herne';
-    $pane->shown = FALSE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $pane->uuid = 'f7f878b3-7a8d-432f-9390-67831f38d7b3';
-    $display->content['new-f7f878b3-7a8d-432f-9390-67831f38d7b3'] = $pane;
-    $display->panels['first'][2] = 'new-f7f878b3-7a8d-432f-9390-67831f38d7b3';
+    $display->panels['first'][2] = 'new-0d71851b-fca1-4f9a-85ac-0e4a09802114';
     $pane = new stdClass();
     $pane->pid = 'new-2a96aa7c-f015-4142-a96e-3088a45a32db';
     $pane->panel = 'preface';
