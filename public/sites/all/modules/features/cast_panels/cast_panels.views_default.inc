@@ -884,17 +884,119 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'node';
-  $handler->display->display_options['row_options']['view_mode'] = 'members_page';
-  $handler->display->display_options['row_options']['links'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'title' => 'title',
+    'field_date' => 'field_date',
+    'field_location_name_line' => 'field_location_name_line',
+    'field_location_thoroughfare' => 'field_location_name_line',
+    'field_location_locality' => 'field_location_locality',
+    'field_tickets_link' => 'field_tickets_link',
+  );
+  $handler->display->display_options['style_options']['default'] = 'field_date';
+  $handler->display->display_options['style_options']['info'] = array(
+    'title' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_date' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_location_name_line' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => ', ',
+      'empty_column' => 0,
+    ),
+    'field_location_thoroughfare' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_location_locality' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_tickets_link' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  /* Field: Content: Date */
+  $handler->display->display_options['fields']['field_date']['id'] = 'field_date';
+  $handler->display->display_options['fields']['field_date']['table'] = 'field_data_field_date';
+  $handler->display->display_options['fields']['field_date']['field'] = 'field_date';
+  $handler->display->display_options['fields']['field_date']['settings'] = array(
+    'format_type' => 'medium',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'linked_field' => array(
+      'linked' => 0,
+      'destination' => '',
+      'advanced' => array(
+        'title' => '',
+        'target' => '',
+        'class' => '',
+        'rel' => '',
+        'text' => '',
+      ),
+    ),
+  );
+  /* Field: Content: Location - Locality (i.e. City) */
+  $handler->display->display_options['fields']['field_location_locality']['id'] = 'field_location_locality';
+  $handler->display->display_options['fields']['field_location_locality']['table'] = 'field_data_field_location';
+  $handler->display->display_options['fields']['field_location_locality']['field'] = 'field_location_locality';
+  $handler->display->display_options['fields']['field_location_locality']['label'] = 'City';
+  $handler->display->display_options['fields']['field_location_locality']['element_type'] = 'strong';
+  /* Field: Content: Location - Full name */
+  $handler->display->display_options['fields']['field_location_name_line']['id'] = 'field_location_name_line';
+  $handler->display->display_options['fields']['field_location_name_line']['table'] = 'field_data_field_location';
+  $handler->display->display_options['fields']['field_location_name_line']['field'] = 'field_location_name_line';
+  $handler->display->display_options['fields']['field_location_name_line']['label'] = 'Location';
+  /* Field: Content: Location - Thoroughfare (i.e. Street address) */
+  $handler->display->display_options['fields']['field_location_thoroughfare']['id'] = 'field_location_thoroughfare';
+  $handler->display->display_options['fields']['field_location_thoroughfare']['table'] = 'field_data_field_location';
+  $handler->display->display_options['fields']['field_location_thoroughfare']['field'] = 'field_location_thoroughfare';
+  $handler->display->display_options['fields']['field_location_thoroughfare']['label'] = '';
+  $handler->display->display_options['fields']['field_location_thoroughfare']['element_label_colon'] = FALSE;
+  /* Field: Content: Tickets link */
+  $handler->display->display_options['fields']['field_tickets_link']['id'] = 'field_tickets_link';
+  $handler->display->display_options['fields']['field_tickets_link']['table'] = 'field_data_field_tickets_link';
+  $handler->display->display_options['fields']['field_tickets_link']['field'] = 'field_tickets_link';
+  $handler->display->display_options['fields']['field_tickets_link']['label'] = 'Tickets';
+  $handler->display->display_options['fields']['field_tickets_link']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_tickets_link']['settings'] = array(
+    'linked_field' => array(
+      'linked' => 0,
+      'destination' => '',
+      'advanced' => array(
+        'title' => '',
+        'target' => '',
+        'class' => '',
+        'rel' => '',
+        'text' => '',
+      ),
+    ),
+  );
   /* Sort criterion: Content: Date (field_date) */
   $handler->display->display_options['sorts']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['sorts']['field_date_value']['table'] = 'field_data_field_date';
@@ -928,6 +1030,10 @@ function cast_panels_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('Date'),
+    t('City'),
+    t('Location'),
+    t('Tickets'),
   );
   $export['upcoming'] = $view;
 

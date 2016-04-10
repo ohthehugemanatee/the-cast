@@ -659,7 +659,7 @@ function cast_commerce_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_product',
     'label' => 'Product',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'field_injection' => 1,
