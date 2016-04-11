@@ -9,6 +9,7 @@ dependencies[] = features
 dependencies[] = field_group
 dependencies[] = image
 dependencies[] = link
+dependencies[] = list
 dependencies[] = strongarm
 dependencies[] = text
 features[bean_type][] = banner_block
