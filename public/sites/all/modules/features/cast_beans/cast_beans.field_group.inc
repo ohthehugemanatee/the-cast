@@ -21,10 +21,10 @@ function cast_beans_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Bottom Right',
-    'weight' => '1',
+    'weight' => '4',
     'children' => array(
-      0 => 'field_button_text',
-      1 => 'field_body_text',
+      0 => 'field_body_text',
+      1 => 'field_button_text',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -79,7 +79,6 @@ function cast_beans_field_group_info() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Bottom Right');
-
 
   return $field_groups;
 }
