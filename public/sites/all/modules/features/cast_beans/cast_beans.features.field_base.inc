@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * cast_boxes.features.field_base.inc
+ * cast_beans.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function cast_boxes_field_default_field_bases() {
+function cast_beans_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'field_bannerblock_frontpage'.
@@ -32,7 +32,7 @@ function cast_boxes_field_default_field_bases() {
       'allowed_values_function' => '',
       'entity_translation_sync' => FALSE,
     ),
-    'translatable' => 0,
+    'translatable' => 1,
     'type' => 'list_boolean',
   );
 
@@ -53,7 +53,7 @@ function cast_boxes_field_default_field_bases() {
     'settings' => array(
       'entity_translation_sync' => FALSE,
     ),
-    'translatable' => 0,
+    'translatable' => 1,
     'type' => 'text_long',
   );
 
@@ -75,7 +75,7 @@ function cast_boxes_field_default_field_bases() {
       'entity_translation_sync' => FALSE,
       'max_length' => 255,
     ),
-    'translatable' => 0,
+    'translatable' => 1,
     'type' => 'text',
   );
 
@@ -105,7 +105,7 @@ function cast_boxes_field_default_field_bases() {
       'title_value' => '',
       'url' => 0,
     ),
-    'translatable' => 0,
+    'translatable' => 1,
     'type' => 'link_field',
   );
 
@@ -130,7 +130,7 @@ function cast_boxes_field_default_field_bases() {
       ),
       'uri_scheme' => 'public',
     ),
-    'translatable' => 0,
+    'translatable' => 1,
     'type' => 'image',
   );
 
@@ -155,7 +155,7 @@ function cast_boxes_field_default_field_bases() {
       ),
       'uri_scheme' => 'public',
     ),
-    'translatable' => 0,
+    'translatable' => 1,
     'type' => 'image',
   );
 
