@@ -75,3 +75,10 @@ function cast_misc_update_7006() {
 function cast_misc_update_7007() {
   module_enable(array('i18n_block'));
 }
+
+/**
+ * [bean-boxes] Enable cast_beans module.
+ */
+function cast_misc_update_7008() {
+  module_enable(array('cast_beans'));
+}
