@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Cast Beans feature.
+ */
+
+include_once 'cast_beans.features.inc';
