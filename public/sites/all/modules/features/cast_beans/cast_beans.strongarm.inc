@@ -78,7 +78,7 @@ function cast_beans_strongarm() {
         'title' => array(
           'default' => array(
             'weight' => '2',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
         ),
       ),
