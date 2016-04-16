@@ -178,7 +178,7 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'banner_block' => 'banner_block',
   );
-  /* Filter criterion: Box: Promote to frontpage (field_bannerblock_frontpage) */
+  /* Filter criterion: Field: Promote to frontpage (field_bannerblock_frontpage) */
   $handler->display->display_options['filters']['field_bannerblock_frontpage_value']['id'] = 'field_bannerblock_frontpage_value';
   $handler->display->display_options['filters']['field_bannerblock_frontpage_value']['table'] = 'field_data_field_bannerblock_frontpage';
   $handler->display->display_options['filters']['field_bannerblock_frontpage_value']['field'] = 'field_bannerblock_frontpage_value';
@@ -883,7 +883,8 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '0';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
     'title' => 'title',
