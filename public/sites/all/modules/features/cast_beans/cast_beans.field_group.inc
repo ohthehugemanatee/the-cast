@@ -24,7 +24,7 @@ function cast_beans_field_group_info() {
     'weight' => '4',
     'children' => array(
       0 => 'field_body_text',
-      1 => 'field_button_text',
+      1 => 'field_button',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -57,7 +57,7 @@ function cast_beans_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'field_body_text',
-      1 => 'field_button_text',
+      1 => 'field_button',
     ),
     'format_type' => 'div',
     'format_settings' => array(

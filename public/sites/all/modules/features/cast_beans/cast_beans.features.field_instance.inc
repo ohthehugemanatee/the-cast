@@ -43,7 +43,7 @@ function cast_beans_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 4,
+      'weight' => 7,
     ),
   );
 
@@ -66,7 +66,7 @@ function cast_beans_field_default_field_instances() {
               'text' => '',
               'title' => '',
             ),
-            'destination' => '[bean:field-destination-url:url]',
+            'destination' => '[bean:field-button:url]',
             'linked' => 1,
           ),
         ),
@@ -112,12 +112,12 @@ function cast_beans_field_default_field_instances() {
         'rows' => 4,
       ),
       'type' => 'text_textarea',
-      'weight' => 1,
+      'weight' => 3,
     ),
   );
 
-  // Exported field_instance: 'bean-banner_block-field_button_text'.
-  $field_instances['bean-banner_block-field_button_text'] = array(
+  // Exported field_instance: 'bean-banner_block-field_button'.
+  $field_instances['bean-banner_block-field_button'] = array(
     'bundle' => 'banner_block',
     'default_value' => NULL,
     'deleted' => 0,
@@ -125,66 +125,33 @@ function cast_beans_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'text',
+        'module' => 'link',
         'settings' => array(
           'linked_field' => array(
             'advanced' => array(
-              'class' => 'banner',
+              'class' => '',
               'rel' => '',
               'target' => '',
               'text' => '',
               'title' => '',
             ),
-            'destination' => '[bean:field-destination-url:url]',
-            'linked' => 1,
+            'destination' => '',
+            'linked' => 0,
           ),
         ),
-        'type' => 'text_default',
+        'type' => 'link_default',
         'weight' => 3,
       ),
     ),
     'entity_type' => 'bean',
-    'field_name' => 'field_button_text',
-    'label' => 'Button text',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'bean-banner_block-field_destination_url'.
-  $field_instances['bean-banner_block-field_destination_url'] = array(
-    'bundle' => 'banner_block',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
-      ),
-    ),
-    'entity_type' => 'bean',
-    'field_name' => 'field_destination_url',
-    'label' => 'Destination URL',
+    'field_name' => 'field_button',
+    'label' => 'Button',
     'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
+        'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
         'target' => 'default',
@@ -196,8 +163,8 @@ function cast_beans_field_default_field_instances() {
       'enable_tokens' => 1,
       'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
-      'title' => 'none',
-      'title_label_use_field_label' => FALSE,
+      'title' => 'optional',
+      'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -209,7 +176,7 @@ function cast_beans_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -233,7 +200,7 @@ function cast_beans_field_default_field_instances() {
               'text' => '',
               'title' => '',
             ),
-            'destination' => '[bean:field-destination-url:url]',
+            'destination' => '[bean:field-button:url]',
             'linked' => 1,
           ),
         ),
@@ -265,7 +232,7 @@ function cast_beans_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 0,
+      'weight' => 2,
     ),
   );
 
@@ -288,7 +255,7 @@ function cast_beans_field_default_field_instances() {
               'text' => '',
               'title' => '',
             ),
-            'destination' => '[bean:field-destination-url:url]',
+            'destination' => '[bean:field-button:url]',
             'linked' => 1,
           ),
         ),
@@ -334,20 +301,25 @@ function cast_beans_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 1,
+      'weight' => 3,
     ),
   );
 
-  // Exported field_instance: 'bean-link_block-field_button_text'.
-  $field_instances['bean-link_block-field_button_text'] = array(
+  // Exported field_instance: 'bean-link_block-field_button'.
+  $field_instances['bean-link_block-field_button'] = array(
     'bundle' => 'link_block',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'title' => 'More',
+        'url' => 'front',
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'text',
+        'module' => 'link',
         'settings' => array(
           'linked_field' => array(
             'advanced' => array(
@@ -355,58 +327,25 @@ function cast_beans_field_default_field_instances() {
               'rel' => '',
               'target' => '',
               'text' => '',
-              'title' => '[bean:field-button-text]',
+              'title' => '',
             ),
-            'destination' => '[bean:field-destination-url:url]',
-            'linked' => 1,
+            'destination' => '',
+            'linked' => 0,
           ),
         ),
-        'type' => 'text_plain',
-        'weight' => 3,
+        'type' => 'link_default',
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'bean',
-    'field_name' => 'field_button_text',
-    'label' => 'Button text',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'bean-link_block-field_destination_url'.
-  $field_instances['bean-link_block-field_destination_url'] = array(
-    'bundle' => 'link_block',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
-      ),
-    ),
-    'entity_type' => 'bean',
-    'field_name' => 'field_destination_url',
-    'label' => 'Destination URL',
-    'required' => 0,
+    'field_name' => 'field_button',
+    'label' => 'Button',
+    'required' => 1,
     'settings' => array(
       'absolute_url' => 1,
       'attributes' => array(
-        'class' => '',
+        'class' => 'block-link-button',
+        'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
         'target' => 'default',
@@ -418,8 +357,8 @@ function cast_beans_field_default_field_instances() {
       'enable_tokens' => 1,
       'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
-      'title' => 'none',
-      'title_label_use_field_label' => FALSE,
+      'title' => 'required',
+      'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -431,7 +370,7 @@ function cast_beans_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -455,7 +394,7 @@ function cast_beans_field_default_field_instances() {
               'text' => '',
               'title' => '',
             ),
-            'destination' => '[bean:field-destination-url:url]',
+            'destination' => '[bean:field-button:url]',
             'linked' => 1,
           ),
         ),
@@ -487,7 +426,7 @@ function cast_beans_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 0,
+      'weight' => 2,
     ),
   );
 
@@ -515,7 +454,7 @@ function cast_beans_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'social_block' => array(
         'label' => 'hidden',
@@ -556,12 +495,12 @@ function cast_beans_field_default_field_instances() {
         'rows' => 2,
       ),
       'type' => 'text_textarea',
-      'weight' => 0,
+      'weight' => 3,
     ),
   );
 
-  // Exported field_instance: 'bean-social_block-field_button_text'.
-  $field_instances['bean-social_block-field_button_text'] = array(
+  // Exported field_instance: 'bean-social_block-field_button'.
+  $field_instances['bean-social_block-field_button'] = array(
     'bundle' => 'social_block',
     'default_value' => NULL,
     'deleted' => 0,
@@ -569,7 +508,7 @@ function cast_beans_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'text',
+        'module' => 'link',
         'settings' => array(
           'linked_field' => array(
             'advanced' => array(
@@ -579,84 +518,23 @@ function cast_beans_field_default_field_instances() {
               'text' => '',
               'title' => '',
             ),
-            'destination' => '[bean:field-destination-url:url]',
-            'linked' => 1,
+            'destination' => '',
+            'linked' => 0,
           ),
         ),
-        'type' => 'text_default',
-        'weight' => 3,
-      ),
-      'social_block' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'edit' => array(
-            'editor' => 'plain_text',
-          ),
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '[bean:field_destination_url]',
-            'linked' => 1,
-          ),
-        ),
-        'type' => 'text_default',
+        'type' => 'link_default',
         'weight' => 2,
       ),
     ),
     'entity_type' => 'bean',
-    'field_name' => 'field_button_text',
-    'label' => 'Button text',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'bean-social_block-field_destination_url'.
-  $field_instances['bean-social_block-field_destination_url'] = array(
-    'bundle' => 'social_block',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
-      ),
-      'social_block' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
-      ),
-    ),
-    'entity_type' => 'bean',
-    'field_name' => 'field_destination_url',
-    'label' => 'Destination URL',
+    'field_name' => 'field_button',
+    'label' => 'Button',
     'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
+        'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
         'target' => 'default',
@@ -668,8 +546,8 @@ function cast_beans_field_default_field_instances() {
       'enable_tokens' => 1,
       'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
-      'title' => 'none',
-      'title_label_use_field_label' => FALSE,
+      'title' => 'optional',
+      'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -681,7 +559,7 @@ function cast_beans_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -705,12 +583,12 @@ function cast_beans_field_default_field_instances() {
               'text' => '',
               'title' => '',
             ),
-            'destination' => '[bean:field-destination-url:url]',
+            'destination' => '[bean:field-button:url]',
             'linked' => 1,
           ),
         ),
         'type' => 'image',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'social_block' => array(
         'label' => 'hidden',
@@ -761,15 +639,14 @@ function cast_beans_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Body text');
-  t('Button text');
-  t('Destination URL');
+  t('Button');
   t('Enable this checkbox to include this banner block in the frontpage slideshow.');
   t('Image');
   t('Keep it short to fit in the block!');
