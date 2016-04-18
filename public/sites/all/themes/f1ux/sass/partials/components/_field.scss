@@ -1,6 +1,7 @@
 // @file
 // Styles for fields.
 
+.field--button,
 .field--button-text,
 .field--tickets-link {
   @extend %black-button;
