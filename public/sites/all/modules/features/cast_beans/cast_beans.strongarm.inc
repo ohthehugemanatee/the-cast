@@ -29,16 +29,16 @@ function cast_beans_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'label' => array(
-          'weight' => '1',
+          'weight' => '0',
         ),
         'title' => array(
-          'weight' => '2',
+          'weight' => '1',
         ),
         'revision' => array(
-          'weight' => '4',
+          'weight' => '6',
         ),
         'view_mode' => array(
-          'weight' => '3',
+          'weight' => '5',
         ),
       ),
       'display' => array(
@@ -73,7 +73,20 @@ function cast_beans_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'label' => array(
+          'weight' => '0',
+        ),
+        'title' => array(
+          'weight' => '1',
+        ),
+        'revision' => array(
+          'weight' => '6',
+        ),
+        'view_mode' => array(
+          'weight' => '5',
+        ),
+      ),
       'display' => array(
         'title' => array(
           'default' => array(
@@ -103,11 +116,24 @@ function cast_beans_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'label' => array(
+          'weight' => '0',
+        ),
+        'title' => array(
+          'weight' => '1',
+        ),
+        'revision' => array(
+          'weight' => '6',
+        ),
+        'view_mode' => array(
+          'weight' => '5',
+        ),
+      ),
       'display' => array(
         'title' => array(
           'default' => array(
-            'weight' => '0',
+            'weight' => '3',
             'visible' => FALSE,
           ),
         ),

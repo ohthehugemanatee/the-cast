@@ -22,14 +22,14 @@ function cast_beans_ds_layout_settings_info() {
       'ds_content' => array(
         0 => 'field_headshot',
         1 => 'field_body_text',
-        2 => 'field_button_text',
+        2 => 'field_button',
         3 => 'group_bottomright',
       ),
     ),
     'fields' => array(
       'field_headshot' => 'ds_content',
       'field_body_text' => 'ds_content',
-      'field_button_text' => 'ds_content',
+      'field_button' => 'ds_content',
       'group_bottomright' => 'ds_content',
     ),
     'classes' => array(),
@@ -59,13 +59,13 @@ function cast_beans_ds_layout_settings_info() {
       ),
       'right' => array(
         1 => 'field_image',
-        2 => 'field_button_text',
+        2 => 'field_button',
       ),
     ),
     'fields' => array(
       'field_body_text' => 'left',
       'field_image' => 'right',
-      'field_button_text' => 'right',
+      'field_button' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
