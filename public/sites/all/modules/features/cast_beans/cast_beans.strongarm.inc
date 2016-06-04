@@ -25,6 +25,9 @@ function cast_beans_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'social_block' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -44,6 +47,10 @@ function cast_beans_strongarm() {
       'display' => array(
         'title' => array(
           'default' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
+          'social_block' => array(
             'weight' => '-9',
             'visible' => FALSE,
           ),

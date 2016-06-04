@@ -61,6 +61,7 @@ function cast_boxes_ds_view_modes_info() {
   $ds_view_mode->view_mode = 'social_block';
   $ds_view_mode->label = 'social block';
   $ds_view_mode->entities = array(
+    'bean' => 'bean',
     'entity_boxes' => 'entity_boxes',
   );
   $export['social_block'] = $ds_view_mode;
