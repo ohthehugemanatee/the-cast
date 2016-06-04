@@ -15,8 +15,10 @@ function cast_translation_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'entity_translation_entity_types';
   $strongarm->value = array(
+    'bean' => 'bean',
     'entity_boxes' => 'entity_boxes',
     'node' => 'node',
+    'commerce_product' => 0,
     'taxonomy_term' => 0,
     'user' => 0,
   );

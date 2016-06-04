@@ -25,6 +25,12 @@ function cast_beans_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'social_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 5,
       ),
     ),
@@ -55,6 +61,25 @@ function cast_beans_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => 'flex-caption',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '[bean:field-button:url]',
+            'linked' => 1,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'social_block' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
@@ -129,6 +154,25 @@ function cast_beans_field_default_field_instances() {
         'settings' => array(
           'linked_field' => array(
             'advanced' => array(
+              'class' => 'banner',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '[bean:field-button:url]',
+            'linked' => 1,
+          ),
+        ),
+        'type' => 'link_title_plain',
+        'weight' => 3,
+      ),
+      'social_block' => array(
+        'label' => 'hidden',
+        'module' => 'link',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
               'class' => '',
               'rel' => '',
               'target' => '',
@@ -187,6 +231,27 @@ function cast_beans_field_default_field_instances() {
     'description' => 'The image will automatically be cropped to 960px × 300px',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'banner_image',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '[bean:field-button:url]',
+            'linked' => 1,
+          ),
+        ),
+        'type' => 'image',
+        'weight' => 1,
+      ),
+      'social_block' => array(
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
