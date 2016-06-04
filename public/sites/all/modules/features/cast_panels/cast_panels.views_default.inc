@@ -233,6 +233,12 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['fields']['rendered_entity']['view_mode'] = 'social_block';
   $handler->display->display_options['fields']['rendered_entity']['bypass_access'] = 0;
   $handler->display->display_options['path'] = 'admin/content/frontpage-slideshow-block';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Frontpage slideshow order';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['name'] = 'management';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
   $translatables['frontpage_slideshow_blocks'] = array(
     t('Master'),
     t('more'),
