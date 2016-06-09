@@ -262,6 +262,32 @@ function cast_panels_default_page_manager_handlers() {
     $pane->uuid = '2bc3817d-c706-4647-9dc0-5d300a718f77';
     $display->content['new-2bc3817d-c706-4647-9dc0-5d300a718f77'] = $pane;
     $display->panels['third'][1] = 'new-2bc3817d-c706-4647-9dc0-5d300a718f77';
+    $pane = new stdClass();
+    $pane->pid = 'new-e93f3e33-c243-4a7e-a94e-5fa69a0b16f7';
+    $pane->panel = 'third';
+    $pane->type = 'block';
+    $pane->subtype = 'bean-contact--urs-art-booking-';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'yellow',
+    );
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = 'e93f3e33-c243-4a7e-a94e-5fa69a0b16f7';
+    $display->content['new-e93f3e33-c243-4a7e-a94e-5fa69a0b16f7'] = $pane;
+    $display->panels['third'][2] = 'new-e93f3e33-c243-4a7e-a94e-5fa69a0b16f7';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1544,6 +1570,25 @@ function cast_panels_default_page_manager_pages() {
     $display->content['new-b4b8fec2-731a-4285-bd27-0951b5c155dd'] = $pane;
     $display->panels['preface'][1] = 'new-b4b8fec2-731a-4285-bd27-0951b5c155dd';
     $pane = new stdClass();
+    $pane->pid = 'new-edfb02d5-a0fa-4387-b3e9-49963bd4db5b';
+    $pane->panel = 'second';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'upcoming_events-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'edfb02d5-a0fa-4387-b3e9-49963bd4db5b';
+    $display->content['new-edfb02d5-a0fa-4387-b3e9-49963bd4db5b'] = $pane;
+    $display->panels['second'][0] = 'new-edfb02d5-a0fa-4387-b3e9-49963bd4db5b';
+    $pane = new stdClass();
     $pane->pid = 'new-565ad1dd-d284-48c6-afb7-ed32b0e8e9e1';
     $pane->panel = 'second';
     $pane->type = 'block';
@@ -1564,30 +1609,11 @@ function cast_panels_default_page_manager_pages() {
       'css_class' => 'yellow short',
     );
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = '565ad1dd-d284-48c6-afb7-ed32b0e8e9e1';
     $display->content['new-565ad1dd-d284-48c6-afb7-ed32b0e8e9e1'] = $pane;
-    $display->panels['second'][0] = 'new-565ad1dd-d284-48c6-afb7-ed32b0e8e9e1';
-    $pane = new stdClass();
-    $pane->pid = 'new-edfb02d5-a0fa-4387-b3e9-49963bd4db5b';
-    $pane->panel = 'second';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'upcoming_events-panel_pane_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = 'edfb02d5-a0fa-4387-b3e9-49963bd4db5b';
-    $display->content['new-edfb02d5-a0fa-4387-b3e9-49963bd4db5b'] = $pane;
-    $display->panels['second'][1] = 'new-edfb02d5-a0fa-4387-b3e9-49963bd4db5b';
+    $display->panels['second'][1] = 'new-565ad1dd-d284-48c6-afb7-ed32b0e8e9e1';
     $pane = new stdClass();
     $pane->pid = 'new-212fd229-2bae-4178-ae3d-eeaf50514d7d';
     $pane->panel = 'second';
