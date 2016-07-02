@@ -82,3 +82,10 @@ function cast_misc_update_7007() {
 function cast_misc_update_7008() {
   module_enable(array('entitycache', 'cast_beans', 'bean_entitycache', 'bean_admin_ui', 'bean_uuid'));
 }
+
+/**
+ * [redhen] Enable cast_crm module.
+ */
+function cast_misc_update_7009() {
+  module_enable(array('cast_crm'));
+}

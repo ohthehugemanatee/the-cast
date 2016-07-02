@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the cast_crm feature.
+ */
+
+include_once 'cast_crm.features.inc';
