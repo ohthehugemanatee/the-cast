@@ -213,15 +213,16 @@ function cast_panels_default_page_manager_handlers() {
     $display->content['new-0146fdaa-c287-44fa-bf41-2ec715f5f2bf'] = $pane;
     $display->panels['second'][0] = 'new-0146fdaa-c287-44fa-bf41-2ec715f5f2bf';
     $pane = new stdClass();
-    $pane->pid = 'new-ae5545c7-9687-4ee1-ab97-14bd66d3cf4e';
+    $pane->pid = 'new-28eca9d9-5c3f-4a2d-b5e4-c20e28b419fb';
     $pane->panel = 'third';
     $pane->type = 'block';
-    $pane->subtype = 'mailchimp_lists-the_cast_newsletter';
+    $pane->subtype = 'mailchimp_signup-signup_block';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'override_title' => 1,
-      'override_title_text' => 'The Cast Newsletter',
+      'override_title_text' => 'THE CAST NEWSLETTER',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -234,34 +235,9 @@ function cast_panels_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'ae5545c7-9687-4ee1-ab97-14bd66d3cf4e';
-    $display->content['new-ae5545c7-9687-4ee1-ab97-14bd66d3cf4e'] = $pane;
-    $display->panels['third'][0] = 'new-ae5545c7-9687-4ee1-ab97-14bd66d3cf4e';
-    $pane = new stdClass();
-    $pane->pid = 'new-2bc3817d-c706-4647-9dc0-5d300a718f77';
-    $pane->panel = 'third';
-    $pane->type = 'block';
-    $pane->subtype = 'boxes-press';
-    $pane->shown = FALSE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'dkgray',
-    );
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = '2bc3817d-c706-4647-9dc0-5d300a718f77';
-    $display->content['new-2bc3817d-c706-4647-9dc0-5d300a718f77'] = $pane;
-    $display->panels['third'][1] = 'new-2bc3817d-c706-4647-9dc0-5d300a718f77';
+    $pane->uuid = '28eca9d9-5c3f-4a2d-b5e4-c20e28b419fb';
+    $display->content['new-28eca9d9-5c3f-4a2d-b5e4-c20e28b419fb'] = $pane;
+    $display->panels['third'][0] = 'new-28eca9d9-5c3f-4a2d-b5e4-c20e28b419fb';
     $pane = new stdClass();
     $pane->pid = 'new-e93f3e33-c243-4a7e-a94e-5fa69a0b16f7';
     $pane->panel = 'third';
@@ -283,11 +259,11 @@ function cast_panels_default_page_manager_handlers() {
       'css_class' => 'yellow',
     );
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = 'e93f3e33-c243-4a7e-a94e-5fa69a0b16f7';
     $display->content['new-e93f3e33-c243-4a7e-a94e-5fa69a0b16f7'] = $pane;
-    $display->panels['third'][2] = 'new-e93f3e33-c243-4a7e-a94e-5fa69a0b16f7';
+    $display->panels['third'][1] = 'new-e93f3e33-c243-4a7e-a94e-5fa69a0b16f7';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1352,7 +1328,7 @@ function cast_panels_default_page_manager_pages() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['blog'] = $page;
+  $pages[''] = $page;
 
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
@@ -1589,15 +1565,15 @@ function cast_panels_default_page_manager_pages() {
     $display->content['new-edfb02d5-a0fa-4387-b3e9-49963bd4db5b'] = $pane;
     $display->panels['second'][0] = 'new-edfb02d5-a0fa-4387-b3e9-49963bd4db5b';
     $pane = new stdClass();
-    $pane->pid = 'new-565ad1dd-d284-48c6-afb7-ed32b0e8e9e1';
+    $pane->pid = 'new-3a7d4904-2dcf-49fb-ad2c-62444ee2e060';
     $pane->panel = 'second';
     $pane->type = 'block';
-    $pane->subtype = 'mailchimp_lists-the_cast_newsletter';
+    $pane->subtype = 'mailchimp_signup-signup_block';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_title' => 1,
+      'override_title_text' => 'Become a fan',
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();
@@ -1611,9 +1587,9 @@ function cast_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = '565ad1dd-d284-48c6-afb7-ed32b0e8e9e1';
-    $display->content['new-565ad1dd-d284-48c6-afb7-ed32b0e8e9e1'] = $pane;
-    $display->panels['second'][1] = 'new-565ad1dd-d284-48c6-afb7-ed32b0e8e9e1';
+    $pane->uuid = '3a7d4904-2dcf-49fb-ad2c-62444ee2e060';
+    $display->content['new-3a7d4904-2dcf-49fb-ad2c-62444ee2e060'] = $pane;
+    $display->panels['second'][1] = 'new-3a7d4904-2dcf-49fb-ad2c-62444ee2e060';
     $pane = new stdClass();
     $pane->pid = 'new-212fd229-2bae-4178-ae3d-eeaf50514d7d';
     $pane->panel = 'second';
@@ -1640,7 +1616,7 @@ function cast_panels_default_page_manager_pages() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['frontpage'] = $page;
+  $pages[''] = $page;
 
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
@@ -1801,7 +1777,7 @@ function cast_panels_default_page_manager_pages() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['members'] = $page;
+  $pages[''] = $page;
 
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
@@ -2015,7 +1991,7 @@ function cast_panels_default_page_manager_pages() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['upcoming'] = $page;
+  $pages[''] = $page;
 
   return $pages;
 

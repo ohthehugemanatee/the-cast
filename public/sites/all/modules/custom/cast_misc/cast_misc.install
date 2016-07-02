@@ -84,8 +84,9 @@ function cast_misc_update_7008() {
 }
 
 /**
- * [redhen] Enable cast_crm module.
+ * [redhen] Enable cast_crm module, [mailchimp-update] Force reinstall the mailchimp schema.
  */
 function cast_misc_update_7009() {
   module_enable(array('cast_crm'));
+  drupal_install_schema('mailchimp');
 }

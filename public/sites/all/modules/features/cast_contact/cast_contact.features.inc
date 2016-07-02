@@ -14,32 +14,28 @@ function cast_contact_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
- * Implements hook_default_mailchimp_list().
+ * Implements hook_default_mailchimp_signup().
  */
-function cast_contact_default_mailchimp_list() {
+function cast_contact_default_mailchimp_signup() {
   $items = array();
-  $items['the_cast_newsletter'] = entity_import('mailchimp_list', '{
-    "name" : "the_cast_newsletter",
-    "mc_list_id" : "ae856802b1",
-    "label" : "The Cast newsletter",
-    "description" : "Subscribe to our newsletter and we\\u0027ll keep you updated on upcoming events and special offers!",
+  $items['signup_block'] = entity_import('mailchimp_signup', '{
+    "name" : "signup_block",
+    "mc_lists" : { "ae856802b1" : "ae856802b1" },
+    "mode" : "1",
+    "title" : "Signup block",
     "settings" : {
-      "roles" : { "1" : 1 },
-      "mergefields" : { "EMAIL" : "mail", "FNAME" : "", "LNAME" : "" },
-      "mergefields_display" : { "EMAIL" : true, "FNAME" : 1, "LNAME" : 1 },
-      "doublein" : 1,
-      "show_register_form" : 0,
-      "default_register_form_optin" : 0,
-      "show_account_form" : 0,
-      "form_label" : "",
-      "submit_label" : "Subscribe",
-      "include_interest_groups" : 0,
-      "opt_in_interest_groups" : 0,
-      "interest_groups_label" : "",
-      "cron" : 0,
-      "webhooks" : 0,
-      "allow_anonymous" : 1,
-      "required" : 0
+      "path" : "",
+      "submit_button" : "Subscribe",
+      "confirmation_message" : "You have been successfully subscribed.",
+      "destination" : "",
+      "mergefields" : {
+        "EMAIL" : {"tag":"EMAIL","name":"Email Address","type":"email","required":true,"default_value":"","public":true,"display_order":1,"options":{"size":25}},
+        "FNAME" : {"merge_id":1,"tag":"FNAME","name":"First Name","type":"text","required":false,"default_value":"","public":true,"display_order":2,"options":{"size":25},"help_text":"","list_id":"ae856802b1","_links":[{"rel":"self","href":"https:\\/\\/us8.api.mailchimp.com\\/3.0\\/lists\\/ae856802b1\\/merge-fields\\/1","method":"GET","targetSchema":"https:\\/\\/us8.api.mailchimp.com\\/schema\\/3.0\\/Lists\\/MergeFields\\/Instance.json"},{"rel":"parent","href":"https:\\/\\/us8.api.mailchimp.com\\/3.0\\/lists\\/ae856802b1\\/merge-fields","method":"GET","targetSchema":"https:\\/\\/us8.api.mailchimp.com\\/schema\\/3.0\\/Lists\\/MergeFields\\/Collection.json","schema":"https:\\/\\/us8.api.mailchimp.com\\/schema\\/3.0\\/CollectionLinks\\/Lists\\/MergeFields.json"},{"rel":"update","href":"https:\\/\\/us8.api.mailchimp.com\\/3.0\\/lists\\/ae856802b1\\/merge-fields\\/1","method":"PATCH","schema":"https:\\/\\/us8.api.mailchimp.com\\/schema\\/3.0\\/Lists\\/MergeFields\\/Instance.json"},{"rel":"delete","href":"https:\\/\\/us8.api.mailchimp.com\\/3.0\\/lists\\/ae856802b1\\/merge-fields\\/1","method":"DELETE"}]},
+        "LNAME" : {"merge_id":2,"tag":"LNAME","name":"Last Name","type":"text","required":false,"default_value":"","public":true,"display_order":3,"options":{"size":25},"help_text":"","list_id":"ae856802b1","_links":[{"rel":"self","href":"https:\\/\\/us8.api.mailchimp.com\\/3.0\\/lists\\/ae856802b1\\/merge-fields\\/2","method":"GET","targetSchema":"https:\\/\\/us8.api.mailchimp.com\\/schema\\/3.0\\/Lists\\/MergeFields\\/Instance.json"},{"rel":"parent","href":"https:\\/\\/us8.api.mailchimp.com\\/3.0\\/lists\\/ae856802b1\\/merge-fields","method":"GET","targetSchema":"https:\\/\\/us8.api.mailchimp.com\\/schema\\/3.0\\/Lists\\/MergeFields\\/Collection.json","schema":"https:\\/\\/us8.api.mailchimp.com\\/schema\\/3.0\\/CollectionLinks\\/Lists\\/MergeFields.json"},{"rel":"update","href":"https:\\/\\/us8.api.mailchimp.com\\/3.0\\/lists\\/ae856802b1\\/merge-fields\\/2","method":"PATCH","schema":"https:\\/\\/us8.api.mailchimp.com\\/schema\\/3.0\\/Lists\\/MergeFields\\/Instance.json"},{"rel":"delete","href":"https:\\/\\/us8.api.mailchimp.com\\/3.0\\/lists\\/ae856802b1\\/merge-fields\\/2","method":"DELETE"}]}
+      },
+      "description" : "Subscribe to our newsletter and we\\u0027ll keep you updated on upcoming events and special offers!",
+      "doublein" : 0,
+      "include_interest_groups" : 0
     },
     "rdf_mapping" : []
   }');

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 65, ../../../../../../../../.rvm/gems/ruby-2.1.2/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+/* line 65, ../../../../../../../../../.rvm/gems/ruby-2.2.3/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
 .l-grid__row:after, .l-panels-one-column:after, .l-panels-one-column .l-preface:after,
 .l-panels-one-column .l-main:after {
   content: "";
@@ -1538,7 +1538,7 @@ input.throbbing {
 }
 
 /* line 57, ../sass/partials/components/_button.scss */
-.black-button, .l-panels-two-column .mailchimp-lists-user-subscribe-form .button--submit, .mailchimp-lists-user-subscribe-form .button--submit {
+.black-button, .l-panels-two-column .pane--mailchimp-signup-signup-block .button--submit, .mailchimp-signup-subscribe-form .button--submit {
   background: #000;
   color: #fff;
   display: block;
@@ -1557,7 +1557,7 @@ input.throbbing {
   border-radius: 0px;
 }
 /* line 73, ../sass/partials/components/_button.scss */
-.black-button:focus, .mailchimp-lists-user-subscribe-form .button--submit:focus, .black-button:hover, .mailchimp-lists-user-subscribe-form .button--submit:hover {
+.black-button:focus, .l-panels-two-column .pane--mailchimp-signup-signup-block .button--submit:focus, .mailchimp-signup-subscribe-form .button--submit:focus, .black-button:hover, .l-panels-two-column .pane--mailchimp-signup-signup-block .button--submit:hover, .mailchimp-signup-subscribe-form .button--submit:hover {
   border: none;
   background: #c15d22;
   color: #fff;
@@ -3068,43 +3068,45 @@ footer .pane {
   color: #fff;
 }
 
-/* line 6, ../sass/partials/components/_mailchimp-block.scss */
-.l-panels-two-column .mailchimp-lists-user-subscribe-form .button--submit {
+/* line 7, ../sass/partials/components/_mailchimp-block.scss */
+.l-panels-two-column .pane--mailchimp-signup-signup-block form {
+  text-align: left;
+  padding: 8px;
+}
+/* line 11, ../sass/partials/components/_mailchimp-block.scss */
+.l-panels-two-column .pane--mailchimp-signup-signup-block form .mailchimp-signup-subscribe-form-description {
+  width: 100%;
+  margin-bottom: 0;
+}
+/* line 16, ../sass/partials/components/_mailchimp-block.scss */
+.l-panels-two-column .pane--mailchimp-signup-signup-block form .form-item {
+  float: left;
+  width: 50%;
+  margin: 0;
+}
+/* line 22, ../sass/partials/components/_mailchimp-block.scss */
+.l-panels-two-column .pane--mailchimp-signup-signup-block .button--submit {
   float: left;
   line-height: 1em;
   margin-top: 1.03em;
   font-size: 1.2em;
   padding: 0.3125em;
 }
-/* line 15, ../sass/partials/components/_mailchimp-block.scss */
-.l-panels-two-column .mailchimp-lists-user-subscribe-form .mailchimp-newsletter-wrapper {
-  text-align: left;
-  padding: 8px;
-}
-/* line 19, ../sass/partials/components/_mailchimp-block.scss */
-.l-panels-two-column .mailchimp-lists-user-subscribe-form .mailchimp-newsletter-wrapper #edit-mailchimp-lists-mailchimp-the-cast-newsletter-title {
-  width: 100%;
-}
-/* line 23, ../sass/partials/components/_mailchimp-block.scss */
-.l-panels-two-column .mailchimp-lists-user-subscribe-form .mailchimp-newsletter-wrapper .form-item {
-  float: left;
-  width: 50%;
-  margin: 0;
-}
 
-/* line 32, ../sass/partials/components/_mailchimp-block.scss */
-.mailchimp-lists-user-subscribe-form {
+/* line 33, ../sass/partials/components/_mailchimp-block.scss */
+.mailchimp-signup-subscribe-form {
   padding-bottom: 2em;
 }
-/* line 35, ../sass/partials/components/_mailchimp-block.scss */
-.mailchimp-lists-user-subscribe-form .button--submit {
+/* line 36, ../sass/partials/components/_mailchimp-block.scss */
+.mailchimp-signup-subscribe-form .button--submit {
   float: left;
 }
-/* line 39, ../sass/partials/components/_mailchimp-block.scss */
-.mailchimp-lists-user-subscribe-form .form-item__description {
+/* line 40, ../sass/partials/components/_mailchimp-block.scss */
+.mailchimp-signup-subscribe-form .mailchimp-signup-subscribe-form-description {
   color: #FFF;
   text-shadow: 1px 1px 0px #000;
   font-size: 1em;
+  margin-bottom: 1.3em;
 }
 
 /* line 8, ../sass/partials/components/_node.scss */

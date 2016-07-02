@@ -2,22 +2,15 @@
 // Styles for mailchimp blocks.
 
 .l-panels-two-column {
-  .mailchimp-lists-user-subscribe-form {
-    .button--submit {
-      @extend %black-submit;
-      float: left;
-      line-height: 1em;
-      margin-top: 1.03em;
-      font-size: 1.2em;
-      padding: 0.3125em;
-    }
+  .pane--mailchimp-signup-signup-block {
 
-    .mailchimp-newsletter-wrapper {
+    form {
       text-align: left;
       padding: 8px;
 
-      #edit-mailchimp-lists-mailchimp-the-cast-newsletter-title {
+      .mailchimp-signup-subscribe-form-description {
         width: 100%;
+        margin-bottom: 0;
       }
 
       .form-item {
@@ -26,19 +19,28 @@
         margin: 0;
       }
     }
+    .button--submit {
+      @extend %black-submit;
+      float: left;
+      line-height: 1em;
+      margin-top: 1.03em;
+      font-size: 1.2em;
+      padding: 0.3125em;
+    }
   }
 }
 
-.mailchimp-lists-user-subscribe-form {
+.mailchimp-signup-subscribe-form {
   padding-bottom: 2em;
 
   .button--submit {
     @extend %black-submit;
     float: left;
   }
-  .form-item__description {
+  .mailchimp-signup-subscribe-form-description {
     color: #FFF;
     text-shadow: 1px 1px 0px #000;
     font-size: 1em;
+    margin-bottom: 1.3em;
   }
 }
