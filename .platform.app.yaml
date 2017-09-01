@@ -9,7 +9,7 @@ type: 'php:7.1'
 
 # Configuration of the build of this application.
 build:
-    flavor: vanilla
+    flavor: drupal
 
 access:
     ssh: admin
