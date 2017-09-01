@@ -14,7 +14,6 @@ dependencies[] = strongarm
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[field_base][] = field_mailchimp_subscription
-features[field_instance][] = redhen_contact-contact-field_mailchimp_subscription
 features[mailchimp_signup][] = signup_block
 features[user_permission][] = access site-wide contact form
 features[user_permission][] = access user contact forms

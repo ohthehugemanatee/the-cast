@@ -43,7 +43,7 @@ function cast_core_types_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_body_wrapper|node|event|members_page'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -76,7 +76,7 @@ function cast_core_types_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_bottomright|node|audio|default'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -108,7 +108,7 @@ function cast_core_types_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_bottomright|node|event|members_page'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -140,7 +140,7 @@ function cast_core_types_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_left|node|bio|members_page'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -174,7 +174,7 @@ function cast_core_types_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_left|node|event|members_page'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -206,7 +206,7 @@ function cast_core_types_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_right|node|bio|members_page'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -241,7 +241,7 @@ function cast_core_types_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_right|node|event|members_page'] = $field_group;
+  $field_groups[''] = $field_group;
 
   // Translatables
   // Included for use with string extractors like potx.
