@@ -13,9 +13,9 @@ $aliases['dev'] = array(
 );
 
 $aliases['live'] = array(
-  'uri' => 'www.thecastmusic.com',
+  'uri' => 'thecastmusic.com',
   'root' => '/var/www/thecastmusic.com/public',
-  'remote-host' => 'www.thecastmusic.com',
+  'remote-host' => '174.129.37.59',
   'remote-user' => 'cvertesi',
   'command-specific' => array(
     'rsync' => array (

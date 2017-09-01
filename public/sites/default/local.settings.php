@@ -2,44 +2,32 @@
 
 /**
  * @file
- * Drupal site-specific configuration file.
+ * Drupal site configuration for local development.
  */
 
-$conf['stage_file_proxy_origin'] = 'http://thecastmusic.com/';
 
-$conf['file_private_path'] = '../private';
-
-### AMAZEE.IO Database connection
-if(getenv('AMAZEEIO_SITENAME')){
-  $databases['default']['default'] = array(
-    'driver' => 'mysql',
-    'database' => getenv('AMAZEEIO_SITENAME'),
-    'username' => getenv('AMAZEEIO_DB_USERNAME'),
-    'password' => getenv('AMAZEEIO_DB_PASSWORD'),
-    'host' => getenv('AMAZEEIO_DB_HOST'),
-    'port' => getenv('AMAZEEIO_DB_PORT'),
-    'prefix' => '',
-  );
-}
+// DB connection.
+$databases['default']['default'] = array(
+  'driver' => getenv('DB_DRIVER'),
+  'database' => getenv('DB_NAME'),
+  'username' => getenv('DB_USER'),
+  'password' => getenv('DB_PASSWORD'),
+  'host' => getenv('DB_HOST'),
+);
 
 ### Base URL
 if (getenv('AMAZEEIO_BASE_URL')) {
-  $base_url = getenv('AMAZEEIO_BASE_URL');
+  $base_url = 'http://localhost';
 }
 
-$conf['cache'] = '0';
-$conf['file_private_path'] = '../private';
+// File paths.
+$conf['file_private_path'] = 'sites/default/files/private';
 $conf['file_temporary_path'] = '/tmp';
+// Stage file proxy source.
+$conf['stage_file_proxy_origin'] = 'https://thecastmusic.com/';
+// Disable cache.
+$conf['cache'] = '0';
+// Disable HTTPS.
 $conf['securepages_enable'] = FALSE;
 $conf['https'] = FALSE;
-$conf['stage_file_proxy_origin'] = 'http://thecastmusic.com';
 
-/**
- *Memcached support is disabled until Amazee resolves https://github.com/amazeeio/docker/issues/2
- */
-/*
-$conf['cache_backends'][] = 'sites/all/modules/contrib/memcache/memcache.inc';
-$conf['cache_default_class'] = 'MemCacheDrupal';
-$conf['cache_class_cache_form'] = 'DrupalDatabaseCache';
-$conf['memcache_key_prefix'] = 'thecast';
-*/
