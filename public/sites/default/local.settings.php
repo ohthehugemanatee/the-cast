@@ -16,9 +16,7 @@ $databases['default']['default'] = array(
 );
 
 ### Base URL
-if (getenv('AMAZEEIO_BASE_URL')) {
-  $base_url = 'http://localhost';
-}
+$base_url = 'http://localhost';
 
 // File paths.
 $conf['file_private_path'] = 'sites/default/files/private';

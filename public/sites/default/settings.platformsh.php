@@ -5,6 +5,8 @@
  * Platform.sh specific settings.php configuration.
  */
 
+$conf['securepages_enable'] = FALSE;
+
 // Configure relationships.
 if (isset($_ENV['PLATFORM_RELATIONSHIPS'])) {
   $relationships = json_decode(base64_decode($_ENV['PLATFORM_RELATIONSHIPS']), TRUE);
