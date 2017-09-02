@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * @file
+ * Imports events by scraping the URS ART website.
+ */
+
+/**
+ * Implements hook_cron().
+ */
+function cast_events_import_cron() {
+  // Get the HTML data from http://www.ursart.de/the-cast/tourplan/.
+  $http_response = drupal_http_request('http://www.ursart.de/the-cast/tourplan/');
+  if ($http_response->code != 200) {
+    throw new Exception('Failed getting source HTML from ursart.de');
+  }
+  // Load it into a DOM Document.
+  $domDocument = new DOMDocument();
+  $domDocument->loadHTML($http_response->data);
+  // Get just the table of events.
+  $eventsTable = $domDocument->getElementById('example');
+  /** @var \DOMNode $tableBody */
+  $tableBody = $eventsTable->getElementsByTagName('tbody')->item(0);
+  // Create an associative array of events listed.
+  $listedEvents = [];
+  // Convert the table body to simpleXML.
+  /** @var \SimpleXMLElement $tableBody */
+  $tableBody = simplexml_import_dom($tableBody);
+  /** @var \SimpleXMLElement $row */
+  foreach ($tableBody->children() as $row) {
+    $columns = [
+      'date' => $row->td[0],
+      'program' => $row->td[1],
+      'spielort' => $row->td[2],
+      'adresse' => $row->td[3],
+      'vvk' => $row->td[4],
+    ];
+    $nodeValues = [
+    ];
+    // Build an array key as a hash of date/time and location name.
+  }
+
+
+
+  // Get all Event nodes with a date after now.
+
+  // Loop over the event nodes:
+    // Find the event item for this node.
+    // If we don't find one:
+      // Unpublish the node, leave a revision comment, and continue.
+    // If we do find one:
+      // Compare values in the fields, and update.
+      // Remove the event from the array of scraped events.
+  // Loop over the remainig array of scraped events:
+    // Create an event node, and save it.
+  // Leave a log message "X events created, Y updated, Z unpublished."
+}
