@@ -30,16 +30,25 @@ function cast_events_import_cron() {
   foreach ($tableBody->children() as $row) {
     $columns = [
       'date' => $row->td[0],
+      'string_date' => (string) $row->td[0],
       'program' => $row->td[1],
       'spielort' => $row->td[2],
       'adresse' => $row->td[3],
       'vvk' => $row->td[4],
     ];
-    $nodeValues = [
-    ];
     // Build an array key as a hash of date/time and location name.
+    $arrayKey = md5($columns['string_date'] . $columns['spielort']);
+    $listedEvents[$arrayKey] = $columns
   }
-
+/**
+  $nodeValues = [
+    'field_date' => date_create($string_date),
+    'field_tickets_link' => [
+      'url' => (string) $columns['vvk']->a['href'],
+      'title' => (string) $columns['vvk']->a,
+    ],
+  ];
+*/
 
 
   // Get all Event nodes with a date after now.
