@@ -36,23 +36,19 @@ web:
             #
             # This is a filesystem path, relative to the application root.
             root: 'public'
-
             # How long to allow static assets from this location to be cached.
             # Can be a time in seconds, or -1 for no caching. Times can be
             # suffixed with "s" (seconds), "m" (minutes), "h" (hours), "d"
             # (days), "w" (weeks), "M" (months, as 30 days) or "y" (years, as 365 days).
             expires: -1
-
             # Deny access to static files in this location.
             allow: false
-
             # Whether to forward disallowed and missing resources from this
             # location to the application.
             # Can be true, false or a URI path string.
             passthru: '/index.php'
             # Do not execute PHP scripts.
             scripts: false
-
             # Rules for specific URI patterns.
             rules:
                 # Allow access to common static files.
