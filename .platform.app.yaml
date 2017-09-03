@@ -47,6 +47,8 @@ web:
             passthru: '/index.php'
             # Do not execute PHP scripts.
             scripts: false
+            # Deny access to static files in this location.
+            allow: false
             # Rules for specific URI patterns.
             rules:
                 # Allow access to common static files.
