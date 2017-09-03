@@ -41,28 +41,12 @@ web:
             # Can be a time in seconds, or -1 for no caching. Times can be
             # suffixed with "s" (seconds), "m" (minutes), "h" (hours), "d"
             # (days), "w" (weeks), "M" (months, as 30 days) or "y" (years, as 365 days).
-            expires: 5m
-
-            # Deny access to static files in this location.
-            allow: false
+            expires: -1
 
             # Whether to forward disallowed and missing resources from this
             # location to the application.
             # Can be true, false or a URI path string.
-            passthru: '/public/index.php'
-
-            # Do not execute PHP scripts.
-            scripts: false
-
-            # Rules for specific URI patterns.
-            rules:
-                # Allow access to common static files.
-                '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
-                    allow: true
-                '^/robots\.txt$':
-                    allow: true
-                '^/sitemap\.xml$':
-                    allow: true
+            passthru: '/index.php'
 
 # The size of the persistent disk of the application (in MB).
 disk: 2048
