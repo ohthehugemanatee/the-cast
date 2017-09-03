@@ -45,8 +45,6 @@ web:
             # location to the application.
             # Can be true, false or a URI path string.
             passthru: '/index.php'
-            # Do not execute PHP scripts.
-            scripts: false
             # Deny access to static files in this location.
             allow: false
             # Rules for specific URI patterns.
@@ -58,8 +56,6 @@ web:
                     allow: true
                 '^/sitemap\.xml$':
                     allow: true
-                '^/index\.php$':
-                    scripts: true
 
 # The size of the persistent disk of the application (in MB).
 disk: 2048
