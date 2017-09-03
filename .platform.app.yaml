@@ -53,6 +53,16 @@ web:
             # Do not execute PHP scripts.
             scripts: false
 
+            # Rules for specific URI patterns.
+            rules:
+                # Allow access to common static files.
+                '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
+                    allow: true
+                '^/robots\.txt$':
+                    allow: true
+                '^/sitemap\.xml$':
+                    allow: true
+
 # The size of the persistent disk of the application (in MB).
 disk: 2048
 
