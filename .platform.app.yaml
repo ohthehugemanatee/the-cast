@@ -49,7 +49,7 @@ web:
             # Whether to forward disallowed and missing resources from this
             # location to the application.
             # Can be true, false or a URI path string.
-            passthru: '/index.php'
+            passthru: 'public/index.php'
 
             # Do not execute PHP scripts.
             scripts: false
