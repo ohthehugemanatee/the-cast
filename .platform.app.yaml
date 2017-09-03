@@ -56,6 +56,8 @@ web:
                     allow: true
                 '^/sitemap\.xml$':
                     allow: true
+                '^/index\.php$':
+                    scripts: true
 
 # The size of the persistent disk of the application (in MB).
 disk: 2048
