@@ -97,3 +97,11 @@ function cast_misc_update_7009() {
 function cast_misc_update_7010() {
   module_enable(array('cast_events_import'));
 }
+
+/**
+ * Disable commerce modules, since we don't use them.
+ */
+function cast_misc_update_7011() {
+  module_disable(['commerce']);
+  drupal_uninstall_modules(['commerce']);
+}
