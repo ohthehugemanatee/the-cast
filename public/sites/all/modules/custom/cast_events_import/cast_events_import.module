@@ -227,3 +227,12 @@ function _cast_events_import_lookup_address(string $address) {
     'status' => 500,
   );
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function cast_events_import_form_node_form_alter(&$form, &$form_state, $form_id) {
+  if ($form['#node']->type == 'event' && isset($form['field_manual_override'])) {
+    $form['field_manual_override'][LANGUAGE_NONE]['#default_value'] = 1;
+  }
+}
