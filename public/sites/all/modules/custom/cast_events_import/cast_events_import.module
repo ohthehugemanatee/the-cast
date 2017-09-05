@@ -27,7 +27,7 @@ function _cast_events_import_importer() {
   $lastSyncedHash = variable_get('cast_events_import_last_synced_hash', '');
   $currentHash = md5($http_response->data);
   if ($currentHash == $lastSyncedHash) {
-    //return;
+    return;
   }
   variable_set('cast_events_import_last_synced_hash', $currentHash);
   $listedEvents = _cast_events_build_events_array($http_response->data);
