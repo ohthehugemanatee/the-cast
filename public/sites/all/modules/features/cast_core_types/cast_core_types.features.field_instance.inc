@@ -1074,7 +1074,7 @@ function cast_core_types_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => '',
+    'description' => 'When this is enabled, updates are no longer synced from the URS Art website. It is automatically enabled for you when you create or edit an Event by hand.',
     'display' => array(
       'default' => array(
         'label' => 'above',
