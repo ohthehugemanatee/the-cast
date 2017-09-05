@@ -227,10 +227,3 @@ function _cast_events_import_lookup_address(string $address) {
     'status' => 500,
   );
 }
-
-/**
- * Implements hook_page_build().
- */
-function cast_events_import_page_build(&$page) {
-  _cast_events_import_importer();
-}
