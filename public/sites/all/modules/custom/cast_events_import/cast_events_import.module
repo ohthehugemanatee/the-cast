@@ -27,7 +27,7 @@ function _cast_events_import_importer() {
   $lastSyncedHash = variable_get('cast_events_import_last_synced_hash', '');
   $currentHash = md5($http_response->data);
   if ($currentHash == $lastSyncedHash) {
-    return;
+    //return;
   }
   variable_set('cast_events_import_last_synced_hash', $currentHash);
   $listedEvents = _cast_events_build_events_array($http_response->data);
@@ -49,6 +49,7 @@ function _cast_events_import_importer() {
   // Loop over the event nodes and match them with event rows.
   if (isset($results['node']) && !empty($results['node'])) {
     foreach ($results['node'] as $nid => $event) {
+      $event = node_load($nid);
       $node = entity_metadata_wrapper('node', $event);
       // Find the event item for this node.
       $arrayKey = $node->field_ursart_event_id->value();
@@ -155,6 +156,9 @@ function _cast_events_build_events_array(string $data) {
  *   An event row from ursart.de .
  * @param \EntityMetadataWrapper|null $node
  *   The node to receive the values. If null, one will be created.
+ *
+ * @return \EntityMetadataWrapper
+ *   The wrapped node, unsaved.
  */
 function _cast_events_import_map_node_values(array $eventRow, EntityMetadataWrapper $node = NULL) {
   if (empty($node)) {
@@ -170,13 +174,11 @@ function _cast_events_import_map_node_values(array $eventRow, EntityMetadataWrap
   $spielort = (string) $eventRow['spielort'];
   $date = (string) $eventRow['date'];
   $node->title->set("{$spielort} {$date}");
-  $node->field_location->set([
-    'country' => isset($address->country) ? $address->country : '',
-    'name_line' => $spielort,
-    'thoroughfare' => isset($address->street_number) && isset($address->route) ? "{$address->street_number->short_name} {$address->route->short_name}" : '',
-    'postal_code' => isset($address->postal_code) ? $address->postal_code : '',
-    'locality' => isset($address->locality) ? $address->locality->long_name : '',
-  ]);
+  $node->field_location->country = isset($address['country']) ? $address['country']->short_name : '';
+  $node->field_location->name_line = $spielort;
+  $node->field_location->thoroughfare = isset($address['street_number']) && isset($address['route']) ? "{$address['street_number']->short_name} {$address['route']->short_name}" : '';
+  $node->field_location->postal_code = isset($address['postal_code']) ? $address['postal_code']->short_name : '';
+  $node->field_location->locality = isset($address['locality']) ? $address['locality']->long_name : '';
   $node->field_tickets_link->set([
     'url' => (string) $eventRow['vvk']->a['href'],
     'title' => (string) $eventRow['vvk']->a,
@@ -224,4 +226,11 @@ function _cast_events_import_lookup_address(string $address) {
   return array(
     'status' => 500,
   );
+}
+
+/**
+ * Implements hook_page_build().
+ */
+function cast_events_import_page_build(&$page) {
+  _cast_events_import_importer();
 }
