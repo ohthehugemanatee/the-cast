@@ -185,10 +185,19 @@ function _cast_events_import_map_node_values(array $eventRow, EntityMetadataWrap
   $node->field_location->thoroughfare = isset($address['street_number']) && isset($address['route']) ? "{$address['street_number']->short_name} {$address['route']->short_name}" : '';
   $node->field_location->postal_code = isset($address['postal_code']) ? $address['postal_code']->short_name : '';
   $node->field_location->locality = isset($address['locality']) ? $address['locality']->long_name : '';
-  $node->field_tickets_link->set([
-    'url' => (string) $eventRow['vvk']->a['href'],
-    'title' => (string) $eventRow['vvk']->a,
-  ]);
+  // Set field_tickets link differently depending on the contents (le sigh).
+  if (!empty($eventRow['vvk']->a)) {
+    $node->field_tickets_link->set([
+      'url' => (string) $eventRow['vvk']->a['href'],
+      'title' => (string) $eventRow['vvk']->a,
+    ]);
+  }
+  else {
+    $node->field_tickets_link->set([
+      'url' => '',
+      'title' => (string) $eventRow['vvk'],
+    ]);
+  }
   $node->field_date->set($eventRow['dateTime']->getTimeStamp());
   $node->field_ursart_event_id->set($eventRow['id']);
   return $node;
