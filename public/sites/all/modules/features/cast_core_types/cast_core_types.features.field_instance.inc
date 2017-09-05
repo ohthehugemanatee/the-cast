@@ -1065,6 +1065,74 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-event-field_manual_override'.
+  $field_instances['node-event-field_manual_override'] = array(
+    'bundle' => 'event',
+    'default_value' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 6,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'members_page' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_manual_override',
+    'label' => 'Manual override',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 8,
+    ),
+  );
+
   // Exported field_instance: 'node-event-field_tickets_link'.
   $field_instances['node-event-field_tickets_link'] = array(
     'bundle' => 'event',
@@ -1857,6 +1925,7 @@ function cast_core_types_field_default_field_instances() {
   t('Image');
   t('Images');
   t('Location');
+  t('Manual override');
   t('Paste the URL to a Vimeo or Youtube video here.');
   t('Select multiple files by holding down SHIFT, CTRL, or CMD keys.');
   t('The image will automatically be scaled and cropped to 234 × 300 px');
