@@ -32,10 +32,11 @@ function _cast_events_import_importer() {
   variable_set('cast_events_import_last_synced_hash', $currentHash);
   $listedEvents = _cast_events_build_events_array($http_response->data);
 
-  // Set counters for created/updated/unpublished.
+  // Set counters for created/updated/unpublished/ignored.
   $createdCount = 0;
   $updatedCount = 0;
   $unpublishedCount = 0;
+  $ignoredCount = 0;
 
   // Get all published Event nodes after the current date/time.
   $query = new EntityFieldQuery();
@@ -55,18 +56,22 @@ function _cast_events_import_importer() {
       $arrayKey = $node->field_ursart_event_id->value();
       // If we find the event row for this node.
       if (!empty($arrayKey) && isset($listedEvents[$arrayKey])) {
-        // For now, don't update any existing nodes.
-        /**
-        // Copy values from the event row into the node.
-        $node = _cast_events_import_map_node_values($listedEvents[$arrayKey], $node);
-        $node->revision->set(TRUE);
-        $node->log->set('Updated event per listing on ursart.de');
-        $node->save();
-         */
+        // Do not update nodes under manual control.
+        if ($node->field_manual_override->value() == 1) {
+          // Bump the ignored count.
+          $ignoredCount++;
+        }
+        else {
+          // Copy values from the event row into the node.
+          $node = _cast_events_import_map_node_values($listedEvents[$arrayKey], $node);
+          $node->revision->set(TRUE);
+          $node->log->set('Updated event per listing on ursart.de');
+          $node->save();
+          // Bump the updated count.
+          $updatedCount++;
+        }
         // Remove the event from the array of scraped events.
         unset($listedEvents[$arrayKey]);
-        // Bump the updated count and continue.
-        $updatedCount++;
         continue;
       }
       // If we didn't find the event row for this node, unpublish it.
@@ -90,11 +95,12 @@ function _cast_events_import_importer() {
 
   // Leave a log message about the operation.
   watchdog('cast_events_import',
-    'Imported events from ursart.de. Created %created, updated %updated, and unpublished %unpublished events.',
+    'Imported events from ursart.de. Created %created, updated %updated, unpublished %unpublished, and ignored %ignored events.',
     [
       '%created' => $createdCount,
       '%updated' => $updatedCount,
       '%unpublished' => $unpublishedCount,
+      '%ignored' => $ignoredCount,
     ]
   );
 }
