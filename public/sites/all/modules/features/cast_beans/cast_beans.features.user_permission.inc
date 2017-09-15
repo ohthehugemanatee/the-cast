@@ -32,9 +32,9 @@ function cast_beans_user_default_permissions() {
     'module' => 'bean',
   );
 
-  // Exported permission: 'view any simple bean'.
-  $permissions['view any simple bean'] = array(
-    'name' => 'view any simple bean',
+  // Exported permission: 'view any social_block bean'.
+  $permissions['view any social_block bean'] = array(
+    'name' => 'view any social_block bean',
     'roles' => array(
       'admin' => 'admin',
       'anonymous user' => 'anonymous user',
@@ -43,13 +43,11 @@ function cast_beans_user_default_permissions() {
     'module' => 'bean',
   );
 
-  // Exported permission: 'view any social_block bean'.
-  $permissions['view any social_block bean'] = array(
-    'name' => 'view any social_block bean',
+  // Exported permission: 'view any text bean'.
+  $permissions['view any text bean'] = array(
+    'name' => 'view any text bean',
     'roles' => array(
       'admin' => 'admin',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'bean',
   );
