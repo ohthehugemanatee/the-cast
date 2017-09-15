@@ -3161,6 +3161,11 @@ footer .pane {
   margin-bottom: 8px;
   text-align: right;
 }
+
+.pane .view--upcoming-events {
+  text-align: left;
+}
+
 /* line 13, ../sass/partials/components/_pane.scss */
 .pane h2.node__title {
   margin: 0;
@@ -3357,7 +3362,6 @@ ul.quicktabs-tabs li.active a {
 }
 /* line 59, ../sass/partials/components/_views-row.scss */
 .view--upcoming-events .views-field.views-field-field-date, .view--upcoming-events .views-field.views-field-field-location-locality {
-  font-size: 2.2em;
   line-height: 0.9;
   text-transform: uppercase;
 }
