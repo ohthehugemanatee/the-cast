@@ -2896,13 +2896,13 @@ footer .pane {
 }
 
 /* line 10, ../sass/partials/components/_layout-adjustment.scss */
-header .content .pane-2 {
+header .content .pane-1 {
   margin-bottom: 0;
   background: #000;
   text-align: center;
 }
 /* line 15, ../sass/partials/components/_layout-adjustment.scss */
-header .content .pane-2 h2 {
+header .content .pane-1 h2 {
   margin: 0;
   letter-spacing: 0.1em;
 }
