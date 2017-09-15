@@ -33,10 +33,14 @@ function cast_core_types_image_default_styles() {
     'label' => '2col tall block',
     'effects' => array(
       6 => array(
-        'name' => 'image_scale_and_crop',
+        'name' => 'focal_point_scale_and_crop',
         'data' => array(
           'width' => 476,
           'height' => 250,
+        ),
+        'focal_point_advanced' => array(
+          'shift_x' => '',
+          'shift_y' => '',
         ),
         'weight' => 1,
       ),
@@ -48,10 +52,14 @@ function cast_core_types_image_default_styles() {
     'label' => 'banner image',
     'effects' => array(
       7 => array(
-        'name' => 'image_scale_and_crop',
+        'name' => 'focal_point_scale_and_crop',
         'data' => array(
           'width' => 960,
           'height' => 300,
+          'focal_point_advanced' => array(
+            'shift_x' => '',
+            'shift_y' => '',
+          ),
         ),
         'weight' => 1,
       ),
@@ -63,10 +71,14 @@ function cast_core_types_image_default_styles() {
     'label' => 'gallery grid',
     'effects' => array(
       10 => array(
-        'name' => 'image_scale_and_crop',
+        'name' => 'focal_point_scale_and_crop',
         'data' => array(
           'width' => 234,
           'height' => 150,
+        ),
+        'focal_point_advanced' => array(
+          'shift_x' => '',
+          'shift_y' => '',
         ),
         'weight' => 1,
       ),

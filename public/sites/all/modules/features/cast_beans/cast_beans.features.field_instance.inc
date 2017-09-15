@@ -280,7 +280,7 @@ function cast_beans_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
-      'entity_translation_sync' => FALSE,
+      'entity_translation_sync' => 0,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -293,7 +293,7 @@ function cast_beans_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'preview_image_style' => 'banner_image',
+        'preview_image_style' => 'focal_point_preview',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
@@ -474,7 +474,7 @@ function cast_beans_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
-      'entity_translation_sync' => FALSE,
+      'entity_translation_sync' => 0,
       'file_directory' => 'menu_blocks',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -487,7 +487,7 @@ function cast_beans_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'preview_image_style' => '2col_tall_block',
+        'preview_image_style' => 'focal_point_preview',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
