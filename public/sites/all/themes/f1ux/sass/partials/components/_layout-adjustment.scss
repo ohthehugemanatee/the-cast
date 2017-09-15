@@ -24,7 +24,7 @@ header .content .pane-1 {
     .pane {
       .pane__content {
         .front &{
-          height: 250px;
+          min-height: 250px;
         }
       }
     }

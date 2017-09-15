@@ -317,7 +317,7 @@ input,
 textarea,
 video {
   height: auto;
-  max-width: 100%;
+  width: 100%;
 }
 
 /* line 278, ../sass/partials/base/_normalize.scss */
@@ -833,8 +833,8 @@ ul.panels-ipe-linkbar li {
 /* line 1, ../sass/partials/layout/_page.scss */
 .l-constrain {
   margin: 0 auto;
-  max-width: 60.5em;
-  width: 60.5em;
+  max-width: 100em;
+  width: 100em;
 }
 
 /* line 13, ../sass/partials/layout/panels/_four-column-two-row.scss */
@@ -2910,7 +2910,7 @@ header .content .pane-1 h2 {
 /* line 26, ../sass/partials/components/_layout-adjustment.scss */
 .front .l-panels-two-column .l-first .pane .pane__content, .front
 .l-panels-two-column .l-second .pane .pane__content {
-  height: 250px;
+  min-height: 250px;
 }
 /* line 33, ../sass/partials/components/_layout-adjustment.scss */
 .front .l-panels-two-column .l-first .pane.short .pane__content, .front
