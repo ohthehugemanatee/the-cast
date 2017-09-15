@@ -4,6 +4,7 @@ core = 7.x
 package = The Cast
 dependencies[] = addressfield
 dependencies[] = cast_core_types
+dependencies[] = cast_panels
 dependencies[] = commerce
 dependencies[] = commerce_cart
 dependencies[] = commerce_checkout
