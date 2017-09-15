@@ -2994,7 +2994,7 @@ header .content .pane-2 h2 {
 }
 /* line 24, ../sass/partials/components/_main-menu.scss */
 .block--system-main-menu ul.nav li a {
-  color: #646464;
+  color: #999999;
   display: block;
   font-size: 1em;
   padding: 0.1em 0.8em;
