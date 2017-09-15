@@ -3320,6 +3320,25 @@ ul.quicktabs-tabs li.active a {
   background: #fff;
 }
 
+/* line 5, ../sass/partials/components/_video-embed.scss */
+.pane--nodefield-video .file-video .content {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+/* line 14, ../sass/partials/components/_video-embed.scss */
+.pane--nodefield-video .file-video .content iframe,
+.pane--nodefield-video .file-video .content object,
+.pane--nodefield-video .file-video .content embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* line 4, ../sass/partials/components/_background-color.scss */
 .black .pane__content {
   background-color: #000;
