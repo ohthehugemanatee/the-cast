@@ -54,7 +54,7 @@ function cast_beans_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Bottom Right',
-    'weight' => '1',
+    'weight' => '3',
     'children' => array(
       0 => 'field_body_text',
       1 => 'field_button',
@@ -63,13 +63,13 @@ function cast_beans_field_group_info() {
     'format_settings' => array(
       'label' => 'Bottom Right',
       'instance_settings' => array(
+        'id' => 'bean_link_block_full_group_bottomright',
         'classes' => 'group-bottomright field-group-div',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
         'effect' => 'none',
         'speed' => 'none',
-        'id' => 'bean_link_block_full_group_bottomright',
       ),
       'formatter' => 'open',
     ),
