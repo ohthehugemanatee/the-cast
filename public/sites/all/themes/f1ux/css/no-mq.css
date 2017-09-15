@@ -2892,7 +2892,7 @@ footer .pane--menu-menu-footer-social-links .pane__content ul li a.youtube {
 header .content,
 .l-preface .pane,
 footer .pane {
-  margin: 0 4px 8px;
+  margin: 0 0px 8px;
 }
 
 /* line 10, ../sass/partials/components/_layout-adjustment.scss */
@@ -3060,7 +3060,7 @@ header .content .pane-1 h2 {
 .l-panels-three-column-two-row .l-fourth .pane--node-content,
 .l-panels-four-column-two-row .l-fifth .pane,
 .l-panels-four-column-two-row .l-fifth .pane--node-content {
-  padding-right: 8px;
+  padding: 0 1em;
   text-align: left !important;
 }
 /* line 12, ../sass/partials/components/_node.scss */
