@@ -32,6 +32,7 @@ features[field_base][] = field_destination_url
 features[field_base][] = field_headshot
 features[field_base][] = field_image
 features[field_group][] = group_bottomright|bean|banner_block|default
+features[field_group][] = group_bottomright|bean|link_block|default
 features[field_instance][] = bean-banner_block-field_bannerblock_frontpage
 features[field_instance][] = bean-banner_block-field_body_text
 features[field_instance][] = bean-banner_block-field_button
