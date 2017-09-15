@@ -43,7 +43,7 @@ function cast_flexslider_flexslider_default_presets() {
     'animation' => 'fade',
     'slideshow' => 1,
     'slideshowSpeed' => '7000',
-    'directionNav' => 1,
+    'directionNav' => 0,
     'controlNav' => '0',
     'prevText' => 'Previous',
     'nextText' => 'Next',
