@@ -3081,6 +3081,11 @@ header .content .pane-1 h2 {
   color: #fff;
 }
 
+/* line 4, ../sass/partials/components/_mollom.scss */
+.mollom-image-captcha img {
+  width: auto;
+}
+
 /* line 7, ../sass/partials/components/_mailchimp-block.scss */
 .l-panels-two-column .pane--mailchimp-signup-signup-block form {
   text-align: left;
