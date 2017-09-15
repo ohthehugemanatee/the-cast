@@ -345,6 +345,7 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Images */
   $handler->display->display_options['fields']['field_images']['id'] = 'field_images';
@@ -478,16 +479,17 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['fields']['field_video']['table'] = 'field_data_field_video';
   $handler->display->display_options['fields']['field_video']['field'] = 'field_video';
   $handler->display->display_options['fields']['field_video']['label'] = '';
+  $handler->display->display_options['fields']['field_video']['alter']['text'] = '<a href="[path]">[field_video]</a>';
   $handler->display->display_options['fields']['field_video']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_video']['alter']['path'] = '[path]';
   $handler->display->display_options['fields']['field_video']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_video']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_video']['type'] = 'file_rendered';
   $handler->display->display_options['fields']['field_video']['settings'] = array(
-    'file_view_mode' => 'media_preview',
+    'file_view_mode' => 'preview',
     'linked_field' => array(
       'linked' => 0,
-      'destination' => '',
+      'destination' => '[path]',
       'advanced' => array(
         'title' => '',
         'target' => '',
@@ -568,6 +570,7 @@ function cast_panels_views_default_views() {
     t('View'),
     t('<div class="group-bottomright field-group-div"><div class="field--body-text">[field_gallery_grid_title]</div> <div class="field--button-text">[view_node]</div></div>'),
     t('Videos'),
+    t('<a href="[path]">[field_video]</a>'),
   );
   $export['photo_galleries_grid'] = $view;
 
