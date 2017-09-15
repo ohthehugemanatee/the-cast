@@ -239,6 +239,33 @@ function cast_panels_default_panels_mini() {
   $display->content['new-4eafa787-579c-414a-ae60-16562f32b83d'] = $pane;
   $display->panels['middle'][1] = 'new-4eafa787-579c-414a-ae60-16562f32b83d';
   $pane = new stdClass();
+  $pane->pid = 'new-fef8f53a-99fe-4f75-b98e-f4bd91a622a6';
+  $pane->panel = 'middle';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => '"The opera band" text',
+    'title' => '',
+    'title_heading' => 'h2',
+    'body' => '<h2>The opera band</h2>
+',
+    'format' => 'full_html',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $pane->uuid = 'fef8f53a-99fe-4f75-b98e-f4bd91a622a6';
+  $display->content['new-fef8f53a-99fe-4f75-b98e-f4bd91a622a6'] = $pane;
+  $display->panels['middle'][2] = 'new-fef8f53a-99fe-4f75-b98e-f4bd91a622a6';
+  $pane = new stdClass();
   $pane->pid = 'new-3b885ae7-b56a-4c69-92d5-b74760331914';
   $pane->panel = 'middle';
   $pane->type = 'block';
@@ -256,11 +283,11 @@ function cast_panels_default_panels_mini() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 2;
+  $pane->position = 3;
   $pane->locks = array();
   $pane->uuid = '3b885ae7-b56a-4c69-92d5-b74760331914';
   $display->content['new-3b885ae7-b56a-4c69-92d5-b74760331914'] = $pane;
-  $display->panels['middle'][2] = 'new-3b885ae7-b56a-4c69-92d5-b74760331914';
+  $display->panels['middle'][3] = 'new-3b885ae7-b56a-4c69-92d5-b74760331914';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-4eafa787-579c-414a-ae60-16562f32b83d';
   $mini->display = $display;
