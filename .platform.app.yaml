@@ -94,7 +94,7 @@ hooks:
       set -e
       cd public
       drush -y updb
-      drush -y fr --force
+      drush -y fra --force
       drush -y cc all
 
 # The configuration of scheduled execution.
