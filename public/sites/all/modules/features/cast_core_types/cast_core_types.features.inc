@@ -38,10 +38,6 @@ function cast_core_types_image_default_styles() {
           'width' => 476,
           'height' => 250,
         ),
-        'focal_point_advanced' => array(
-          'shift_x' => '',
-          'shift_y' => '',
-        ),
         'weight' => 1,
       ),
     ),
@@ -75,10 +71,6 @@ function cast_core_types_image_default_styles() {
         'data' => array(
           'width' => 234,
           'height' => 150,
-        ),
-        'focal_point_advanced' => array(
-          'shift_x' => '',
-          'shift_y' => '',
         ),
         'weight' => 1,
       ),

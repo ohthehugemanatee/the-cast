@@ -97,7 +97,7 @@ function cast_beans_strongarm() {
       'display' => array(
         'title' => array(
           'default' => array(
-            'weight' => '2',
+            'weight' => '4',
             'visible' => FALSE,
           ),
         ),
