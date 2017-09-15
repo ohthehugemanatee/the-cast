@@ -1,3 +1,53 @@
 <?php
 
 // @file: Miscellaneous between-the-cracks functionality for the Cast.
+
+
+/**
+ * Implements hook_menu.
+ *
+ * Add router items for /video and /galleries that take you to their most recent
+ * node.
+ */
+/**
+ * Implements hook_menu().
+ */
+function cast_misc_menu() {
+  return [
+    'video' => [
+      'page callback' => 'cast_misc_latest_node_redirect',
+      'page arguments' => ['video'],
+      'access callback' => TRUE,
+    ],
+    'photos' => [
+      'page callback' => 'cast_misc_latest_node_redirect',
+      'page arguments' => ['photo_gallery'],
+      'access callback' => TRUE,
+    ],
+  ];
+}
+
+/**
+ * Latest node redirect callback.
+ *
+ * A router item that simply redirects you to the most recent node of the given
+ * type.
+ *
+ * @param string $argument
+ *   The content type to query, and to which to redirect.
+ */
+function cast_misc_latest_node_redirect(string $argument) {
+  $target = '/';
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', $argument)
+    ->propertyCondition('status', NODE_PUBLISHED)
+    ->propertyOrderBy('created', 'DESC')
+    ->range(0, 1);
+  $result = $query->execute();
+  if (isset($result['node'])) {
+    $nid = key($result['node']);
+    $target = drupal_get_path_alias('node/' . $nid);
+  }
+  drupal_goto($target);
+}

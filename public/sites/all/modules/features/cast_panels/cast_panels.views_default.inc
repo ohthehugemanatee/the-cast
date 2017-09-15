@@ -337,7 +337,7 @@ function cast_panels_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Photos';
+  $handler->display->display_options['title'] = 'More galleries';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -435,6 +435,16 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['nid']['not'] = TRUE;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -456,7 +466,7 @@ function cast_panels_views_default_views() {
   /* Display: Videos */
   $handler = $view->new_display('block', 'Videos', 'block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Videos';
+  $handler->display->display_options['title'] = 'More Videos';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -559,7 +569,7 @@ function cast_panels_views_default_views() {
   );
   $translatables['photo_galleries_grid'] = array(
     t('Master'),
-    t('Photos'),
+    t('More galleries'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -569,7 +579,10 @@ function cast_panels_views_default_views() {
     t('[title]'),
     t('View'),
     t('<div class="group-bottomright field-group-div"><div class="field--body-text">[field_gallery_grid_title]</div> <div class="field--button-text">[view_node]</div></div>'),
+    t('All'),
+    t('Photos'),
     t('Videos'),
+    t('More Videos'),
     t('<a href="[path]">[field_video]</a>'),
   );
   $export['photo_galleries_grid'] = $view;
