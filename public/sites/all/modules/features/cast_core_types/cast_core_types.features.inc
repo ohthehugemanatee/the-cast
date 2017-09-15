@@ -35,8 +35,8 @@ function cast_core_types_image_default_styles() {
       6 => array(
         'name' => 'focal_point_scale_and_crop',
         'data' => array(
-          'width' => 523.6,
-          'height' => 275,
+          'width' => 837.76,
+          'height' => 440,
         ),
         'weight' => 1,
       ),
@@ -50,8 +50,8 @@ function cast_core_types_image_default_styles() {
       7 => array(
         'name' => 'focal_point_scale_and_crop',
         'data' => array(
-          'width' => 1056,
-          'height' => 330,
+          'width' => 1689.6,
+          'height' => 528,
           'focal_point_advanced' => array(
             'shift_x' => '',
             'shift_y' => '',
@@ -69,8 +69,8 @@ function cast_core_types_image_default_styles() {
       10 => array(
         'name' => 'focal_point_scale_and_crop',
         'data' => array(
-          'width' => 257.4,
-          'height' => 165,
+          'width' => 411.84,
+          'height' => 264,
         ),
         'weight' => 1,
       ),
@@ -84,8 +84,8 @@ function cast_core_types_image_default_styles() {
       4 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 257.4,
-          'height' => 330,
+          'width' => 411.84,
+          'height' => 528,
         ),
         'weight' => 1,
       ),
@@ -124,8 +124,8 @@ function cast_core_types_image_default_styles() {
       1 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 122.1,
-          'height' => 79.2,
+          'width' => 195.36,
+          'height' => 126.72,
         ),
         'weight' => 1,
       ),
@@ -139,8 +139,8 @@ function cast_core_types_image_default_styles() {
       5 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 52.8,
-          'height' => 52.8,
+          'width' => 84.48,
+          'height' => 84.48,
         ),
         'weight' => 1,
       ),
