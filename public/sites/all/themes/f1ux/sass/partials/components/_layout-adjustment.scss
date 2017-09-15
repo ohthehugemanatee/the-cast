@@ -7,6 +7,17 @@ footer .pane {
   margin: 0 4px 8px;
 }
 
+header .content .pane-2 {
+  margin-bottom: 0;
+  background: #000;
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    letter-spacing: 0.1em;
+  }
+}
+
 .l-panels-two-column {  
   .l-first,
   .l-second {
