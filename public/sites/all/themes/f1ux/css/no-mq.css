@@ -2602,6 +2602,44 @@ tr.drag-previous {
   text-decoration: none;
 }
 
+/* line 5, ../sass/partials/components/_bean.scss */
+.pane .bean--call-to-action {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 2em;
+}
+/* line 13, ../sass/partials/components/_bean.scss */
+.pane .bean--call-to-action a {
+  text-decoration: none;
+}
+/* line 17, ../sass/partials/components/_bean.scss */
+.pane .bean--text {
+  background: #000000;
+  font-size: 1.6em;
+  text-align: left;
+  min-height: 3em;
+  padding: 0.5em;
+}
+/* line 24, ../sass/partials/components/_bean.scss */
+.pane .bean--text .field--body-text {
+  color: #fff;
+  line-height: 1.1;
+}
+/* line 28, ../sass/partials/components/_bean.scss */
+.pane .bean--text .field--body-text p {
+  margin: 0;
+}
+/* line 32, ../sass/partials/components/_bean.scss */
+.pane .bean--text .field--body-text a {
+  text-decoration: none;
+}
+/* line 36, ../sass/partials/components/_bean.scss */
+.pane .bean--text .field--body-text strong {
+  color: #c15d22;
+}
+
 /* line 4, ../sass/partials/components/_commerce-cart.scss */
 .view--cast-shopping-cart-block table {
   width: 100%;
@@ -3345,7 +3383,7 @@ ul.quicktabs-tabs li.active a {
 }
 
 /* line 24, ../sass/partials/components/_background-color.scss */
-.yellow .pane__content {
+.pane .bean--call-to-action, .yellow .pane__content {
   background-color: #c18936;
   color: #fff;
 }
