@@ -8,8 +8,8 @@ name: 'app'
 type: 'php:7.1'
 
 # Raise the memory limit for our large images.
- variables:
-    php:
+variables:
+   php:
         memory_limit: 256M
 
 # Configuration of the build of this application.
