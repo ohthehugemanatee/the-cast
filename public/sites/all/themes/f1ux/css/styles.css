@@ -2607,11 +2607,12 @@ tr.drag-previous {
 .view--photo-galleries-grid {
   background: #a0a0a4;
   float: left;
+  padding: 4px;
 }
 /* line 14, ../sass/partials/components/_view.scss */
 .view--photo-galleries-grid .views-row {
   float: left;
-  margin-bottom: 8px;
+  margin: 2px;
   padding: 0;
   position: relative;
 }
