@@ -48,8 +48,6 @@ function cast_beans_user_default_permissions() {
     'name' => 'view any text bean',
     'roles' => array(
       'admin' => 'admin',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'bean',
   );
