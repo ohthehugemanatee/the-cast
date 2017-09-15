@@ -10,10 +10,11 @@
 .view--photo-galleries-grid {
   background: $light_gray;
   float: left;
+  padding: 4px;
   
   .views-row {
     float: left;
-    margin-bottom: 8px;
+    margin: 2px;
     padding: 0;
     position: relative;
     

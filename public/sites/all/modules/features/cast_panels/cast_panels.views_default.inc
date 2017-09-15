@@ -968,17 +968,37 @@ function cast_panels_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Upcoming shows';
+  $handler->display->display_options['title'] = 'Next shows';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '2';
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
+  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'field_date' => 'field_date',
+    'field_location_locality' => 'field_location_locality',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'field_date' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_location_locality' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
   /* Field: Content: Date */
   $handler->display->display_options['fields']['field_date']['id'] = 'field_date';
   $handler->display->display_options['fields']['field_date']['table'] = 'field_data_field_date';
@@ -989,14 +1009,16 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['fields']['field_date']['alter']['absolute'] = TRUE;
   $handler->display->display_options['fields']['field_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_date']['settings'] = array(
-    'format_type' => 'short',
+    'format_type' => 'custom',
+    'custom_date_format' => 'j F',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
+    'show_remaining_days' => 0,
     'linked_field' => array(
-      'linked' => 0,
-      'destination' => '[path]',
+      'linked' => 1,
+      'destination' => '',
       'advanced' => array(
         'title' => '',
         'target' => '',
@@ -1014,14 +1036,6 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['fields']['field_location_locality']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_location_locality']['alter']['path'] = 'upcoming';
   $handler->display->display_options['fields']['field_location_locality']['element_label_colon'] = FALSE;
-  /* Field: Content: Location - Full name */
-  $handler->display->display_options['fields']['field_location_name_line']['id'] = 'field_location_name_line';
-  $handler->display->display_options['fields']['field_location_name_line']['table'] = 'field_data_field_location';
-  $handler->display->display_options['fields']['field_location_name_line']['field'] = 'field_location_name_line';
-  $handler->display->display_options['fields']['field_location_name_line']['label'] = '';
-  $handler->display->display_options['fields']['field_location_name_line']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_location_name_line']['alter']['path'] = 'upcoming';
-  $handler->display->display_options['fields']['field_location_name_line']['element_label_colon'] = FALSE;
   /* Field: Content: Tickets link */
   $handler->display->display_options['fields']['field_tickets_link']['id'] = 'field_tickets_link';
   $handler->display->display_options['fields']['field_tickets_link']['table'] = 'field_data_field_tickets_link';
@@ -1042,7 +1056,6 @@ function cast_panels_views_default_views() {
       ),
     ),
   );
-  $handler->display->display_options['fields']['field_tickets_link']['field_api_classes'] = TRUE;
   /* Sort criterion: Content: Date (field_date) */
   $handler->display->display_options['sorts']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['sorts']['field_date_value']['table'] = 'field_data_field_date';
@@ -1077,7 +1090,7 @@ function cast_panels_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
   $translatables['upcoming_events'] = array(
     t('Master'),
-    t('Upcoming shows'),
+    t('Next shows'),
     t('more'),
     t('Apply'),
     t('Reset'),

@@ -4,7 +4,11 @@
 .pane {
   margin-bottom: 8px;
   text-align: right;
-  
+
+
+  .view--upcoming-events {
+    text-align: left;
+  }
   
   h2.pane__title {
     @extend %pane-title;
