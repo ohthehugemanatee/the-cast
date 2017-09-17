@@ -7,7 +7,7 @@
   }
 }
 
-.region-navigation {
+#block-system-main-menu .content {
   display: none;
 
   @include breakpoint($mobile-menu-bp, $no-query: true) {

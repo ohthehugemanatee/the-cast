@@ -1844,12 +1844,12 @@ input.throbbing {
 }
 
 /* line 10, ../sass/partials/components/_mobile-menu.scss */
-.region-navigation {
+#block-system-main-menu .content {
   display: none;
 }
 @media (min-width: 43.75em) {
   /* line 10, ../sass/partials/components/_mobile-menu.scss */
-  .region-navigation {
+  #block-system-main-menu .content {
     display: block;
   }
 }

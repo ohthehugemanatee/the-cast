@@ -1837,7 +1837,7 @@ input.throbbing {
 }
 
 /* line 10, ../sass/partials/components/_mobile-menu.scss */
-.region-navigation {
+#block-system-main-menu .content {
   display: none;
   display: block;
 }
