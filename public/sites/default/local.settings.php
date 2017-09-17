@@ -25,6 +25,8 @@ $conf['file_temporary_path'] = '/tmp';
 $conf['stage_file_proxy_origin'] = 'https://thecastmusic.com/';
 // Disable cache.
 $conf['cache'] = '0';
+$conf['preprocess_css'] = 0;
+$conf['preprocess_js'] = 0;
 // Disable HTTPS.
 $conf['securepages_enable'] = FALSE;
 $conf['https'] = FALSE;
