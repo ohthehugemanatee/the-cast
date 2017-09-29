@@ -3055,7 +3055,7 @@ header .content .pane-1 h2 {
 /* line 7, ../sass/partials/components/_mailchimp-block.scss */
 .l-panels-two-column .pane--mailchimp-signup-signup-block form {
   text-align: left;
-  padding: 8px;
+  padding: 24px;
 }
 /* line 11, ../sass/partials/components/_mailchimp-block.scss */
 .l-panels-two-column .pane--mailchimp-signup-signup-block form .mailchimp-signup-subscribe-form-description {
@@ -3064,28 +3064,26 @@ header .content .pane-1 h2 {
 }
 /* line 16, ../sass/partials/components/_mailchimp-block.scss */
 .l-panels-two-column .pane--mailchimp-signup-signup-block form .form-item {
-  float: left;
-  width: 50%;
-  margin: 0;
+  width: 100%;
 }
-/* line 22, ../sass/partials/components/_mailchimp-block.scss */
+/* line 21, ../sass/partials/components/_mailchimp-block.scss */
 .l-panels-two-column .pane--mailchimp-signup-signup-block .button--submit {
-  float: left;
+  float: none;
   line-height: 1em;
   margin-top: 1.03em;
   font-size: 1.2em;
   padding: 0.3125em;
 }
 
-/* line 33, ../sass/partials/components/_mailchimp-block.scss */
+/* line 32, ../sass/partials/components/_mailchimp-block.scss */
 .mailchimp-signup-subscribe-form {
   padding-bottom: 2em;
 }
-/* line 36, ../sass/partials/components/_mailchimp-block.scss */
+/* line 35, ../sass/partials/components/_mailchimp-block.scss */
 .mailchimp-signup-subscribe-form .button--submit {
   float: left;
 }
-/* line 40, ../sass/partials/components/_mailchimp-block.scss */
+/* line 39, ../sass/partials/components/_mailchimp-block.scss */
 .mailchimp-signup-subscribe-form .mailchimp-signup-subscribe-form-description {
   color: #FFF;
   text-shadow: 1px 1px 0px #000;

@@ -6,7 +6,7 @@
 
     form {
       text-align: left;
-      padding: 8px;
+      padding: 24px;
 
       .mailchimp-signup-subscribe-form-description {
         width: 100%;
@@ -14,14 +14,13 @@
       }
 
       .form-item {
-        float: left;
-        width: 50%;
-        margin: 0;
+        width: 100%;
+
       }
     }
     .button--submit {
       @extend %black-submit;
-      float: left;
+      float: none;
       line-height: 1em;
       margin-top: 1.03em;
       font-size: 1.2em;
