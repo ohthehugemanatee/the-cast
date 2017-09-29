@@ -25,7 +25,6 @@ function _cast_events_import_importer() {
   }
   // Make sure that the website has been updated since our last sync.
   $lastSyncedHash = variable_get('cast_events_import_last_synced_hash', '');
-  $lastSyncedHash = 0;
   $currentHash = md5($http_response->data);
   if ($currentHash == $lastSyncedHash) {
     return;
