@@ -1012,6 +1012,13 @@ function cast_panels_views_default_views() {
       'empty_column' => 0,
     ),
   );
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['label'] = 'More link';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="/upcoming">More...</a>';
+  $handler->display->display_options['footer']['area']['format'] = 'filtered_html';
   /* Field: Content: Date */
   $handler->display->display_options['fields']['field_date']['id'] = 'field_date';
   $handler->display->display_options['fields']['field_date']['table'] = 'field_data_field_date';
@@ -1110,6 +1117,8 @@ function cast_panels_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('More link'),
+    t('<a href="/upcoming">More...</a>'),
     t('Date (field_date)'),
     t('Block'),
     t('Content pane'),
