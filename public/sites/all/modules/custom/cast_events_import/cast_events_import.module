@@ -25,6 +25,7 @@ function _cast_events_import_importer() {
   }
   // Make sure that the website has been updated since our last sync.
   $lastSyncedHash = variable_get('cast_events_import_last_synced_hash', '');
+  $lastSyncedHash = 0;
   $currentHash = md5($http_response->data);
   if ($currentHash == $lastSyncedHash) {
     return;
@@ -200,6 +201,15 @@ function _cast_events_import_map_node_values(array $eventRow, EntityMetadataWrap
   }
   $node->field_date->set($eventRow['dateTime']->getTimeStamp());
   $node->field_ursart_event_id->set($eventRow['id']);
+
+  // Mark unpublished if we're missing any field values.
+  if (
+    empty($node->field_date->value())
+    || empty($node->field_tickets_link->value())
+    || empty($node->field_location->value())
+  ) {
+    $node->status->set(NODE_NOT_PUBLISHED);
+  }
   return $node;
 }
 
@@ -250,4 +260,12 @@ function cast_events_import_form_node_form_alter(&$form, &$form_state, $form_id)
   if ($form['#node']->type == 'event' && isset($form['field_manual_override'])) {
     $form['field_manual_override'][LANGUAGE_NONE]['#default_value'] = 1;
   }
+}
+
+
+/**
+ * Implements hook_page_alter().
+ */
+function cast_events_import_page_alter(&$page) {
+  _cast_events_import_importer();
 }
