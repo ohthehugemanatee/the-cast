@@ -15,16 +15,15 @@
 
       .form-item {
         width: 100%;
-
       }
-    }
-    .button--submit {
-      @extend %black-submit;
-      float: none;
-      line-height: 1em;
-      margin-top: 1.03em;
-      font-size: 1.2em;
-      padding: 0.3125em;
+      .button--submit {
+        @extend %black-submit;
+        float: none;
+        line-height: 1em;
+        margin-top: 1.03em;
+        font-size: 1.2em;
+        padding: 0.3125em;
+      }
     }
   }
 }
