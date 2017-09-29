@@ -187,18 +187,18 @@ function _cast_events_import_map_node_values(array $eventRow, EntityMetadataWrap
   $node->field_location->postal_code = isset($address['postal_code']) ? $address['postal_code']->short_name : '';
   $node->field_location->locality = isset($address['locality']) ? $address['locality']->long_name : '';
   // Set field_tickets link differently depending on the contents (le sigh).
+  // Default: there is no link in the tickets field. Just use the text.
+  $link_title = (string) $eventRow['vvk'];
+  $link_uri = '';
+  // If there is a link, it becomes titled "Tickets".
   if (!empty($eventRow['vvk']->a)) {
-    $node->field_tickets_link->set([
-      'url' => (string) $eventRow['vvk']->a['href'],
-      'title' => (string) $eventRow['vvk']->a,
-    ]);
+    $link_title = t('Tickets');
+    $link_uri = (string) $eventRow['vvk']->a['href'];
   }
-  else {
-    $node->field_tickets_link->set([
-      'url' => '',
-      'title' => (string) $eventRow['vvk'],
-    ]);
-  }
+  $node->field_tickets_link->set([
+    'url' => $link_uri,
+    'title' => $link_title,
+  ]);
   $node->field_date->set($eventRow['dateTime']->getTimeStamp());
   $node->field_ursart_event_id->set($eventRow['id']);
 
