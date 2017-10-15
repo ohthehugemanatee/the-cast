@@ -8,6 +8,21 @@
 
   .view--upcoming-events {
     text-align: left;
+
+    .view__footer {
+      @extend %black;
+
+      margin: 0 0 4px;
+      text-align: left;
+      padding-left: 24px;
+      width: 100%;
+      line-height: 3em;
+      text-transform: uppercase;
+
+      a {
+        text-decoration: none;
+      }
+    }
   }
   
   h2.pane__title {
