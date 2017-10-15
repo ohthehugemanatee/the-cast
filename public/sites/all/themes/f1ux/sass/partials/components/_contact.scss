@@ -1,0 +1,7 @@
+// @file
+// Styles for the site contact form.
+
+#contact-site-form .button {
+  @extend %black-submit;
+  float: none;
+}
