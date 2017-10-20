@@ -109,7 +109,7 @@ function cast_core_types_image_default_styles() {
         'name' => 'image_crop',
         'data' => array(
           'width' => 1600,
-          'height' => 700,
+          'height' => 1000,
           'anchor' => 'center-center',
         ),
         'weight' => 2,
