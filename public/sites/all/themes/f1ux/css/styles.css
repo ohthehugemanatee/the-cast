@@ -2891,13 +2891,13 @@ footer .pane--menu-menu-footer-social-links .pane__content ul li a.youtube {
 /* line 7, ../sass/partials/components/_jcarousel.scss */
 .views_slideshow_cycle_main .views-slideshow-cycle-main-frame {
   width: 100% !important;
-  height: auto;
-  min-height: 700px;
+  height: auto !important;
 }
 /* line 8, ../sass/partials/components/_jcarousel.scss */
 .views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row {
   width: 100% !important;
   height: auto;
+  position: relative !important;
 }
 /* line 9, ../sass/partials/components/_jcarousel.scss */
 .views_slideshow_cycle_main .field-content {
