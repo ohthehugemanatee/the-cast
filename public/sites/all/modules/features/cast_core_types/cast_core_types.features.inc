@@ -99,8 +99,8 @@ function cast_core_types_image_default_styles() {
       3 => array(
         'name' => 'image_scale',
         'data' => array(
-          'width' => '',
-          'height' => 420,
+          'width' => '1600',
+          'height' => '',
           'upscale' => 1,
         ),
         'weight' => 1,
@@ -108,8 +108,8 @@ function cast_core_types_image_default_styles() {
       4 => array(
         'name' => 'image_crop',
         'data' => array(
-          'width' => 960,
-          'height' => 420,
+          'width' => 1600,
+          'height' => 700,
           'anchor' => 'center-center',
         ),
         'weight' => 2,
