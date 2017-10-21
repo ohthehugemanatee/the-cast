@@ -115,3 +115,13 @@ function cast_misc_update_7012() {
     field_delete_instance($instance);
   }
 }
+
+/**
+ * Delete the field_additional_info field from Events.
+ */
+function cast_misc_update_7013() {
+  $instance = field_info_instance('node', 'field_additional_info', 'event');
+  if (!empty($instance)) {
+    field_delete_instance($instance, TRUE);
+  }
+}
