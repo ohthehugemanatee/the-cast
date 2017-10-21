@@ -18,11 +18,11 @@ function cast_events_import_mail($key, &$message, $params) {
       $message['body'][] = t('Created %created,', $params);
       $message['body'][] = t('Updated %updated,', $params);
       $message['body'][] = t('Unpublished %unpublished existing,', $params);
-      $message['body'][] = t('Ignored %ignored manual overrides.', $params);
+      $message['body'][] = t('Ignored %ignored manual overrides,', $params);
       $message['body'][] = t('%needs_review events need review before they can be published.', $params);
       if ((int) $params['%needs_review'] > 0) {
-        $message['body'][] = t('You can review and manually curate events with the <a href="@dashboard">events dashboard</a>.',
-          ['@dashboard' => url('/admin/content/events-dashboard')]);
+        $message['body'][] = t('You can review and manually curate events at: @dashboard .',
+          ['@dashboard' => url('https://thecastmusic.com/admin/content/events-dashboard')]);
       }
       $message['body'][] = t('Love,');
       $message['body'][] = t('Your website');
@@ -53,7 +53,7 @@ function _cast_events_import_importer() {
   $lastSyncedHash = variable_get('cast_events_import_last_synced_hash', '');
   $currentHash = md5($http_response->data);
   if ($currentHash == $lastSyncedHash) {
-    // return;
+    return;
   }
   $listedEvents = _cast_events_build_events_array($http_response->data);
 
