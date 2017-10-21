@@ -6,6 +6,32 @@
  */
 
 /**
+ * Implements hook_mail().
+ */
+function cast_events_import_mail($key, &$message, $params) {
+  switch ($key) {
+    case 'import_confirm':
+      $message['subject'] = t('Events were automatically updated on thecastmusic.com');
+      $message['body'][] = t('Hi Bryn,');
+      $message['body'][] = t("The website just found changes on ursart.de, so it updated the list of events. Here's the summary of what changed.");
+      $message['body'][] = t('Imported events from ursart.de.');
+      $message['body'][] = t('Created %created,', $params);
+      $message['body'][] = t('Updated %updated,', $params);
+      $message['body'][] = t('Unpublished %unpublished existing,', $params);
+      $message['body'][] = t('Ignored %ignored manual overrides.', $params);
+      $message['body'][] = t('%needs_review events need review before they can be published.', $params);
+      if ((int) $params['%needs_review'] > 0) {
+        $message['body'][] = t('You can review and manually curate events with the <a href="@dashboard">events dashboard</a>.',
+          ['@dashboard' => url('/admin/content/events-dashboard')]);
+      }
+      $message['body'][] = t('Love,');
+      $message['body'][] = t('Your website');
+
+      break;
+  }
+}
+
+/**
  * Implements hook_cron().
  */
 function cast_events_import_cron() {
@@ -27,7 +53,7 @@ function _cast_events_import_importer() {
   $lastSyncedHash = variable_get('cast_events_import_last_synced_hash', '');
   $currentHash = md5($http_response->data);
   if ($currentHash == $lastSyncedHash) {
-    return;
+    // return;
   }
   $listedEvents = _cast_events_build_events_array($http_response->data);
 
@@ -36,13 +62,13 @@ function _cast_events_import_importer() {
   $updatedCount = 0;
   $unpublishedCount = 0;
   $ignoredCount = 0;
+  $needsReviewCount = 0;
 
   // Get all published Event nodes after the current date/time.
   $query = new EntityFieldQuery();
   $query->entityCondition('entity_type', 'node')
     ->entityCondition('bundle', 'event')
     ->fieldCondition('field_date', 'value', date('Y-m-d H:i:s'), '>')
-    ->propertyCondition('status', NODE_PUBLISHED)
     ->addMetaData('account', user_load(1));
   $results = $query->execute();
 
@@ -63,6 +89,9 @@ function _cast_events_import_importer() {
         else {
           // Copy values from the event row into the node.
           $node = _cast_events_import_map_node_values($listedEvents[$arrayKey], $node);
+          if ($node->status->value() === NODE_NOT_PUBLISHED) {
+            $needsReviewCount++;
+          }
           $node->revision->set(TRUE);
           $node->log->set('Updated event per listing on ursart.de');
           $node->save();
@@ -85,8 +114,11 @@ function _cast_events_import_importer() {
   }
   // Loop over the remaining array of scraped events.
   foreach ($listedEvents as $arrayKey => $listedEvent) {
-    // Create an event node, and save it.
+    // Create/update an event node, and save it.
     $node = _cast_events_import_map_node_values($listedEvent, NULL);
+    if ($node->status->value() === NODE_NOT_PUBLISHED) {
+      $needsReviewCount++;
+    }
     $node->log->set('Automatically created event as listed on ursart.de');
     $node->save();
     $createdCount++;
@@ -95,16 +127,20 @@ function _cast_events_import_importer() {
   // Update the saved hash.
   variable_set('cast_events_import_last_synced_hash', $currentHash);
 
-  // Leave a log message about the operation.
+  // Leave a log message and email about the operation.
+
+  $params = [
+    '%created' => $createdCount,
+    '%updated' => $updatedCount,
+    '%unpublished' => $unpublishedCount,
+    '%ignored' => $ignoredCount,
+    '%needs_review' => $needsReviewCount,
+  ];
   watchdog('cast_events_import',
-    'Imported events from ursart.de. Created %created, updated %updated, unpublished %unpublished, and ignored %ignored events.',
-    [
-      '%created' => $createdCount,
-      '%updated' => $updatedCount,
-      '%unpublished' => $unpublishedCount,
-      '%ignored' => $ignoredCount,
-    ]
+    'Imported events from ursart.de. Created %created, updated %updated, unpublished %unpublished existing, and ignored %ignored manual override events. %needs_review events need review before they can be published.',
+    $params
   );
+  drupal_mail('cast_events_import', 'import_confirm', 'info@thecastmusic.com', LANGUAGE_NONE, $params);
 }
 
 /**
@@ -202,6 +238,7 @@ function _cast_events_import_map_node_values(array $eventRow, EntityMetadataWrap
   ]);
   $node->field_date->set($eventRow['dateTime']->getTimeStamp());
   $node->field_ursart_event_id->set($eventRow['id']);
+  $node->field_manual_override->set(0);
 
   // Mark unpublished if we're missing any field values.
   if (
