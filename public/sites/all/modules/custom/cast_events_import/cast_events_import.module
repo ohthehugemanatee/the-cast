@@ -89,11 +89,12 @@ function _cast_events_import_importer() {
         else {
           // Copy values from the event row into the node.
           $node = _cast_events_import_map_node_values($listedEvents[$arrayKey], $node);
-          if ($node->status->value() === NODE_NOT_PUBLISHED) {
-            $needsReviewCount++;
-          }
           $node->revision->set(TRUE);
           $node->log->set('Updated event per listing on ursart.de');
+          if ($node->status->value() === NODE_NOT_PUBLISHED) {
+            $needsReviewCount++;
+            $node->log->set('Updated event from ursart.de, but it needs manual review');
+          }
           $node->save();
           // Bump the updated count.
           $updatedCount++;
