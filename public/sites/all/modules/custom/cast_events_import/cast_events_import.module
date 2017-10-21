@@ -169,7 +169,8 @@ function _cast_events_build_events_array(string $data) {
   $tableBody = simplexml_import_dom($tableBody);
   /** @var \SimpleXMLElement $tableBody */
   /** @var \SimpleXMLElement[] $rows */
-  $rows = reset($tableBody->children());
+  $children = $tableBody->children();
+  $rows = reset($children);
   foreach ($rows as $row) {
     $columns = [
       'date' => $row->td[0],
