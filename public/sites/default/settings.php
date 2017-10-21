@@ -17,6 +17,7 @@ if (file_exists(__DIR__ . '/settings.platformsh.php')) {
 }
 
 // Local development settings.
-if (getenv('LOCAL_DEVELOPMENT')) {
+// @todo proper detection. See https://github.com/wodby/drupal-php/issues/44.
+if (getenv('LOCAL_DEVELOPMENT') || !getenv('PLATFORM_RELATIONSHIPS')) {
   include_once('local.settings.php');
 }

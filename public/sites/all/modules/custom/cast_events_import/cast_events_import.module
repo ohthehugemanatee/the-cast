@@ -1,0 +1,270 @@
+<?php
+
+/**
+ * @file
+ * Imports events by scraping the URS ART website.
+ */
+
+/**
+ * Implements hook_cron().
+ */
+function cast_events_import_cron() {
+  return _cast_events_import_importer();
+}
+
+/**
+ * Import events from HTML on ursart.de.
+ *
+ * @throws \Exception
+ */
+function _cast_events_import_importer() {
+  // Get the HTML data from http://www.ursart.de/the-cast/tourplan/.
+  $http_response = drupal_http_request('http://www.ursart.de/the-cast/tourplan/');
+  if ($http_response->code != 200) {
+    throw new Exception('Failed getting source HTML from ursart.de');
+  }
+  // Make sure that the website has been updated since our last sync.
+  $lastSyncedHash = variable_get('cast_events_import_last_synced_hash', '');
+  $currentHash = md5($http_response->data);
+  if ($currentHash == $lastSyncedHash) {
+    return;
+  }
+  variable_set('cast_events_import_last_synced_hash', $currentHash);
+  $listedEvents = _cast_events_build_events_array($http_response->data);
+
+  // Set counters for created/updated/unpublished/ignored.
+  $createdCount = 0;
+  $updatedCount = 0;
+  $unpublishedCount = 0;
+  $ignoredCount = 0;
+
+  // Get all published Event nodes after the current date/time.
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'event')
+    ->fieldCondition('field_date', 'value', date('Y-m-d H:i:s'), '>')
+    ->propertyCondition('status', NODE_PUBLISHED)
+    ->addMetaData('account', user_load(1));
+  $results = $query->execute();
+
+  // Loop over the event nodes and match them with event rows.
+  if (isset($results['node']) && !empty($results['node'])) {
+    foreach ($results['node'] as $nid => $event) {
+      $event = node_load($nid);
+      $node = entity_metadata_wrapper('node', $event);
+      // Find the event item for this node.
+      $arrayKey = $node->field_ursart_event_id->value();
+      // If we find the event row for this node.
+      if (!empty($arrayKey) && isset($listedEvents[$arrayKey])) {
+        // Do not update nodes under manual control.
+        if ($node->field_manual_override->value() == 1) {
+          // Bump the ignored count.
+          $ignoredCount++;
+        }
+        else {
+          // Copy values from the event row into the node.
+          $node = _cast_events_import_map_node_values($listedEvents[$arrayKey], $node);
+          $node->revision->set(TRUE);
+          $node->log->set('Updated event per listing on ursart.de');
+          $node->save();
+          // Bump the updated count.
+          $updatedCount++;
+        }
+        // Remove the event from the array of scraped events.
+        unset($listedEvents[$arrayKey]);
+        continue;
+      }
+      // If we didn't find the event row for this node, unpublish it.
+      $node->status->set(NODE_NOT_PUBLISHED);
+      // Create a new revision and leave a log message.
+      $node->revision->set(TRUE);
+      $node->log->set('Automatically unpublished event, as it was not listed on ursart.de');
+      $node->save();
+      // Bump the unpublished count.
+      $unpublishedCount++;
+    }
+  }
+  // Loop over the remaining array of scraped events.
+  foreach ($listedEvents as $arrayKey => $listedEvent) {
+    // Create an event node, and save it.
+    $node = _cast_events_import_map_node_values($listedEvent, NULL);
+    $node->log->set('Automatically created event as listed on ursart.de');
+    $node->save();
+    $createdCount++;
+  }
+
+  // Leave a log message about the operation.
+  watchdog('cast_events_import',
+    'Imported events from ursart.de. Created %created, updated %updated, unpublished %unpublished, and ignored %ignored events.',
+    [
+      '%created' => $createdCount,
+      '%updated' => $updatedCount,
+      '%unpublished' => $unpublishedCount,
+      '%ignored' => $ignoredCount,
+    ]
+  );
+}
+
+/**
+ * Build the events array based on the HTML from URSART.de.
+ *
+ * @param string $data
+ *   The HTML body.
+ *
+ * @return array
+ *   An array of rows, with added dateTime and id fields.
+ */
+function _cast_events_build_events_array(string $data) {
+  $listedEvents = [];
+  // Load the HTML into a DOM Document.
+  $domDocument = new DOMDocument();
+  // Hide errors and warnings in the invalid HTML.
+  @$domDocument->loadHTML($data);
+  // Get just the table of events.
+  $eventsTable = $domDocument->getElementById('example');
+  /** @var \DOMNode $tableBody */
+  $tableBody = $eventsTable->getElementsByTagName('tbody')->item(0);
+  // Create an associative array of events listed.
+  $listedEvents = [];
+  // Convert the table body to simpleXML.
+  $tableBody = simplexml_import_dom($tableBody);
+  /** @var \SimpleXMLElement $tableBody */
+  /** @var \SimpleXMLElement[] $rows */
+  $rows = reset($tableBody->children());
+  foreach ($rows as $row) {
+    $columns = [
+      'date' => $row->td[0],
+      'program' => $row->td[1],
+      'spielort' => $row->td[2],
+      'adresse' => $row->td[3],
+      'vvk' => $row->td[4],
+    ];
+    // Process the date/time into a standard object.
+    // Remove everything after the start time.
+    $date = substr((string) $columns['date'], 0, 15);
+    // Sometimes they use colons instead of periods to separate time components.
+    $date = str_replace(':', '.', $date);
+    $date = DateTime::createFromFormat('d.m.YH.i', $date);
+    // Save the created datetime object.
+    $columns['dateTime'] = $date;
+    // Build an array key as a hash of date/time and location name.
+    $arrayKey = md5($date->getTimestamp() . $columns['spielort']);
+    $columns['id'] = $arrayKey;
+    $listedEvents[$arrayKey] = $columns;
+  }
+  return $listedEvents;
+}
+
+/**
+ * Given an event row and optionally a node, copies values from row to node.
+ *
+ * @param array $eventRow
+ *   An event row from ursart.de .
+ * @param \EntityMetadataWrapper|null $node
+ *   The node to receive the values. If null, one will be created.
+ *
+ * @return \EntityMetadataWrapper
+ *   The wrapped node, unsaved.
+ */
+function _cast_events_import_map_node_values(array $eventRow, EntityMetadataWrapper $node = NULL) {
+  if (empty($node)) {
+    // Create an Event node.
+    $rawNode = entity_create('node', array('type' => 'event'));
+    // Specify the author.
+    $rawNode->uid = 1;
+    // Create a Entity Wrapper of that new Entity.
+    $node = entity_metadata_wrapper('node', $rawNode);
+  }
+  // Update field values.
+  $address = _cast_events_import_lookup_address((string) $eventRow['adresse']);
+  $spielort = (string) $eventRow['spielort'];
+  $date = (string) $eventRow['date'];
+  $node->title->set("{$spielort} {$date}");
+  $node->field_location->country = isset($address['country']) ? $address['country']->short_name : '';
+  $node->field_location->name_line = $spielort;
+  $node->field_location->thoroughfare = isset($address['street_number']) && isset($address['route']) ? "{$address['street_number']->short_name} {$address['route']->short_name}" : '';
+  $node->field_location->postal_code = isset($address['postal_code']) ? $address['postal_code']->short_name : '';
+  $node->field_location->locality = isset($address['locality']) ? $address['locality']->long_name : '';
+  // Set field_tickets link differently depending on the contents (le sigh).
+  // Default: there is no link in the tickets field. Just use the text.
+  $link_title = (string) $eventRow['vvk'];
+  $link_uri = '';
+  // If there is a link, it becomes titled "Tickets".
+  if (!empty($eventRow['vvk']->a)) {
+    $link_title = t('Tickets');
+    $link_uri = (string) $eventRow['vvk']->a['href'];
+  }
+  $node->field_tickets_link->set([
+    'url' => $link_uri,
+    'title' => $link_title,
+  ]);
+  $node->field_date->set($eventRow['dateTime']->getTimeStamp());
+  $node->field_ursart_event_id->set($eventRow['id']);
+
+  // Mark unpublished if we're missing any field values.
+  if (
+    empty($node->field_date->value())
+    || empty($node->field_tickets_link->value())
+    || empty($node->field_location->value())
+  ) {
+    $node->status->set(NODE_NOT_PUBLISHED);
+  }
+  return $node;
+}
+
+/**
+ * Look up a given address with Google's geo search, return a location array.
+ *
+ * @param string $address
+ *   The string address to search.
+ *
+ * @return array
+ *   An address array.
+ */
+function _cast_events_import_lookup_address(string $address) {
+  $data = drupal_http_request('https://maps.googleapis.com/maps/api/geocode/json?address=' . urlencode($address) . '&sensor=false');
+  if ($data->code == 200) {
+    $data_decoded = json_decode($data->data);
+    if ($data_decoded->status == 'ZERO_RESULTS' || $data_decoded->status == 'OVER_QUERY_LIMIT') {
+      return array(
+        'status' => $data_decoded->status,
+        'accuracy' => NULL,
+        'latitude' => NULL,
+        'longitude' => NULL,
+      );
+    }
+    else {
+      $components = [];
+      foreach ($data_decoded->results[0]->address_components as $addressComponent) {
+        $components[$addressComponent->types[0]] = $addressComponent;
+      }
+      return array(
+        'status' => $data_decoded->status,
+        'accuracy' => $data_decoded->results[0]->geometry->location_type,
+        'latitude' => $data_decoded->results[0]->geometry->location->lat,
+        'longitude' => $data_decoded->results[0]->geometry->location->lng,
+      ) + $components;
+    }
+  }
+  // Non 200 is G_GEO_SERVER_ERROR (500).
+  return array(
+    'status' => 500,
+  );
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function cast_events_import_form_node_form_alter(&$form, &$form_state, $form_id) {
+  if ($form['#node']->type == 'event' && isset($form['field_manual_override'])) {
+    $form['field_manual_override'][LANGUAGE_NONE]['#default_value'] = 1;
+  }
+}
+
+
+/**
+ * Implements hook_page_alter().
+ */
+function cast_events_import_page_alter(&$page) {
+  _cast_events_import_importer();
+}

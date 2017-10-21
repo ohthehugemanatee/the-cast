@@ -90,3 +90,28 @@ function cast_misc_update_7009() {
   module_enable(array('cast_crm'));
   drupal_install_schema('mailchimp');
 }
+
+/**
+ * Enable cast_events_import module.
+ */
+function cast_misc_update_7010() {
+  module_enable(array('cast_events_import'));
+}
+
+/**
+ * Disable commerce modules, since we don't use them.
+ */
+function cast_misc_update_7011() {
+  module_disable(['commerce']);
+  drupal_uninstall_modules(['commerce']);
+}
+
+/**
+ * Delete the body field from Events.
+ */
+function cast_misc_update_7012() {
+  $instance = field_info_instance('node', 'body', 'event');
+  if (!empty($instance)) {
+    field_delete_instance($instance);
+  }
+}
