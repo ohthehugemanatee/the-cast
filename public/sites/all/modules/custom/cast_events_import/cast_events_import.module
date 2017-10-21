@@ -29,7 +29,6 @@ function _cast_events_import_importer() {
   if ($currentHash == $lastSyncedHash) {
     return;
   }
-  variable_set('cast_events_import_last_synced_hash', $currentHash);
   $listedEvents = _cast_events_build_events_array($http_response->data);
 
   // Set counters for created/updated/unpublished/ignored.
@@ -92,6 +91,9 @@ function _cast_events_import_importer() {
     $node->save();
     $createdCount++;
   }
+
+  // Update the saved hash.
+  variable_set('cast_events_import_last_synced_hash', $currentHash);
 
   // Leave a log message about the operation.
   watchdog('cast_events_import',
@@ -204,8 +206,8 @@ function _cast_events_import_map_node_values(array $eventRow, EntityMetadataWrap
   // Mark unpublished if we're missing any field values.
   if (
     empty($node->field_date->value())
-    || empty($node->field_tickets_link->value())
-    || empty($node->field_location->value())
+    || empty($node->field_tickets_link->url->value())
+    || empty($node->field_location->locality->value())
   ) {
     $node->status->set(NODE_NOT_PUBLISHED);
   }
@@ -259,12 +261,4 @@ function cast_events_import_form_node_form_alter(&$form, &$form_state, $form_id)
   if ($form['#node']->type == 'event' && isset($form['field_manual_override'])) {
     $form['field_manual_override'][LANGUAGE_NONE]['#default_value'] = 1;
   }
-}
-
-
-/**
- * Implements hook_page_alter().
- */
-function cast_events_import_page_alter(&$page) {
-  _cast_events_import_importer();
 }
