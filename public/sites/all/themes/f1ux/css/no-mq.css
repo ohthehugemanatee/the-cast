@@ -3343,38 +3343,42 @@ ul.quicktabs-tabs li.active a {
 /* line 37, ../sass/partials/components/_views-row.scss */
 .view--upcoming-events table, .view--upcoming table {
   width: 100%;
-  line-height: 3em;
+  line-height: 1.5em;
 }
 /* line 41, ../sass/partials/components/_views-row.scss */
+.view--upcoming-events table tr, .view--upcoming table tr {
+  height: 3.5em;
+}
+/* line 45, ../sass/partials/components/_views-row.scss */
 .view--upcoming-events table td, .view--upcoming-events table th, .view--upcoming table td, .view--upcoming table th {
   padding-left: 24px;
 }
 
-/* line 49, ../sass/partials/components/_views-row.scss */
+/* line 53, ../sass/partials/components/_views-row.scss */
 .view--upcoming-events .views-field a {
   text-decoration: none;
 }
-/* line 53, ../sass/partials/components/_views-row.scss */
+/* line 57, ../sass/partials/components/_views-row.scss */
 .view--upcoming-events .views-field a:focus, .view--upcoming-events .views-field a:hover {
   color: #fff;
 }
-/* line 59, ../sass/partials/components/_views-row.scss */
+/* line 63, ../sass/partials/components/_views-row.scss */
 .view--upcoming-events .views-field.views-field-field-date, .view--upcoming-events .views-field.views-field-field-location-locality {
   line-height: 0.9;
   text-transform: uppercase;
 }
-/* line 64, ../sass/partials/components/_views-row.scss */
+/* line 68, ../sass/partials/components/_views-row.scss */
 .view--upcoming-events .views-field.views-field-field-location-name-line {
   font-size: 1.3em;
   line-height: 1.1;
   text-transform: uppercase;
 }
-/* line 71, ../sass/partials/components/_views-row.scss */
+/* line 75, ../sass/partials/components/_views-row.scss */
 .view--upcoming-events.views-row-last {
   margin-bottom: 0;
 }
 
-/* line 78, ../sass/partials/components/_views-row.scss */
+/* line 82, ../sass/partials/components/_views-row.scss */
 .view--upcoming .views-row {
   background: #fff;
 }

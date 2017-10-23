@@ -55,7 +55,9 @@ services:
 
   mailhog:
     image: mailhog/mailhog
+    ports:
+      - 8025:8025
     labels:
       - 'traefik.backend=mailhog'
       - 'traefik.port=8025'
-      - 'traefik.frontend.rule=Host:mailhog.drupal.docker.localhost'
+      - 'traefik.frontend.rule=Host:mailhog.localhost'
