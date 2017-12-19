@@ -92,6 +92,7 @@ dependencies:
   php:
     'drush/drush': '~8'
     'drupal/console': '@stable'
+    'platformsh/cli': '~3'
 
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
@@ -107,3 +108,11 @@ crons:
     drupal:
         spec: '*/20 * * * *'
         cmd: 'cd public ; drush core-cron'
+    # Create a backup snapshot.
+    snapshot:
+        spec: '30 4 * * *'
+        cmd: '/bin/sh /app/scripts/snapshot.sh'
+    # Force redeploy to check and re-issue SSL certs if necessary.
+    cert-check:
+        spec: '45 4 * * *'
+        cmd: '/app/scripts/redeploy.sh'
