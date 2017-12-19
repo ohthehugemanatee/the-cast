@@ -11,5 +11,5 @@ TIME_DIFF=$((${DATESTAMP} - ${CERT_CHECK}))
 if [[ ${PLATFORM_ENVIRONMENT} = "master-7rqtwti" && (( ${TIME_DIFF}  -gt "604800" )) ]];
   then
     # trigger a snapshot.
-    php /app/.global/bin/platform.phar vset --yes --no-wait -e master -p ${PLATFORM_PROJECT} env:CERT_CHECK ${DATESTAMP}
+    php platform vset --yes --no-wait -e master -p ${PLATFORM_PROJECT} env:CERT_CHECK ${DATESTAMP}
 fi
