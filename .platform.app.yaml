@@ -92,7 +92,8 @@ dependencies:
   php:
     'drush/drush': '~8'
     'drupal/console': '@stable'
-    'platformsh/cli': '~3'
+    'platformsh/cli': '@stable'
+    'stecman/symfony-console-completion': '@stable'
 
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
