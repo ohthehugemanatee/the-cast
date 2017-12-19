@@ -86,6 +86,7 @@ mounts:
     '/tmp': 'shared:files/tmp'
     '/private': 'shared:files/private'
     '/drush-backups': 'shared:files/drush-backups'
+    '/.platformsh': 'shared:files/.platformsh'
 
 # The build-time dependencies of the app.
 dependencies:
