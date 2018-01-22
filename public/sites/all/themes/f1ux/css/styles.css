@@ -2625,6 +2625,19 @@ tr.drag-previous {
   margin-right: 8px;
 }
 
+/* line 31, ../sass/partials/components/_view.scss */
+#views_slideshow_cycle_div_photo_gallery-block_1_0 .views-field-field-attribution {
+  color: #DDD;
+  height: 0;
+}
+/* line 35, ../sass/partials/components/_view.scss */
+#views_slideshow_cycle_div_photo_gallery-block_1_0 .views-field-field-attribution .field-content {
+  position: relative;
+  top: -1.3125em;
+  background: black;
+  font-size: 0.7em;
+}
+
 /* line 4, ../sass/partials/components/_views-widget.scss */
 .views-widget {
   display: inline-block;
