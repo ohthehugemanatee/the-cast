@@ -99,7 +99,7 @@ function cast_core_types_image_default_styles() {
       3 => array(
         'name' => 'image_scale',
         'data' => array(
-          'width' => '1600',
+          'width' => 1600,
           'height' => '',
           'upscale' => 1,
         ),

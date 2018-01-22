@@ -1489,6 +1489,85 @@ function cast_core_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-photo_gallery-field_attribution'.
+  $field_instances['node-photo_gallery-field_attribution'] = array(
+    'bundle' => 'photo_gallery',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_attribution',
+    'label' => 'Attribution',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+          'redhen_activity_message' => 'redhen_activity_message',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'filtered_html' => array(
+              'weight' => 0,
+            ),
+            'full_html' => array(
+              'weight' => 1,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+            'redhen_activity_message' => array(
+              'weight' => 0,
+            ),
+          ),
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 6,
+    ),
+  );
+
   // Exported field_instance: 'node-photo_gallery-field_gallery_grid_title'.
   $field_instances['node-photo_gallery-field_gallery_grid_title'] = array(
     'bundle' => 'photo_gallery',
@@ -1819,7 +1898,7 @@ function cast_core_types_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Additional info');
+  t('Attribution');
   t('Audio');
   t('Body');
   t('Body (left side)');
@@ -1842,11 +1921,11 @@ function cast_core_types_field_default_field_instances() {
   t('The image will be automatically cropped to 960px × 300px');
   t('The title which will appear when this gallery is listed in the Gallery Grid layout on the Media page.');
   t('The title which will appear when this video is listed in the Gallery Grid layout on the Media page.');
-  t('This information is displayed under the event location and date. It\'s a good place to mention after parties, before parties, and other special aspects of the show.');
   t('This text will only appear when the audio is highlighted on the front page.');
   t('Tickets link');
   t('URSART Event ID');
   t('Video');
+  t('When this is enabled, updates are no longer synced from the URS Art website. It is automatically enabled for you when you create or edit an Event by hand.');
 
   return $field_instances;
 }

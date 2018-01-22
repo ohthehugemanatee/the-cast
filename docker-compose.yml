@@ -6,6 +6,8 @@ volumes:
 services:
   mariadb:
     image: wodby/mariadb:10.1-2.1.0
+    ports:
+      - 3306:3306
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: drupal

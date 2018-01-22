@@ -709,6 +709,25 @@ function cast_panels_views_default_views() {
   );
   $handler->display->display_options['fields']['field_images_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_images_1']['delta_offset'] = '0';
+  /* Field: Content: Attribution */
+  $handler->display->display_options['fields']['field_attribution']['id'] = 'field_attribution';
+  $handler->display->display_options['fields']['field_attribution']['table'] = 'field_data_field_attribution';
+  $handler->display->display_options['fields']['field_attribution']['field'] = 'field_attribution';
+  $handler->display->display_options['fields']['field_attribution']['label'] = '';
+  $handler->display->display_options['fields']['field_attribution']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_attribution']['settings'] = array(
+    'linked_field' => array(
+      'linked' => 0,
+      'destination' => '',
+      'advanced' => array(
+        'title' => '',
+        'target' => '',
+        'class' => '',
+        'rel' => '',
+        'text' => '',
+      ),
+    ),
+  );
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
