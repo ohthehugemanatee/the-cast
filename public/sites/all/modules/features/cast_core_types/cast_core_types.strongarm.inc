@@ -394,6 +394,9 @@ function cast_core_types_strongarm() {
         'path' => array(
           'weight' => '2',
         ),
+        'language' => array(
+          'weight' => '5',
+        ),
       ),
       'display' => array(),
     ),
