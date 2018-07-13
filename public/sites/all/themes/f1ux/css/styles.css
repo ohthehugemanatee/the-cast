@@ -3534,3 +3534,8 @@ ul.quicktabs-tabs li.active a {
   background-color: #a0a0a4;
   color: #fff;
 }
+
+/* manual entry, ../sass/partials/module_tweaks/recaptcha.scss */
+fieldset.captcha .fieldset__description {
+  color: #646464;
+}

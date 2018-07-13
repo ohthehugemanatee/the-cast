@@ -354,6 +354,7 @@ function redhen_relation_update_7101(&$sandbox) {
 
     // Remove old relation role field.
     $purge_batch = 4;
+    /**
     foreach ($sandbox['old_instances'] as $type => $bundles) {
       foreach ($bundles as $bundle) {
         $instance = field_info_instance(
@@ -367,7 +368,7 @@ function redhen_relation_update_7101(&$sandbox) {
     }
     field_delete_field(REDHEN_RELATION_ROLES_FIELD);
     field_purge_batch($purge_batch);
-
+*/
     // Create default Admin and Member roles.
     $default_roles = array(
       'admin' => array(
@@ -389,7 +390,7 @@ function redhen_relation_update_7101(&$sandbox) {
     );
     foreach ($default_roles as $rolename => $default_role) {
       $relation_role = entity_create('redhen_relation_role', $default_role);
-      $relation_role->save();
+      //$relation_role->save();
     }
 
     // Add new relation role field.
