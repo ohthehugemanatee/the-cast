@@ -1,0 +1,5 @@
+// fix for recaptcha text color.
+
+fieldset.captcha .fieldset_description {
+  color: $dark_gray;
+}
