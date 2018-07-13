@@ -1180,6 +1180,25 @@ function cast_panels_default_page_manager_pages() {
   $display->content['new-52f5eabb-73d6-419c-91b2-5b03314249a2'] = $pane;
   $display->panels['first'][4] = 'new-52f5eabb-73d6-419c-91b2-5b03314249a2';
   $pane = new stdClass();
+  $pane->pid = 'new-772d4e4d-2d46-4d65-9618-6dd933470d29';
+  $pane->panel = 'preface';
+  $pane->type = 'page_messages';
+  $pane->subtype = 'page_messages';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '772d4e4d-2d46-4d65-9618-6dd933470d29';
+  $display->content['new-772d4e4d-2d46-4d65-9618-6dd933470d29'] = $pane;
+  $display->panels['preface'][0] = 'new-772d4e4d-2d46-4d65-9618-6dd933470d29';
+  $pane = new stdClass();
   $pane->pid = 'new-2a96aa7c-f015-4142-a96e-3088a45a32db';
   $pane->panel = 'preface';
   $pane->type = 'panels_mini';
@@ -1196,11 +1215,11 @@ function cast_panels_default_page_manager_pages() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 0;
+  $pane->position = 1;
   $pane->locks = array();
   $pane->uuid = '2a96aa7c-f015-4142-a96e-3088a45a32db';
   $display->content['new-2a96aa7c-f015-4142-a96e-3088a45a32db'] = $pane;
-  $display->panels['preface'][0] = 'new-2a96aa7c-f015-4142-a96e-3088a45a32db';
+  $display->panels['preface'][1] = 'new-2a96aa7c-f015-4142-a96e-3088a45a32db';
   $pane = new stdClass();
   $pane->pid = 'new-b4b8fec2-731a-4285-bd27-0951b5c155dd';
   $pane->panel = 'preface';
@@ -1231,11 +1250,11 @@ function cast_panels_default_page_manager_pages() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 1;
+  $pane->position = 2;
   $pane->locks = array();
   $pane->uuid = 'b4b8fec2-731a-4285-bd27-0951b5c155dd';
   $display->content['new-b4b8fec2-731a-4285-bd27-0951b5c155dd'] = $pane;
-  $display->panels['preface'][1] = 'new-b4b8fec2-731a-4285-bd27-0951b5c155dd';
+  $display->panels['preface'][2] = 'new-b4b8fec2-731a-4285-bd27-0951b5c155dd';
   $pane = new stdClass();
   $pane->pid = 'new-edfb02d5-a0fa-4387-b3e9-49963bd4db5b';
   $pane->panel = 'second';
