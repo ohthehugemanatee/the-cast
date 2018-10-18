@@ -141,3 +141,15 @@ function cast_misc_update_7015() {
   module_disable(['cast_events_import']);
   drupal_uninstall_modules(['cast_events_import']);
 }
+
+/**
+ * Delete unused fields on events.
+ */
+function cast_misc_update_7016() {
+  foreach (['field_manual_override', 'field_ursart_event_id'] as $field_name) {
+    $instance = field_info_instance('node', $field_name, 'event');
+    if (!empty($instance)) {
+      field_delete_instance($instance, TRUE);
+    }
+  }
+}
