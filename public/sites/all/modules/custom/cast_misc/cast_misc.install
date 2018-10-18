@@ -153,3 +153,27 @@ function cast_misc_update_7016() {
     }
   }
 }
+
+/**
+ * Delete old Event nodes.
+ */
+function cast_misc_update_7017() {
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'event')
+    ->addMetaData('account', user_load(1));
+  $result = $query->execute();
+  if (isset($result['node'])) {
+    node_delete_multiple(array_keys($result['node']));
+  }
+  $count = count($result['node']);
+  return "Deleted $count events.";
+}
+
+/**
+ * Enable and revert the cast_feeds Feature.
+ */
+function cast_misc_update_7018() {
+  module_enable(['cast_feeds']);
+  features_revert_module('cast_feeds');
+}
