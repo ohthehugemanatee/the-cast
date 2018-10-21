@@ -8,5 +8,7 @@ features[ctools][] = feeds:feeds_importer_default:1
 features[ctools][] = feeds_tamper:feeds_tamper_default:2
 features[features_api][] = api:2
 features[feeds_importer][] = ursart_events
+features[feeds_tamper][] = ursart_events-11-default_value
+features[feeds_tamper][] = ursart_events-12-rewrite
 features[feeds_tamper][] = ursart_events-4-default_value
 project path = sites/all/modules/features
