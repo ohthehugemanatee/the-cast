@@ -894,7 +894,8 @@ function cast_panels_views_default_views() {
   $handler->display->display_options['fields']['field_date']['table'] = 'field_data_field_date';
   $handler->display->display_options['fields']['field_date']['field'] = 'field_date';
   $handler->display->display_options['fields']['field_date']['settings'] = array(
-    'format_type' => 'medium',
+    'format_type' => 'custom',
+    'custom_date_format' => 'M j Y - G:i',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
