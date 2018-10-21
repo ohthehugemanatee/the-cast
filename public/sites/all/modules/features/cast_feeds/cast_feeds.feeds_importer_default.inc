@@ -45,70 +45,75 @@ function cast_feeds_feeds_importer_default() {
         'authorize' => 0,
         'mappings' => array(
           0 => array(
-            'source' => '1',
-            'target' => 'field_date:start',
-            'timezone' => 'Europe/Berlin',
-            'language' => 'und',
-          ),
-          1 => array(
             'source' => '2',
             'target' => 'title',
             'unique' => FALSE,
             'language' => 'und',
           ),
-          2 => array(
+          1 => array(
             'source' => '3',
             'target' => 'field_location:name_line',
             'unique' => FALSE,
             'language' => 'und',
           ),
-          3 => array(
+          2 => array(
             'source' => '4',
             'target' => 'field_location:country',
             'unique' => FALSE,
             'language' => 'und',
           ),
-          4 => array(
+          3 => array(
             'source' => '5',
             'target' => 'field_location:postal_code',
             'unique' => FALSE,
             'language' => 'und',
           ),
-          5 => array(
+          4 => array(
             'source' => '6',
             'target' => 'field_location:locality',
             'unique' => FALSE,
             'language' => 'und',
           ),
-          6 => array(
+          5 => array(
             'source' => '7',
             'target' => 'field_location:thoroughfare',
             'unique' => FALSE,
             'language' => 'und',
           ),
-          7 => array(
-            'source' => '8',
-            'target' => 'Temporary target 1',
-            'unique' => FALSE,
-            'language' => 'und',
-          ),
-          8 => array(
+          6 => array(
             'source' => '10',
             'target' => 'field_tickets_link:url',
             'unique' => FALSE,
             'language' => 'und',
           ),
-          9 => array(
+          7 => array(
             'source' => '11',
             'target' => 'field_tickets_link:title',
             'unique' => FALSE,
             'language' => 'und',
           ),
-          10 => array(
+          8 => array(
             'source' => '12',
             'target' => 'guid',
             'unique' => 1,
             'language' => 'und',
+          ),
+          9 => array(
+            'source' => '1',
+            'target' => 'Temporary target 2',
+            'unique' => FALSE,
+            'language' => 'und',
+          ),
+          10 => array(
+            'source' => '8',
+            'target' => 'Temporary target 1',
+            'unique' => FALSE,
+            'language' => 'und',
+          ),
+          11 => array(
+            'source' => '13',
+            'target' => 'field_date:start',
+            'timezone' => 'Europe/Berlin',
           ),
         ),
         'insert_new' => '1',
