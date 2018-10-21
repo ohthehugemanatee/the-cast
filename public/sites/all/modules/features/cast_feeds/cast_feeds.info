@@ -10,5 +10,7 @@ features[features_api][] = api:2
 features[feeds_importer][] = ursart_events
 features[feeds_tamper][] = ursart_events-11-default_value
 features[feeds_tamper][] = ursart_events-12-rewrite
+features[feeds_tamper][] = ursart_events-13-rewrite
+features[feeds_tamper][] = ursart_events-13-trim
 features[feeds_tamper][] = ursart_events-4-default_value
 project path = sites/all/modules/features
