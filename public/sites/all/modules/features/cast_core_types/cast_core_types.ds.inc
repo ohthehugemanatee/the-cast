@@ -185,26 +185,22 @@ function cast_core_types_ds_layout_settings_info() {
     'regions' => array(
       'header' => array(
         0 => 'title',
-        2 => 'field_fach',
-      ),
-      'main_content' => array(
-        1 => 'field_body_right',
-        4 => 'group_left',
-        5 => 'body',
-        6 => 'group_right',
+        1 => 'field_fach',
       ),
       'media' => array(
-        3 => 'field_headshot',
+        2 => 'field_headshot',
+      ),
+      'main_content' => array(
+        3 => 'body',
+        4 => 'field_body_right',
       ),
     ),
     'fields' => array(
       'title' => 'header',
-      'field_body_right' => 'main_content',
       'field_fach' => 'header',
       'field_headshot' => 'media',
-      'group_left' => 'main_content',
       'body' => 'main_content',
-      'group_right' => 'main_content',
+      'field_body_right' => 'main_content',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -217,6 +213,7 @@ function cast_core_types_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
   );
   $export['node|bio|members_page'] = $ds_layout;
 
