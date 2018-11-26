@@ -48,9 +48,19 @@ $gutter: 8px;
   }
 }
 
+.l-slat__contentcontainer {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint($bp-first) {
+    flex-direction: row;
+  }
+}
+
 .l-slat__media {
   margin: 0;
   padding: 0;
+  flex-shrink: 0;
 
 
   @include breakpoint($bp-first) {
@@ -74,11 +84,12 @@ $gutter: 8px;
   display: table-cell;
   padding: 16px;
   text-align: left;
-  width: 10000px;
+  width: auto;
 
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
     *width: auto;
     *zoom: 1;
+    width:10000px
   }
   
   
