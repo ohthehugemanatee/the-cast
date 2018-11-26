@@ -1,63 +1,51 @@
 @media (min-width: 43.75em) {
   /* line 13, ../../sass/partials/layout/panels/_four-column-two-row.scss */
   .l-panels-four-column-two-row .l-first {
-    width: 25%;
+    width: 23.72881%;
     float: left;
     margin-right: -100%;
     margin-left: 0%;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 14, ../../sass/partials/layout/panels/_four-column-two-row.scss */
   .l-panels-four-column-two-row .l-second {
-    width: 25%;
+    width: 23.72881%;
     float: left;
     margin-right: -100%;
-    margin-left: 25%;
+    margin-left: 25.42373%;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 15, ../../sass/partials/layout/panels/_four-column-two-row.scss */
   .l-panels-four-column-two-row .l-third {
-    width: 25%;
+    width: 23.72881%;
     float: left;
     margin-right: -100%;
-    margin-left: 50%;
+    margin-left: 50.84746%;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 16, ../../sass/partials/layout/panels/_four-column-two-row.scss */
   .l-panels-four-column-two-row .l-fourth {
-    width: 25%;
+    width: 23.72881%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 21, ../../sass/partials/layout/panels/_four-column-two-row.scss */
   .l-panels-four-column-two-row.fifth.sixth .l-fifth {
-    width: 75%;
+    width: 74.57627%;
     float: left;
     margin-right: -100%;
     margin-left: 0%;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 22, ../../sass/partials/layout/panels/_four-column-two-row.scss */
   .l-panels-four-column-two-row.fifth.sixth .l-sixth {
-    width: 25%;
+    width: 23.72881%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 26, ../../sass/partials/layout/panels/_four-column-two-row.scss */
   .l-panels-four-column-two-row.fifth.sixth-empty .l-fifth {
@@ -66,8 +54,6 @@
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 29, ../../sass/partials/layout/panels/_four-column-two-row.scss */
   .l-panels-four-column-two-row.fifth-empty.sixth .l-sixth {
@@ -76,8 +62,6 @@
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
 }
 
@@ -90,7 +74,7 @@
 .l-panels-four-column-two-row:after {
   clear: both;
 }
-/* line 42, ../../sass/partials/layout/panels/_four-column-two-row.scss */
+/* line 36, ../../sass/partials/layout/panels/_four-column-two-row.scss */
 .l-panels-four-column-two-row .l-preface,
 .l-panels-four-column-two-row .l-first,
 .l-panels-four-column-two-row .l-second,
@@ -98,8 +82,8 @@
 .l-panels-four-column-two-row .l-fourth,
 .l-panels-four-column-two-row .l-fifth,
 .l-panels-four-column-two-row .l-sixth {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-bottom: 2em;
 }

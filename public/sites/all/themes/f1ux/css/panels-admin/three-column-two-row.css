@@ -1,113 +1,91 @@
 @media (min-width: 43.75em) {
   /* line 16, ../../sass/partials/layout/panels/_three-column-two-row.scss */
   .l-panels-three-column-two-row.first.second.third .l-first {
-    width: 33.33333%;
+    width: 32.20339%;
     float: left;
     margin-right: -100%;
     margin-left: 0%;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 17, ../../sass/partials/layout/panels/_three-column-two-row.scss */
   .l-panels-three-column-two-row.first.second.third .l-second {
-    width: 33.33333%;
+    width: 32.20339%;
     float: left;
     margin-right: -100%;
-    margin-left: 33.33333%;
+    margin-left: 33.89831%;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 18, ../../sass/partials/layout/panels/_three-column-two-row.scss */
   .l-panels-three-column-two-row.first.second.third .l-third {
-    width: 33.33333%;
+    width: 32.20339%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 21, ../../sass/partials/layout/panels/_three-column-two-row.scss */
   .l-panels-three-column-two-row.first.second.third-empty .l-first {
-    width: 50%;
+    width: 49.15254%;
     float: left;
     margin-right: -100%;
     margin-left: 0%;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 22, ../../sass/partials/layout/panels/_three-column-two-row.scss */
   .l-panels-three-column-two-row.first.second.third-empty .l-second {
-    width: 50%;
+    width: 49.15254%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 26, ../../sass/partials/layout/panels/_three-column-two-row.scss */
   .l-panels-three-column-two-row.first.second-empty.third .l-first {
-    width: 50%;
+    width: 49.15254%;
     float: left;
     margin-right: -100%;
     margin-left: 0%;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 27, ../../sass/partials/layout/panels/_three-column-two-row.scss */
   .l-panels-three-column-two-row.first.second-empty.third .l-third {
-    width: 50%;
+    width: 49.15254%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 31, ../../sass/partials/layout/panels/_three-column-two-row.scss */
   .l-panels-three-column-two-row.first-empty.second.third .l-second {
-    width: 50%;
+    width: 49.15254%;
     float: left;
     margin-right: -100%;
     margin-left: 0%;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 32, ../../sass/partials/layout/panels/_three-column-two-row.scss */
   .l-panels-three-column-two-row.first-empty.second.third .l-third {
-    width: 50%;
+    width: 49.15254%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 38, ../../sass/partials/layout/panels/_three-column-two-row.scss */
   .l-panels-three-column-two-row.fourth.fifth .l-fourth {
-    width: 66.66667%;
+    width: 66.10169%;
     float: left;
     margin-right: -100%;
     margin-left: 0%;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 39, ../../sass/partials/layout/panels/_three-column-two-row.scss */
   .l-panels-three-column-two-row.fourth.fifth .l-fifth {
-    width: 33.33333%;
+    width: 32.20339%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 43, ../../sass/partials/layout/panels/_three-column-two-row.scss */
   .l-panels-three-column-two-row.fourth.fifth-empty .l-fourth {
@@ -116,8 +94,6 @@
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
   /* line 46, ../../sass/partials/layout/panels/_three-column-two-row.scss */
   .l-panels-three-column-two-row.fourth-empty.fifth .l-fifth {
@@ -126,8 +102,6 @@
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    padding-left: 4px;
-    padding-right: 4px;
   }
 }
 
@@ -140,15 +114,15 @@
 .l-panels-three-column-two-row:after {
   clear: both;
 }
-/* line 58, ../../sass/partials/layout/panels/_three-column-two-row.scss */
+/* line 53, ../../sass/partials/layout/panels/_three-column-two-row.scss */
 .l-panels-three-column-two-row .l-preface,
 .l-panels-three-column-two-row .l-first,
 .l-panels-three-column-two-row .l-second,
 .l-panels-three-column-two-row .l-third,
 .l-panels-three-column-two-row .l-fourth,
 .l-panels-three-column-two-row .l-fifth {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-bottom: 2em;
 }
