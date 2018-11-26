@@ -253,7 +253,7 @@ function cast_core_types_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -344,7 +344,7 @@ function cast_core_types_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -737,10 +737,9 @@ function cast_core_types_field_default_field_instances() {
       'module' => 'date',
       'settings' => array(
         'increment' => 15,
-        'input_format' => 'm/d/Y - H:i:s',
+        'input_format' => 'n/j/Y',
         'input_format_custom' => '',
         'label_position' => 'above',
-        'no_fieldset' => 0,
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
