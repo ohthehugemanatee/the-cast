@@ -1,7 +1,7 @@
 @media (min-width: 43.75em) {
   /* line 13, ../../sass/partials/layout/panels/_sidebar.scss */
   .l-panels-sidebar.main.sidebar .l-main {
-    width: 65.21739%;
+    width: 66.10169%;
     float: left;
     margin-right: -100%;
     margin-left: 0%;
@@ -9,7 +9,7 @@
   }
   /* line 16, ../../sass/partials/layout/panels/_sidebar.scss */
   .l-panels-sidebar.main.sidebar .l-sidebar {
-    width: 30.43478%;
+    width: 32.20339%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -26,12 +26,12 @@
 .l-panels-sidebar:after {
   clear: both;
 }
-/* line 27, ../../sass/partials/layout/panels/_sidebar.scss */
+/* line 25, ../../sass/partials/layout/panels/_sidebar.scss */
 .l-panels-sidebar .l-preface,
 .l-panels-sidebar .l-main,
 .l-panels-sidebar .l-sidebar {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 /* line 9, ../../sass/partials/global/mixins/_clearfix.scss */
