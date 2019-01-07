@@ -51,3 +51,16 @@ function cast_misc_latest_node_redirect(string $argument) {
   }
   drupal_goto($target);
 }
+
+/**
+ * Implements hook_feeds_after_parse().
+ *
+ * If an item to import has a link URL but no title, provide a title.
+ */
+function cast_misc_feeds_after_parse(FeedsSource $source, FeedsParserResult $result) {
+  foreach ($result->items as $index => $item) {
+    if (!empty($item['10']) && empty($item['11'])) {
+      $result->items[$index]['11'] = 'Allgemeiner Link';
+    }
+  }
+}
