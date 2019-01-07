@@ -23,22 +23,7 @@ function cast_feeds_feeds_tamper_default() {
   $feeds_tamper->weight = 1;
   $feeds_tamper->description = 'Convert case';
   $export['ursart_events-11-convert_case'] = $feeds_tamper;
-
-  $feeds_tamper = new stdClass();
-  $feeds_tamper->disabled = TRUE; /* Edit this to true to make a default feeds_tamper disabled initially */
-  $feeds_tamper->api_version = 2;
-  $feeds_tamper->id = 'ursart_events-11-default_value';
-  $feeds_tamper->importer = 'ursart_events';
-  $feeds_tamper->source = '11';
-  $feeds_tamper->plugin_id = 'default_value';
-  $feeds_tamper->settings = array(
-    'default_value' => 'Allgemeiner Link',
-    'only_if_empty' => 1,
-  );
-  $feeds_tamper->weight = 0;
-  $feeds_tamper->description = 'Set value or default value';
-  $export['ursart_events-11-default_value'] = $feeds_tamper;
-
+  
   $feeds_tamper = new stdClass();
   $feeds_tamper->disabled = FALSE; /* Edit this to true to make a default feeds_tamper disabled initially */
   $feeds_tamper->api_version = 2;
