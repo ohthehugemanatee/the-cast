@@ -194,8 +194,21 @@ function cast_panels_default_panels_mini() {
   $pane->panel = 'middle';
   $pane->type = 'block';
   $pane->subtype = 'locale-language_content';
-  $pane->shown = FALSE;
-  $pane->access = array();
+  $pane->shown = TRUE;
+  $pane->access = array(
+    'plugins' => array(
+      0 => array(
+        'name' => 'role',
+        'settings' => array(
+          'rids' => array(
+            0 => 2,
+          ),
+        ),
+        'context' => 'logged-in-user',
+        'not' => FALSE,
+      ),
+    ),
+  );
   $pane->configuration = array(
     'override_title' => 1,
     'override_title_text' => '',
