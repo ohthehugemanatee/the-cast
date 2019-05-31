@@ -14,7 +14,6 @@ dependencies[] = date
 dependencies[] = ds
 dependencies[] = emfield
 dependencies[] = entity
-dependencies[] = entity_boxes
 dependencies[] = features
 dependencies[] = field_group
 dependencies[] = file
