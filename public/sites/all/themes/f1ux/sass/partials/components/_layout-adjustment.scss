@@ -21,13 +21,6 @@ header .content .pane-1 {
 .l-panels-two-column {  
   .l-first,
   .l-second {
-    .pane {
-      .pane__content {
-        .front &{
-          min-height: 250px;
-        }
-      }
-    }
     .pane.short {
       .pane__content {
         .front &{

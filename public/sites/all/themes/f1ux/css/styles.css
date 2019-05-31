@@ -2998,17 +2998,12 @@ header .content .pane-1 h2 {
 }
 
 /* line 26, ../sass/partials/components/_layout-adjustment.scss */
-.front .l-panels-two-column .l-first .pane .pane__content, .front
-.l-panels-two-column .l-second .pane .pane__content {
-  min-height: 250px;
-}
-/* line 33, ../sass/partials/components/_layout-adjustment.scss */
 .front .l-panels-two-column .l-first .pane.short .pane__content, .front
 .l-panels-two-column .l-second .pane.short .pane__content {
   height: 166px;
 }
 
-/* line 47, ../sass/partials/components/_layout-adjustment.scss */
+/* line 40, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-four-column-two-row .l-first .pane .pane__content,
 .l-panels-four-column-two-row .l-second .pane .pane__content,
 .l-panels-four-column-two-row .l-third .pane .pane__content,
@@ -3017,43 +3012,43 @@ header .content .pane-1 h2 {
   height: 123px;
 }
 
-/* line 61, ../sass/partials/components/_layout-adjustment.scss */
+/* line 54, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-two-row .l-first .pane .pane__content,
 .l-panels-three-column-two-row .l-second .pane .pane__content,
 .l-panels-three-column-two-row .l-third .pane .pane__content {
   height: 165px;
 }
 
-/* line 70, ../sass/partials/components/_layout-adjustment.scss */
+/* line 63, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-25-50-25 .l-first .pane__content,
 .l-panels-three-column-25-50-25 .l-third .pane__content {
   padding: 8px;
   text-align: left;
 }
-/* line 75, ../sass/partials/components/_layout-adjustment.scss */
+/* line 68, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-25-50-25 .l-first .pane__content .group-left,
 .l-panels-three-column-25-50-25 .l-third .pane__content .group-left {
   float: left;
   width: 75%;
 }
-/* line 79, ../sass/partials/components/_layout-adjustment.scss */
+/* line 72, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-25-50-25 .l-first .pane__content .group-right,
 .l-panels-three-column-25-50-25 .l-third .pane__content .group-right {
   float: right;
   text-align: right;
   width: 25%;
 }
-/* line 85, ../sass/partials/components/_layout-adjustment.scss */
+/* line 78, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-three-column-25-50-25 .l-second .pane__content {
   padding: 16px;
   text-align: left;
 }
 
-/* line 93, ../sass/partials/components/_layout-adjustment.scss */
+/* line 86, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-four-column-two-row .pane__content {
   text-align: left;
 }
-/* line 97, ../sass/partials/components/_layout-adjustment.scss */
+/* line 90, ../sass/partials/components/_layout-adjustment.scss */
 .l-panels-four-column-two-row .l-fifth .pane__content {
   padding: 16px;
   text-align: left;
