@@ -14,6 +14,14 @@
     display: block;
   }
 }
+.pane--locale-language-content {
+  display: none;
+  float: none;
+  @include breakpoint($mobile-menu-bp, $no-query: true) {
+    display: block;
+    float: right;
+  }
+}
 
 .mobile-nav__bar {
   @include background-image(

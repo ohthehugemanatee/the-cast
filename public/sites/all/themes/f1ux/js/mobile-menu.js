@@ -11,8 +11,18 @@
           $mobileLinks = $('<div class="mobile-nav__links element-hidden"></div>'),
           $mobileArrow = $('<span class="mobile-arrow"></span>'),
           $mainMenu = $('#block-system-main-menu ul.nav', context).first().clone(),
+          $languageMenu = $('.pane--locale-language-content ul.nav', context).first().clone(),
           $isSuperfish = ($mainMenu.hasClass('sf-menu')) ? true : false;
 
+      // Pull language links from language menu.
+      $languageMenu.find('a').each(function () {
+        // Copy the link to the mobile bar.
+        $(this).addClass('mobile-nav__button');
+        $(this).find('img').each(function () {
+          $(this).addClass('mobile-nav__icon');
+        });
+        $mobileBar.prepend(this);
+      });
       // Remove menu id, add class, and format subnav menus.
       $mainMenu.removeAttr('id').attr('class', 'nav nav--mobile').find('ul').each(function () {
         var $parentLink = $(this).prev('a');
