@@ -15,14 +15,10 @@ function cast_beans_preprocess_field(&$variables) {
   if ($variables['element']['#field_name'] == 'field_button') {
     if (isset($variables['element']['#items'][0])) {
       $field_value = $variables['element']['#items'][0];
-      // Title and URL are identical if title is missing.
-      if ($field_value['title'] == $field_value['url']) {
+      // If original title was blank, don't display.
+      if ($field_value['original_title'] === '') {
         $variables['items'][0]['#markup'] = '';
-
       }
-    }
-    else {
-      $one = 'two';
     }
 
   }
