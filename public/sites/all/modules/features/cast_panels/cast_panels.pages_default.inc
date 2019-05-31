@@ -1521,7 +1521,7 @@ function cast_panels_default_page_manager_pages() {
   $pane->panel = 'preface';
   $pane->type = 'block';
   $pane->subtype = 'bean-singing-in-a-row';
-  $pane->shown = TRUE;
+  $pane->shown = FALSE;
   $pane->access = array();
   $pane->configuration = array(
     'override_title' => 0,
@@ -1539,6 +1539,29 @@ function cast_panels_default_page_manager_pages() {
   $pane->uuid = 'd429c1cf-581f-48ef-89c8-55d58d3d7983';
   $display->content['new-d429c1cf-581f-48ef-89c8-55d58d3d7983'] = $pane;
   $display->panels['preface'][1] = 'new-d429c1cf-581f-48ef-89c8-55d58d3d7983';
+  $pane = new stdClass();
+  $pane->pid = 'new-9efe9737-3d0f-403d-935e-567d5d290a61';
+  $pane->panel = 'preface';
+  $pane->type = 'block';
+  $pane->subtype = 'bean-the-cast-bka-premiere-banner-201';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'override_title' => 0,
+    'override_title_text' => '',
+    'override_title_heading' => 'h2',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $pane->uuid = '9efe9737-3d0f-403d-935e-567d5d290a61';
+  $display->content['new-9efe9737-3d0f-403d-935e-567d5d290a61'] = $pane;
+  $display->panels['preface'][2] = 'new-9efe9737-3d0f-403d-935e-567d5d290a61';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

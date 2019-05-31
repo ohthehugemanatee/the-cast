@@ -177,3 +177,11 @@ function cast_misc_update_7018() {
   module_enable(['cast_feeds']);
   features_revert_module('cast_feeds');
 }
+
+/**
+ * Disable entity_boxes.
+ */
+function cast_misc_update_7019() {
+  module_disable(['cast_boxes', 'boxes']);
+  drupal_uninstall_modules(['cast_boxes', 'boxes']);
+}

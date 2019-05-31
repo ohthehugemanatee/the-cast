@@ -13,13 +13,6 @@ function cast_ux_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'boxes_edit_location';
-  $strongarm->value = '1';
-  $export['boxes_edit_location'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'eu_cookie_compliance';
   $strongarm->value = array(
     'popup_enabled' => 1,
