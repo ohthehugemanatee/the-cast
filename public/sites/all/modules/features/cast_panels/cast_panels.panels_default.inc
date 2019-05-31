@@ -196,18 +196,7 @@ function cast_panels_default_panels_mini() {
   $pane->subtype = 'locale-language_content';
   $pane->shown = TRUE;
   $pane->access = array(
-    'plugins' => array(
-      0 => array(
-        'name' => 'role',
-        'settings' => array(
-          'rids' => array(
-            0 => 2,
-          ),
-        ),
-        'context' => 'logged-in-user',
-        'not' => FALSE,
-      ),
-    ),
+    'plugins' => array(),
   );
   $pane->configuration = array(
     'override_title' => 1,
