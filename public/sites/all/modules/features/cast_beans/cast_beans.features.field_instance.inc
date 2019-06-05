@@ -106,9 +106,10 @@ function cast_beans_field_default_field_instances() {
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
-          'filtered_html' => 0,
+          'filtered_html' => 'filtered_html',
           'full_html' => 0,
-          'plain_text' => 'plain_text',
+          'plain_text' => 0,
+          'redhen_activity_message' => 0,
         ),
         'allowed_formats_toggle' => 1,
         'default_order_toggle' => 1,
@@ -122,6 +123,9 @@ function cast_beans_field_default_field_instances() {
             ),
             'plain_text' => array(
               'weight' => -50,
+            ),
+            'redhen_activity_message' => array(
+              'weight' => 0,
             ),
           ),
         ),
