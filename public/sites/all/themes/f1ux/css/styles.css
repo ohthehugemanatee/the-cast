@@ -2620,8 +2620,10 @@ tr.drag-previous {
 .pane--frontpage-slideshow-blocks .field--body-text {
   float: left;
   min-width: 200px;
+  width: 100%;
+  text-align: center;
 }
-/* line 8, ../sass/partials/components/_banner.scss */
+/* line 10, ../sass/partials/components/_banner.scss */
 .pane--frontpage-slideshow-blocks .field--body-text p {
   font-size: 1.375em;
   margin: 0.95455em 0;
@@ -2633,7 +2635,7 @@ tr.drag-previous {
     overflow-wrap: break-word;
   }
 }
-/* line 18, ../sass/partials/components/_banner.scss */
+/* line 20, ../sass/partials/components/_banner.scss */
 .pane--frontpage-slideshow-blocks .field--headshot {
   float: right;
   max-width: 900px;
@@ -2641,28 +2643,28 @@ tr.drag-previous {
   overflow: hidden;
 }
 @media (min-width: 56.25em) {
-  /* line 18, ../sass/partials/components/_banner.scss */
+  /* line 20, ../sass/partials/components/_banner.scss */
   .pane--frontpage-slideshow-blocks .field--headshot {
     max-width: 800px;
   }
 }
-/* line 27, ../sass/partials/components/_banner.scss */
+/* line 29, ../sass/partials/components/_banner.scss */
 .pane--frontpage-slideshow-blocks .bean--banner-block {
   max-width: 1120px;
   background-color: black;
 }
 
-/* line 34, ../sass/partials/components/_banner.scss */
+/* line 36, ../sass/partials/components/_banner.scss */
 .page-upcoming .l-preface .pane.pane--boxes-demo-banner {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 41, ../sass/partials/components/_banner.scss */
+/* line 43, ../sass/partials/components/_banner.scss */
 .l-preface .pane.pane--boxes-demo-banner .entity-boxes--banner-block .content {
   height: 300px !important;
   position: relative;
 }
-/* line 46, ../sass/partials/components/_banner.scss */
+/* line 48, ../sass/partials/components/_banner.scss */
 .l-preface .pane.pane--boxes-demo-banner .entity-boxes--banner-block .content .field--body-text a {
   font-size: 2em;
   line-height: 1;

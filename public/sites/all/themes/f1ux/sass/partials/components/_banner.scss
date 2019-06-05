@@ -5,6 +5,8 @@
   .field--body-text {
     float: left;
     min-width: 200px;
+    width: 100%;
+    text-align: center;
     p {
       @extend %hN;
       font-size: em($font-size-xl);
