@@ -1,38 +1,49 @@
 // @file
 // Styles for the banner.
 
-.pane--frontpage-slideshow {
-  .l-preface & {
-    .pane__content {
-      
-      a {
-        font-size: 2em;
-        line-height: 1;
-        text-decoration: none;
-      }
+.pane--frontpage-slideshow-blocks {
+  .field--body-text {
+    float: left;
+    width: 200px;
+    min-width: 200px;
+    p {
+      @extend %hN;
+      font-size: em($font-size-xl);
+      margin: rhythm(1, $font-size-xl) 0;
     }
+  }
+  .field--headshot {
+    float: right;
+    max-width: 800px;
+    max-height: 450px;
+    overflow: hidden;
+  }
+  .bean--banner-block {
+    max-width: 1120px;
+    background-color: black;
   }
 }
 
 .l-preface .pane.pane--boxes-demo-banner {
-  .page-upcoming & {
-    margin-left: 0;
-    margin-right: 0;
-  }
+    .page-upcoming & {
+      margin-left: 0;
+      margin-right: 0;
+    }
 
-  
-  .entity-boxes--banner-block {
-    .content {
-      height: 300px !important;
-      position: relative;
-      
-      .field--body-text {
-        a {
-          font-size: 2em;
-          line-height: 1;
-          text-decoration: none;
+
+    .entity-boxes--banner-block {
+      .content {
+        height: 300px !important;
+        position: relative;
+
+        .field--body-text {
+          a {
+            font-size: 2em;
+            line-height: 1;
+            text-decoration: none;
+          }
         }
       }
     }
   }
-}
+

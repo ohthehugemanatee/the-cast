@@ -29,7 +29,6 @@ features[features_api][] = api:2
 features[field_base][] = field_bannerblock_frontpage
 features[field_base][] = field_body_text
 features[field_base][] = field_button
-features[field_base][] = field_button_text
 features[field_base][] = field_destination_url
 features[field_base][] = field_headshot
 features[field_base][] = field_image

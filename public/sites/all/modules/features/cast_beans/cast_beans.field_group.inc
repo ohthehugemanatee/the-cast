@@ -21,24 +21,12 @@ function cast_beans_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Bottom Right',
-    'weight' => '2',
-    'children' => array(
-      0 => 'field_body_text',
-      1 => 'field_button',
-    ),
-    'format_type' => 'div',
+    'weight' => '3',
+    'children' => array(),
+    'format_type' => 'hidden',
     'format_settings' => array(
-      'label' => 'Bottom Right',
-      'instance_settings' => array(
-        'classes' => 'group-bottomright field-group-div pane--boxes-demo-banner',
-        'description' => '',
-        'show_label' => '0',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'none',
-        'id' => 'bean_banner_block_full_group_bottomright',
-      ),
-      'formatter' => 'open',
+      'formatter' => '',
+      'instance_settings' => array(),
     ),
   );
   $field_groups['group_bottomright|bean|banner_block|default'] = $field_group;

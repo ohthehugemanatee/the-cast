@@ -47,7 +47,7 @@ function cast_beans_strongarm() {
       'display' => array(
         'title' => array(
           'default' => array(
-            'weight' => '0',
+            'weight' => '4',
             'visible' => FALSE,
           ),
           'social_block' => array(
