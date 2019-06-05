@@ -795,12 +795,6 @@ function _link_parse_url($url) {
     $url_parts['fragment'] = substr($url, strpos($url, '#') + 1);
     $url = substr($url, 0, strpos($url, '#'));
   }
-  // Separate out the query string, if any.
-  if (strpos($url, '?') !== FALSE) {
-    $query = substr($url, strpos($url, '?') + 1);
-    $url_parts['query'] = _link_parse_str($query);
-    $url = substr($url, 0, strpos($url, '?'));
-  }
   $url_parts['url'] = $url;
   return $url_parts;
 }
