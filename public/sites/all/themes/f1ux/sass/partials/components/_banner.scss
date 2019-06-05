@@ -2,32 +2,33 @@
 // Styles for the banner.
 
 .pane--frontpage-slideshow-blocks {
-  .field--body-text {
-    float: left;
-    min-width: 200px;
-    width: 100%;
-    text-align: center;
-    p {
-      @extend %hN;
-      font-size: em($font-size-xl);
-      margin: rhythm(1, $font-size-xl) 0;
+  .content {
+    display: block;
+
+    @include breakpoint(700px, $no-query: true) {
+      display: flex;
+      flex-direction: row-reverse;
     }
-    @include breakpoint(1000px, $no-query: true) {
-      width: 200px;
-      overflow-wrap: break-word;
+
+    .field--body-text {
+      flex: 0 0 25%;
+      align-items: center;
+      display: flex;
+
+      p {
+        @extend %hN;
+        font-size: em($font-size-xl);
+        margin: rhythm(1, $font-size-xl) 0;
+      }
+    }
+
+    .field--headshot {
+      @include breakpoint(700px, $no-query: true) {
+        flex: 1 1 75%;
+      }
     }
   }
-  .field--headshot {
-    float: right;
-    max-width: 900px;
-    max-height: 450px;
-    overflow: hidden;
-    @include breakpoint(900px, $no-query: true) {
-      max-width:800px;
-    }
-    }
   .bean--banner-block {
-    max-width: 1120px;
     background-color: black;
   }
 }
