@@ -1,0 +1,29 @@
+From 3e53015ed71c76e293ae9daf6977ea0a3f4813eb Mon Sep 17 00:00:00 2001
+From: Campbell Vertesi <campbell@vertesi.com>
+Date: Wed, 5 Jun 2019 15:57:38 +0200
+Subject: [PATCH 1/1] Don't separate query string
+
+---
+ link.module | 6 ------
+ 1 file changed, 6 deletions(-)
+
+diff --git a/link.module b/link.module
+index a57535d..a21590a 100644
+--- a/link.module
++++ b/link.module
+@@ -795,12 +795,6 @@ function _link_parse_url($url) {
+     $url_parts['fragment'] = substr($url, strpos($url, '#') + 1);
+     $url = substr($url, 0, strpos($url, '#'));
+   }
+-  // Separate out the query string, if any.
+-  if (strpos($url, '?') !== FALSE) {
+-    $query = substr($url, strpos($url, '?') + 1);
+-    $url_parts['query'] = _link_parse_str($query);
+-    $url = substr($url, 0, strpos($url, '?'));
+-  }
+   $url_parts['url'] = $url;
+   return $url_parts;
+ }
+-- 
+2.17.1
+
