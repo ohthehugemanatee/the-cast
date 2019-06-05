@@ -15,10 +15,15 @@
       align-items: center;
       display: flex;
 
+      a {
+        text-decoration: none;
+      }
+
       p {
         @extend %hN;
-        font-size: em($font-size-xl);
-        margin: rhythm(1, $font-size-xl) 0;
+        text-align: center;
+        font-size: em($font-size-xxl);
+        margin: rhythm(1, $font-size-xxl) 0;
       }
     }
 
