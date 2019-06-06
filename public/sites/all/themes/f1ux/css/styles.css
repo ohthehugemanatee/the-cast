@@ -2632,43 +2632,44 @@ tr.drag-previous {
   flex: 0 0 25%;
   align-items: center;
   display: flex;
+  padding: 1em;
 }
-/* line 17, ../sass/partials/components/_banner.scss */
+/* line 18, ../sass/partials/components/_banner.scss */
 .pane--frontpage-slideshow-blocks .content .field--body-text p {
   text-align: center;
   font-size: 1.625em;
   margin: 0.80769em 0;
 }
-/* line 18, ../sass/partials/components/_banner.scss */
+/* line 19, ../sass/partials/components/_banner.scss */
 .pane--frontpage-slideshow-blocks .content .field--body-text p a {
   text-decoration: none;
 }
-/* line 22, ../sass/partials/components/_banner.scss */
+/* line 23, ../sass/partials/components/_banner.scss */
 .pane--frontpage-slideshow-blocks .content .field--body-text p b, .pane--frontpage-slideshow-blocks .content .field--body-text p strong a {
   color: #cb0004;
 }
 @media (min-width: 43.75em) {
-  /* line 34, ../sass/partials/components/_banner.scss */
+  /* line 35, ../sass/partials/components/_banner.scss */
   .pane--frontpage-slideshow-blocks .content .field--headshot {
     flex: 1 1 75%;
   }
 }
-/* line 40, ../sass/partials/components/_banner.scss */
+/* line 41, ../sass/partials/components/_banner.scss */
 .pane--frontpage-slideshow-blocks .bean--banner-block {
   background-color: black;
 }
 
-/* line 46, ../sass/partials/components/_banner.scss */
+/* line 47, ../sass/partials/components/_banner.scss */
 .page-upcoming .l-preface .pane.pane--boxes-demo-banner {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 53, ../sass/partials/components/_banner.scss */
+/* line 54, ../sass/partials/components/_banner.scss */
 .l-preface .pane.pane--boxes-demo-banner .entity-boxes--banner-block .content {
   height: 300px !important;
   position: relative;
 }
-/* line 58, ../sass/partials/components/_banner.scss */
+/* line 59, ../sass/partials/components/_banner.scss */
 .l-preface .pane.pane--boxes-demo-banner .entity-boxes--banner-block .content .field--body-text a {
   font-size: 2em;
   line-height: 1;
