@@ -408,7 +408,7 @@ dt + dt {
 }
 
 /* line 115, ../sass/partials/base/_html-elements.scss */
-h1, h2, h3, h4, h5, h6, .pane--frontpage-slideshow-blocks .content .field--body-text p {
+h1, h2, h3, h4, h5, h6, .bean--banner-block .content .field--body-text p {
   color: #fff;
   font-family: "Orator", helvetica, sans-serif;
   line-height: 1.1;
@@ -2532,53 +2532,53 @@ tr.drag-previous {
   margin-top: 8px;
 }
 
+/* line 4, ../sass/partials/components/_banner.scss */
+.bean--banner-block {
+  background-color: black;
+}
 /* line 5, ../sass/partials/components/_banner.scss */
-.pane--frontpage-slideshow-blocks .content {
+.bean--banner-block .content {
   display: block;
   display: flex;
   flex-direction: row-reverse;
 }
 /* line 13, ../sass/partials/components/_banner.scss */
-.pane--frontpage-slideshow-blocks .content .field--body-text {
+.bean--banner-block .content .field--body-text {
   flex: 0 0 25%;
   align-items: center;
   display: flex;
   padding: 1em;
 }
 /* line 18, ../sass/partials/components/_banner.scss */
-.pane--frontpage-slideshow-blocks .content .field--body-text p {
+.bean--banner-block .content .field--body-text p {
   text-align: center;
   font-size: 1.625em;
   margin: 0.80769em 0;
 }
 /* line 19, ../sass/partials/components/_banner.scss */
-.pane--frontpage-slideshow-blocks .content .field--body-text p a {
+.bean--banner-block .content .field--body-text p a {
   text-decoration: none;
 }
 /* line 23, ../sass/partials/components/_banner.scss */
-.pane--frontpage-slideshow-blocks .content .field--body-text p b, .pane--frontpage-slideshow-blocks .content .field--body-text p strong a {
+.bean--banner-block .content .field--body-text p b, .bean--banner-block .content .field--body-text p strong a {
   color: #cb0004;
 }
 /* line 35, ../sass/partials/components/_banner.scss */
-.pane--frontpage-slideshow-blocks .content .field--headshot {
+.bean--banner-block .content .field--headshot {
   flex: 1 1 75%;
 }
-/* line 41, ../sass/partials/components/_banner.scss */
-.pane--frontpage-slideshow-blocks .bean--banner-block {
-  background-color: black;
-}
 
-/* line 47, ../sass/partials/components/_banner.scss */
+/* line 45, ../sass/partials/components/_banner.scss */
 .page-upcoming .l-preface .pane.pane--boxes-demo-banner {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 54, ../sass/partials/components/_banner.scss */
+/* line 52, ../sass/partials/components/_banner.scss */
 .l-preface .pane.pane--boxes-demo-banner .entity-boxes--banner-block .content {
   height: 300px !important;
   position: relative;
 }
-/* line 59, ../sass/partials/components/_banner.scss */
+/* line 57, ../sass/partials/components/_banner.scss */
 .l-preface .pane.pane--boxes-demo-banner .entity-boxes--banner-block .content .field--body-text a {
   font-size: 2em;
   line-height: 1;
