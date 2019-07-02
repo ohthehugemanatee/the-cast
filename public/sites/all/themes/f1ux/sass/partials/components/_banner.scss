@@ -1,38 +1,66 @@
 // @file
 // Styles for the banner.
 
-.pane--frontpage-slideshow {
-  .l-preface & {
-    .pane__content {
-      
-      a {
-        font-size: 2em;
-        line-height: 1;
-        text-decoration: none;
+.bean--banner-block {
+  .content {
+    display: block;
+
+    @include breakpoint(700px, $no-query: true) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .field--body-text {
+      flex: 0 0 25%;
+      align-items: center;
+      display: flex;
+      padding: 1em;
+      p {
+        a {
+          text-decoration: none;
+        }
+
+        b, strong a {
+            color: #cb0004;
+          }
+
+        @extend %hN;
+        text-align: center;
+        font-size: em($font-size-xxl);
+        margin: rhythm(1, $font-size-xxl) 0;
+
+      }
+    }
+
+    .field--headshot {
+      @include breakpoint(700px, $no-query: true) {
+        flex: 1 1 75%;
       }
     }
   }
+    background-color: black;
 }
 
 .l-preface .pane.pane--boxes-demo-banner {
-  .page-upcoming & {
-    margin-left: 0;
-    margin-right: 0;
-  }
+    .page-upcoming & {
+      margin-left: 0;
+      margin-right: 0;
+    }
 
-  
-  .entity-boxes--banner-block {
-    .content {
-      height: 300px !important;
-      position: relative;
-      
-      .field--body-text {
-        a {
-          font-size: 2em;
-          line-height: 1;
-          text-decoration: none;
+
+    .entity-boxes--banner-block {
+      .content {
+        height: 300px !important;
+        position: relative;
+
+        .field--body-text {
+          a {
+            font-size: 2em;
+            line-height: 1;
+            text-decoration: none;
+          }
         }
       }
     }
   }
-}
+

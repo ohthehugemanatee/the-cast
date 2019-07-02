@@ -985,6 +985,7 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'above',
         'module' => 'link',
         'settings' => array(
+          'custom_title' => '',
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -1004,6 +1005,7 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'link',
         'settings' => array(
+          'custom_title' => '',
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -1023,6 +1025,7 @@ function cast_core_types_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'link',
         'settings' => array(
+          'custom_title' => '',
           'linked_field' => array(
             'advanced' => array(
               'class' => '',

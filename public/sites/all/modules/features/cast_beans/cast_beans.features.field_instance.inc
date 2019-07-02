@@ -25,7 +25,7 @@ function cast_beans_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 5,
       ),
       'social_block' => array(
         'label' => 'above',
@@ -77,7 +77,7 @@ function cast_beans_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'social_block' => array(
         'label' => 'hidden',
@@ -106,9 +106,10 @@ function cast_beans_field_default_field_instances() {
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
-          'filtered_html' => 0,
+          'filtered_html' => 'filtered_html',
           'full_html' => 0,
-          'plain_text' => 'plain_text',
+          'plain_text' => 0,
+          'redhen_activity_message' => 0,
         ),
         'allowed_formats_toggle' => 1,
         'default_order_toggle' => 1,
@@ -122,6 +123,9 @@ function cast_beans_field_default_field_instances() {
             ),
             'plain_text' => array(
               'weight' => -50,
+            ),
+            'redhen_activity_message' => array(
+              'weight' => 0,
             ),
           ),
         ),
@@ -150,27 +154,15 @@ function cast_beans_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'link',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => 'banner',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '[bean:field-button:url]',
-            'linked' => 1,
-          ),
-        ),
-        'type' => 'link_title_plain',
-        'weight' => 3,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
       ),
       'social_block' => array(
         'label' => 'hidden',
         'module' => 'link',
         'settings' => array(
+          'custom_title' => '',
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -249,7 +241,7 @@ function cast_beans_field_default_field_instances() {
           ),
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'social_block' => array(
         'label' => 'hidden',
@@ -285,7 +277,7 @@ function cast_beans_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '960x300',
+      'min_resolution' => '',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -487,6 +479,7 @@ function cast_beans_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'link',
         'settings' => array(
+          'custom_title' => '',
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -676,6 +669,7 @@ function cast_beans_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'link',
         'settings' => array(
+          'custom_title' => '',
           'linked_field' => array(
             'advanced' => array(
               'class' => '',

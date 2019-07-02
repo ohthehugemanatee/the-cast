@@ -64,23 +64,10 @@ function cast_ux_views_default_views() {
   $handler->display->display_options['fields']['field_tickets_link']['id'] = 'field_tickets_link';
   $handler->display->display_options['fields']['field_tickets_link']['table'] = 'field_data_field_tickets_link';
   $handler->display->display_options['fields']['field_tickets_link']['field'] = 'field_tickets_link';
-  /* Field: Content: Manual override */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_manual_override']['id'] = 'field_manual_override';
   $handler->display->display_options['fields']['field_manual_override']['table'] = 'field_data_field_manual_override';
   $handler->display->display_options['fields']['field_manual_override']['field'] = 'field_manual_override';
-  $handler->display->display_options['fields']['field_manual_override']['settings'] = array(
-    'linked_field' => array(
-      'linked' => 0,
-      'destination' => '',
-      'advanced' => array(
-        'title' => '',
-        'target' => '',
-        'class' => '',
-        'rel' => '',
-        'text' => '',
-      ),
-    ),
-  );
   /* Field: Content: Published */
   $handler->display->display_options['fields']['status']['id'] = 'status';
   $handler->display->display_options['fields']['status']['table'] = 'node';
@@ -121,7 +108,7 @@ function cast_ux_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'event' => 'event',
   );
-  /* Filter criterion: Content: Manual override (field_manual_override) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_manual_override_value']['id'] = 'field_manual_override_value';
   $handler->display->display_options['filters']['field_manual_override_value']['table'] = 'field_data_field_manual_override';
   $handler->display->display_options['filters']['field_manual_override_value']['field'] = 'field_manual_override_value';
@@ -188,11 +175,12 @@ function cast_ux_views_default_views() {
     t('Date'),
     t('City'),
     t('Tickets link'),
-    t('Manual override'),
+    t('Broken handler field_data_field_manual_override.field_manual_override'),
     t('Published'),
     t('Edit link'),
     t('Log message'),
     t('Manual override (field_manual_override)'),
+    t('Manual override'),
     t('Date (field_date)'),
     t('Page'),
   );

@@ -47,11 +47,11 @@ function cast_core_types_image_default_styles() {
   $styles['banner_image'] = array(
     'label' => 'banner image',
     'effects' => array(
-      7 => array(
+      2 => array(
         'name' => 'focal_point_scale_and_crop',
         'data' => array(
-          'width' => 1689.6,
-          'height' => 528,
+          'width' => 1115,
+          'height' => 557,
           'focal_point_advanced' => array(
             'shift_x' => '',
             'shift_y' => '',
